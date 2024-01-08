@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --tree-poppy: #F7941D;
+    --tree-leaf: #151686;
+}

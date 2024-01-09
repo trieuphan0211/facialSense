@@ -4,11 +4,156 @@ import female from "../assets/img/home/Female.png";
 import male from "../assets/img/home/Male.png";
 import male1 from "../assets/img/home/Male1.png";
 import { Check } from "../assets/svg";
-import { useIntersectionObserver } from "@uidotdev/usehooks";
+import { useIntersectionObserver, useWindowSize } from "@uidotdev/usehooks";
 import { PieChart } from "@mui/x-charts/PieChart";
 import { BarChart } from "@mui/x-charts/BarChart";
+import office_building from "../assets/img/home/office-building.png";
+import scan_man from "../assets/img/home/scan_man.png";
+import identity_female from "../assets/img/home/identify_female.png";
+import fixthelogo from "../assets/img/home/fixthephoto.png";
+import capterra from "../assets/img/home/capterra.png";
+import { useRef, useState } from "react";
+import MobileStepper from "@mui/material/MobileStepper";
+import EastRoundedIcon from "@mui/icons-material/EastRounded";
+import WestRoundedIcon from "@mui/icons-material/WestRounded";
+import Box from "@mui/material/Box";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { LeafButton, PoppyButton } from "../components/button";
+import { useTranslation } from "react-i18next";
+
+// Benefits
+const systemBenefits = [
+  {
+    img: office_building,
+    header: "homepage.benefit.items.0.header",
+    context: [
+      {
+        label: "homepage.benefit.items.0.context.0.label",
+        text: "homepage.benefit.items.0.context.0.text",
+      },
+      {
+        label: "homepage.benefit.items.0.context.1.label",
+        text: "homepage.benefit.items.0.context.1.text",
+      },
+      {
+        label: "homepage.benefit.items.0.context.2.label",
+        text: "homepage.benefit.items.0.context.2.text",
+      },
+      {
+        label: "homepage.benefit.items.0.context.3.label",
+        text: "homepage.benefit.items.0.context.3.text",
+      },
+    ],
+  },
+  {
+    img: scan_man,
+    header: "homepage.benefit.items.1.header",
+    context: [
+      {
+        label: "homepage.benefit.items.1.context.0.label",
+        text: "homepage.benefit.items.1.context.0.text",
+      },
+      {
+        label: "homepage.benefit.items.1.context.1.label",
+        text: "homepage.benefit.items.1.context.1.text",
+      },
+      {
+        label: "homepage.benefit.items.1.context.2.label",
+        text: "homepage.benefit.items.1.context.2.text",
+      },
+      {
+        label: "homepage.benefit.items.1.context.3.label",
+        text: "homepage.benefit.items.1.context.3.text",
+      },
+      {
+        label: "homepage.benefit.items.1.context.4.label",
+        text: "homepage.benefit.items.1.context.4.text",
+      },
+    ],
+  },
+  {
+    img: identity_female,
+    header: "homepage.benefit.items.2.header",
+    context: [
+      {
+        label: "homepage.benefit.items.2.context.0.label",
+        text: "homepage.benefit.items.2.context.0.text",
+      },
+      {
+        label: "homepage.benefit.items.2.context.1.label",
+        text: "homepage.benefit.items.2.context.1.text",
+      },
+      {
+        label: "homepage.benefit.items.2.context.2.label",
+        text: "homepage.benefit.items.2.context.2.text",
+      },
+      {
+        label: "homepage.benefit.items.2.context.3.label",
+        text: "homepage.benefit.items.2.context.3.text",
+      },
+      {
+        label: "homepage.benefit.items.2.context.4.label",
+        text: "homepage.benefit.items.2.context.4.text",
+      },
+    ],
+  },
+];
+
+// Carousel
+const carousel = [
+  {
+    img: fixthelogo,
+    description: "homepage.testimonials.items.0.description",
+    name: "homepage.testimonials.items.0.name",
+    position: "homepage.testimonials.items.0.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.1.description",
+    name: "homepage.testimonials.items.1.name",
+    position: "homepage.testimonials.items.1.position",
+  },
+];
+
+// Accordion
+const accordionData = [
+  {
+    header: "homepage.question.items.0.header",
+    body: "homepage.question.items.0.body",
+  },
+  {
+    header: "homepage.question.items.1.header",
+    body: "homepage.question.items.1.body",
+  },
+  {
+    header: "homepage.question.items.2.header",
+    body: "homepage.question.items.2.body",
+  },
+  {
+    header: "homepage.question.items.3.header",
+    body: "homepage.question.items.3.body",
+  },
+  {
+    header: "homepage.question.items.4.header",
+    body: "homepage.question.items.4.body",
+  },
+];
 
 export const Homepage = () => {
+  const { width } = useWindowSize();
+  // Translations
+  const { t, i18n } = useTranslation();
+  // Pie chart
+  const dataPieChart = [
+    { value: 25, color: "#87A7CD", label: t("homepage.solution.workhours") },
+    { value: 75, color: "#1E62B0", label: t("homepage.solution.vacation") },
+  ];
   //Begin: Check if the element is in the viewport
   const [ref, entry] = useIntersectionObserver({
     threshold: 0,
@@ -26,69 +171,75 @@ export const Homepage = () => {
     rootMargin: "0px",
   });
   //End: Check if the element is in the viewport
-  const dataPieChart = [
-    { value: 25, color: "#87A7CD", label: "Work hours" },
-    { value: 75, color: "#1E62B0", label: "Vacation" },
-  ];
+  // Begin: Carousel
+  const nextCarouselRef = useRef();
+  const prevCarouselRef = useRef();
+  const [activeCarousel, setActiveCarousel] = useState(0);
+  console.log(activeCarousel);
+  const maxCarousel = carousel.length;
+  const handleNext = () => {
+    nextCarouselRef.current.click();
+  };
 
+  const handleBack = () => {
+    prevCarouselRef.current.click();
+  };
+  const properties = {
+    prevArrow: <button className="hidden" ref={prevCarouselRef}></button>,
+    nextArrow: <button className="hidden" ref={nextCarouselRef}></button>,
+    slidesToShow: width < 1023 ? 1 : 2,
+    onStartChange: (oldIndex, newIndex) => {
+      console.log(newIndex);
+      setActiveCarousel(newIndex);
+    },
+    infinite: false,
+    canSwipe: false,
+    autoplay: false,
+  };
+  // End: Carousel
+  // Begin: Accordion
+  const [expanded, setExpanded] = useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+  // End: Accordion
   return (
     <>
-      <div className="bg-home bg-right bg-no-repeat h-[737px]">
+      <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-left-top">
         <Header />
-        <div className="w-[1100px] mx-auto flex items-center justify-between">
+        <div className="max-w-[1100px] mx-auto flex items-center justify-between xl:flex-col-reverse">
           <div className="max-w-[616px] flex flex-col gap-5">
             <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden">
-              Biometric employee attendance and visitor management solutions
+              {t("homepage.solution.header")}
             </h1>
             <p className="text-lg text-[#9795B5]">
-              Simple to use and easy to integrate, CheckID FacialSense
-              multi-biometric solutions offer fast and secure employee and
-              visitor time management.
+              {t("homepage.solution.description")}
             </p>
-            <div className="flex gap-6">
-              <Button
-                variant="contained"
-                sx={{
-                  borderRadius: "30px",
-                  padding: "10px 20px",
-                  backgroundColor: "var(--tree-leaf)",
-                  color: "#fff",
-                  fontSize: "16px",
-                  fontWeight: "bold",
-                  textTransform: "capitalize",
-                }}
-              >
-                Get started for free now!
-              </Button>
-              <Button
-                variant="outlined"
-                sx={{
-                  borderRadius: "30px",
-                  padding: "10px 20px",
-                  borderColor: "var(--tree-poppy)",
-                  color: "var(--tree-poppy)",
-                  fontSize: "16px",
-                  fontWeight: "bold",
-                  textTransform: "capitalize",
-                }}
-              >
-                Request demo
-              </Button>
+            <div className="flex gap-6 xl:justify-center">
+              <LeafButton title={t("homepage.solution.get")} />
+              <PoppyButton title={t("homepage.solution.request")} />
             </div>
           </div>
-          <div className="relative w-[500px] h-[480px] px-[108px] pt-8">
+          <div className="relative w-[500px]  h-[480px] px-[108px] pt-8 sm:scale-[0.7]">
             <div className="absolute scale-0 animate-scale-up  top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1">
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-bold">Jane Doe</h6>
-                <p className="font-normal text-sm">Employee</p>
+                <h6 className="text-base font-bold">
+                  {t("homepage.solution.janedoe")}
+                </h6>
+                <p className="font-normal text-sm">
+                  {t("homepage.solution.employee")}
+                </p>
               </div>
               <div className="flex justify-between">
                 <h6 className="text-base font-bold text-[var(--tree-poppy)]">
-                  Check in
+                  {t("homepage.solution.checkin")}
                 </h6>
                 <p className="text-base font-bold">07:55:41 AM</p>
               </div>
-              <p className="text-xs font-semibold">Friday, August 12, 2022</p>
+              <p className="text-xs font-semibold">
+                {t("homepage.solution.day1")}
+              </p>
             </div>
             <img src={female} alt="female" className="" />
             <div className="absolute animate-scale-up-slow top-0 bottom-0 my-auto right-0 left-0 mx-auto w-[135px] h-40 ">
@@ -116,122 +267,128 @@ export const Homepage = () => {
             </div>
             <div className="absolute scale-0 animate-scale-up bottom-0 right-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1">
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-bold">Jane Doe</h6>
-                <p className="font-normal text-sm">Visitor</p>
+                <h6 className="text-base font-bold">
+                  {t("homepage.solution.janedoe")}
+                </h6>
+                <p className="font-normal text-sm">
+                  {t("homepage.solution.visitor")}
+                </p>
               </div>
               <div className="flex justify-between">
                 <h6 className="text-base font-bold text-[var(--tree-poppy)]">
-                  Welcome
+                  {t("homepage.solution.welcome")}
                 </h6>
                 <p className="text-base font-bold">07:55:41 AM</p>
               </div>
-              <p className="text-xs font-semibold">Friday, August 12, 2022</p>
+              <p className="text-xs font-semibold">
+                {t("homepage.solution.day1")}
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-shape bg-no-repeat bg-[left_top_-115px] py-[100px] px-4">
         <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
-          Our{" "}
+          {t("homepage.product.our")}
           <span className="border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
-            products
+            {t("homepage.product.products")}
           </span>
         </h1>
-        <div className="max-w-[1280px] mx-auto mb-12 flex justify-between">
-          <div className="w-[570px]">
+        <div className="max-w-[1280px] mx-auto mb-12 flex justify-between xl:flex-col-reverse xl:items-center">
+          <div className="w-[570px] sm:w-auto">
             <h2 className="text-[38px] font-extrabold leading-[56px] text-[#1C2045] mb-5">
-              Biometric Attendance Management System
+              {t("homepage.product.header")}
             </h2>
             <p className="text-lg text-[#3A505F] mb-8 max-w-[510px]">
-              CheckID FacialSense BioAttendance is a Biometric Attendance
-              Management System designed to register and manage employee using
-              face, fingerprint, and iris biometric identification..
+              {t("homepage.product.description")}
             </p>
             <div>
               <p className="text-lg text-[#3A505F] font-semibold mb-8 max-w-[510px]">
-                Powerful features:
+                {t("homepage.product.features.header")}
               </p>
-              <div className="flex">
-                <ul className="w-[324px] flex flex-col gap-4">
+              <div className="flex sm:flex-col">
+                <ul className="w-[324px] flex flex-col gap-4 sm:w-auto">
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Face, Fingerprint, and Iris attendance recognition
+                    {t("homepage.product.features.feature1")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Geofencing and location based tracking
+                    {t("homepage.product.features.feature2")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Contactless and hygienic
+                    {t("homepage.product.features.feature3")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Identification with face mask
+                    {t("homepage.product.features.feature4")}
                   </li>
                 </ul>
-                <ul className="w-[324px] flex flex-col gap-4">
+                <ul className="w-[324px] flex flex-col gap-4 sm:w-auto">
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Face liveness detection
+                    {t("homepage.product.features.feature5")}
                   </li>
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Real-time face detection
+                    {t("homepage.product.features.feature6")}
                   </li>
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Fraudulent prevention
+                    {t("homepage.product.features.feature7")}
                   </li>
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Multiple face detection
+                    {t("homepage.product.features.feature8")}
                   </li>{" "}
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Advanced reporting
+                    {t("homepage.product.features.feature9")}
                   </li>
                 </ul>
               </div>
             </div>
-            <Button
-              variant="contained"
-              sx={{
-                borderRadius: "30px",
-                padding: "10px 20px",
-                backgroundColor: "var(--tree-leaf)",
-                color: "#fff",
-                fontSize: "16px",
-                fontWeight: "bold",
-                textTransform: "capitalize",
-                marginTop: "30px",
-              }}
-            >
-              Learn more
-            </Button>
+            <div className="xl:flex xl:justify-center">
+              <LeafButton
+                title={t("homepage.product.learnmore")}
+                style={{ marginTop: "30px" }}
+              />
+            </div>
           </div>
-          <div className="relative w-[506px] h-[554px] p-[30px]" ref={ref}>
+          <div
+            className="relative w-[506px] h-[554px] p-[30px] sm:scale-[0.7]"
+            ref={ref}
+          >
             <div
               className={`absolute scale-0 ${
                 entry?.isIntersecting ? "animate-scale-up-not-delay" : null
               } top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1`}
             >
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-bold">Jane Doe</h6>
-                <p className="font-normal text-sm">Employee</p>
+                <h6 className="text-base font-bold">
+                  {t("homepage.solution.janedoe")}
+                </h6>
+                <p className="font-normal text-sm">
+                  {t("homepage.solution.employee")}
+                </p>
               </div>
               <div className="flex justify-between">
                 <h6 className="text-base font-bold text-[var(--tree-poppy)]">
-                  Check in
+                  {t("homepage.solution.checkin")}
                 </h6>
                 <p className="text-base font-bold">07:55:41 AM</p>
               </div>
-              <p className="text-xs font-semibold">Friday, August 12, 2022</p>
+              <p className="text-xs font-semibold">
+                {t("homepage.solution.day1")}
+              </p>
             </div>
             <img src={male} alt="" />
             <div className="absolute bottom-0 left-0 w-[217px]   p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col ">
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-medium">Work hours</h6>
+                <h6 className="text-base font-medium">
+                  {t("homepage.solution.workhours")}
+                </h6>
               </div>
               <div className="flex justify-between -my-12" ref={pieChart}>
                 <BarChart
@@ -256,7 +413,10 @@ export const Homepage = () => {
             </div>
             <div className="absolute bottom-0 right-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1">
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-medium">Total hours</h6>
+                <h6 className="text-base font-medium">
+                  {" "}
+                  {t("homepage.solution.totalhours")}
+                </h6>
               </div>
               <div className="flex justify-between" ref={pieChart}>
                 <PieChart
@@ -277,105 +437,101 @@ export const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto flex flex-row-reverse justify-between">
-          <div className="w-[590px]">
+        <div className="max-w-[1280px] mx-auto flex flex-row-reverse justify-between xl:flex-col-reverse xl:items-center">
+          <div className="w-[590px] sm:w-auto">
             <h2 className="text-[38px] font-extrabold leading-[56px] text-[#1C2045] mb-5">
-              Biometric Visitor Management System
+              {t("homepage.visitor.header")}
             </h2>
             <p className="text-lg text-[#3A505F] mb-5 max-w-[510px]">
-              CheckID FacialSense Biometric Visitor Management is designed to
-              register, monitor, and manage visitors, their appointments,
-              attendance & access control of any organization or institute by
-              using face, fingerprint, and iris biometric identification.
+              {t("homepage.visitor.description")}
             </p>
             <p className="text-lg text-[#3A505F] mb-8 max-w-[510px]">
-              It can be used to manage any type of visitor, such as customers,
-              guests, attendees, suppliers, and passengers.
+              {t("homepage.visitor.description1")}
             </p>
             <div>
               <p className="text-lg text-[#3A505F] font-semibold mb-8 max-w-[510px]">
-                Powerful features:
+                {t("homepage.visitor.features.header")}
               </p>
-              <div className="flex">
-                <ul className="w-[335px] flex flex-col gap-4">
+              <div className="flex sm:flex-col">
+                <ul className="w-[335px] flex flex-col gap-4 sm:w-auto">
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Secure visitor identification
+                    {t("homepage.visitor.features.feature1")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Real-time visitor analytics
+                    {t("homepage.visitor.features.feature2")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Online visitor appointments
+                    {t("homepage.visitor.features.feature3")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Visitor registration kiosk
+                    {t("homepage.visitor.features.feature4")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Visitor access control
+                    {t("homepage.visitor.features.feature5")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Visit logs
+                    {t("homepage.visitor.features.feature6")}
                   </li>
                 </ul>
-                <ul className="w-[300px] flex flex-col gap-4">
+                <ul className="w-[300px] flex flex-col gap-4 sm:w-auto">
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Visitor information kiosk
+                    {t("homepage.visitor.features.feature7")}
                   </li>
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Real-time notifications
+                    {t("homepage.visitor.features.feature8")}
                   </li>
                   <li className="flex text-lg items-center">
                     <Check className="m-[10px] min-w-8" />
-                    Advanced scheduling
+                    {t("homepage.visitor.features.feature9")}
                   </li>
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
-                    Automatic appointment time and visitor queue management
+                    {t("homepage.visitor.features.feature10")}
                   </li>
                 </ul>
               </div>
+            </div>{" "}
+            <div className="xl:flex xl:justify-center">
+              <LeafButton
+                title={t("homepage.product.learnmore")}
+                style={{ marginTop: "30px" }}
+              />
             </div>
-            <Button
-              variant="contained"
-              sx={{
-                borderRadius: "30px",
-                padding: "10px 20px",
-                backgroundColor: "var(--tree-leaf)",
-                color: "#fff",
-                fontSize: "16px",
-                fontWeight: "bold",
-                textTransform: "capitalize",
-                marginTop: "30px",
-              }}
-            >
-              Learn more
-            </Button>
           </div>
-          <div className="relative w-[506px] h-[554px] p-[30px]" ref={manRef}>
+          <div
+            className="relative w-[506px] h-[554px] p-[30px] sm:scale-[0.7]"
+            ref={manRef}
+          >
             <div
               className={`absolute scale-0 ${
                 entry1?.isIntersecting ? "animate-scale-up-not-delay" : null
               } top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1`}
             >
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-bold">John Smith</h6>
-                <p className="font-normal text-sm">Visitor</p>
+                <h6 className="text-base font-bold">
+                  {t("homepage.visitor.johnsmith")}
+                </h6>
+                <p className="font-normal text-sm">
+                  {t("homepage.solution.visitor")}
+                </p>
               </div>
               <div className="flex justify-between">
                 <h6 className="text-base font-bold text-[var(--tree-poppy)]">
-                  Welcome
+                  {t("homepage.solution.welcome")}
                 </h6>
                 <p className="text-base font-bold">07:55:41 AM</p>
               </div>
-              <p className="text-xs font-semibold">Friday, August 12, 2022</p>
+              <p className="text-xs font-semibold">
+                {t("homepage.solution.day1")}
+              </p>
             </div>
             <img src={male1} alt="" />
 
@@ -385,15 +541,225 @@ export const Homepage = () => {
               } bottom-0 right-0 w-[380px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1`}
             >
               <div className="flex justify-between mb-3">
-                <h6 className="text-base font-bold">CheckID FacialSense VMS</h6>
-                <p className="font-normal text-sm">now</p>
+                <h6 className="text-base font-bold">
+                  {t("homepage.visitor.checkid")}
+                </h6>
+                <p className="font-normal text-sm">
+                  {t("homepage.visitor.now")}
+                </p>
               </div>
-              <p className="font-normal text-sm">
-                This is a reminder that you have an appointment scheduled for
-                tomorrow at 10 am.
-              </p>
+              <p className="font-normal text-sm">{t("homepage.visitor.des")}</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-[#F2F5FE] p-[100px] lg:px-3">
+        {i18n.language === "en" ? (
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
+            {t("homepage.benefit.header.bio")}
+            <span className="border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+              {t("homepage.benefit.header.benefit")}
+            </span>
+          </h1>
+        ) : (
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
+            <span className="border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+              {t("homepage.benefit.header.benefit")}
+            </span>
+            {t("homepage.benefit.header.bio")}
+          </h1>
+        )}
+
+        <div className="flex gap-[30px] justify-center md:flex-col md:items-center">
+          {systemBenefits.map((item, index) => (
+            <div className="max-w-[350px] p-[30px] md:max-w-none" key={index}>
+              <div className="w-20 h-20 bg-white flex items-center justify-center rounded-full">
+                <img className="" src={item.img} alt="" />
+              </div>
+              <h2 className="mt-[30px] text-[22px] font-bold leading-[33px] text-[#1C2045]">
+                {t(item.header)}
+              </h2>
+              <ul className="text-[#3A505F] text-base">
+                {item.context.map((subitem, index) => (
+                  <li className="flex gap-[8px] mt-4" key={`item_${index}`}>
+                    <div className="mt-[5px]">
+                      <Check className="w-[25px] h-[25px] py-[7px]" />
+                    </div>
+                    <p>
+                      <span className="font-bold">{t(subitem.label)}</span> -
+                      {t(subitem.text)}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="max-w-[1100px] mx-auto px-2 pt-[100px] pb-16">
+        <Box sx={{ display: "flex", gap: "50px", flexDirection: "column" }}>
+          <div className="flex items-center justify-between sm:flex-col sm:gap-2">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+              {t("homepage.testimonials.header")}
+            </h1>
+            <MobileStepper
+              steps={maxCarousel}
+              position="static"
+              activeStep={activeCarousel}
+              sx={{
+                "& .MuiMobileStepper-dots": { display: "none" },
+                gap: "15px",
+              }}
+              nextButton={
+                <Button
+                  size="small"
+                  onClick={handleNext}
+                  sx={{
+                    padding: "15px 40px",
+                    bgcolor: "#EEF3FA",
+                    borderRadius: "20px",
+                    "&:hover": { backgroundColor: "#EEF3FA" },
+                  }}
+                  disabled={
+                    activeCarousel === maxCarousel - (width < 1023 ? 1 : 2)
+                  }
+                >
+                  <EastRoundedIcon sx={{ fontSize: "30px" }} />
+                </Button>
+              }
+              backButton={
+                <Button
+                  size="small"
+                  onClick={handleBack}
+                  sx={{
+                    padding: "15px 40px",
+                    bgcolor: "#EEF3FA",
+                    borderRadius: "20px",
+                    "&:hover": { backgroundColor: "#EEF3FA" },
+                  }}
+                  disabled={activeCarousel === 0}
+                >
+                  <WestRoundedIcon sx={{ fontSize: "30px" }} />
+                </Button>
+              }
+            />
+          </div>
+          <Slide {...properties}>
+            {carousel.map((item, index) => (
+              <div
+                className="each-slide-effect mx-[10px] mb-10 text-[#3A505F]"
+                key={index}
+              >
+                <div className="shadow-xl shadow-[#0c44cc1a] p-[30px] flex flex-col gap-[35px] h-[330px] sm:h-auto">
+                  <div>
+                    <img className=" h-[25px]" src={item.img} alt="" />
+                  </div>
+                  <p className="text-base">{t(item.description)}</p>
+                  <div>
+                    <h6 className="text-base font-bold">{t(item.name)}</h6>
+                    <p className="text-sm">{t(item.position)}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slide>
+        </Box>
+      </div>
+      <div className="bg-[#F2F5FE]">
+        <div className="max-w-[1100px] mx-auto py-[100px] px-4">
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-4">
+            {t("homepage.question.header.frequently")}
+            <span className="border-b-[10px] pl-1 inline-block h-11 border-[var(--tree-poppy)]">
+              {t("homepage.question.header.asked")}
+            </span>
+          </h1>
+          <p className="text-[#3A505F] text-center mb-[50px]">
+            {t("homepage.question.description")}
+          </p>
+          <div>
+            {accordionData.map((item, index) => (
+              <Accordion
+                expanded={expanded === `panel${index + 1}`}
+                onChange={handleChange(`panel${index + 1}`)}
+                key={`panel${index + 1}`}
+                sx={{
+                  boxShadow: "0px 4px 12px 0px rgba(12, 68, 204, 0.10)",
+                  borderRadius: "6px",
+                  padding: "15px 35px",
+                  marginBottom: "20px",
+                  "&:before": {
+                    display: "none",
+                  },
+                }}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon sx={{ fontSize: "30px" }} />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                  sx={{
+                    color: "#151686",
+                    padding: "0px",
+                    "& .Mui-expanded": {
+                      margin: "0px",
+                    },
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "22px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {t(item.header)}
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails
+                  sx={{
+                    "&.MuiAccordionDetails-root": {
+                      paddingLeft: "0px",
+                      width: "94%",
+                    },
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "18px",
+                      lineHeight: "25px",
+                      fontWeight: 400,
+                      color: "#3A505F",
+                    }}
+                  >
+                    {t(item.body)}
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#151686] px-[165px]  py-10 flex justify-between items-center text-white lg:px-6 md:flex-col">
+        <div>
+          <h1 className="text-[38px] leading-[56px] font-extrabold mb-6 md:text-center">
+            {t("homepage.faq.header")}
+          </h1>
+          <p className="text-lg ">{t("homepage.faq.description")}</p>
+        </div>
+        <div className="md:mt-5">
+          <Button
+            variant="contained"
+            sx={{
+              padding: "10px 20px",
+              bgcolor: "#F7941D",
+              border: "1px solid #F7941D",
+              borderRadius: "30px",
+              boxShadow: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
+              "&:hover": {
+                bgcolor: "#F7941D",
+              },
+            }}
+          >
+            {t("homepage.faq.contact")}
+          </Button>
         </div>
       </div>
     </>

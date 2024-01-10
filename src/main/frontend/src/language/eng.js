@@ -169,6 +169,61 @@ export default {
           name: "Rajeev S.",
           position: "CFO",
         },
+        {
+          description:
+            "We are using this software in our school for taking attendance of staff and found very useful. This software register all our staff’s detail and biometrics information quickly and we immediately started taking the attendance of our staff. We have been able track the absentee of our staff and late comers. We have been able to take the attendance report on daily basis very quickly without any trouble.",
+          name: "Seema C.",
+          position: "Teacher, Red Roses Public School",
+        },
+        {
+          description:
+            "Before we use traditional time and attendance I have to do lot of work to synchronize reports. But with CheckID FacialSense we do it with just few clicks.",
+          name: "Priya P.",
+          position: "Smartcard IT India",
+        },
+        {
+          description:
+            "Face recognition works well with normal camera also. Very convenient and cost effective and value for money. Highly accurate. The system has face, finger and iris biometrics support.",
+          name: "Rakesh B.",
+          position: "Manager - Sales & Marketing, BioScan Solution",
+        },
+        {
+          description:
+            "This is the perfect software for anyone / company that has any information that needs to be kept confidential. Everything is up to date whats not to like. Hands down the best software for anything that you hold in high regard.",
+          name: "Marcus D.",
+          position: "Information Technology, Ogle School",
+        },
+        {
+          description:
+            "Accuracy in identifying the face and fingerprint. Also Iris recognition. Mobile face recognition with multiple face detection.",
+          name: "Rakesh B.",
+          position: "Head - Marketing, BioScan Solution",
+        },
+        {
+          description:
+            "We are using this product for attendance purpose, it is designed in such a way that anyone can easily setup this for their organization. We are using Face recognition for authentication. Mobile app is also very useful for field force executives. It allows us to easily capture all our on-field executives, which help seamless payroll processing based on this data.",
+          name: "Kishan G.",
+          position:
+            "Information Technology and Services, Innova Systems (India) Pvt. Ltd.",
+        },
+        {
+          description:
+            "CheckID FacialSense Biometric Time & attendance solution is excellent to support on windows & android both platforms. Single solution for all biometric based needs. Need to optimize on the cost part as per required biometric for T&A.",
+          name: "Piyush K.",
+          position: "CEO, Biotechnology, Saral Infotech",
+        },
+        {
+          description:
+            "Very fine app with better functionalities than other apps. Needs some minor enhancements and fixes.",
+          name: "Shiv Kumar S.",
+          position: "Computer & Network Security",
+        },
+        {
+          description:
+            "CheckID FacialSense bio attendance can revolutionize your employee attendance software for its features, very easy to use and update and to teach to employees. It needs a little improvement on the manual, color on the interface and needs more customizable menus when programming attendance.",
+          name: "Mary Ann R.",
+          position: "Executive Assistant, LGU Reina Mercedes",
+        },
       ],
     },
     question: {
@@ -184,16 +239,18 @@ export default {
           body: "Biometric identification is simply to make sure that the actual person is present. All other legacy systems either do not have person identification or have a high possibility to impersonate. Loss of such fraudulent attempt may be much bigger than the lost on wages.",
         },
         {
-          header: "Why we need to select NCheck biometric attendance?",
-          body: "Biometric identification in employee or visitor attendance need to have a guarantee on true identification. NCheck uses award winning Neurotechnology biometric identification technology algorithms. NCheck supports face, fingerprint and iris biometric recognition. All modality support is an advantage to use in any security requirement and environment. There are many other advantages combined with biometric recognition such as face mask, safety hat, glasses, age, gender etc. recognition and enforcing.",
+          header:
+            "Why we need to select CheckID FacialSense biometric attendance?",
+          body: "Biometric identification in employee or visitor attendance need to have a guarantee on true identification. CheckID FacialSense uses award winning Neurotechnology biometric identification technology algorithms. CheckID FacialSense supports face, fingerprint and iris biometric recognition. All modality support is an advantage to use in any security requirement and environment. There are many other advantages combined with biometric recognition such as face mask, safety hat, glasses, age, gender etc. recognition and enforcing.",
         },
         {
-          header: "Do we get free support for NCheck products ?",
-          body: "NCheck product support team provides free online, email and phone. If you need priority support with your support level requirement you can get 24X7 paid priority support.",
+          header: "Do we get free support for CheckID FacialSense products ?",
+          body: "CheckID FacialSense product support team provides free online, email and phone. If you need priority support with your support level requirement you can get 24X7 paid priority support.",
         },
         {
-          header: "Can we get a customized version NCheck product?",
-          body: "NCheck products are highly configurable and can be configure for many of your custom requirements such as change in person detail entry, additional column in reports, change in calculation of a report field etc. NCheck can also extend for your custom requirements by using extension module. NCheck extension modules extend the product for your requirement without compromising product update capability.",
+          header:
+            "Can we get a customized version CheckID FacialSense product?",
+          body: "CheckID FacialSense products are highly configurable and can be configure for many of your custom requirements such as change in person detail entry, additional column in reports, change in calculation of a report field etc. CheckID FacialSense can also extend for your custom requirements by using extension module. CheckID FacialSense extension modules extend the product for your requirement without compromising product update capability.",
         },
         {
           header: "Do you have reseller program?",

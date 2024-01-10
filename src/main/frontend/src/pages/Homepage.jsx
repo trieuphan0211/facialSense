@@ -26,6 +26,12 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LeafButton, PoppyButton } from "../components/button";
 import { useTranslation } from "react-i18next";
+import ciclegray from "../assets/img/home/ciclegray.png";
+import ciclepoppy from "../assets/img/home/ciclepoppy.png";
+import cicletree from "../assets/img/home/cicletree.png";
+import triangle from "../assets/img/home/triangle.png";
+import dot from "../assets/img/home/dot.png";
+import softwareadvice from "../assets/img/home/softwareadvice.png";
 
 // Benefits
 const systemBenefits = [
@@ -119,6 +125,60 @@ const carousel = [
     name: "homepage.testimonials.items.1.name",
     position: "homepage.testimonials.items.1.position",
   },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.2.description",
+    name: "homepage.testimonials.items.2.name",
+    position: "homepage.testimonials.items.2.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.3.description",
+    name: "homepage.testimonials.items.3.name",
+    position: "homepage.testimonials.items.3.position",
+  },
+  {
+    img: softwareadvice,
+    description: "homepage.testimonials.items.4.description",
+    name: "homepage.testimonials.items.4.name",
+    position: "homepage.testimonials.items.4.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.5.description",
+    name: "homepage.testimonials.items.5.name",
+    position: "homepage.testimonials.items.5.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.6.description",
+    name: "homepage.testimonials.items.6.name",
+    position: "homepage.testimonials.items.6.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.7.description",
+    name: "homepage.testimonials.items.7.name",
+    position: "homepage.testimonials.items.7.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.8.description",
+    name: "homepage.testimonials.items.8.name",
+    position: "homepage.testimonials.items.8.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.9.description",
+    name: "homepage.testimonials.items.9.name",
+    position: "homepage.testimonials.items.9.position",
+  },
+  {
+    img: capterra,
+    description: "homepage.testimonials.items.10.description",
+    name: "homepage.testimonials.items.10.name",
+    position: "homepage.testimonials.items.10.position",
+  },
 ];
 
 // Accordion
@@ -206,10 +266,36 @@ export const Homepage = () => {
   // End: Accordion
   return (
     <>
-      <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-left-top">
+      <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-left-top ">
         <Header />
         <div className="max-w-[1100px] mx-auto flex items-center justify-between xl:flex-col-reverse">
-          <div className="max-w-[616px] flex flex-col gap-5">
+          <img
+            className="absolute right-36 top-36 opacity-50 animate-bounce-slow"
+            src={ciclegray}
+            alt=""
+          />
+
+          <img
+            className="absolute left-[5%] bottom-[20%] animate-spin-slow"
+            src={triangle}
+            alt=""
+          />
+          <img
+            className="absolute left-[5%] top-[20%] animate-movesquare-slow"
+            src={dot}
+            alt=""
+          />
+          <div className="relative max-w-[616px] flex flex-col gap-5">
+            <img
+              className="absolute right-[20%] top-[150px]  animate-movesquare"
+              src={ciclepoppy}
+              alt=""
+            />
+            <img
+              className="absolute right-[20%] top-[20px] animate-movesquare-slow"
+              src={cicletree}
+              alt=""
+            />
             <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden">
               {t("homepage.solution.header")}
             </h1>
@@ -290,7 +376,7 @@ export const Homepage = () => {
       <div className="bg-shape bg-no-repeat bg-[left_top_-115px] py-[100px] px-4">
         <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
           {t("homepage.product.our")}
-          <span className="border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+          <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
             {t("homepage.product.products")}
           </span>
         </h1>
@@ -557,7 +643,7 @@ export const Homepage = () => {
         {i18n.language === "en" ? (
           <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
             {t("homepage.benefit.header.bio")}
-            <span className="border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+            <span className="border-b-[10px] inline-block pl-2 h-11 border-[var(--tree-poppy)]">
               {t("homepage.benefit.header.benefit")}
             </span>
           </h1>
@@ -650,11 +736,23 @@ export const Homepage = () => {
                 className="each-slide-effect mx-[10px] mb-10 text-[#3A505F]"
                 key={index}
               >
-                <div className="shadow-xl shadow-[#0c44cc1a] p-[30px] flex flex-col gap-[35px] h-[330px] sm:h-auto">
-                  <div>
-                    <img className=" h-[25px]" src={item.img} alt="" />
+                <div className="shadow-xl shadow-[#0c44cc1a] p-[30px] flex flex-col justify-between h-[330px] sm:h-auto">
+                  <div className="flex flex-col gap-[35px]">
+                    <div>
+                      <img className=" h-[25px]" src={item.img} alt="" />
+                    </div>
+                    <p
+                      className="text-base"
+                      style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 5,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }}
+                    >
+                      {t(item.description)}
+                    </p>
                   </div>
-                  <p className="text-base">{t(item.description)}</p>
                   <div>
                     <h6 className="text-base font-bold">{t(item.name)}</h6>
                     <p className="text-sm">{t(item.position)}</p>
@@ -667,12 +765,22 @@ export const Homepage = () => {
       </div>
       <div className="bg-[#F2F5FE]">
         <div className="max-w-[1100px] mx-auto py-[100px] px-4">
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-4">
-            {t("homepage.question.header.frequently")}
-            <span className="border-b-[10px] pl-1 inline-block h-11 border-[var(--tree-poppy)]">
-              {t("homepage.question.header.asked")}
-            </span>
-          </h1>
+          {i18n.language === "en" ? (
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-4">
+              {t("homepage.question.header.frequently")}
+              <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
+                {t("homepage.question.header.asked")}
+              </span>
+            </h1>
+          ) : (
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-4">
+              <span className="border-b-[10px] pr-2 inline-block h-11 border-[var(--tree-poppy)]">
+                {t("homepage.question.header.asked")}
+              </span>
+              {t("homepage.question.header.frequently")}
+            </h1>
+          )}
+
           <p className="text-[#3A505F] text-center mb-[50px]">
             {t("homepage.question.description")}
           </p>
@@ -756,6 +864,7 @@ export const Homepage = () => {
               "&:hover": {
                 bgcolor: "#F7941D",
               },
+              textTransform: "none",
             }}
           >
             {t("homepage.faq.contact")}

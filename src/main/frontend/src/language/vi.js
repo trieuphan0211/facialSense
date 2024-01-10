@@ -170,12 +170,67 @@ export default {
           name: "Rajeev S.",
           position: "Tổng Giám đốc Tài chính",
         },
+        {
+          description:
+            "Chúng tôi đang sử dụng phần mềm này trong trường học của chúng tôi để điểm danh nhân viên và thấy rất hữu ích. Phần mềm này đăng ký tất cả thông tin và dấu vết sinh trắc học của nhân viên chúng tôi nhanh chóng và chúng tôi ngay lập tức bắt đầu điểm danh nhân viên của mình. Chúng tôi đã theo dõi được sự vắng mặt và những người đến trễ của nhân viên. Chúng tôi đã có thể xem báo cáo điểm danh hàng ngày một cách nhanh chóng mà không gặp khó khăn nào.",
+          name: "Seema C.",
+          position: "Giáo viên, Trường Trung học Red Roses",
+        },
+        {
+          description:
+            "Trước khi chúng tôi sử dụng hệ thống thời gian và chấm công truyền thống, tôi phải làm nhiều công việc để đồng bộ báo cáo. Nhưng với CheckID FacialSense, chúng tôi chỉ cần vài cú nhấp chuột.",
+          name: "Priya P.",
+          position: "Smartcard IT India",
+        },
+        {
+          description:
+            "Nhận diện khuôn mặt hoạt động tốt với camera thông thường. Rất thuận tiện và hiệu quả chi phí và đáng giá tiền. Độ chính xác cao. Hệ thống hỗ trợ nhận diện sinh trắc học khuôn mặt, dấu vân tay và mống mắt.",
+          name: "Rakesh B.",
+          position: "Quản lý - Bộ phận Bán hàng & Tiếp thị, BioScan Solution",
+        },
+        {
+          description:
+            "Đây là phần mềm hoàn hảo cho bất kỳ cá nhân hoặc công ty nào có thông tin cần được giữ kín. Mọi thứ đều được cập nhật, không có gì để chê cả. Chắc chắn là phần mềm tốt nhất cho bất cứ thứ gì bạn coi trọng.",
+          name: "Marcus D.",
+          position: "Công nghệ Thông tin, Trường Ogle",
+        },
+        {
+          description:
+            "Độ chính xác trong việc nhận diện khuôn mặt và dấu vân tay. Cũng hỗ trợ nhận diện mống mắt. Nhận diện khuôn mặt trên di động với nhiều khuôn mặt cùng lúc.",
+          name: "Rakesh B.",
+          position: "Trưởng - Bộ phận Tiếp thị, BioScan Solution",
+        },
+        {
+          description:
+            "Chúng tôi đang sử dụng sản phẩm này cho mục đích điểm danh, nó được thiết kế sao cho bất kỳ ai cũng có thể dễ dàng thiết lập cho tổ chức của họ. Chúng tôi đang sử dụng nhận diện khuôn mặt để xác thực. Ứng dụng di động cũng rất hữu ích đối với các nhân viên ngoại ô. Nó giúp chúng tôi dễ dàng ghi lại tất cả các nhân viên ngoại ô của mình, giúp quá trình xử lý lương mạch lạc dựa trên dữ liệu này.",
+          name: "Kishan G.",
+          position:
+            "Công nghệ Thông tin và Dịch vụ, Innova Systems (Ấn Độ) Pvt. Ltd.",
+        },
+        {
+          description:
+            "Giải pháp chấm công sinh trắc học CheckID FacialSense xuất sắc để hỗ trợ trên cả hai nền tảng Windows và Android. Một giải pháp duy nhất cho tất cả các nhu cầu dựa trên sinh trắc học. Cần tối ưu hóa về mặt chi phí theo yêu cầu cụ thể về sinh trắc học cho thời gian và chấm công.",
+          name: "Piyush K.",
+          position: "CEO, Sinh học Ứng dụng Công nghệ, Saral Infotech",
+        },
+        {
+          description:
+            "Ứng dụng rất tốt với các tính năng tốt hơn so với các ứng dụng khác. Cần một số cải tiến và sửa chữa nhỏ.",
+          name: "Shiv Kumar S.",
+          position: "An ninh Mạng và Máy tính",
+        },
+        {
+          description:
+            "Chấm công sinh trắc học CheckID FacialSense có thể làm thay đổi phần mềm chấm công nhân viên của bạn với các tính năng, dễ sử dụng và cập nhật và dạy nhân viên. Cần một số cải thiện nhỏ về hướng dẫn sử dụng, màu sắc trên giao diện và cần nhiều menu có thể tùy chỉnh hơn khi lập trình điểm danh.",
+          name: "Mary Ann R.",
+          position: "Trợ lý điều hành, Hội đồng Địa phương Reina Mercedes",
+        },
       ],
     },
     question: {
       header: {
-        frequently: "Thường",
-        asked: "hỏi",
+        frequently: "phổ biến",
+        asked: "Câu hỏi",
       },
       description: " Mọi thứ bạn cần biết về sản phẩm và thanh toán.",
       items: [
@@ -186,18 +241,18 @@ export default {
         },
         {
           header:
-            "Tại sao chúng ta cần chọn chấm công sinh trắc học của NCheck?",
-          body: "Nhận diện sinh trắc học trong chấm công nhân viên hoặc người thăm cần có sự đảm bảo về việc nhận diện chính xác. NCheck sử dụng các thuật toán công nghệ nhận diện sinh trắc học của Neurotechnology đã giành giải thưởng. NCheck hỗ trợ nhận diện sinh trắc học khuôn mặt, dấu vân tay và mống mắt. Việc hỗ trợ tất cả các phương tiện là một ưu điểm khi sử dụng trong bất kỳ yêu cầu và môi trường an ninh nào. Có nhiều ưu điểm khác kết hợp với nhận diện sinh trắc học như nhận diện khẩu trang, mũ an toàn, kính, độ tuổi, giới tính, v.v.",
+            "Tại sao chúng ta cần chọn chấm công sinh trắc học của CheckID FacialSense?",
+          body: "Nhận diện sinh trắc học trong chấm công nhân viên hoặc người thăm cần có sự đảm bảo về việc nhận diện chính xác. CheckID FacialSense sử dụng các thuật toán công nghệ nhận diện sinh trắc học của Neurotechnology đã giành giải thưởng. CheckID FacialSense hỗ trợ nhận diện sinh trắc học khuôn mặt, dấu vân tay và mống mắt. Việc hỗ trợ tất cả các phương tiện là một ưu điểm khi sử dụng trong bất kỳ yêu cầu và môi trường an ninh nào. Có nhiều ưu điểm khác kết hợp với nhận diện sinh trắc học như nhận diện khẩu trang, mũ an toàn, kính, độ tuổi, giới tính, v.v.",
         },
         {
           header:
-            "Chúng ta có nhận được hỗ trợ miễn phí cho các sản phẩm của NCheck không?",
-          body: "Đội ngũ hỗ trợ sản phẩm NCheck cung cấp dịch vụ trực tuyến, qua email và điện thoại miễn phí. Nếu bạn cần hỗ trợ ưu tiên với yêu cầu cấp độ hỗ trợ của bạn, bạn có thể sử dụng dịch vụ hỗ trợ ưu tiên trả phí 24/7.",
+            "Chúng ta có nhận được hỗ trợ miễn phí cho các sản phẩm của CheckID FacialSense không?",
+          body: "Đội ngũ hỗ trợ sản phẩm CheckID FacialSense cung cấp dịch vụ trực tuyến, qua email và điện thoại miễn phí. Nếu bạn cần hỗ trợ ưu tiên với yêu cầu cấp độ hỗ trợ của bạn, bạn có thể sử dụng dịch vụ hỗ trợ ưu tiên trả phí 24/7.",
         },
         {
           header:
-            "Chúng ta có thể nhận được phiên bản tùy chỉnh của sản phẩm NCheck không?",
-          body: "Các sản phẩm NCheck có khả năng cấu hình cao và có thể được cấu hình cho nhiều yêu cầu tùy chỉnh của bạn như thay đổi thông tin người, thêm cột trong báo cáo, thay đổi cách tính toán một trường báo cáo, v.v. NCheck cũng có thể mở rộng cho các yêu cầu tùy chỉnh của bạn bằng cách sử dụng các mô-đun mở rộng. Các mô-đun mở rộng NCheck mở rộng sản phẩm cho yêu cầu của bạn mà không ảnh hưởng đến khả năng cập nhật sản phẩm.",
+            "Chúng ta có thể nhận được phiên bản tùy chỉnh của sản phẩm CheckID FacialSense không?",
+          body: "Các sản phẩm CheckID FacialSense có khả năng cấu hình cao và có thể được cấu hình cho nhiều yêu cầu tùy chỉnh của bạn như thay đổi thông tin người, thêm cột trong báo cáo, thay đổi cách tính toán một trường báo cáo, v.v. CheckID FacialSense cũng có thể mở rộng cho các yêu cầu tùy chỉnh của bạn bằng cách sử dụng các mô-đun mở rộng. Các mô-đun mở rộng CheckID FacialSense mở rộng sản phẩm cho yêu cầu của bạn mà không ảnh hưởng đến khả năng cập nhật sản phẩm.",
         },
         {
           header: "Bạn có chương trình đại lý không?",

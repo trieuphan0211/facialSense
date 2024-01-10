@@ -266,7 +266,7 @@ export const Homepage = () => {
   // End: Accordion
   return (
     <>
-      <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-left-top ">
+      <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-right-top lg:!bg-left-top ">
         <Header />
         <div className="max-w-[1100px] mx-auto flex items-center justify-between xl:flex-col-reverse">
           <img
@@ -302,7 +302,7 @@ export const Homepage = () => {
             <p className="text-lg text-[#9795B5]">
               {t("homepage.solution.description")}
             </p>
-            <div className="flex gap-6 xl:justify-center">
+            <div className="flex gap-6 xl:justify-center sm:flex-col">
               <LeafButton title={t("homepage.solution.get")} />
               <PoppyButton title={t("homepage.solution.request")} />
             </div>

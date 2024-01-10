@@ -7,6 +7,7 @@ import { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import { useTranslation } from "react-i18next";
 
 export const Header = () => {
@@ -47,10 +48,7 @@ export const Header = () => {
           <ul className="flex gap-5 uppercase text-sm font-medium text-white">
             {navLinks.map((link) => (
               <li key={t(link.name)} className="relative group/nav py-5">
-                <Link
-                  to={link.path}
-                  className="hover:text-gray-400 xl:text-gray-300"
-                >
+                <Link to={link.path} className="hover:text-gray-400 ">
                   {t(link.name)}
                 </Link>
                 {link.subnav && (
@@ -100,26 +98,30 @@ export const Header = () => {
         }}
       >
         <nav>
-          <ul className="flex flex-col uppercase text-sm font-medium text-white ">
+          <nav className="flex flex-col uppercase text-sm font-medium text-white ">
             {navLinks.map((link) => (
-              <li key={link.name} className="">
-                <input
-                  id={link.name}
-                  className="peer/nav hidden"
-                  type="checkbox"
-                />
-                <label
-                  htmlFor={link.name}
-                  className="text-black  hover:text-gray-400 peer-checked/nav:text-gray-400 peer-checked/nav:bg-gray-100 block p-5  hover:bg-gray-100"
-                >
-                  {t(link.name)}
-                </label>
+              <details key={link.name} className="group">
+                <summary className="flex  justify-between group text-black group  hover:text-gray-400 group-open:text-gray-400 group-open:bg-gray-100  block p-5  hover:bg-gray-100">
+                  <Link
+                    to={link.path}
+                    className="cursor-pointer"
+                    onClick={handleDrawerToggle}
+                  >
+                    {t(link.name)}
+                  </Link>
+                  {link.subnav && (
+                    <div className="group-open:rotate-180 transition-all cursor-pointer">
+                      <ExpandMoreOutlinedIcon />
+                    </div>
+                  )}
+                </summary>
+
                 {link.subnav && (
-                  <ul
-                    className={`hidden peer-checked/nav:block w-48 bg-white text-black font-semibold  rounded-md ml-10`}
+                  <nav
+                    className={` peer-checked/nav:block w-48 bg-white text-black font-semibold  rounded-md ml-10`}
                   >
                     {link.subnav.map((sublink) => (
-                      <li key={sublink.name} className="">
+                      <div key={sublink.name} onClick={handleDrawerToggle}>
                         <Link
                           to={sublink.path}
                           className="hover:text-gray-400 h-11 flex px-5 py-[10px] items-center justify-between group/subnav"
@@ -127,13 +129,13 @@ export const Header = () => {
                           {t(sublink.name)}
                           <EastRoundedIcon className="!hidden  group-hover/subnav:translate-x-2 group-hover/subnav:!block !transition-all" />
                         </Link>
-                      </li>
+                      </div>
                     ))}
-                  </ul>
+                  </nav>
                 )}
-              </li>
+              </details>
             ))}
-          </ul>
+          </nav>
         </nav>
         <div className="flex gap-5 mt-3 justify-center">
           <PoppyButton title={t("header.login")} />

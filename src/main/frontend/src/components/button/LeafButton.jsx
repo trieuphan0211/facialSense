@@ -14,6 +14,8 @@ export const LeafButton = ({ title, style }) => {
         fontWeight: "bold",
         textTransform: "capitalize",
         border: "1px solid var(--tree-leaf)",
+        boxShadow: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
+
         "&:hover": {
           backgroundColor: "var(--tree-leaf)",
         },

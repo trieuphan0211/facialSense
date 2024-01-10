@@ -1,4 +1,4 @@
-import { Header } from "../components/common";
+import { Header, Question } from "../components/common";
 import Button from "@mui/material/Button";
 import female from "../assets/img/home/Female.png";
 import male from "../assets/img/home/Male.png";
@@ -19,11 +19,6 @@ import WestRoundedIcon from "@mui/icons-material/WestRounded";
 import Box from "@mui/material/Box";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LeafButton, PoppyButton } from "../components/button";
 import { useTranslation } from "react-i18next";
 import ciclegray from "../assets/img/home/ciclegray.png";
@@ -32,6 +27,7 @@ import cicletree from "../assets/img/home/cicletree.png";
 import triangle from "../assets/img/home/triangle.png";
 import dot from "../assets/img/home/dot.png";
 import softwareadvice from "../assets/img/home/softwareadvice.png";
+import { AccordionTollge } from "../components/accordion";
 
 // Benefits
 const systemBenefits = [
@@ -257,13 +253,7 @@ export const Homepage = () => {
     autoplay: false,
   };
   // End: Carousel
-  // Begin: Accordion
-  const [expanded, setExpanded] = useState(false);
 
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-  // End: Accordion
   return (
     <>
       <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-right-top lg:!bg-left-top ">
@@ -784,93 +774,10 @@ export const Homepage = () => {
           <p className="text-[#3A505F] text-center mb-[50px]">
             {t("homepage.question.description")}
           </p>
-          <div>
-            {accordionData.map((item, index) => (
-              <Accordion
-                expanded={expanded === `panel${index + 1}`}
-                onChange={handleChange(`panel${index + 1}`)}
-                key={`panel${index + 1}`}
-                sx={{
-                  boxShadow: "0px 4px 12px 0px rgba(12, 68, 204, 0.10)",
-                  borderRadius: "6px",
-                  padding: "15px 35px",
-                  marginBottom: "20px",
-                  "&:before": {
-                    display: "none",
-                  },
-                }}
-              >
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ fontSize: "30px" }} />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                  sx={{
-                    color: "#151686",
-                    padding: "0px",
-                    "& .Mui-expanded": {
-                      margin: "0px",
-                    },
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      fontSize: "22px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {t(item.header)}
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails
-                  sx={{
-                    "&.MuiAccordionDetails-root": {
-                      paddingLeft: "0px",
-                      width: "94%",
-                    },
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      fontSize: "18px",
-                      lineHeight: "25px",
-                      fontWeight: 400,
-                      color: "#3A505F",
-                    }}
-                  >
-                    {t(item.body)}
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            ))}
-          </div>
+          <AccordionTollge accordionData={accordionData} type="default" />
         </div>
       </div>
-      <div className="bg-[#151686] px-[165px]  py-10 flex justify-between items-center text-white lg:px-6 md:flex-col">
-        <div>
-          <h1 className="text-[38px] leading-[56px] font-extrabold mb-6 md:text-center">
-            {t("homepage.faq.header")}
-          </h1>
-          <p className="text-lg ">{t("homepage.faq.description")}</p>
-        </div>
-        <div className="md:mt-5">
-          <Button
-            variant="contained"
-            sx={{
-              padding: "10px 20px",
-              bgcolor: "#F7941D",
-              border: "1px solid #F7941D",
-              borderRadius: "30px",
-              boxShadow: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
-              "&:hover": {
-                bgcolor: "#F7941D",
-              },
-              textTransform: "none",
-            }}
-          >
-            {t("homepage.faq.contact")}
-          </Button>
-        </div>
-      </div>
+      <Question />
     </>
   );
 };

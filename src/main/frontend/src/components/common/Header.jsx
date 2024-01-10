@@ -19,11 +19,11 @@ export const Header = () => {
     {
       name: "header.product",
       path: "/",
-      subnav: [
-        { name: "header.subProduct.overview", path: "/" },
-        { name: "header.subProduct.pricing", path: "/" },
-        { name: "header.subProduct.market", path: "/" },
-      ],
+      // subnav: [
+      //   { name: "header.subProduct.overview", path: "/" },
+      //   { name: "header.subProduct.pricing", path: "/" },
+      //   { name: "header.subProduct.market", path: "/" },
+      // ],
     },
     {
       name: "header.industries",
@@ -45,10 +45,13 @@ export const Header = () => {
       <img className="h-full -ml-9" src={logo} alt="" />
       <div className="flex gap-10 items-center lg:hidden">
         <nav>
-          <ul className="flex gap-5 uppercase text-sm font-medium text-white">
+          <ul className="flex gap-5 uppercase text-sm font-medium 2xl:text-white text-indigo-400">
             {navLinks.map((link) => (
               <li key={t(link.name)} className="relative group/nav py-5">
-                <Link to={link.path} className="hover:text-gray-400 ">
+                <Link
+                  to={link.path}
+                  className="2xl:hover:text-gray-400 hover:text-indigo-300"
+                >
                   {t(link.name)}
                 </Link>
                 {link.subnav && (

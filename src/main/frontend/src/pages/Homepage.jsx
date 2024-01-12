@@ -231,7 +231,6 @@ export const Homepage = () => {
   const nextCarouselRef = useRef();
   const prevCarouselRef = useRef();
   const [activeCarousel, setActiveCarousel] = useState(0);
-  console.log(activeCarousel);
   const maxCarousel = carousel.length;
   const handleNext = () => {
     nextCarouselRef.current.click();
@@ -275,7 +274,7 @@ export const Homepage = () => {
             src={dot}
             alt=""
           />
-          <div className="relative max-w-[616px] flex flex-col gap-5">
+          <div className="relative mt-28 max-w-[616px] flex flex-col gap-5">
             <img
               className="absolute right-[20%] top-[150px]  animate-movesquare"
               src={ciclepoppy}
@@ -633,13 +632,13 @@ export const Homepage = () => {
         {i18n.language === "en" ? (
           <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
             {t("homepage.benefit.header.bio")}
-            <span className="border-b-[10px] inline-block pl-2 h-11 border-[var(--tree-poppy)]">
+            <span className="border-b-[10px] pl-2 inline-block pl-2 h-11 border-[var(--tree-poppy)]">
               {t("homepage.benefit.header.benefit")}
             </span>
           </h1>
         ) : (
           <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
-            <span className="border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+            <span className="border-b-[10px] pr-2 inline-block h-11 border-[var(--tree-poppy)]">
               {t("homepage.benefit.header.benefit")}
             </span>
             {t("homepage.benefit.header.bio")}
@@ -672,7 +671,7 @@ export const Homepage = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-[1100px] mx-auto px-2 pt-[100px] pb-16">
+      <div className="max-w-[1200px] mx-auto px-2 pt-[100px] pb-16">
         <Box sx={{ display: "flex", gap: "50px", flexDirection: "column" }}>
           <div className="flex items-center justify-between sm:flex-col sm:gap-2">
             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
@@ -694,6 +693,7 @@ export const Homepage = () => {
                     padding: "15px 40px",
                     bgcolor: "#EEF3FA",
                     borderRadius: "20px",
+                    color: "#002B4E",
                     "&:hover": { backgroundColor: "#EEF3FA" },
                   }}
                   disabled={
@@ -711,6 +711,7 @@ export const Homepage = () => {
                     padding: "15px 40px",
                     bgcolor: "#EEF3FA",
                     borderRadius: "20px",
+                    color: "#002B4E",
                     "&:hover": { backgroundColor: "#EEF3FA" },
                   }}
                   disabled={activeCarousel === 0}
@@ -723,7 +724,7 @@ export const Homepage = () => {
           <Slide {...properties}>
             {carousel.map((item, index) => (
               <div
-                className="each-slide-effect mx-[10px] mb-10 text-[#3A505F]"
+                className="each-slide-effect mx-[20px] mb-10 text-[#3A505F]"
                 key={index}
               >
                 <div className="shadow-xl shadow-[#0c44cc1a] p-[30px] flex flex-col justify-between h-[330px] sm:h-auto">

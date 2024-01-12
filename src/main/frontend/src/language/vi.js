@@ -34,9 +34,9 @@ export default {
     product: {
       our: "Sản phẩm của chúng tôi",
       products: "sản phẩm",
-      header: "Hệ thống Quản lý Chấm Công Đa Sinh Trắc Học",
+      header: "Hệ Thống Quản Lý Chấm Công Đa Sinh Trắc Học",
       description:
-        "CheckID FacialSense BioAttendance là Hệ thống Quản lý Chấm Công Đa Sinh Trắc Học được thiết kế để đăng ký và quản lý nhân viên bằng khuôn mặt, vân tay và nhận diện đồng hồ mắt.",
+        "CheckID FacialSense BioAttendance là Hệ Thống Quản Lý Chấm Công Đa Sinh Trắc Học được thiết kế để đăng ký và quản lý nhân viên bằng khuôn mặt, vân tay và nhận diện đồng hồ mắt.",
       features: {
         header: "Các tính năng mạnh mẽ:",
         feature1: "Nhận diện chấm công bằng khuôn mặt, vân tay và đồng hồ mắt",
@@ -52,23 +52,23 @@ export default {
       learnmore: "Tìm hiểu thêm",
     },
     visitor: {
-      header: "Hệ Thống Quản lý Người Thăm Dựa trên Nhận Diện Sinh trắc học",
+      header: "Hệ Thống Quản lý Du Khách Dựa Trên Nhận Diện Sinh Trắc Học",
       description:
-        "Hệ thống Quản lý Người Thăm sử dụng công nghệ nhận diện khuôn mặt, dấu vân tay và mống mắt để đăng ký, giám sát và quản lý người thăm, các cuộc hẹn của họ, điểm danh và kiểm soát truy cập của bất kỳ tổ chức hoặc học viện nào.",
+        "Hệ thống Quản lý Du Khách sử dụng công nghệ nhận diện khuôn mặt, dấu vân tay và mống mắt để đăng ký, giám sát và quản lý Du Khách, các cuộc hẹn của họ, điểm danh và kiểm soát truy cập của bất kỳ tổ chức hoặc học viện nào.",
       description1:
-        "Nó có thể được sử dụng để quản lý bất kỳ loại người thăm nào, chẳng hạn như khách hàng, khách mời, người tham dự, nhà cung cấp và hành khách.",
+        "Nó có thể được sử dụng để quản lý bất kỳ loại Du Khách nào, chẳng hạn như khách hàng, khách mời, người tham dự, nhà cung cấp và hành khách.",
       features: {
         header: "Tính năng mạnh mẽ:",
-        feature1: "Xác định người thăm an toàn",
-        feature2: "Phân tích người thăm theo thời gian thực",
-        feature3: "Đặt lịch trực tuyến cho người thăm",
-        feature4: "Máy đăng ký người thăm",
-        feature5: "Kiểm soát truy cập người thăm",
+        feature1: "Xác định Du Khách an toàn",
+        feature2: "Phân tích Du Khách theo thời gian thực",
+        feature3: "Đặt lịch trực tuyến cho Du Khách",
+        feature4: "Máy đăng ký Du Khách",
+        feature5: "Kiểm soát truy cập Du Khách",
         feature6: "Nhật ký thăm",
-        feature7: "Máy thông tin người thăm",
+        feature7: "Máy thông tin Du Khách",
         feature8: "Thông báo theo thời gian thực",
         feature9: "Lập lịch tiên tiến",
-        feature10: "Quản lý thời gian hẹn và hàng đợi người thăm tự động",
+        feature10: "Quản lý thời gian hẹn và hàng đợi Du Khách tự động",
       },
       learnmore: "Tìm hiểu thêm",
       johnsmith: "John Smith",
@@ -78,7 +78,7 @@ export default {
     },
     benefit: {
       header: {
-        bio: "Hệ thống nhận diện sinh trắc học",
+        bio: "hệ thống nhận diện sinh trắc học",
         benefit: "Lợi ích",
       },
       items: {
@@ -98,7 +98,7 @@ export default {
               text: "nhận diện sinh trắc học ngăn chặn việc cố gắng điểm danh giả mạo thay mặt người khác.",
             },
             {
-              label: "Nhận diện người thăm tự động",
+              label: "Nhận diện Du Khách tự động",
               text: "theo dõi lượng lớn người tham dự với nhiều nhận diện khuôn mặt cùng lúc qua các camera giám sát.",
             },
           ],
@@ -129,7 +129,7 @@ export default {
           ],
         },
         2: {
-          header: "Đối với người thăm",
+          header: "Đối với Du Khách",
           context: [
             {
               label: "Tiện lợi",
@@ -141,15 +141,15 @@ export default {
             },
             {
               label: "Check-in không tiếp xúc",
-              text: "quét khuôn mặt hoặc mống mắt của người thăm mang lại giải pháp ghi lại điểm danh sạch sẽ hơn.",
+              text: "quét khuôn mặt hoặc mống mắt của Du Khách mang lại giải pháp ghi lại điểm danh sạch sẽ hơn.",
             },
             {
               label: "Quyền riêng tư",
-              text: "xác minh người thăm bằng khuôn mặt, dấu vân tay hoặc mống mắt đảm bảo quyền truy cập thông tin của bạn chỉ dưới sự ủy quyền của bạn.",
+              text: "xác minh Du Khách bằng khuôn mặt, dấu vân tay hoặc mống mắt đảm bảo quyền truy cập thông tin của bạn chỉ dưới sự ủy quyền của bạn.",
             },
             {
               label: "Trải nghiệm cá nhân hóa",
-              text: "người thăm nhận được thông tin cá nhân hóa bằng cách sử dụng nhận diện sinh trắc học.",
+              text: "Du Khách nhận được thông tin cá nhân hóa bằng cách sử dụng nhận diện sinh trắc học.",
             },
           ],
         },
@@ -235,14 +235,13 @@ export default {
       description: " Mọi thứ bạn cần biết về sản phẩm và thanh toán.",
       items: [
         {
-          header:
-            "Tại sao chúng ta cần nhận diện sinh trắc học cho người thăm?",
+          header: "Tại sao chúng ta cần nhận diện sinh trắc học cho Du Khách?",
           body: "Nhận diện sinh trắc học đơn giản là để đảm bảo rằng người thực sự hiện diện. Tất cả các hệ thống cũ khác đều không có nhận diện người hoặc có khả năng giả mạo cao. Mất mát do những cố gắng giả mạo như vậy có thể lớn hơn nhiều so với mất lương.",
         },
         {
           header:
             "Tại sao chúng ta cần chọn chấm công sinh trắc học của CheckID FacialSense?",
-          body: "Nhận diện sinh trắc học trong chấm công nhân viên hoặc người thăm cần có sự đảm bảo về việc nhận diện chính xác. CheckID FacialSense sử dụng các thuật toán công nghệ nhận diện sinh trắc học của Neurotechnology đã giành giải thưởng. CheckID FacialSense hỗ trợ nhận diện sinh trắc học khuôn mặt, dấu vân tay và mống mắt. Việc hỗ trợ tất cả các phương tiện là một ưu điểm khi sử dụng trong bất kỳ yêu cầu và môi trường an ninh nào. Có nhiều ưu điểm khác kết hợp với nhận diện sinh trắc học như nhận diện khẩu trang, mũ an toàn, kính, độ tuổi, giới tính, v.v.",
+          body: "Nhận diện sinh trắc học trong chấm công nhân viên hoặc Du Khách cần có sự đảm bảo về việc nhận diện chính xác. CheckID FacialSense sử dụng các thuật toán công nghệ nhận diện sinh trắc học của Neurotechnology đã giành giải thưởng. CheckID FacialSense hỗ trợ nhận diện sinh trắc học khuôn mặt, dấu vân tay và mống mắt. Việc hỗ trợ tất cả các phương tiện là một ưu điểm khi sử dụng trong bất kỳ yêu cầu và môi trường an ninh nào. Có nhiều ưu điểm khác kết hợp với nhận diện sinh trắc học như nhận diện khẩu trang, mũ an toàn, kính, độ tuổi, giới tính, v.v.",
         },
         {
           header:
@@ -284,4 +283,5 @@ export default {
       data: "Thỏa thuận chuyển dữ liệu",
     },
   },
+  backtotop: "Quay lại đầu trang",
 };

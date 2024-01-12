@@ -159,7 +159,7 @@ export default {
       items: [
         {
           description:
-            "CheckID FacialSense offers a complete solution to monitor and control the work of your employees in offices, educational and healthcare institutions, hotels and factories. With the help of multimedia scanning, you can minimize the risk of third-party intrusion into the company.",
+            "“CheckID FacialSense offers a complete solution to monitor and control the work of your employees in offices, educational and healthcare institutions, hotels and factories. With the help of multimedia scanning, you can minimize the risk of third-party intrusion into the company.”",
           name: "Alex Bern",
           position: "Manager of the partnership department at Fixthephoto.com",
         },
@@ -171,56 +171,56 @@ export default {
         },
         {
           description:
-            "We are using this software in our school for taking attendance of staff and found very useful. This software register all our staff’s detail and biometrics information quickly and we immediately started taking the attendance of our staff. We have been able track the absentee of our staff and late comers. We have been able to take the attendance report on daily basis very quickly without any trouble.",
+            "“We are using this software in our school for taking attendance of staff and found very useful. This software register all our staff’s detail and biometrics information quickly and we immediately started taking the attendance of our staff. We have been able track the absentee of our staff and late comers. We have been able to take the attendance report on daily basis very quickly without any trouble.”",
           name: "Seema C.",
           position: "Teacher, Red Roses Public School",
         },
         {
           description:
-            "Before we use traditional time and attendance I have to do lot of work to synchronize reports. But with CheckID FacialSense we do it with just few clicks.",
+            "“Before we use traditional time and attendance I have to do lot of work to synchronize reports. But with CheckID FacialSense we do it with just few clicks.”",
           name: "Priya P.",
           position: "Smartcard IT India",
         },
         {
           description:
-            "Face recognition works well with normal camera also. Very convenient and cost effective and value for money. Highly accurate. The system has face, finger and iris biometrics support.",
+            "“Face recognition works well with normal camera also. Very convenient and cost effective and value for money. Highly accurate. The system has face, finger and iris biometrics support.”",
           name: "Rakesh B.",
           position: "Manager - Sales & Marketing, BioScan Solution",
         },
         {
           description:
-            "This is the perfect software for anyone / company that has any information that needs to be kept confidential. Everything is up to date whats not to like. Hands down the best software for anything that you hold in high regard.",
+            "“This is the perfect software for anyone / company that has any information that needs to be kept confidential. Everything is up to date whats not to like. Hands down the best software for anything that you hold in high regard.”",
           name: "Marcus D.",
           position: "Information Technology, Ogle School",
         },
         {
           description:
-            "Accuracy in identifying the face and fingerprint. Also Iris recognition. Mobile face recognition with multiple face detection.",
+            "“Accuracy in identifying the face and fingerprint. Also Iris recognition. Mobile face recognition with multiple face detection.”",
           name: "Rakesh B.",
           position: "Head - Marketing, BioScan Solution",
         },
         {
           description:
-            "We are using this product for attendance purpose, it is designed in such a way that anyone can easily setup this for their organization. We are using Face recognition for authentication. Mobile app is also very useful for field force executives. It allows us to easily capture all our on-field executives, which help seamless payroll processing based on this data.",
+            "“We are using this product for attendance purpose, it is designed in such a way that anyone can easily setup this for their organization. We are using Face recognition for authentication. Mobile app is also very useful for field force executives. It allows us to easily capture all our on-field executives, which help seamless payroll processing based on this data.”",
           name: "Kishan G.",
           position:
             "Information Technology and Services, Innova Systems (India) Pvt. Ltd.",
         },
         {
           description:
-            "CheckID FacialSense Biometric Time & attendance solution is excellent to support on windows & android both platforms. Single solution for all biometric based needs. Need to optimize on the cost part as per required biometric for T&A.",
+            "“CheckID FacialSense Biometric Time & attendance solution is excellent to support on windows & android both platforms. Single solution for all biometric based needs. Need to optimize on the cost part as per required biometric for T&A.”",
           name: "Piyush K.",
           position: "CEO, Biotechnology, Saral Infotech",
         },
         {
           description:
-            "Very fine app with better functionalities than other apps. Needs some minor enhancements and fixes.",
+            "“Very fine app with better functionalities than other apps. Needs some minor enhancements and fixes.”",
           name: "Shiv Kumar S.",
           position: "Computer & Network Security",
         },
         {
           description:
-            "CheckID FacialSense bio attendance can revolutionize your employee attendance software for its features, very easy to use and update and to teach to employees. It needs a little improvement on the manual, color on the interface and needs more customizable menus when programming attendance.",
+            "“CheckID FacialSense bio attendance can revolutionize your employee attendance software for its features, very easy to use and update and to teach to employees. It needs a little improvement on the manual, color on the interface and needs more customizable menus when programming attendance.”",
           name: "Mary Ann R.",
           position: "Executive Assistant, LGU Reina Mercedes",
         },
@@ -281,4 +281,5 @@ export default {
       data: "Data transfer agreement",
     },
   },
+  backtotop: "Back To Top",
 };

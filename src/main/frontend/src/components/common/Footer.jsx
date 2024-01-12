@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/img/logo.png";
 import { LanguageMenu } from "../menu";
+import { Link } from "react-router-dom";
 export const Footer = () => {
   const { t } = useTranslation();
   return (
@@ -18,10 +19,10 @@ export const Footer = () => {
               {t("footer.contact.phone")
                 .split("/n")
                 .map((item) => (
-                  <>
+                  <span key={item}>
                     {item}
                     <br />
-                  </>
+                  </span>
                 ))}
             </p>
             <p>{t("footer.contact.email")}</p>
@@ -30,9 +31,15 @@ export const Footer = () => {
             <h3 className="text-base font-bold">
               {t("footer.legal.infomation")}
             </h3>
-            <p> {t("footer.legal.term")}</p>
-            <p>{t("footer.legal.elements")}</p>
-            <p>{t("footer.legal.data")}</p>
+            <p className="hover:underline">
+              <Link> {t("footer.legal.term")}</Link>
+            </p>
+            <p className="hover:underline">
+              <Link>{t("footer.legal.elements")}</Link>
+            </p>
+            <p className="hover:underline">
+              <Link>{t("footer.legal.data")}</Link>
+            </p>
           </div>
         </div>
       </div>

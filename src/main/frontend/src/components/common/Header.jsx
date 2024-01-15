@@ -12,9 +12,13 @@ import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownR
 import { ReactComponent as ShoppingBag } from "../../assets/svg/shopping-bag.svg";
 import { ReactComponent as PlusCircle } from "../../assets/svg/plus-circle.svg";
 import { ReactComponent as OpenBook } from "../../assets/svg/open-book.svg";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+// import logoWhite from "../../assets/img/logo_white.png";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const { width } = useWindowSize();
+  const navigate = useNavigate();
   // Translate
   const { t } = useTranslation();
   // Begin: navLinks
@@ -22,20 +26,20 @@ export const Header = () => {
     {
       name: "header.product",
       path: "/",
-      position: "-left-10",
+      position: "",
       subnav: [
         {
-          name: "product",
+          name: "header.subproduct.0.name",
           item: [
             {
               name: "",
               item: [
                 {
-                  name: "CheckID FacialSense Bio Attendance",
+                  name: "header.subproduct.0.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "CheckID FacialSense Visitor management",
+                  name: "header.subproduct.0.item.0.item.1.name",
                   path: "/",
                 },
               ],
@@ -49,45 +53,45 @@ export const Header = () => {
       position: "-left-36",
       subnav: [
         {
-          name: "CHECKID FACIALSENSE BIO ATTENDANCE",
+          name: "header.subindustries.0.name",
           item: [
             {
               name: "",
               item: [
                 {
-                  name: "Office Employee",
+                  name: "header.subindustries.0.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "Retail Workforce",
+                  name: "header.subindustries.0.item.0.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Mobile and Remote Employee",
+                  name: "header.subindustries.0.item.0.item.2.name",
                   path: "/",
                 },
                 {
-                  name: "Student Attendance",
+                  name: "header.subindustries.0.item.0.item.3.name",
                   path: "/",
                 },
                 {
-                  name: "Construction Site",
+                  name: "header.subindustries.0.item.0.item.4.name",
                   path: "/",
                 },
                 {
-                  name: "Healthcare",
+                  name: "header.subindustries.0.item.0.item.5.name",
                   path: "/",
                 },
                 {
-                  name: "Service and Hospitality",
+                  name: "header.subindustries.0.item.0.item.6.name",
                   path: "/",
                 },
                 {
-                  name: "Factory and Warehouse",
+                  name: "header.subindustries.0.item.0.item.7.name",
                   path: "/",
                 },
                 {
-                  name: "Agriculture",
+                  name: "header.subindustries.0.item.0.item.8.name",
                   path: "/",
                 },
               ],
@@ -95,45 +99,45 @@ export const Header = () => {
           ],
         },
         {
-          name: "CHECKID FACIALSENSE VISITOR MANAGEMENT",
+          name: "header.subindustries.1.name",
           item: [
             {
               name: "",
               item: [
                 {
-                  name: "Organization",
+                  name: "header.subindustries.1.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "Travel and Excursion",
+                  name: "header.subindustries.1.item.0.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Banking or financial institutes",
+                  name: "header.subindustries.1.item.0.item.2.name",
                   path: "/",
                 },
                 {
-                  name: "Hotels and restaurants",
+                  name: "header.subindustries.1.item.0.item.3.name",
                   path: "/",
                 },
                 {
-                  name: "Consultation services",
+                  name: "header.subindustries.1.item.0.item.4.name",
                   path: "/",
                 },
                 {
-                  name: "Building and apartments",
+                  name: "header.subindustries.1.item.0.item.5.name",
                   path: "/",
                 },
                 {
-                  name: "Customer support",
+                  name: "header.subindustries.1.item.0.item.6.name",
                   path: "/",
                 },
                 {
-                  name: "Entertainment",
+                  name: "header.subindustries.1.item.0.item.7.name",
                   path: "/",
                 },
                 {
-                  name: "Schools and campuses",
+                  name: "header.subindustries.1.item.0.item.8.name",
                   path: "/",
                 },
               ],
@@ -148,17 +152,17 @@ export const Header = () => {
       position: "",
       subnav: [
         {
-          name: "pricing",
+          name: "header.subpricing.0.name",
           item: [
             {
               name: "",
               item: [
                 {
-                  name: "CheckID FacialSense Bio Attendance",
+                  name: "header.subpricing.0.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "CheckID FacialSense Visitor management",
+                  name: "header.subpricing.0.item.0.item.1.name",
                   path: "/",
                 },
               ],
@@ -173,26 +177,26 @@ export const Header = () => {
       position: "-right-[370px]",
       subnav: [
         {
-          name: "product",
+          name: "header.subresources.0.name",
           item: [
             {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <ShoppingBag />
-                  CHECKID FACIALSENSE BIO ATTENDANCE
+                  {t("header.subresources.0.item.0.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "On-premise Server",
+                  name: "header.subresources.0.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "Standard clients",
+                  name: "header.subresources.0.item.0.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Lite Clients",
+                  name: "header.subresources.0.item.0.item.2.name",
                   path: "/",
                 },
               ],
@@ -201,20 +205,20 @@ export const Header = () => {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <ShoppingBag />
-                  CHECKID FACIALSENSE VISITOR MANAGEMENT
+                  {t("header.subresources.0.item.1.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "On-premise Server",
+                  name: "header.subresources.0.item.1.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "Visitor Clients",
+                  name: "header.subresources.0.item.1.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Visitor Lite Clients",
+                  name: "header.subresources.0.item.1.item.2.name",
                   path: "/",
                 },
               ],
@@ -223,28 +227,28 @@ export const Header = () => {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <PlusCircle />
-                  OTHER
+                  {t("header.subresources.0.item.2.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "CheckID FacialSense Surveillance Client",
+                  name: "header.subresources.0.item.2.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "CheckID FacialSense Guard",
+                  name: "header.subresources.0.item.2.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Scanner Drivers",
+                  name: "header.subresources.0.item.2.item.2.name",
                   path: "/",
                 },
                 {
-                  name: "Developer samples",
+                  name: "header.subresources.0.item.2.item.3.name",
                   path: "/",
                 },
                 {
-                  name: "Previous versions",
+                  name: "header.subresources.0.item.2.item.4.name",
                   path: "/",
                 },
               ],
@@ -252,26 +256,26 @@ export const Header = () => {
           ],
         },
         {
-          name: "DOCUMENTATION",
+          name: "header.subresources.1.name",
           item: [
             {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <OpenBook />
-                  USER GUIDE
+                  {t("header.subresources.1.item.0.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "CheckID FacialSense Bio Attendance",
+                  name: "header.subresources.1.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "CheckID FacialSense Visitor Management",
+                  name: "header.subresources.1.item.0.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Developer guide",
+                  name: "header.subresources.1.item.0.item.2.name",
                   path: "/",
                 },
               ],
@@ -281,24 +285,24 @@ export const Header = () => {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <PlusCircle />
-                  OTHER
+                  {t("header.subresources.1.item.1.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "Payroll integration",
+                  name: "header.subresources.1.item.1.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "Attendance reports",
+                  name: "header.subresources.1.item.1.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Third-party integrations",
+                  name: "header.subresources.1.item.1.item.2.name",
                   path: "/",
                 },
                 {
-                  name: "Supported devices",
+                  name: "header.subresources.1.item.1.item.3.name",
                   path: "/",
                 },
               ],
@@ -306,22 +310,22 @@ export const Header = () => {
           ],
         },
         {
-          name: "QUICK START GUIDE",
+          name: "header.subresources.2.name",
           item: [
             {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <ShoppingBag />
-                  CHECKID FACIALSENSE BIO ATTENDANCE
+                  {t("header.subresources.2.item.0.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "Cloud",
+                  name: "header.subresources.2.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "On-premises",
+                  name: "header.subresources.2.item.0.item.1.name",
                   path: "/",
                 },
               ],
@@ -331,16 +335,16 @@ export const Header = () => {
               name: (
                 <div className="flex items-center gap-[10px]">
                   <ShoppingBag />
-                  CHECKID FACIALSENSE VISITOR MANAGEMENT
+                  {t("header.subresources.2.item.1.name")}
                 </div>
               ),
               item: [
                 {
-                  name: "Cloud",
+                  name: "header.subresources.2.item.1.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "On-premises",
+                  name: "header.subresources.2.item.1.item.1.name",
                   path: "/",
                 },
               ],
@@ -355,33 +359,33 @@ export const Header = () => {
       position: "",
       subnav: [
         {
-          name: "Company",
+          name: "header.subcompany.0.name",
           item: [
             {
               name: "",
               item: [
                 {
-                  name: "About us",
+                  name: "header.subcompany.0.item.0.item.0.name",
                   path: "/",
                 },
                 {
-                  name: "Contact us",
+                  name: "header.subcompany.0.item.0.item.1.name",
                   path: "/",
                 },
                 {
-                  name: "Customer references",
+                  name: "header.subcompany.0.item.0.item.2.name",
                   path: "/",
                 },
                 {
-                  name: "Register as a distributor",
+                  name: "header.subcompany.0.item.0.item.3.name",
                   path: "/",
                 },
                 {
-                  name: "News and updates",
+                  name: "header.subcompany.0.item.0.item.4.name",
                   path: "/",
                 },
                 {
-                  name: "Blog",
+                  name: "header.subcompany.0.item.0.item.5.name",
                   path: "/",
                 },
               ],
@@ -399,78 +403,86 @@ export const Header = () => {
   };
   //End: toggle menu
   return (
-    <header className="w-full h-32  mx-auto px-2 max-w-[1100px] py-8 flex justify-between items-center">
-      <img className="h-full -ml-9" src={logo} alt="" />
-      <div className="flex gap-10 items-center lg:hidden">
-        <nav>
-          <ul className="flex gap-5 uppercase text-sm font-medium 2xl:text-white text-indigo-400">
-            {navLinks.map((link) => (
-              <li
-                key={t(link.name)}
-                className="relative group/nav py-5 cursor-pointer"
-              >
-                <Link
-                  to={link.path}
-                  className="2xl:hover:text-gray-400 group-hover/nav:text-indigo-300 flex items-center justify-between after:block after:absolute after:transition-[all] after:duration-[500ms] after:left-0 after:w-0 after:group-hover/nav:w-full  after:top-5 after:border-t-[3px] after:border-[var(--tree-poppy)] "
+    <header className=" w-full h-32    py-8 lg:py-2 lg:h-auto z-10">
+      <div className="flex max-w-[1300px] justify-between items-center px-2  mx-auto">
+        <img
+          className="h-[66px] -ml-9 cursor-pointer"
+          onClick={() => navigate("/")}
+          src={logo}
+          alt=""
+        />
+        <div className="flex gap-10 items-center lg:hidden">
+          <nav>
+            <ul className="flex gap-5 uppercase text-sm font-medium text-white ">
+              {navLinks.map((link) => (
+                <li
+                  key={t(link.name)}
+                  className="relative group/nav py-5 cursor-pointer"
                 >
-                  {t(link.name)}
-                  <KeyboardArrowDownRoundedIcon className="group-hover/nav:rotate-180 rotate-0 transition-[all] duration-[2000ms]" />
-                </Link>
-                <div
-                  className={`hidden gap-5 absolute normal-case shadow-lg  z-10 top-14   ${link.position}  group-hover/nav:flex group-hover/nav:animate-show-nav  bg-white text-black font-semibold p-5  rounded-md`}
-                >
-                  {link.subnav &&
-                    link?.subnav.map((subnav) => (
-                      <div className="flex flex-col" key={subnav.name}>
-                        {subnav.name && (
-                          <h3 className="font-semibold text-sm uppercase text-[#151686] mb-[10px]">
-                            {subnav.name}
-                          </h3>
-                        )}
+                  <Link
+                    to={link.path}
+                    className="2xl:hover:text-gray-400 group-hover/nav:text-[#F7941D] flex items-center justify-between after:block  after:absolute after:transition-[all] after:duration-[500ms] after:left-0 after:w-0 after:group-hover/nav:w-full  after:top-4 after:border-t-[3px] after:border-[var(--tree-poppy)] "
+                  >
+                    {t(link.name)}
+                    <KeyboardArrowDownRoundedIcon className="group-hover/nav:rotate-180 rotate-0 transition-[all] duration-[2000ms]" />
+                  </Link>
+                  <div
+                    className={`hidden gap-5 absolute normal-case shadow-lg  z-10 top-16   ${link.position}  group-hover/nav:flex group-hover/nav:animate-show-nav  bg-white text-black font-semibold p-5  rounded`}
+                  >
+                    {link.subnav &&
+                      link?.subnav.map((subnav) => (
+                        <div className="flex flex-col" key={subnav.name}>
+                          {subnav.name && (
+                            <h3 className="font-semibold text-sm uppercase text-[#151686] mb-[10px]">
+                              {t(subnav.name)}
+                            </h3>
+                          )}
 
-                        <ul className="w-[356px]">
-                          {subnav.item.map((sublink, index) => (
-                            <div className="group/subnavlink" key={index}>
-                              {sublink.name && (
-                                <h4 className="text-[12px] font-medium rounded group-hover/subnavlink:text-[#958FED] group-hover/subnavlink:bg-[#F2F5FE]">
-                                  {sublink.name}
-                                </h4>
-                              )}
-                              {sublink.item &&
-                                sublink.item.map((item) => (
-                                  <li key={t(item.name)} className="">
-                                    <Link
-                                      to={item.path}
-                                      className="flex p-[10px] items-center justify-between text-nowrap font-normal hover:bg-[#EEF3FA] hover:text-[#151686] hover:font-semibold rounded"
-                                    >
-                                      {t(item.name)}
-                                    </Link>
-                                  </li>
-                                ))}
-                            </div>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="flex gap-5">
-          <PoppyButton title={t("header.login")} />
+                          <ul className="w-[356px]">
+                            {subnav.item.map((sublink, index) => (
+                              <div className="group/subnavlink" key={index}>
+                                {sublink.name && (
+                                  <h4 className="text-[12px] text-[#607D94] font-medium rounded group-hover/subnavlink:text-[#958FED] group-hover/subnavlink:bg-[#F2F5FE] mb-2">
+                                    {sublink.name}
+                                  </h4>
+                                )}
+                                {sublink.item &&
+                                  sublink.item.map((item) => (
+                                    <li key={t(item.name)} className="">
+                                      <Link
+                                        to={item.path}
+                                        className="flex p-[10px] items-center justify-between text-nowrap font-normal hover:bg-[#EEF3FA] hover:text-[#151686] hover:font-semibold rounded"
+                                      >
+                                        {t(item.name)}
+                                      </Link>
+                                    </li>
+                                  ))}
+                              </div>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="flex gap-5">
+            <PoppyButton title={t("header.login")} />
 
-          <LeafButton title={t("header.signup")} />
+            <LeafButton title={t("header.signup")} />
+          </div>
         </div>
+        <IconButton
+          aria-label="Open Menu"
+          edge="start"
+          onClick={handleDrawerToggle}
+          sx={{ padding: "15px", display: width > 1022 ? "none" : "block" }}
+        >
+          <MenuIcon sx={{ fontSize: "45px", color: "#ccc" }} />
+        </IconButton>
       </div>
-      <IconButton
-        aria-label="Open Menu"
-        edge="start"
-        onClick={handleDrawerToggle}
-        sx={{ padding: "15px", display: width > 1022 ? "none" : "block" }}
-      >
-        <MenuIcon sx={{ fontSize: "45px", color: "#ccc" }} />
-      </IconButton>
+
       <Drawer
         anchor="right"
         variant="temporary"
@@ -483,22 +495,22 @@ export const Header = () => {
           display: width > 1022 ? "none" : "block",
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
-            width: "auto",
+            width: width < 450 ? "100%" : "450px",
           },
         }}
       >
-        <nav>
-          <nav className="flex flex-col uppercase text-sm font-medium  normal-case">
+        <nav className="relative pt-10">
+          <button
+            className="absolute top-0 left-0 p-2"
+            onClick={handleDrawerToggle}
+          >
+            <CloseRoundedIcon />
+          </button>
+          <nav className="flex flex-col uppercase text-sm font-medium  normal-case ">
             {navLinks.map((link) => (
               <details key={link.name} className="group">
-                <summary className="flex  justify-between group text-black group  hover:text-gray-400 group-open:text-gray-400 group-open:bg-gray-100  block p-5  hover:bg-gray-100">
-                  <Link
-                    to={link.path}
-                    className="cursor-pointer"
-                    onClick={handleDrawerToggle}
-                  >
-                    {t(link.name)}
-                  </Link>
+                <summary className="flex  justify-between group text-black group  hover:text-[#F7941D] group-open:text-[#F7941D] group-open:bg-[#F7941D]/[0.1]  block p-5  hover:bg-[#F7941D]/[0.1]">
+                  <p className="cursor-pointer">{t(link.name)}</p>
                   {link.subnav && (
                     <div className="group-open:rotate-180 transition-all cursor-pointer">
                       <ExpandMoreOutlinedIcon />
@@ -511,11 +523,11 @@ export const Header = () => {
                     <div className="flex flex-col p-5" key={subnav.name}>
                       {subnav.name && (
                         <h3 className="font-semibold text-sm uppercase text-[#151686] mb-[10px]">
-                          {subnav.name}
+                          {t(subnav.name)}
                         </h3>
                       )}
 
-                      <ul className="w-[356px]">
+                      <ul className={`${width > 450 ? "w-[356px]" : null}`}>
                         {subnav.item.map((sublink, index) => (
                           <div className="group/subnavlink" key={index}>
                             {sublink.name && (
@@ -528,7 +540,7 @@ export const Header = () => {
                                 <li key={t(item.name)} className="">
                                   <Link
                                     to={item.path}
-                                    className="flex p-[10px] items-center justify-between text-nowrap font-normal hover:bg-[#EEF3FA] hover:text-[#151686] hover:font-semibold rounded"
+                                    className="flex p-[10px] items-center justify-between text-wrap font-normal hover:bg-[#EEF3FA] hover:text-[#151686] hover:font-semibold rounded"
                                   >
                                     {t(item.name)}
                                   </Link>

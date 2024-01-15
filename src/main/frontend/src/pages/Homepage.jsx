@@ -1,4 +1,4 @@
-import { Header, Question } from "../components/common";
+import { Question } from "../components/common";
 import Button from "@mui/material/Button";
 import female from "../assets/img/home/Female.png";
 import male from "../assets/img/home/Male.png";
@@ -255,9 +255,8 @@ export const Homepage = () => {
 
   return (
     <>
-      <div className="bg-home bg-right bg-no-repeat h-[737px] xl:h-auto xl:bg-right-top lg:!bg-left-top ">
-        <Header />
-        <div className="max-w-[1100px] mx-auto flex items-center justify-between xl:flex-col-reverse">
+      <div className=" xl:h-auto ">
+        <div className="max-w-[1300px] overflow-hidden px-2 mx-auto flex items-center justify-between xl:flex-col-reverse">
           <img
             className="absolute right-36 top-36 opacity-50 animate-bounce-slow"
             src={ciclegray}
@@ -297,7 +296,7 @@ export const Homepage = () => {
             </div>
           </div>
           <div className="relative w-[500px]  h-[480px] px-[108px] pt-8 sm:scale-[0.7]">
-            <div className="absolute scale-0 animate-scale-up  top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1">
+            <div className="absolute scale-0 animate-scale-up  top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col gap-1">
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-bold">
                   {t("homepage.solution.janedoe")}
@@ -340,7 +339,7 @@ export const Homepage = () => {
                 </defs>
               </svg>
             </div>
-            <div className="absolute scale-0 animate-scale-up bottom-0 right-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1">
+            <div className="absolute scale-0 animate-scale-up bottom-0 right-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col gap-1">
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-bold">
                   {t("homepage.solution.janedoe")}
@@ -363,13 +362,23 @@ export const Homepage = () => {
         </div>
       </div>
       <div className="bg-shape bg-no-repeat bg-[left_top_-115px] py-[100px] px-4">
-        <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
-          {t("homepage.product.our")}
-          <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
-            {t("homepage.product.products")}
-          </span>
-        </h1>
-        <div className="max-w-[1280px] mx-auto mb-12 flex justify-between xl:flex-col-reverse xl:items-center">
+        {i18n.language === "en" ? (
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
+            {t("homepage.product.our")}
+            <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
+              {t("homepage.product.products")}
+            </span>
+          </h1>
+        ) : (
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
+            <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
+              {t("homepage.product.products")}
+            </span>
+            {t("homepage.product.our")}
+          </h1>
+        )}
+
+        <div className="max-w-[1300px] px-2 mx-auto mb-12 flex justify-between xl:flex-col-reverse xl:items-center">
           <div className="w-[570px] sm:w-auto">
             <h2 className="text-[38px] font-extrabold leading-[56px] text-[#1C2045] mb-5">
               {t("homepage.product.header")}
@@ -382,7 +391,7 @@ export const Homepage = () => {
                 {t("homepage.product.features.header")}
               </p>
               <div className="flex sm:flex-col">
-                <ul className="w-[324px] flex flex-col gap-4 sm:w-auto">
+                <ul className="w-[324px] flex flex-col gap-4 sm:w-auto ">
                   <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature1")}
@@ -395,29 +404,29 @@ export const Homepage = () => {
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature3")}
                   </li>
-                  <li className="flex text-lg items-start">
+                  <li className="flex text-lg items-start mb-4">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature4")}
                   </li>
                 </ul>
                 <ul className="w-[324px] flex flex-col gap-4 sm:w-auto">
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature5")}
                   </li>
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature6")}
                   </li>
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature7")}
                   </li>
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature8")}
                   </li>{" "}
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.product.features.feature9")}
                   </li>
@@ -438,7 +447,7 @@ export const Homepage = () => {
             <div
               className={`absolute scale-0 ${
                 entry?.isIntersecting ? "animate-scale-up-not-delay" : null
-              } top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1`}
+              } top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col gap-1`}
             >
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-bold">
@@ -459,7 +468,7 @@ export const Homepage = () => {
               </p>
             </div>
             <img src={male} alt="" />
-            <div className="absolute bottom-0 left-0 w-[217px]   p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col ">
+            <div className="absolute bottom-0 left-0 w-[217px]   p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col ">
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-medium">
                   {t("homepage.solution.workhours")}
@@ -486,7 +495,7 @@ export const Homepage = () => {
                 />
               </div>
             </div>
-            <div className="absolute bottom-0 right-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1">
+            <div className="absolute bottom-0 right-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col gap-1">
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-medium">
                   {" "}
@@ -512,9 +521,9 @@ export const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto flex flex-row-reverse justify-between xl:flex-col-reverse xl:items-center">
+        <div className="max-w-[1300px] px-2 mx-auto flex flex-row-reverse justify-between xl:flex-col-reverse xl:items-center">
           <div className="w-[590px] sm:w-auto">
-            <h2 className="text-[38px] font-extrabold leading-[56px] text-[#1C2045] mb-5">
+            <h2 className="text-[38px] font-extrabold capitalize leading-[56px] text-[#1C2045] mb-5">
               {t("homepage.visitor.header")}
             </h2>
             <p className="text-lg text-[#3A505F] mb-5 max-w-[510px]">
@@ -549,21 +558,21 @@ export const Homepage = () => {
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.visitor.features.feature5")}
                   </li>
-                  <li className="flex text-lg items-start">
+                  <li className="flex text-lg items-start mb-4">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.visitor.features.feature6")}
                   </li>
                 </ul>
                 <ul className="w-[300px] flex flex-col gap-4 sm:w-auto">
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.visitor.features.feature7")}
                   </li>
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.visitor.features.feature8")}
                   </li>
-                  <li className="flex text-lg items-center">
+                  <li className="flex text-lg items-start">
                     <Check className="m-[10px] min-w-8" />
                     {t("homepage.visitor.features.feature9")}
                   </li>
@@ -588,7 +597,7 @@ export const Homepage = () => {
             <div
               className={`absolute scale-0 ${
                 entry1?.isIntersecting ? "animate-scale-up-not-delay" : null
-              } top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1`}
+              } top-0 left-0 w-[250px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col gap-1`}
             >
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-bold">
@@ -613,7 +622,7 @@ export const Homepage = () => {
             <div
               className={`absolute scale-0 ${
                 entry1?.isIntersecting ? "animate-scale-up-not-delay" : null
-              } bottom-0 right-0 w-[380px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded-sm flex flex-col gap-1`}
+              } bottom-0 right-0 w-[380px]  p-4 bg-gradient-filter backdrop-blur-[14px] rounded flex flex-col gap-1`}
             >
               <div className="flex justify-between mb-3">
                 <h6 className="text-base font-bold">
@@ -637,8 +646,8 @@ export const Homepage = () => {
             </span>
           </h1>
         ) : (
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
-            <span className="border-b-[10px] pr-2 inline-block h-11 border-[var(--tree-poppy)]">
+          <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold mb-12">
+            <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
               {t("homepage.benefit.header.benefit")}
             </span>
             {t("homepage.benefit.header.bio")}
@@ -661,7 +670,7 @@ export const Homepage = () => {
                       <Check className="w-[25px] h-[25px] py-[7px]" />
                     </div>
                     <p>
-                      <span className="font-bold">{t(subitem.label)}</span> -
+                      <span className="font-bold">{t(subitem.label)}</span> -{" "}
                       {t(subitem.text)}
                     </p>
                   </li>
@@ -671,9 +680,9 @@ export const Homepage = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto px-2 pt-[100px] pb-16">
+      <div className="max-w-[1300px] mx-auto px-2 pt-[100px] pb-16">
         <Box sx={{ display: "flex", gap: "50px", flexDirection: "column" }}>
-          <div className="flex items-center justify-between sm:flex-col sm:gap-2">
+          <div className="flex items-center justify-between sm:flex-col sm:gap-2 px-3">
             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
               {t("homepage.testimonials.header")}
             </h1>
@@ -727,7 +736,7 @@ export const Homepage = () => {
                 className="each-slide-effect mx-[20px] mb-10 text-[#3A505F]"
                 key={index}
               >
-                <div className="shadow-xl shadow-[#0c44cc1a] p-[30px] flex flex-col justify-between h-[330px] sm:h-auto">
+                <div className="shadow-xl shadow-[#0c44cc1a] p-[30px] flex flex-col justify-between h-[330px] sm:h-auto rounded">
                   <div className="flex flex-col gap-[35px]">
                     <div>
                       <img className=" h-[25px]" src={item.img} alt="" />
@@ -755,17 +764,30 @@ export const Homepage = () => {
         </Box>
       </div>
       <div className="bg-[#F2F5FE]">
-        <div className="max-w-[1100px] mx-auto py-[100px] px-4">
+        <div className="max-w-[1300px] mx-auto  py-[100px] px-6">
           {i18n.language === "en" ? (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-4">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
               {t("homepage.question.header.frequently")}
-              <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
-                {t("homepage.question.header.asked")}
-              </span>
+              {width > 460 ? (
+                <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
+                  {t("homepage.question.header.asked")}
+                </span>
+              ) : (
+                t("homepage.question.header.asked")
+                  .split(" ")
+                  .map((item, index) => (
+                    <span
+                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]"
+                      key={index}
+                    >
+                      {item}
+                    </span>
+                  ))
+              )}
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-4">
-              <span className="border-b-[10px] pr-2 inline-block h-11 border-[var(--tree-poppy)]">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
+              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
                 {t("homepage.question.header.asked")}
               </span>
               {t("homepage.question.header.frequently")}

@@ -1,15 +1,272 @@
 export default {
   header: {
     product: "Products",
-    subProduct: {
-      overview: "Overview",
-      pricing: "Pricing",
-      market: "Marketplace",
-    },
+    subproduct: [
+      {
+        name: "products",
+        item: [
+          {
+            name: "",
+            item: [
+              {
+                name: "CheckID FacialSense Bio Attendance",
+              },
+              {
+                name: "CheckID FacialSense Visitor management",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     industries: "Industries",
+    subindustries: [
+      {
+        name: "CHECKID FACIALSENSE BIO ATTENDANCE",
+        item: [
+          {
+            name: "",
+            item: [
+              {
+                name: "Office Employee",
+              },
+              {
+                name: "Retail Workforce",
+              },
+              {
+                name: "Mobile and Remote Employee",
+              },
+              {
+                name: "Student Attendance",
+              },
+              {
+                name: "Construction Site",
+              },
+              {
+                name: "Healthcare",
+              },
+              {
+                name: "Service and Hospitality",
+              },
+              {
+                name: "Factory and Warehouse",
+              },
+              {
+                name: "Agriculture",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "CHECKID FACIALSENSE VISITOR MANAGEMENT",
+        item: [
+          {
+            name: "",
+            item: [
+              {
+                name: "Organization",
+              },
+              {
+                name: "Travel and Excursion",
+              },
+              {
+                name: "Banking or financial institutes",
+              },
+              {
+                name: "Hotels and restaurants",
+              },
+              {
+                name: "Consultation services",
+              },
+              {
+                name: "Building and apartments",
+              },
+              {
+                name: "Customer support",
+              },
+              {
+                name: "Entertainment",
+              },
+              {
+                name: "Schools and campuses",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     pricing: "Pricing",
+    subpricing: [
+      {
+        name: "pricing",
+        item: [
+          {
+            name: "",
+            item: [
+              {
+                name: "CheckID FacialSense Bio Attendance",
+              },
+              {
+                name: "CheckID FacialSense Visitor management",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     resources: "Resources",
+    subresources: [
+      {
+        name: "product",
+        item: [
+          {
+            name: "CHECKID FACIALSENSE BIO ATTENDANCE",
+            item: [
+              {
+                name: "On-premise Server",
+              },
+              {
+                name: "Standard clients",
+              },
+              {
+                name: "Lite Clients",
+              },
+            ],
+          },
+          {
+            name: "CHECKID FACIALSENSE VISITOR MANAGEMENT",
+            item: [
+              {
+                name: "On-premise Server",
+              },
+              {
+                name: "Visitor Clients",
+              },
+              {
+                name: "Visitor Lite Clients",
+              },
+            ],
+          },
+          {
+            name: "OTHER",
+            item: [
+              {
+                name: "CheckID FacialSense Surveillance Client",
+              },
+              {
+                name: "CheckID FacialSense Guard",
+              },
+              {
+                name: "Scanner Drivers",
+              },
+              {
+                name: "Developer samples",
+              },
+              {
+                name: "Previous versions",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "DOCUMENTATION",
+        item: [
+          {
+            name: "USER GUIDE",
+            item: [
+              {
+                name: "CheckID FacialSense Bio Attendance",
+              },
+              {
+                name: "CheckID FacialSense Visitor Management",
+              },
+              {
+                name: "Developer guide",
+              },
+            ],
+          },
+
+          {
+            name: "OTHER",
+            item: [
+              {
+                name: "Payroll integration",
+              },
+              {
+                name: "Attendance reports",
+              },
+              {
+                name: "Third-party integrations",
+              },
+              {
+                name: "Supported devices",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "QUICK START GUIDE",
+        item: [
+          {
+            name: "CHECKID FACIALSENSE BIO ATTENDANCE",
+            item: [
+              {
+                name: "Cloud",
+              },
+              {
+                name: "On-premises",
+              },
+            ],
+          },
+
+          {
+            name: "CHECKID FACIALSENSE VISITOR MANAGEMENT",
+            item: [
+              {
+                name: "Cloud",
+              },
+              {
+                name: "On-premises",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     company: "Company",
+    subcompany: [
+      {
+        name: "Company",
+        item: [
+          {
+            name: "",
+            item: [
+              {
+                name: "About us",
+              },
+              {
+                name: "Contact us",
+              },
+              {
+                name: "Customer references",
+              },
+              {
+                name: "Register as a distributor",
+              },
+              {
+                name: "News and updates",
+              },
+              {
+                name: "Blog",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     login: "Login",
     signup: "Sign Up",
   },
@@ -35,7 +292,7 @@ export default {
       products: "products",
       header: " Biometric Attendance Management System",
       description:
-        " CheckID FacialSense BioAttendance is a Biometric Attendance Management System designed to register and manage employee using face, fingerprint, and iris biometric identification..",
+        " CheckID FacialSense BioAttendance is a Biometric Attendance Management System designed to register and manage employee using face, fingerprint, and iris biometric identification.",
       features: {
         header: "Powerful features:",
         feature1: "Face, Fingerprint, and Iris attendance recognition",
@@ -241,7 +498,7 @@ export default {
         {
           header:
             "Why we need to select CheckID FacialSense biometric attendance?",
-          body: "Biometric identification in employee or visitor attendance need to have a guarantee on true identification. CheckID FacialSense uses award winning Neurotechnology biometric identification technology algorithms. CheckID FacialSense supports face, fingerprint and iris biometric recognition. All modality support is an advantage to use in any security requirement and environment. There are many other advantages combined with biometric recognition such as face mask, safety hat, glasses, age, gender etc. recognition and enforcing.",
+          body: "Biometric identification in employee or visitor attendance need to have a guarantee on true identification. CheckID FacialSense uses biometric identification technology algorithms developed by Mobile-ID. CheckID FacialSense supports face, fingerprint and iris biometric recognition. All modality support is an advantage to use in any security requirement and environment. There are many other advantages combined with biometric recognition such as face mask, safety hat, glasses, age, gender etc. recognition and enforcing.",
         },
         {
           header: "Do we get free support for CheckID FacialSense products ?",
@@ -254,7 +511,7 @@ export default {
         },
         {
           header: "Do you have reseller program?",
-          body: "We have distributors, resellers and integrators in many countries. If you wan to find any of them, please contact us. If you want to become a reseller, integrator or distributor please contact us .",
+          body: "We have distributors, resellers and integrators in many countries. If you wan to find any of them, please contact us. If you want to become a reseller, integrator or distributor please contact us",
         },
       ],
     },

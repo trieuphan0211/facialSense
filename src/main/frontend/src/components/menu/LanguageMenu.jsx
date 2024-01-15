@@ -113,12 +113,22 @@ export const LanguageMenu = () => {
               <p> {language === "English" ? "English" : "Tiếng Việt"}</p>
               <KeyboardArrowDownIcon />
             </StyleButton>
-            <MenuStyle {...bindMenu(popupState)}>
+            <MenuStyle
+              {...bindMenu(popupState)}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              transformOrigin={{
+                vertical: "center",
+                horizontal: "right",
+              }}
+            >
               <MenuItem
                 onClick={() => {
                   handleLanguage("English", popupState);
                 }}
-                style={{ fontSize: "12px" }}
+                style={{ fontSize: "12px", width: "160px" }}
               >
                 <img
                   src={English}

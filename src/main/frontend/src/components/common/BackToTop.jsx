@@ -3,8 +3,10 @@ import Button from "@mui/material/Button";
 import KeyboardTabRoundedIcon from "@mui/icons-material/KeyboardTabRounded";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { useWindowSize } from "@uidotdev/usehooks";
 export const BackToTop = () => {
   const { t } = useTranslation();
+  const { width } = useWindowSize();
   const backToTopRef = useRef(null);
 
   window.addEventListener("scroll", () => {
@@ -20,7 +22,13 @@ export const BackToTop = () => {
   });
 
   return (
-    <div className="fixed bottom-1 right-10 z-10 h-16" ref={backToTopRef}>
+    <div
+      className="fixed bottom-16 z-10 h-16 hidden"
+      ref={backToTopRef}
+      style={{
+        left: width > 613 ? "calc(100vw - 150px)" : "calc(100vw - 100px)",
+      }}
+    >
       <Button
         sx={{
           display: "flex",

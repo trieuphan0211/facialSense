@@ -11,8 +11,8 @@ export const PoppyButton = ({ title, style }) => {
         color: "var(--tree-poppy)",
         fontSize: "16px",
         fontWeight: "bold",
-        textTransform: "capitalize",
-        boxShadow: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
+        textTransform: "none",
+        // boxShadow: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
         "&:hover": {
           backgroundColor: "var(--tree-poppy)",
           color: "#fff",

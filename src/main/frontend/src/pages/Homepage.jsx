@@ -504,7 +504,7 @@ export const Homepage = () => {
               </div>
               <div className="flex justify-between" ref={pieChart}>
                 <PieChart
-                  width={250}
+                  width={i18n == "en" ? 250 : 270}
                   height={70}
                   series={[
                     {

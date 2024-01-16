@@ -75,7 +75,7 @@ export const AccordionTollge = ({ accordionData, type }) => {
             <Typography
               sx={{
                 fontSize: "18px",
-                lineHeight: "25px",
+                lineHeight: "27px",
                 fontWeight: 400,
                 color: "#3A505F",
               }}

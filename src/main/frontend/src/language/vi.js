@@ -525,6 +525,125 @@ export default {
       contact: "Liên hệ với chúng tôi",
     },
   },
+  products: {
+    facialsensevisitormanagement : {
+      solution: {
+        header: "Hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt CheckID FacialSense",
+        description:
+          "Giải pháp chính xác và hiệu quả để quản lý các cuộc hẹn và cung cấp quyền truy cập cho khách hàng",
+        get: "Thử nghiệm miễn phí",
+        request: "Yêu cầu bản demo",
+        janesmith: "John Smith",
+        visitor: "Khách truy cập",
+        welcome: "Chào mừng",
+        day: "Thứ Sáu, ngày 12 tháng 8 năm 2022",
+        time: "07:55:41 AM",
+        checkid: "CheckID FacialSense VMS",
+        titlecheckid: "Đây là lời nhắc rằng bạn có một cuộc hẹn được lên lịch vào ngày mai lúc 10 giờ sáng.",
+        time1: "Hiện nay"
+      },
+      benefits: {
+        header: " của hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+        benefitheader: "Các lợi ích",
+        institution: "Đối với tổ chức",
+        titlesecurity: "Bảo mật",
+        security: " - khách hàng được xác thực trước khi nhập cơ sở, đảm bảo chỉ có quyền truy cập được ủy quyền.",
+        titleappointment: "Đặt hẹn mà không gặp rắc rối",
+        appointment: " - hệ thống tự động quản lý các khe cắm.",
+        titleincrease: "Tăng hiệu suất theo dõi chấm công",
+        increase: " - sử dụng nhận diện bằng quan sát thông minh sử dụng camera giúp theo dõi các nhóm công nhân lớn một cách dễ dàng.",
+  
+        user: "Đối với người dùng",
+        titleconvenience: "Thuận tiện",
+        convenience: " - dễ dàng đặt hẹn từ bất kỳ đâu và bất kỳ lúc nào.",
+        titleautomatic: "Cảnh báo tự động",
+        automatic: " - hệ thống sẽ nhắc bạn về các cuộc hẹn, trong trường hợp bạn quên điều đó.",
+        titlecontactless: "Check-in không tiếp xúc ",
+        contactless: " - quét đa dạng giúp tạo ra một giải pháp vệ sinh hơn để truy cập cơ sở.",
+      },
+      systemserver: {
+        header: "Máy chủ hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+  
+        cloud: "Đám mây",
+        descriptioncloud: "Hệ thống quản lý nhân viên và kiểm soát truy cập sử dụng công nghệ nhận diện khuôn mặt dưới dạng dịch vụ đám mây.",
+        monthly: "Đăng ký hàng tháng",
+        subscription: "Giá đăng ký phụ thuộc vào số lượng nhân viên",
+        free: "Đăng ký miễn phí hỗ trợ tới 5 cuộc hẹn",
+        support: "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
+        noneed: "Không cần lo lắng về việc cài đặt máy chủ và không cần bảo trì.",
+        signup: "Đăng ký",
+  
+        premises: "Trên cơ sở",
+        descriptionpremises: "Hệ thống quản lý và xác thực khách truy cập sinh trắc học với kiểm soát truy cập có thể được lưu trữ tại cơ sở của riêng bạn.",
+        one: "Mua một lần",
+        nolimitation: "Không giới hạn về số lượng cuộc hẹn",
+        needno: "Cần cài đặt máy chủ bởi chính bạn",
+        support1: "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
+        customer: "Khách hàng có quyền tự do cài đặt và cấu hình máy chủ Hệ thống Quản lý Khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+        download: "Tải bản dùng thử"
+      },
+      quickstartguide: {
+        header: "Hướng dẫn bắt đầu nhanh chóng",
+        description: "Hướng dẫn từng bước được cung cấp để bạn có thể bắt đầu sử dụng hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt CheckID FacialSense.",
+        cloud: "Đám mây",
+        onpremises: "Trên cơ sở"
+      },
+  
+      fearures: {
+        header: " của hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+        featureheader: "Các tính năng",
+        description: "Đội ngũ giàu kinh nghiệm và chuyên nghiệp của chúng tôi đã phát triển một phần mềm quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt đầy đủ các tính năng độc đáo để đưa quản lý khách hàng của doanh nghiệp bạn lên một tầm cao mới",
+        titlesecure: "Bảo vệ quyền truy cập của khách hàng",
+        secure: "Quét mã vạch, RFID, khuôn mặt, vân tay và nhận diện ngói mắt cung cấp quyền truy cập nhanh chóng, hiệu quả và an toàn cho các cuộc hẹn và giao tiếp với khách hàng.",
+        titlesafe: "An toàn và vệ sinh",
+        safe: "Công nghệ nhận diện không tiếp xúc với mã vạch, RFID, khuôn mặt và ngói mắt không tạo ra sự tiếp xúc với khách hàng.",
+        titleonline: "Đặt hẹn trước trực tuyến",
+        online: "Đặt hẹn trước trực tuyến cho phép khách hàng lên kế hoạch cho cuộc thăm của họ trước và truy cập một cách thuận lợi.",
+        titleautomated: "Kiểm soát truy cập tự động",
+        automated: "Các cổng hạn chế và cho phép khách hàng được kiểm soát bằng các thiết bị chấm công.",
+        titlerealtime: "Phân tích thời gian thực về khách hàng",
+        realtime: "Các thiết bị chấm công của khách hàng ghi lại thông tin về việc cho phép và từ chối truy cập trong hệ thống.",
+        titleelectronic: "Thẻ điện tử",
+        electronic: "Tự động tạo ra thẻ hoặc thẻ điện tử cụ thể như mã vạch, RFID và biển số xe được phép sử dụng làm thẻ khách.",
+        titledata: "Quyền riêng tư dữ liệu",
+        data: "Các hoạt động của khách hàng được thực hiện bởi nhân viên ủy quyền, do đó thông tin về khách hàng và cuộc thăm được bảo vệ khỏi việc truy cập trái phép",
+        titlebiometric: "Nhận diện khách hàng bằng công nghệ nhận diện khuôn mặt",
+        biometric: "Hệ thống kiểm soát và quản lý sử dụng nhiều công nghệ nhận diện khuôn mặt, vân tay và ngói mắt.",
+        titlecustomizable: "Ghi chú cuộc thăm có thể tùy chỉnh",
+        customizable: "Ghi chú cuộc thăm được tùy chỉnh với các biểu mẫu và đính kèm có thể được sử dụng để tạo ra nhật ký chi tiết về khách hàng.",
+      },
+      applications: {
+        header: "Ứng dụng và ngành công nghiệp",
+        description: "Hệ thống Điểm danh Sinh học của chúng tôi có thể được sử dụng thành công bởi nhiều doanh nghiệp và tổ chức khác nhau.",
+        organizations: "Tổ chức",
+        travel: "Du lịch và Chuyến đi",
+        hotel: "Khách sạn và Nhà hàng",
+        consulting: "Dịch vụ Tư vấn",
+        bank: "Ngân hàng",
+        building: "Công trình và Căn hộ",
+        school: "Trường học và Khuôn viên",
+        customer: "Hỗ trợ khách hàng"
+      },
+  
+      askedquestions: {
+        header : "Câu hỏi thường gặp",
+        description: "Mọi thông tin bạn cần biết về sản phẩm và thanh toán.",
+        howi: "Làm thế nào tôi có thể thử CheckID FacialSense Bio Attendance?",
+        howcan: "Làm thế nào tôi có thể nâng cấp từ phiên bản thử nghiệm lên phiên bản trả phí?",
+        cani: "Tôi có thể sử dụng dữ liệu từ phiên bản thử nghiệm trong phiên bản trả phí không?",
+        whatare: "Các yêu cầu về phần mềm và phần cứng là gì?",
+        isit: "Có cần phải có kết nối internet để sử dụng CheckID FacialSense Bio Attendance không?",
+        whatis: "Sự khác biệt giữa CheckID FacialSense Standard, CheckID FacialSense Server và CheckID FacialSense Lite là gì?",
+        whathappens: "Điều gì xảy ra trong trường hợp mất kết nối (nếu bạn chạy CheckID FacialSense Bio Attendance trên máy chủ của mình)?",
+      },
+      still: {
+        header: "Vẫn còn câu hỏi?",
+        description: "Liên hệ với chúng tôi ngay bây giờ để mọi thắc mắc - chúng tôi ở đây để giúp bạn.",
+        contact: "Liên hệ với chúng tôi"
+      }
+    }
+  },
+  
   footer: {
     description:
       "Sản phẩm CheckID FacialSense nổi bật trên thị trường là giải pháp đa sinh trắc học tạo ra các ứng dụng hệ thống chính xác và linh hoạt. Hệ thống của chúng tôi được hỗ trợ bởi các thuật toán hàng đầu trong ngành (sinh trắc học) về đọc, bảo mật, nhận diện và xác thực đúng con người do Mobile-ID phát triển.",

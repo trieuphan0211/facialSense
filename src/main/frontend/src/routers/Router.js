@@ -1,6 +1,6 @@
 import { useRoutes, useLocation } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { Homepage } from "../pages";
+import { Facialsensevisitormanagement, Homepage } from "../pages";
 import { useEffect } from "react";
 
 const context = "";
@@ -22,7 +22,9 @@ const Routers = () => {
       path: context,
 
       element: <MainLayout />,
-      children: [{ path: "/", element: <Homepage /> }],
+      children: [{ path: "/", element: <Homepage /> },
+                { path: "/facialsense-visitor-management",  element: <Facialsensevisitormanagement /> }
+      ],
     },
   ]);
   return routing;

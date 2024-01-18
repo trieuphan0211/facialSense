@@ -521,6 +521,131 @@ export default {
       contact: "Contact us",
     },
   },
+  products: {
+    facialsensevisitormanagement : {
+      solution: {
+        header: "CheckID FacialSense Biometric Visitor Management System",
+        description:
+          "The accurate and efficient solution to manage appointments and provide access for visitors",
+        get: "Try for free",
+        request: "Request demo",
+        janesmith: "John Smith",
+        visitor: "Visitor",
+        welcome: "Welcome",
+        day: "Friday, August 12, 2022",
+        time: "07:55:41 AM",
+        checkid: "CheckID FacialSense VMS",
+        titlecheckid: "This is a reminder that you have an appointment scheduled for tomorrow at 10 am.",
+        time1: "now"
+      },
+      benefits: {
+        header: "Biometric Visitor Management System ",
+        benefitheader: "Benefits",
+        institution: "For the institution",
+        titlesecurity: "Security",
+        security: " - visitors are authenticated before entering the premises, hence only authorized access is ensured.",
+        titleappointment: "Appointment booking with no hassle",
+        appointment: " - the system automatically manages slots.",
+        titleincrease: "Increase efficiency of attendance monitoring",
+        increase: " - the use of passive identification using surveillance cameras enables large workforces to be monitored with ease.",
+
+        user: "For the user",
+        titleconvenience: "Convenience",
+        convenience: " - easy to make appointments from anywhere and at any time.",
+        titleautomatic: "Automatic alerts",
+        automatic: " - system will remind you about the appointments, in case you forgot about it.",
+        titlecontactless: "Contactless check-in ",
+        contactless: " - multimodal scanning offers a more hygienic solution to get access to the premises.",
+       
+      },
+      systemserver: {
+        header: "Visitor Management System Server",
+        checkid: "CheckID FacialSense",
+        cloud: "Cloud",
+        descriptioncloud: "Biometric employee management and access control system as a cloud service.",
+        monthly: "Monthly subscription",
+        subscription: "Subscription price depends on employee count",
+        free: "Free subscription supports up to 5 appointments",
+        support: "Support CheckID FacialSense Visitor Management client",
+        noneed: "No need to worry about server installation and no maintenance needed.",
+        signup: "Sign up",
+
+        premises: "On-premises",
+        descriptionpremises: "Biometric visitor authentication and management system with access control that can be hosted on your own premises.",
+        one: "One time purchase",
+        nolimitation: "No limitation on appointment count",
+        needno: "Need to install the server by your own",
+        support1: "Support CheckID FacialSense Visitor Management client",
+        customer: "Customer has freedom to install and configure the Biometric visitor management system server",
+        download: "Download trial"
+
+      },
+      quickstartguide: {
+        header: "Quick start guide",
+        description: "Step-by-step guides are provided for you to start with the CheckID FacialSense Biometric Attendance system.",
+        cloud: "Cloud",
+        onpremises: "On-premises"
+      },
+
+      fearures: {
+        header: "Visitor Management Systems ",
+        featureheader: "Features",
+        description: "Our experienced and highly skilled team have developed a biometric VMS software that is packed full of unique features to take your businesses visitor management to the next level",
+        titlesecure: "Secure visitor access",
+        secure: "Barcode, RFID, face, fingerprint, and iris recognition provide fast, efficient, and secure access for visitor appointments and interaction with visitors.",
+        titlesafe: "Safe and hygienic",
+        safe: "Touchless barcode, RFID, facial, and iris recognition technology that provides no-contact visitor identification.",
+        titleonline: "Online pre appointments",
+        online: "Online pre-appointment allows visitors to plan their visit in advance and access hassle-free.",
+        titleautomated: "Automated access control",
+        automated: "Visitor-restricted and allowed gates are controlled with attendance devices.",
+        titlerealtime: "Realtime visitor analytics",
+        realtime: "Visitor attendance devices record instances of access-granted and access-denied information in the system.",
+        titleelectronic: "Electronic pass",
+        electronic: "Automatic pass generation or specified electronic passes such as Barcode, RFID, and vehicle license plate are allowed to use as a guest pass.",
+        titledata: "Data privacy",
+        data: "Visitor operations are performed by authorized personnel, so visitor and visit information is safeguarded from unauthorized access",
+        titlebiometric: "Biometric visitor recognition",
+        biometric: "Access control and management systems use multi-biometric face, fingerprint, and iris recognition.",
+        titlecustomizable: "Customizable visit notes",
+        customizable: "Customized visit notes with forms and attachments can be used to create detailed visitor logs.",
+
+      },
+      applications: {
+        header: "Applications and Industries",
+        description: "Our Bio Attendance system can be successfully used by various businesses and institutions.",
+        organizations: "Organizations",
+        travel: "Travel and Excursion",
+        hotel: "Hotels and Restaurants",
+        consulting: "Consulting Services",
+        bank: "Banking",
+        building: "Building and Apartments",
+        school: "Schools and Campuses",
+        customer: "Customer support"
+
+      },
+
+      askedquestions: {
+        header : "Frequently asked questions",
+        description: "Everything you need to know about the product and billing.",
+        howi: "How I can try CheckID FacialSense Bio Attendance?",
+        howcan: "How can I upgrade my trial version to paid version?",
+        cani: "Can I use the data from trial version in the paid version?",
+        whatare: "What are the requirements for software and hardware?",
+        isit: "Is it necessary to have an internet connection to use CheckID FacialSense Bio Attendance?",
+        whatis: "What is the difference between CheckID FacialSense Standard, CheckID FacialSense Server and CheckID FacialSense Lite?",
+        whathappens: "What happens in case of connectivity failure (if you run CheckID FacialSense Bio Attendance on your server)?",
+
+
+      },
+      still: {
+        header: "Still have questions?",
+        description: "Contact us now for any inquiries - we are here for you.",
+        contact: "Contact us"
+      }
+
+    }
+  },
   footer: {
     description:
       "CheckID FacialSense products stand out in the market as multi biometric solutions creating accurate and flexible system applications. Our systems are powered by industry-leading algorithms developed by Mobile-ID.",

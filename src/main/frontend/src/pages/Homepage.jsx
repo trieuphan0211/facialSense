@@ -797,7 +797,7 @@ export const Homepage = () => {
           <p className="text-[#3A505F] text-center mb-[50px]">
             {t("homepage.question.description")}
           </p>
-          <AccordionTollge accordionData={accordionData} type="default" />
+          <AccordionTollge accordionData={accordionData} type="default"  />
         </div>
       </div>
       <Question />

@@ -40,7 +40,7 @@ export const Header = () => {
                 },
                 {
                   name: "header.subproduct.0.item.0.item.1.name",
-                  path: "/",
+                  path: "/facialsense-visitor-management",
                 },
               ],
             },

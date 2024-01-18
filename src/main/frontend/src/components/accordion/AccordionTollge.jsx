@@ -4,8 +4,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PropTypes from "prop-types";
-import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import AddIcon from "@mui/icons-material/Add";
 
 export const AccordionTollge = ({ accordionData, type, backgroundColor, boxShadow, border }) => {

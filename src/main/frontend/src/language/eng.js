@@ -613,6 +613,8 @@ export default {
       },
       applications: {
         header: "Applications and Industries",
+        applica: "Applications and",
+        insdus: " Industries",
         description: "Our Bio Attendance system can be successfully used by various businesses and institutions.",
         organizations: "Organizations",
         travel: "Travel and Excursion",
@@ -628,13 +630,27 @@ export default {
       askedquestions: {
         header : "Frequently asked questions",
         description: "Everything you need to know about the product and billing.",
-        howi: "How I can try CheckID FacialSense Bio Attendance?",
-        howcan: "How can I upgrade my trial version to paid version?",
-        cani: "Can I use the data from trial version in the paid version?",
-        whatare: "What are the requirements for software and hardware?",
-        isit: "Is it necessary to have an internet connection to use CheckID FacialSense Bio Attendance?",
-        whatis: "What is the difference between CheckID FacialSense Standard, CheckID FacialSense Server and CheckID FacialSense Lite?",
-        whathappens: "What happens in case of connectivity failure (if you run CheckID FacialSense Bio Attendance on your server)?",
+        howi: "Does the Visitor Management System support Cloud?",
+        howides: "Yes.",
+        howcan: "Can it be deployed on Mobile platform?",
+        howcandes: "Yes, CheckID FacialSense Visitor Management client for Windows and Android provides the following visitor management functions",
+        howcandes1: "Visitor walk-in registration kiosk",
+        howcandes2: "Visitor biometric attendance and access control",
+        howcandes3: "Visitor information display",
+        howcandes4: "Visitor assistant ",
+
+        cani: "Is it a contactless and paper free system?",
+        canides: " Our system is contactless and paper free. ",
+        canides1: "Biometric only walk-in registration using facial recognition or contactless iris/fingerprint capture devices.",
+        canides2: "Online registration support to register from visitors own device",
+        canides3: "Notification email of Visitor pass or QR code to use if required",
+        canides4: "Visitor registration with their own RFID Identity card",
+        
+        whatare: "Is the system customizable with no or little charges?",
+        whataredes: "Yes, the system is highly configurable for different requirements. Any customer specific requirements can be added with an extension without compromizing any future product update capabilities.",
+        isit: "Is the system scalable? ",
+        desisit: "The CheckID FacialSense Visitor Management system is based on microservices and can be scaled according to project size.",
+        
 
 
       },

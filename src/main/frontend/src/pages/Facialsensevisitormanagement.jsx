@@ -1,6 +1,5 @@
 import { useIntersectionObserver,useWindowSize } from "@uidotdev/usehooks";
 import { Question } from "../components/common";
-import { AccordionTollge } from "../components/accordion";
 import male1 from "../assets/img/home/Male1.png";
 import ciclegray from "../assets/img/home/ciclegray.png";
 import ciclepoppy from "../assets/img/home/ciclepoppy.png";
@@ -33,6 +32,7 @@ import banking from  "../assets/img/products/facialsensevisitormanagement/div.ba
 import building from  "../assets/img/products/facialsensevisitormanagement/div.building-image.png"
 import school from  "../assets/img/products/facialsensevisitormanagement/div.school-image.png"
 import customer from  "../assets/img/products/facialsensevisitormanagement/div.customer-image.png"
+import AccordionToggle from "../components/accordion/AcoordionToggle";
 
 export const Facialsensevisitormanagement = () => { 
     const { width } = useWindowSize();
@@ -43,36 +43,7 @@ export const Facialsensevisitormanagement = () => {
         rootMargin: "0px",
       });
     const { t,i18n } = useTranslation();
-    const accordionData = [
-        {
-          header: "products.facialsensevisitormanagement.askedquestions.howi",
-          body: "homepage.question.items.0.body",
-        },
-        {
-          header: "products.facialsensevisitormanagement.askedquestions.howcan",
-          body: "homepage.question.items.1.body",
-        },
-        {
-          header: "products.facialsensevisitormanagement.askedquestions.cani",
-          body: "homepage.question.items.2.body",
-        },
-        {
-          header: "products.facialsensevisitormanagement.askedquestions.whatare",
-          body: "homepage.question.items.3.body",
-        },
-        {
-          header: "products.facialsensevisitormanagement.askedquestions.isit",
-          body: "homepage.question.items.4.body",
-        },
-        {
-            header: "products.facialsensevisitormanagement.askedquestions.whatis",
-            body: "homepage.question.items.4.body",
-          },
-          {
-            header: "products.facialsensevisitormanagement.askedquestions.whathappens",
-            body: "homepage.question.items.4.body",
-          },
-      ];
+    
     return(
         <>
             <div className=" xl:h-auto pb-[100px]">
@@ -187,7 +158,7 @@ export const Facialsensevisitormanagement = () => {
                 </div>
                 <div className="max-w-[1300px] flex flex-col mx-auto  relative">
                           <div className="mask ">&nbsp;</div>
-                          <video className="w-full h-full rounded-lg"  poster="" autoPlay="" loop="" muted="1" width="300" height="480" src="https://d1d661ml0e18pm.cloudfront.net/vms-video.mp4"></video>
+                          <video className="w-full h-full rounded-lg"  poster="" autoPlay loop muted width="300" height="480" src="https://d1d661ml0e18pm.cloudfront.net/vms-video.mp4"></video>
                           <div>
                 <div className="sm:flex-col flex mt-12 items-start gap-[50px]  ">
                   <div className="flex-1">
@@ -255,23 +226,35 @@ export const Facialsensevisitormanagement = () => {
             <div className="mx-auto max-w-[1300px] mb-[50px] px-4">
                 <div className=" flex justify-center items-center">
                     <h1 className="text-center text-5xl text-[#1C2045] font-extrabold ">
-                        <span  className="inline-block border-b-[10px]  pl-2 h-11 border-[var(--tree-poppy)] ">
-                        {t("products.facialsensevisitormanagement.systemserver.checkid")}
-                        </span>
+                        {width < 639 ? (
+                                <>
+                                    <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                   CheckID
+                                    </span>
+                                    <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                    FacialSense
+                                    </span>
+                                </>
+                                ) : (
+                                    <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                            {t("products.facialsensevisitormanagement.systemserver.checkid")}
+                                    </span>
+                                )}
+                        
                         <span style={{ whiteSpace: "wrap" }} className="block">
                         {t("products.facialsensevisitormanagement.systemserver.header")}
                         </span>
                     </h1>
                 </div>
                 <div className="flex justify-between  items-start sm:flex-wrap  sm:w-auto">
-                    <div className="sm:flex-col flex px-[35px] flex-col py-[20px] gap-[30px] relative ">
-                        <img src={ cloud} alt=""  className=" absolute bottom-0 right-0 w-[300px] h-[300px]"/>
-                            <div className="flex flex-col gap-1 items-stretch h-[150px] ">
+                    <div className="sm:flex-col flex px-[35px] flex-col py-[20px] gap-[30px] relative md:px-[15px]">
+                        <img src={ cloud} alt=""  className=" absolute bottom-0 right-0 w-[300px] h-[300px] "/>
+                            <div className="flex flex-col gap-1 items-stretch h-[150px] mds:h-[160px]">
                                 <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] ">{t("products.facialsensevisitormanagement.systemserver.cloud")}</p>
                                 <p className="text-[#1c2045] font-montserrat font-normal 	leading-[25px] max-w-[485px]">{t("products.facialsensevisitormanagement.systemserver.descriptioncloud")}</p>
                             </div>
-                            <div className="flex">
-                                <div className="flex sm:flex-col">
+                            {i18n.language === "en" ? (    <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px]">
+                                <div className="flex sm:flex-col ">
                                     <ul className=" flex flex-col gap-[15px] sm:w-auto ">
                                     <li className="flex text-lg items-start ">
                                         <Check className="m-[7px] min-w-4" />
@@ -296,21 +279,77 @@ export const Facialsensevisitormanagement = () => {
                                     </ul>
                                 
                                 </div>
+                            </div> ) : (   <div className="flex h-[290px] mds:h-[370px] mds740:h-[480px]">
+                                <div className="flex sm:flex-col ">
+                                    <ul className=" flex flex-col gap-[15px] sm:w-auto ">
+                                    <li className="flex text-lg items-start ">
+                                        <Check className="m-[7px] min-w-4" />
+                                        {t("products.facialsensevisitormanagement.systemserver.monthly")}
+                                    </li>
+                                    <li className="flex text-lg items-start">
+                                        <Check className="m-[7px] min-w-4" />
+                                        {t("products.facialsensevisitormanagement.systemserver.subscription")}
+                                    </li>
+                                    <li className="flex text-lg items-start">
+                                        <Check className="m-[7px] min-w-4" />
+                                        {t("products.facialsensevisitormanagement.systemserver.free")}
+                                    </li>
+                                    <li className="flex text-lg items-start max-w-[485px]">
+                                        <Check className="m-[7px] min-w-4" />
+                                        {t("products.facialsensevisitormanagement.systemserver.support")}
+                                    </li>
+                                    <li className="flex text-lg items-start max-w-[485px]">
+                                        <Check className="m-[7px] min-w-4" />
+                                        {t("products.facialsensevisitormanagement.systemserver.noneed")}
+                                    </li>
+                                    </ul>
                                 
-                            </div>
-                            <div className="xl:flex xl:justify-center">
+                                </div>
+                            </div>) }
+                         
+                            <div className="xl:flex ">
                                 <PoppyButton
                                     title={t("products.facialsensevisitormanagement.systemserver.signup")}
                                 />
                             </div>
                     </div>
                     <div className="flex px-[35px] flex-col py-[20px] gap-[30px]   relative  ">
-                    <img src={ premises} alt=""  className=" absolute bottom-0 right-0 w-[300px] h-[300px]"/>
-                            <div className="flex flex-col gap-1 h-[150px]">
-                                <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] ">{t("products.facialsensevisitormanagement.systemserver.premises")}</p>
+                    <img src={ premises} alt=""  className=" absolute bottom-0 right-0 w-[300px] h-[300px] md:h-[400px]"/>
+                            <div className="flex flex-col gap-1 h-[150px] mds:h-[160px] ">
+                                <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] mds:w-[300px]">{t("products.facialsensevisitormanagement.systemserver.premises")}</p>
                                 <p className="text-[#1c2045] font-montserrat font-normal	max-w-[485px] leading-[25px]">{t("products.facialsensevisitormanagement.systemserver.descriptionpremises")}</p>
                             </div>
-                            <div className="flex">
+                            {i18n.language === "en" ? (
+                                  <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px]">
+                                  <div className="flex sm:flex-col">
+                                      <ul className=" flex flex-col gap-[15px] sm:w-auto ">
+                                      <li className="flex text-lg items-start">
+                                          <Check className="m-[7px] min-w-4" />
+                                          {t("products.facialsensevisitormanagement.systemserver.one")}
+                                      </li>
+                                      <li className="flex text-lg items-start">
+                                          <Check className="m-[7px] min-w-4" />
+                                          {t("products.facialsensevisitormanagement.systemserver.nolimitation")}
+                                      </li>
+                                      <li className="flex text-lg items-start">
+                                          <Check className="m-[7px] min-w-4" />
+                                          {t("products.facialsensevisitormanagement.systemserver.needno")}
+                                      </li>
+                                      <li className="flex text-lg items-start max-w-[485px]">
+                                          <Check className="m-[7px] min-w-4" />
+                                          {t("products.facialsensevisitormanagement.systemserver.support1")}
+                                      </li>
+                                      <li className="flex text-lg items-start max-w-[485px]">
+                                          <Check className="m-[7px] min-w-4" />
+                                          {t("products.facialsensevisitormanagement.systemserver.customer")}
+                                      </li>
+                                      </ul>
+                                  
+                                  </div>
+                                  
+                              </div>
+                             ) : (
+                                <div className="flex h-[290px] mds:h-[370px] mds740:h-[480px] ">
                                 <div className="flex sm:flex-col">
                                     <ul className=" flex flex-col gap-[15px] sm:w-auto ">
                                     <li className="flex text-lg items-start">
@@ -338,7 +377,9 @@ export const Facialsensevisitormanagement = () => {
                                 </div>
                                 
                             </div>
-                            <div className="xl:flex xl:justify-center">
+                             )}
+                          
+                            <div className="xl:flex">
                                 <LeafButton
                                     title={t("products.facialsensevisitormanagement.systemserver.download")}
                                    
@@ -367,9 +408,9 @@ export const Facialsensevisitormanagement = () => {
                 <img src={choose1} className=" absolute right-0 top-[77px] "></img>
                 <div className="max-w-[1300px] relative ">
                     <div className=" flex items-center justify-center flex-col gap-[15px]">
-                        
                         {i18n.language === "en" ? (
                                     <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+                                            
                                             {t("products.facialsensevisitormanagement.fearures.header")}
                                             <span style={{ whiteSpace: "nowrap" }} className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]">
                                             {t("products.facialsensevisitormanagement.fearures.featureheader")}
@@ -387,72 +428,72 @@ export const Facialsensevisitormanagement = () => {
 
                         <p className="text-[#3A505F] text-[18px] font-normal leading-[25px] max-w-[900px] text-center">{t("products.facialsensevisitormanagement.fearures.description")}</p>
                         </div>
-                    <div className="my-[50px] flex flex-wrap">
+                    <div className="my-[50px] flex flex-wrap sm:flex-col justify-between items-center">
                     
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={secure} alt="" />
-                                <div className="mt-[20px]">
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img  className="w-[84px] h-[70px]" src={secure} alt="" />
+                                <div className="mt-[20px] ">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titlesecure")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.secure")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.secure")}</p>
                                 </div>
                             </div>
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={safe} alt="" />
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={safe} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titlesafe")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.safe")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.safe")}</p>
                                 </div>
                             </div>
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={online} alt="" className=""/>
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={online} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titleonline")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.online")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.online")}</p>
                                 </div>
                             </div>
                     
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={automated} alt="" />
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={automated} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titleautomated")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.automated")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.automated")}</p>
                                 </div>
                             </div>
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={realtime} alt="" />
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={realtime} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titlerealtime")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.realtime")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px]  mlgd:h-[134px] font-normalmlgd:h-[134px] leading-[24px]">{t("products.facialsensevisitormanagement.fearures.realtime")}</p>
                                 </div>
                             </div>
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={electro} alt="" className=""/>
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full ">
+                                <img className="w-[84px] h-[70px]" src={electro} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titleelectronic")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.electronic")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.electronic")}</p>
                                 </div>
                             </div>
                     
                     
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={data} alt="" />
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={data} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titledata")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.data")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">{t("products.facialsensevisitormanagement.fearures.data")}</p>
                                 </div>
                             </div>
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={sabiofe} alt="" />
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={sabiofe} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titlebiometric")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.biometric")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">{t("products.facialsensevisitormanagement.fearures.biometric")}</p>
                                 </div>
                             </div>
-                            <div className="p-[20px] w-1/3 ">
-                                <img src={custom} alt="" className=""/>
+                            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
+                                <img className="w-[84px] h-[70px]" src={custom} alt="" />
                                 <div className="mt-[20px]">
                                     <p className="text-[#1C2045] font-montserrat font-bold">{t("products.facialsensevisitormanagement.fearures.titlecustomizable")}</p>
-                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal leading-[24px]">{t("products.facialsensevisitormanagement.fearures.customizable")}</p>
+                                    <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">{t("products.facialsensevisitormanagement.fearures.customizable")}</p>
                                 </div>
                             </div>
                     
@@ -468,16 +509,39 @@ export const Facialsensevisitormanagement = () => {
                         
                         {i18n.language === "en" ? (
                                     <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
-    
+                                           {width < 745 ? (
+                                                 <>
+                                                 <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                                   {t("products.facialsensevisitormanagement.applications.applica")}
+                                                 </span>
+                                                 <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                                   {t("products.facialsensevisitormanagement.applications.insdus")}
+                                                 </span>
+                                               </>
+                                           ) : (
                                             <span style={{ whiteSpace: "" }} className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]">
-                                            {t("products.facialsensevisitormanagement.applications.header")}
-                                        </span>
+                                            {t("products.facialsensevisitormanagement.applications.header")} </span>
+                                           )}
+                                            
+                                       
                                     </h1>
                         ) : (
                                     <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
-                                        <span style={{ whiteSpace: "" }} className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
-                                        {t("products.facialsensevisitormanagement.applications.header")}
-                                        </span>
+                                        {width < 745 ? (
+                                                 <>
+                                                 <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                                   {t("products.facialsensevisitormanagement.applications.applica")}
+                                                 </span>
+                                                 <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                                                   {t("products.facialsensevisitormanagement.applications.insdus")}
+                                                 </span>
+                                               </>
+                                           ) : (
+                                            <span style={{ whiteSpace: "" }} className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]">
+                                            {t("products.facialsensevisitormanagement.applications.header")} </span>
+                                           )}
+                                        
+                                        
                                     </h1>
                         )}
 
@@ -486,37 +550,40 @@ export const Facialsensevisitormanagement = () => {
                  </div>
                  <div className="flex max-w-[1300px] pt-[47px] pb-50px flex-col">
                     <div className="flex px-[35px] gap-[81px] lg:gap-[40px]  flex-wrap justify-center items-center ">
-                        <div className="flex flex-col justify-center items-center w-2581 h-[150px] lg:w-1/3  hover:shadow-hoverAppAndIns">
-                            <img src={organiza}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] lg:w-full text-center lg:w-1/3"> {t("products.facialsensevisitormanagement.applications.organizations")}</p>
+                        <div className="group flex flex-col justify-center items-center  h-[150px] lg:w-1/3 md:1/2  hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581  md:1/2 transition-all duration-500 ease-in-out relative">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={organiza}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.organizations")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3">
-                            <img src={travel}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center "> {t("products.facialsensevisitormanagement.applications.travel")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={travel}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.travel")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3 ">
-                            <img src={hotels}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center"> {t("products.facialsensevisitormanagement.applications.hotel")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative ">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={hotels}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]"> {t("products.facialsensevisitormanagement.applications.hotel")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3">
-                            <img src={consul}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center"> {t("products.facialsensevisitormanagement.applications.consulting")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={consul}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]"> {t("products.facialsensevisitormanagement.applications.consulting")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3 ">
-                            <img src={banking}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center "> {t("products.facialsensevisitormanagement.applications.bank")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative ">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={banking}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.bank")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3">
-                            <img src={building}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[120px] text-center"> {t("products.facialsensevisitormanagement.applications.building")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={building}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[120px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.building")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3 relative">
-                            <img src={school}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center "> {t("products.facialsensevisitormanagement.applications.school")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative relative">
+                            <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={school}></img>
+                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.school")}</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns w-2581 lg:w-1/3 relative">
-                            <img src={customer}></img>
-                            <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center "> {t("products.facialsensevisitormanagement.applications.customer")}</p>
+                        <div className="group flex flex-col justify-center items-center h-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                           
+                                <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={customer}></img>
+                                <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center  transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.customer")}</p>
+                         
+                            
                         </div>
                     </div>
                  </div>
@@ -555,7 +622,7 @@ export const Facialsensevisitormanagement = () => {
           <p className="text-[#3A505F] text-center mb-[50px]">
             {t("homepage.question.description")}
           </p>
-          <AccordionTollge accordionData={accordionData} type="default" backgroundColor="#EEF3FA" boxShadow="none" border="1px solid #C9DCEC"/>
+          <AccordionToggle />
         </div>
             </div>
             <Question />

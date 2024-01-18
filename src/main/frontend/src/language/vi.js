@@ -613,28 +613,46 @@ export default {
         customizable: "Ghi chú cuộc thăm được tùy chỉnh với các biểu mẫu và đính kèm có thể được sử dụng để tạo ra nhật ký chi tiết về khách hàng.",
       },
       applications: {
-        header: "Ứng dụng và ngành công nghiệp",
+        header: "Ứng dụng và công nghiệp",
+        applica: "Ứng dụng và",
+        insdus: " công nghiệp",
         description: "Hệ thống Điểm danh Sinh học của chúng tôi có thể được sử dụng thành công bởi nhiều doanh nghiệp và tổ chức khác nhau.",
         organizations: "Tổ chức",
-        travel: "Du lịch và Chuyến đi",
-        hotel: "Khách sạn và Nhà hàng",
-        consulting: "Dịch vụ Tư vấn",
+        travel: "Du lịch và chuyến đi",
+        hotel: "Khách sạn và nhà hàng",
+        consulting: "Dịch vụ tư vấn",
         bank: "Ngân hàng",
-        building: "Công trình và Căn hộ",
-        school: "Trường học và Khuôn viên",
+        building: "Công trình và căn hộ",
+        school: "Trường học và khuôn viên",
         customer: "Hỗ trợ khách hàng"
       },
   
       askedquestions: {
         header : "Câu hỏi thường gặp",
         description: "Mọi thông tin bạn cần biết về sản phẩm và thanh toán.",
-        howi: "Làm thế nào tôi có thể thử CheckID FacialSense Bio Attendance?",
-        howcan: "Làm thế nào tôi có thể nâng cấp từ phiên bản thử nghiệm lên phiên bản trả phí?",
-        cani: "Tôi có thể sử dụng dữ liệu từ phiên bản thử nghiệm trong phiên bản trả phí không?",
-        whatare: "Các yêu cầu về phần mềm và phần cứng là gì?",
-        isit: "Có cần phải có kết nối internet để sử dụng CheckID FacialSense Bio Attendance không?",
-        whatis: "Sự khác biệt giữa CheckID FacialSense Standard, CheckID FacialSense Server và CheckID FacialSense Lite là gì?",
-        whathappens: "Điều gì xảy ra trong trường hợp mất kết nối (nếu bạn chạy CheckID FacialSense Bio Attendance trên máy chủ của mình)?",
+        
+          howi: "Hệ thống quản lý khách hàng có hỗ trợ đám mây không?",
+          howides: "Có.",
+          howcan: "Có thể triển khai trên nền tảng di động không?",
+          howcandes: "Có, ứng dụng quản lý khách hàng CheckID FacialSense cho Windows và Android cung cấp các chức năng quản lý khách thăm sau đây:",
+          howcandes1: "Kiosk đăng ký đến làm khách hàng",
+          howcandes2: "Chấm công và kiểm soát truy cập bằng sinh trắc học của khách hàng",
+          howcandes3: "Hiển thị thông tin của khách hàng",
+          howcandes4: "Trợ lý của khách hàng",
+        
+          cani: "Có phải là một hệ thống không tiếp xúc và không sử dụng giấy không?",
+          canides: "Hệ thống của chúng tôi không tiếp xúc và không sử dụng giấy.",
+          canides1: "Chỉ cần đăng ký bằng sinh trắc học sử dụng nhận dạng khuôn mặt hoặc thiết bị chụp vân tay/retina không tiếp xúc.",
+          canides2: "Hỗ trợ đăng ký trực tuyến để đăng ký từ thiết bị của khách",
+          canides3: "Email thông báo về thẻ vào hoặc mã QR để sử dụng nếu cần",
+          canides4: "Đăng ký khách hàng với thẻ nhận diện RFID riêng của họ",
+        
+          whatare: "Hệ thống có thể tùy chỉnh mà không tốn phí hoặc tốn ít phí không?",
+          whataredes: "Có, hệ thống có khả năng tùy chỉnh cao cho các yêu cầu khác nhau. Bất kỳ yêu cầu cụ thể của khách hàng nào cũng có thể được thêm vào mà không ảnh hưởng đến khả năng cập nhật sản phẩm trong tương lai.",
+          isit: "Hệ thống có thể mở rộng được không?",
+          desisit: "Hệ thống quản lý khách hàng CheckIDFacialSense được xây dựa trên kiến trúc microservices và có thể mở rộng theo kích thước dự án."
+        
+        
       },
       still: {
         header: "Vẫn còn câu hỏi?",

@@ -253,7 +253,8 @@ export const Facialsensevisitormanagement = () => {
                                 <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] ">{t("products.facialsensevisitormanagement.systemserver.cloud")}</p>
                                 <p className="text-[#1c2045] font-montserrat font-normal 	leading-[25px] max-w-[485px]">{t("products.facialsensevisitormanagement.systemserver.descriptioncloud")}</p>
                             </div>
-                            {i18n.language === "en" ? (    <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
+                            {i18n.language === "en" ? (   
+                                <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
                                 <div className="flex sm:flex-col ">
                                     <ul className=" flex flex-col gap-[15px] sm:w-auto ">
                                     <li className="flex text-lg items-start ">
@@ -321,30 +322,30 @@ export const Facialsensevisitormanagement = () => {
                             </div>
                             {i18n.language === "en" ? (
                                   <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
-                                  <div className="flex sm:flex-col">
-                                      <ul className=" flex flex-col gap-[15px] sm:w-auto ">
-                                      <li className="flex text-lg items-start">
-                                          <Check className="m-[7px] min-w-4" />
-                                          {t("products.facialsensevisitormanagement.systemserver.one")}
-                                      </li>
-                                      <li className="flex text-lg items-start">
-                                          <Check className="m-[7px] min-w-4" />
-                                          {t("products.facialsensevisitormanagement.systemserver.nolimitation")}
-                                      </li>
-                                      <li className="flex text-lg items-start">
-                                          <Check className="m-[7px] min-w-4" />
-                                          {t("products.facialsensevisitormanagement.systemserver.needno")}
-                                      </li>
-                                      <li className="flex text-lg items-start max-w-[485px]">
-                                          <Check className="m-[7px] min-w-4" />
-                                          {t("products.facialsensevisitormanagement.systemserver.support1")}
-                                      </li>
-                                      <li className="flex text-lg items-start max-w-[485px]">
-                                          <Check className="m-[7px] min-w-4" />
-                                          {t("products.facialsensevisitormanagement.systemserver.customer")}
-                                      </li>
-                                      </ul>
-                                  
+                                    <div className="flex sm:flex-col">
+                                        <ul className=" flex flex-col gap-[15px] sm:w-auto ">
+                                        <li className="flex text-lg items-start">
+                                            <Check className="m-[7px] min-w-4" />
+                                            {t("products.facialsensevisitormanagement.systemserver.one")}
+                                        </li>
+                                        <li className="flex text-lg items-start">
+                                            <Check className="m-[7px] min-w-4" />
+                                            {t("products.facialsensevisitormanagement.systemserver.nolimitation")}
+                                        </li>
+                                        <li className="flex text-lg items-start">
+                                            <Check className="m-[7px] min-w-4" />
+                                            {t("products.facialsensevisitormanagement.systemserver.needno")}
+                                        </li>
+                                        <li className="flex text-lg items-start max-w-[485px]">
+                                            <Check className="m-[7px] min-w-4" />
+                                            {t("products.facialsensevisitormanagement.systemserver.support1")}
+                                        </li>
+                                        <li className="flex text-lg items-start max-w-[485px]">
+                                            <Check className="m-[7px] min-w-4" />
+                                            {t("products.facialsensevisitormanagement.systemserver.customer")}
+                                        </li>
+                                        </ul>
+                                    
                                   </div>
                                   
                               </div>

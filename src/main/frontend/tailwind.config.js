@@ -6,13 +6,19 @@ module.exports = {
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
       md: { max: "767px" },
+      'mds': {'min': '741px', 'max': '972px'},
+
+      'mds740': {'min': '640px', 'max': '740px'},
       // => @media (max-width: 767px) { ... }
       lg: { max: "1023px" },
+      'mlgd' : {'min': '767px', 'max': '1023px'},
       // => @media (max-width: 1023px) { ... }
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
+      "460sm": { max: "462px" }
+      
     },
 
     extend: {
@@ -75,6 +81,12 @@ module.exports = {
           },
         },
       },
+      boxShadow: {
+        'hoverAppAndIns': '0px 12px 30px 0px rgba(24, 92, 255, 0.18)',
+      },
+      width:{
+        '2581': 'calc(25% - 81px)'
+      }
     },
   },
   plugins: [],

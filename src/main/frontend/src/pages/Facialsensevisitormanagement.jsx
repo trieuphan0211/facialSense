@@ -114,7 +114,7 @@ export const Facialsensevisitormanagement = () => {
                             {t("products.facialsensevisitormanagement.solution.day")}
                         </p>
                         </div>
-                        <img src={male1} alt="" />
+                        <img  src={male1} alt="" />
 
                         <div
                         className={`absolute scale-0 ${

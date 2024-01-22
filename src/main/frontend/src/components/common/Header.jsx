@@ -60,7 +60,7 @@ export const Header = () => {
               item: [
                 {
                   name: "header.subindustries.0.item.0.item.0.name",
-                  path: "/",
+                  path: "/office-employee-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.1.name",

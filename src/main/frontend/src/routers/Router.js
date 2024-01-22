@@ -1,6 +1,6 @@
 import { useRoutes, useLocation } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { Facialsensevisitormanagement, Homepage } from "../pages";
+import { BiometricOffice, Facialsensevisitormanagement, Homepage } from "../pages";
 import { useEffect } from "react";
 
 const context = "";
@@ -23,7 +23,9 @@ const Routers = () => {
 
       element: <MainLayout />,
       children: [{ path: "/", element: <Homepage /> },
-                { path: "/facialsense-visitor-management",  element: <Facialsensevisitormanagement /> }
+                  { path: "/facialsense-visitor-management",  element: <Facialsensevisitormanagement />},
+                 { path: "/office-employee-time-attendance-monitoring-system",  element: <BiometricOffice />}
+               
       ],
     },
   ]);

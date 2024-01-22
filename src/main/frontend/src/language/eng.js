@@ -562,9 +562,9 @@ export default {
         header: "Visitor Management System Server",
         checkid: "CheckID FacialSense",
         cloud: "Cloud",
-        descriptioncloud: "Biometric employee management and access control system as a cloud service.",
+        descriptioncloud: "Biometric visitor authentication and management with access control system as a cloud service.",
         monthly: "Monthly subscription",
-        subscription: "Subscription price depends on employee count",
+        subscription: "Subscription price depends on visitor count",
         free: "Free subscription supports up to 5 appointments",
         support: "Support CheckID FacialSense Visitor Management client",
         noneed: "No need to worry about server installation and no maintenance needed.",
@@ -662,6 +662,53 @@ export default {
 
     }
   },
+  industries: {
+    biometricoffice: {
+      header: "Biometric Office Attendance System",
+      titletransrom : "Transform",
+      transfrom: " Your Office Workplace",
+      transfromdes1: "The CheckID FacialSense biometric office attendance system is a favorite amongst employers for its ability to maintain and enhance an ",
+      effect: "efficient, productive and cost effective ",
+      workfor: "workforce, without the need for specialist hardware.",
+      transfromdes2: "Our system functions by utilizing the ",
+      biomatriciden: "biometric identification of face, fingerprint and iris scanning",
+      checkid: ". CheckID FacialSense biometric office attendance system is a simple turnkey integration into your HR and Payroll operations, ensuring your employees are accurately compensated whilst also removing bottlenecks in your payroll administration.",
+      transfromdes3: "Whilst the biometric technology offers advanced capabilities, the reporting and ",
+      userinf: "user interface is simple, intuitive and customizable",
+      around: " around your business requirements, allowing you to harness these AI-powered capabilities for your own business.",
+      biomatricfeature: "Biometric Office Attendance System Key",
+      biomatricfeaturekey: " Features",
+      biomatricfeaturedes: "Carefully designed and built, this software system has a number of powerful features designed to increase the efficiency and accuracy of employee time and attendance monitoring within your office, including:",
+      multiple: "Multiple face detection",
+      multipledes: "Our biometric office attendance system can detect and recognize faces of all the people seen in the picture, meaning your staff do not have to waste time queuing for the clocking in machine.",
+      realtime: "Real-time face detection",
+      realtimedes: "The system can detect the face of a person passing by without requiring to stop and wait while the camera takes a picture.",
+      turnkey: "Turnkey solution",
+      turnkeydes: "CheckID FacialSense biometric office attendance system requires no specialist hardware*, and easily integrates with the leading payroll providers to allow for a seamless integration into your standard business practices.",
+      footer: "*For fingerprint or iris identification, the system requires an external fingerprint reader or iris scanner, both of which can be purchased from",
+      whychosse: " our Biometric Office Attendance System for your business?",
+      whychossetitle: "Why choose",
+      increaseemploy: " Increase Employee Satisfaction",
+      increaseemploydes: "Nothing dents employee satisfaction more than unpaid wages. Avoid unnecessary wage issues with an accurate time and management system that ensures that every employee is fairly compensated for their work.",
+      streamline: "Streamline your HR",
+      streamlinedes: "The customized reporting that CheckID FacialSense offers your business allows you to easily monitor, analyse and understand your workforce in real time, cutting down the need for cumbersome and confusing paperwork.",
+      reduce: "Reduce Errors",
+      reducedes: "Time and attendance monitoring is a data intensive task, that is prone to human error. The automated biometric office attendance software reduces the risk of mistakes, and ensures an impartial and orderly recording and presentation of data.",
+      increaseproductivity: "Increase Productivity",
+      increaseproductivitydes: "Biometric scanners remove the possibility of ‘buddy punching’, an employee clocking in and out for another. Therefore, you can rest easy knowing that your workforce is putting in the hours they say they are.",
+      cost: "Cost Efficiency",
+      costdes: "Not only does it reduce labor costs that arise as a result of inaccurate recordings, but the multiple face detection feature can be used to cut down on queues for the clocking in machine.",
+      compre: "Comprehensive Reporting",
+      comperdes: "Reports include summary on working hours, overtime, vacation, sick leave and other relevant information all of which can be exported to the payroll system.",
+
+
+
+
+
+
+    }
+  },
+  
   footer: {
     description:
       "CheckID FacialSense products stand out in the market as multi biometric solutions creating accurate and flexible system applications. Our systems are powered by industry-leading algorithms developed by Mobile-ID.",

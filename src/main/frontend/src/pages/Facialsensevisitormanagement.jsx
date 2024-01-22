@@ -1,5 +1,5 @@
 import { useIntersectionObserver,useWindowSize } from "@uidotdev/usehooks";
-import { Question } from "../components/common";
+import { Question, QuickStart } from "../components/common";
 import male1 from "../assets/img/home/Male1.png";
 import ciclegray from "../assets/img/home/ciclegray.png";
 import ciclepoppy from "../assets/img/home/ciclepoppy.png";
@@ -162,7 +162,7 @@ export const Facialsensevisitormanagement = () => {
                           <div>
                 <div className="sm:flex-col flex mt-12 items-start gap-[50px]  ">
                   <div className="flex-1">
-                    <p className="text-lg text-[#3A505F] font-semibold mb-[16px] max-w-[510px]">
+                    <p className="text-[22px] leading-[33px] text-[#3A505F] font-semibold mb-[16px] max-w-[510px]">
                       {t("products.facialsensevisitormanagement.benefits.institution")}
                     </p>
                     <div className="flex sm:flex-col">
@@ -190,7 +190,7 @@ export const Facialsensevisitormanagement = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <p className="text-lg text-[#3A505F] font-semibold mb-[16px] max-w-[510px]">
+                    <p className="text-[22px] leading-[33px] text-[#3A505F] font-semibold mb-[16px] max-w-[510px]">
                       {t("products.facialsensevisitormanagement.benefits.user")}
                     </p>
                     <div className="flex sm:flex-col">
@@ -254,7 +254,7 @@ export const Facialsensevisitormanagement = () => {
                                 <p className="text-[#1c2045] font-montserrat font-normal 	leading-[25px] max-w-[485px]">{t("products.facialsensevisitormanagement.systemserver.descriptioncloud")}</p>
                             </div>
                             {i18n.language === "en" ? (   
-                                <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
+                                <div className="flex  h-[260px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
                                 <div className="flex sm:flex-col ">
                                     <ul className=" flex flex-col gap-[15px] sm:w-auto ">
                                     <li className="flex text-lg items-start ">
@@ -321,7 +321,7 @@ export const Facialsensevisitormanagement = () => {
                                 <p className="text-[#1c2045] font-montserrat font-normal	max-w-[485px] leading-[25px]">{t("products.facialsensevisitormanagement.systemserver.descriptionpremises")}</p>
                             </div>
                             {i18n.language === "en" ? (
-                                  <div className="flex  h-[300px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
+                                  <div className="flex  h-[260px] mds:h-[400px] mds740:h-[480px] 460sm:h-[400px]">
                                     <div className="flex sm:flex-col">
                                         <ul className=" flex flex-col gap-[15px] sm:w-auto ">
                                         <li className="flex text-lg items-start">
@@ -390,20 +390,7 @@ export const Facialsensevisitormanagement = () => {
                     </div>
                 </div>
             </div>
-            <div className=" bg-[#293990] relative ">
-                <img src={left} className=" absolute top-0 left-0 "></img>
-                <img src={right} className=" absolute right-0 bottom-0 "></img>
-                <div className=" flex items-center justify-center">
-                    <div className="flex flex-col gap-[30px] py-[50px] lg:px-[35px]  px-[250px] items-center sm:items-stretch ">
-                        <h1 className="text-center text-[#eef3fa] font-extrabold  text-[38px] leading-[56px]" >{t("products.facialsensevisitormanagement.quickstartguide.header")}</h1>
-                        <p className="text-center text-[#eef3fa] font-normal  text-[16px] leading-[24px] max-w-[540px]">{t("products.facialsensevisitormanagement.quickstartguide.description")}</p>
-                        <div className="flex  gap-6 xl:justify-center sm:flex-col ">
-                        <PoppyButton title={t("products.facialsensevisitormanagement.quickstartguide.cloud")} />
-                        <LeafButton title={t("products.facialsensevisitormanagement.quickstartguide.onpremises")} />
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <QuickStart />
 
             <div className="px-4 py-[90px] flex flex-col items-center relative">
                 <img src={choose1} className=" absolute right-0 top-[77px] "></img>
@@ -556,35 +543,35 @@ export const Facialsensevisitormanagement = () => {
                  </div>
                  <div className="flex max-w-[1300px] pt-[47px] pb-50px flex-col">
                     <div className="flex px-[35px] gap-[81px] lg:gap-[40px]  flex-wrap justify-center items-center ">
-                        <div className="group flex flex-col justify-center items-center  h-[150px] lg:w-1/3 md:1/2 460sm:w-[150px]  hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581  md:1/2 transition-all duration-500 ease-in-out relative">
+                        <div className="group flex flex-col gap-[8px] justify-center items-center  h-[150px] lg:w-1/3 md:1/2 460sm:w-[150px]  hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581  md:1/2 transition-all duration-500 ease-in-out relative">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={organiza}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.organizations")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px]  460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                        <div className="group flex flex-col gap-[8px] justify-center items-center h-[150px]  460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={travel}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.travel")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px] 460sm:w-[150px]  hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative ">
+                        <div className="group flex flex-col  gap-[8px] justify-center items-center h-[150px] 460sm:w-[150px]  hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative ">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={hotels}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]"> {t("products.facialsensevisitormanagement.applications.hotel")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                        <div className="group flex flex-col gap-[8px] justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={consul}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]"> {t("products.facialsensevisitormanagement.applications.consulting")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative ">
+                        <div className="group flex flex-col  gap-[8px] justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative ">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={banking}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.bank")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                        <div className="group flex flex-col gap-[8px] justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={building}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[120px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.building")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative relative">
+                        <div className="group flex flex-col  gap-[8px] justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative relative">
                             <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={school}></img>
                             <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.school")}</p>
                         </div>
-                        <div className="group flex flex-col justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
+                        <div className="group flex flex-col gap-[8px] justify-center items-center h-[150px] 460sm:w-[150px] hover:shadow-hoverAppAndIns  hover:rounded-2xl hover:bg-white w-2581 lg:w-1/3 md:1/2 transition-all duration-500 ease-in-out relative">
                            
                                 <img className="transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px]" src={customer}></img>
                                 <p className="text-[#3A505F] text-1 font-normal leading-[20px] max-w-[100px] text-center  transition-transform duration-500 ease-in-out transform translate-y-0 group-hover:translate-y-[4px] "> {t("products.facialsensevisitormanagement.applications.customer")}</p>

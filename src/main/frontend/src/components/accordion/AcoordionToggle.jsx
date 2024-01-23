@@ -21,7 +21,7 @@ const AccordionToggle = ( ) => {
           onChange={handleChange("panel1")}
           key={"panel1"}
       sx={{
-        boxShadow: "none",
+       
             border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
@@ -30,6 +30,7 @@ const AccordionToggle = ( ) => {
         "&:before": {
           display: "none",
         },
+        boxShadow: expanded === "panel1" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
       }}
     >
       <AccordionSummary expandIcon={
@@ -75,8 +76,8 @@ const AccordionToggle = ( ) => {
           onChange={handleChange("panel2")}
           key={"panel2"}
       sx={{
-        boxShadow: "none",
-            border: "1px solid #C9DCEC" ,
+        boxShadow: expanded === "panel2" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
+        border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
         marginBottom: "20px",
@@ -136,7 +137,7 @@ const AccordionToggle = ( ) => {
           onChange={handleChange("panel3")}
           key={"panel3"}
       sx={{
-        boxShadow: "none",
+        boxShadow: expanded === "panel3" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
             border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
@@ -198,7 +199,7 @@ const AccordionToggle = ( ) => {
           onChange={handleChange("panel4")}
           key={"panel4"}
       sx={{
-        boxShadow: "none",
+        boxShadow: expanded === "panel4" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
         border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
@@ -253,7 +254,7 @@ const AccordionToggle = ( ) => {
           onChange={handleChange("panel5")}
           key={"panel5"}
       sx={{
-        boxShadow: "none",
+        boxShadow: expanded === "panel5" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
             border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",

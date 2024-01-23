@@ -706,6 +706,30 @@ export default {
 
 
 
+    },
+    retailworkforce: {
+      headertitle: "Retail Workforce",
+      header: " Time & Attendance Monitoring System",
+      theckeckid: "The CheckID FacialSense Bio Attendance system",
+      uses: " uses ",
+      biomatrici: "biometric identification of face, fingerprint and iris scanning",
+      desbiomatric: " to efficiently monitor, manage and register attendance, without the need for specialist hardware.",
+      thisal: "This AI - powered biometric technology helps",
+      retail: " retail businesses ",
+      tomain: "to maintain and enhance an ",
+      effect:"efficient, productive and cost effective ",
+      workfore: "workforce in among the fast-paced shop floor environment. Whilst the biometric technology is advanced, the reporting is simple, intuitive and flexible around your business requirements.",
+      theckeckidFacial: "The CheckID FacialSense Bio Attendance system is a turnkey solution that has been designed to fit seamlessly into your business HR and payroll operations, whilst simultaneously ensuring your employees are accurately compensated for the shifts that they work without the need for cumbersome fobs, time cards or clocking in machines.",
+      key: "Key",
+      feature: " Features",
+      desfeature: "The CheckID FacialSense Bio Attendance system has a number of powerful features designed to increase the efficiency and accuracy of employee time and attendance monitoring, including:",
+      multiple: "Multiple face detection",
+      multipledes: "Our biometric office attendance system can detect and recognize faces of all the people seen in the picture, meaning your staff do not have to waste time queuing for the clocking in machine.",
+      contactless: "Contactless attendance tracking",
+      contactlessdes: "No physical contact is needed when person is recognized by face or iris.",
+      liveness: "Liveness detection",
+      livenessdes: "Before starting facial recognition, the system can validate that the check-in / check-out is being attempted by a real person.",
+
     }
   },
   

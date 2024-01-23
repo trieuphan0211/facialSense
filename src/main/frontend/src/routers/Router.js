@@ -1,6 +1,10 @@
 import { useRoutes, useLocation } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { Facialsensevisitormanagement, Homepage } from "../pages";
+import {
+  FacialsenseBioAttendannce,
+  Facialsensevisitormanagement,
+  Homepage,
+} from "../pages";
 import { useEffect } from "react";
 
 const context = "";
@@ -12,6 +16,10 @@ const Routers = () => {
       case "/":
         document.title = "CheckID FacialSense Service | Mobile-ID";
         break;
+      case "/facialsense-visitor-management":
+        document.title =
+          "CheckID FacialSense Service | FacialSense Visitor Management";
+        break;
       default:
         document.title = "CheckID FacialSense Service | Mobile-ID";
         break;
@@ -22,8 +30,16 @@ const Routers = () => {
       path: context,
 
       element: <MainLayout />,
-      children: [{ path: "/", element: <Homepage /> },
-                { path: "/facialsense-visitor-management",  element: <Facialsensevisitormanagement /> }
+      children: [
+        { path: "/", element: <Homepage /> },
+        {
+          path: "/facialsense-visitor-management",
+          element: <Facialsensevisitormanagement />,
+        },
+        {
+          path: "/facialsense-bio-attendance",
+          element: <FacialsenseBioAttendannce />,
+        },
       ],
     },
   ]);

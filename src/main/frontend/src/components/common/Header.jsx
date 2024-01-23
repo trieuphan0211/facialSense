@@ -34,7 +34,7 @@ export const Header = () => {
               item: [
                 {
                   name: "header.subproduct.0.item.0.item.0.name",
-                  path: "/",
+                  path: "/facialsense-bio-attendance",
                 },
                 {
                   name: "header.subproduct.0.item.0.item.1.name",

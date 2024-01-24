@@ -10,22 +10,38 @@ export const MainLayout = () => {
   const location = useLocation();
   const [bg, setBg] = useState("bg-home bg-right-top bg-no-repeat");
   const [logoImg, setLogoImg] = useState(logo);
-  // set Logo & Background
+  // set Logo & Background & title
   useEffect(() => {
-    if (
-      location.pathname == "/" ||
-      location.pathname == "/facialsense-bio-attendance" ||
-      location.pathname == "/facialsense-visitor-management"
-    ) {
-      setBg("bg-home bg-right-top bg-no-repeat");
-      setLogoImg(logo);
-    } else if (
-      location.pathname == "/office-employee-time-attendance-monitoring-system"
-    ) {
-      setBg("bg-industries w bg-center-top bg-no-repeat");
-      setLogoImg(logoWhite);
+    switch (location.pathname) {
+      case "/":
+        setBg("bg-home bg-right-top bg-no-repeat");
+        setLogoImg(logo);
+        document.title = "CheckID FacialSense Service | Mobile-ID";
+        break;
+      case "/facialsense-visitor-management":
+        setBg("bg-home bg-right-top bg-no-repeat");
+        setLogoImg(logo);
+        document.title =
+          "CheckID FacialSense Service | FacialSense Visitor Management";
+        break;
+      case "/facialsense-bio-attendance":
+        setBg("bg-home bg-right-top bg-no-repeat");
+        setLogoImg(logo);
+        document.title =
+          "CheckID FacialSense Service | FacialSense Visitor Management";
+        break;
+      case "/office-employee-time-attendance-monitoring-system":
+        setBg("bg-industries w bg-center-top bg-no-repeat");
+        setLogoImg(logoWhite);
+        document.title =
+          "CheckID FacialSense Service | FacialSense Visitor Management";
+        break;
+      default:
+        document.title = "CheckID FacialSense Service | Mobile-ID";
+        break;
     }
   }, [location]);
+
   return (
     <main className={`${bg}  lg:!bg-left-top bg-[100% 100%]`}>
       <Header logo={logoImg} />

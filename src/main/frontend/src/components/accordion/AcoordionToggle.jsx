@@ -20,6 +20,7 @@ const AccordionToggle = () => {
         onChange={handleChange("panel1")}
         key={"panel1"}
         sx={{
+          boxShadow: "none",
           border: "1px solid #C9DCEC",
           borderRadius: "6px",
           padding: "15px 35px",
@@ -77,6 +78,7 @@ const AccordionToggle = () => {
         onChange={handleChange("panel2")}
         key={"panel2"}
         sx={{
+          boxShadow: "none",
           border: "1px solid #C9DCEC",
           borderRadius: "6px",
           padding: "15px 35px",
@@ -162,6 +164,7 @@ const AccordionToggle = () => {
         onChange={handleChange("panel3")}
         key={"panel3"}
         sx={{
+          boxShadow: "none",
           border: "1px solid #C9DCEC",
           borderRadius: "6px",
           padding: "15px 35px",
@@ -242,6 +245,7 @@ const AccordionToggle = () => {
         onChange={handleChange("panel4")}
         key={"panel4"}
         sx={{
+          boxShadow: "none",
           border: "1px solid #C9DCEC",
           borderRadius: "6px",
           padding: "15px 35px",
@@ -301,6 +305,7 @@ const AccordionToggle = () => {
         onChange={handleChange("panel5")}
         key={"panel5"}
         sx={{
+          boxShadow: "none",
           border: "1px solid #C9DCEC",
           borderRadius: "6px",
           padding: "15px 35px",

@@ -565,9 +565,9 @@ export default {
         header: "Máy chủ hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
   
         cloud: "Đám mây",
-        descriptioncloud: "Hệ thống quản lý nhân viên và kiểm soát truy cập sử dụng công nghệ nhận diện khuôn mặt dưới dạng dịch vụ đám mây.",
+        descriptioncloud: "Quản lý và xác thực sinh trắc học của khách truy cập với hệ thống kiểm soát truy cập dưới dạng dịch vụ đám mây.",
         monthly: "Đăng ký hàng tháng",
-        subscription: "Giá đăng ký phụ thuộc vào số lượng nhân viên",
+        subscription: "Giá đăng ký phụ thuộc vào số lượng khách truy cập",
         free: "Đăng ký miễn phí hỗ trợ tới 5 cuộc hẹn",
         support: "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
         noneed: "Không cần lo lắng về việc cài đặt máy chủ và không cần bảo trì.",
@@ -661,6 +661,48 @@ export default {
       }
     }
   },
+
+    industries: {
+      biometricoffice: {
+        header: "Hệ thống Điểm Danh Văn Phòng Sử Dụng Sinh Trắc Học",
+        titletransrom : "Biến đổi",
+        transfrom: " không gian làm việc văn phòng của bạn",
+        transfromdes1: "Hệ thống chấm công văn phòng sinh trắc học CheckID FacialSense được các nhà tuyển dụng yêu thích vì khả năng duy trì và nâng cao ",
+        effect: "hiệu quả, năng suất và tiết kiệm chi phí",
+        workfor: " của đội ngũ lao động, không cần phần cứng chuyên dụng.",
+        transfromdes2: "Hệ thống của chúng tôi hoạt động bằng cách . Hệ thống điểm danh văn phòng ",
+        biomatriciden: "sử dụng nhận diện sinh trắc học khuôn mặt, vân tay và mống mắt",
+        checkid: ". CheckID FacialSense tích hợp dễ dàng vào các hoạt động quản lý nhân sự và thanh toán lương của bạn, đảm bảo nhân viên của bạn được thanh toán đúng đắn mà còn loại bỏ các rủi ro trong quản lý lương của bạn.",
+        transfromdes3: "Mặc dù công nghệ sinh trắc học mang lại khả năng nâng cao, báo cáo và ",
+        userinf: "giao diện người dùng đơn giản, trực quan và có thể tùy chỉnh",
+        around: " theo yêu cầu kinh doanh của bạn, giúp bạn tận dụng những khả năng được trang bị bởi trí tuệ nhân tạo này cho doanh nghiệp của bạn.",
+        biomatricfeature: "Các Tính Năng Chính của Hệ Thống Điểm Danh Văn Phòng Sử Dụng Sinh Trắc Học",
+        biomatricfeaturedes: "Phần mềm này được thiết kế và xây dựng cẩn thận, với nhiều tính năng mạnh mẽ nhằm tăng cường hiệu suất và độ chính xác của quá trình giám sát thời gian làm việc và điểm danh nhân viên trong văn phòng của bạn, bao gồm:",
+        multiple: "Nhận diện nhiều khuôn mặt",
+        multipledes: "Hệ thống điểm danh văn phòng của chúng tôi có thể nhận diện và nhận biết khuôn mặt của tất cả những người xuất hiện trong hình ảnh, giúp nhân viên không phải đứng xếp hàng để sử dụng máy điểm danh.",
+        realtime: "Nhận diện khuôn mặt thời gian thực",
+        realtimedes: "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
+        turnkey: "Giải pháp toàn diện",
+        turnkeydes: "Hệ thống điểm danh văn phòng CheckID FacialSense không đòi hỏi phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp thanh toán lương hàng đầu để đảm bảo tích hợp mượt mà vào các thực hành kinh doanh tiêu chuẩn của bạn.",
+        footer: "* Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
+        whychosse: " hệ thống điểm danh văn phòng sử dụng sinh trắc học của chúng tôi cho doanh nghiệp của bạn?",
+        whychossetitle: "Tại sao chọn",
+        increaseemploy: "Tăng cường Hài Lòng Nhân Viên",
+        increaseemploydes: "Không có gì làm giảm sự hài lòng của nhân viên hơn là lương không đúng. Tránh những vấn đề không cần thiết về lương với một hệ thống quản lý thời gian chính xác đảm bảo mỗi nhân viên được thanh toán công bằng cho công việc của họ.",
+        streamline: "Tối Ưu Hóa Bộ Phận Nhân Sự",
+        streamlinedes: "Báo cáo tùy chỉnh mà CheckID FacialSense cung cấp cho doanh nghiệp của bạn giúp bạn dễ dàng theo dõi, phân tích và hiểu đội ngũ lao động của mình theo thời gian thực, giảm thiểu nhu cầu sử dụng giấy tờ làm phiền phức.",
+        reduce: "Giảm Sai Số",
+        reducedes: "Giám sát thời gian làm việc và điểm danh là một nhiệm vụ đòi hỏi dữ liệu lớn, dễ phát sinh sai sót từ con người. Phần mềm hệ thống điểm danh văn phòng sử dụng sinh trắc học giảm nguy cơ phạm lỗi, đảm bảo ghi và trình bày dữ liệu một cách công bằng và theo trật tự.",
+        increaseproductivity: "Tăng Cường Năng Suất",
+        increaseproductivitydes: "Bộ quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh dấu thời gian làm việc cho nhân viên khác. Do đó, bạn có thể yên tâm với việc đội ngũ lao động của bạn làm việc theo giờ họ tuyên bố.",
+        cost: "Hiệu Quả Chi Phí",
+        costdes: "Không chỉ giảm chi phí lao động phát sinh từ các ghi chú không chính xác, mà tính năng nhận diện nhiều khuôn mặt còn giúp giảm thiểu thời gian đứng xếp hàng để sử dụng máy điểm danh.",
+        compre: "Báo Cáo Toàn Diện",
+        comperdes: "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác, tất cả đều có thể được xuất khẩu vào hệ thống thanh toán lương."
+      }
+    },
+  
+  
   
   footer: {
     description:

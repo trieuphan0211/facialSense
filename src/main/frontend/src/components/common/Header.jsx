@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png";
+
 import { LeafButton, PoppyButton } from "../button";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useState } from "react";
@@ -12,10 +12,10 @@ import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownR
 import { ReactComponent as ShoppingBag } from "../../assets/svg/shopping-bag.svg";
 import { ReactComponent as PlusCircle } from "../../assets/svg/plus-circle.svg";
 import { ReactComponent as OpenBook } from "../../assets/svg/open-book.svg";
+import PropTypes from "prop-types";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-// import logoWhite from "../../assets/img/logo_white.png";
 
-export const Header = () => {
+export const Header = ({ logo }) => {
   const { width } = useWindowSize();
   // Translate
   const { t } = useTranslation();
@@ -401,7 +401,7 @@ export const Header = () => {
   };
   //End: toggle menu
   return (
-    <header className=" w-full h-32    py-8 lg:py-2 lg:h-auto z-10">
+    <header className=" w-full h-32 py-8 lg:py-2 lg:h-auto z-10">
       <div className="flex max-w-[1300px] justify-between items-center px-2  mx-auto">
         <a
           href="/"
@@ -567,4 +567,7 @@ export const Header = () => {
       </Drawer>
     </header>
   );
+};
+Header.propTypes = {
+  logo: PropTypes.string,
 };

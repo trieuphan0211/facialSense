@@ -6,24 +6,24 @@ module.exports = {
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
       md: { max: "767px" },
-      'mds': {'min': '741px', 'max': '972px'},
-      'smAndmd': {'min': '640px', 'max': '1023px'},
-      'mds740': {'min': '640px', 'max': '740px'},
+      mds: { min: "741px", max: "972px" },
+      smAndmd: { min: "640px", max: "1023px" },
+      mds740: { min: "640px", max: "740px" },
       // => @media (max-width: 767px) { ... }
       lg: { max: "1023px" },
-      'mlgd' : {'min': '767px', 'max': '1023px'},
+      mlgd: { min: "767px", max: "1023px" },
       // => @media (max-width: 1023px) { ... }
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
-      "460sm": { max: "462px" }
-      
+      "460sm": { max: "462px" },
     },
 
     extend: {
       backgroundImage: {
         home: "url('./assets/img/home/bg.png')",
+        industries: "url('./assets/img/home/bg1.png')",
         shape: "url('./assets/img/home/shape.png')",
         "gradient-filter":
           "linear-gradient(180deg, #E1E1E1 0%, rgba(255, 255, 255, 0.50) 100%)",
@@ -82,11 +82,11 @@ module.exports = {
         },
       },
       boxShadow: {
-        'hoverAppAndIns': '0px 12px 30px 0px rgba(24, 92, 255, 0.18)',
+        hoverAppAndIns: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
       },
-      width:{
-        '2581': 'calc(25% - 81px)'
-      }
+      width: {
+        2581: "calc(25% - 81px)",
+      },
     },
   },
   plugins: [],

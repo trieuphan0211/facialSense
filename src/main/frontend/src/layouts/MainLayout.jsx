@@ -25,12 +25,18 @@ export const MainLayout = () => {
           "CheckID FacialSense Service | FacialSense Visitor Management";
         break;
       case "/facialsense-bio-attendance":
-        setBg("bg-home bg-right-top bg-no-repeat");
+        setBg("bg-home bg-right-top bg-no-repeat  ");
         setLogoImg(logo);
         document.title =
           "CheckID FacialSense Service | FacialSense Bio Attendance";
         break;
       case "/office-employee-time-attendance-monitoring-system":
+        setBg("bg-industries w bg-center-top bg-no-repeat max-w-full");
+        setLogoImg(logoWhite);
+        document.title =
+          "CheckID FacialSense Service | FacialSense Visitor Management";
+        break;
+      case "/retail-workforce-time-attendance-monitoring-system":
         setBg("bg-industries w bg-center-top bg-no-repeat bg-contain");
         setLogoImg(logoWhite);
         document.title =
@@ -45,7 +51,7 @@ export const MainLayout = () => {
   }, [location]);
 
   return (
-    <main className={`${bg}  lg:!bg-left-top bg-[100% 100%]`}>
+    <main className={`${bg}  lg:!bg-left-top bg-[100% 100%] minxl:bg-contain`}>
       <Header logo={logoImg} />
       <Outlet />
       <Footer />

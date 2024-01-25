@@ -1,11 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import {
-  BiometricOffice,
-  FacialsenseBioAttendannce,
-  Facialsensevisitormanagement,
-  Homepage,
-} from "../pages";
+import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce } from "../pages";
+
 
 const context = "";
 const Routers = () => {
@@ -14,21 +10,14 @@ const Routers = () => {
       path: context,
 
       element: <MainLayout />,
-      children: [
-        { path: "/", element: <Homepage /> },
+      children: [{ path: "/", element: <Homepage /> },
+     
+               { path: "/facialsense-bio-attendance",  element: <FacialsenseBioAttendannce />},
+                  { path: "/facialsense-visitor-management",  element: <Facialsensevisitormanagement />},
+                 { path: "/office-employee-time-attendance-monitoring-system",  element: <BiometricOffice />},
+                 { path: "/retail-workforce-time-attendance-monitoring-system",  element: <Retailworkforce />}
 
-        {
-          path: "/facialsense-bio-attendance",
-          element: <FacialsenseBioAttendannce />,
-        },
-        {
-          path: "/facialsense-visitor-management",
-          element: <Facialsensevisitormanagement />,
-        },
-        {
-          path: "/office-employee-time-attendance-monitoring-system",
-          element: <BiometricOffice />,
-        },
+               
       ],
     },
   ]);

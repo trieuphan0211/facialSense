@@ -1,212 +1,254 @@
-import male from "../assets/img/home/Male.png";
-import { PieChart } from "@mui/x-charts/PieChart";
-import { BarChart } from "@mui/x-charts/BarChart";
-import "react-slideshow-image/dist/styles.css";
-import { LeafButton, PoppyButton } from "../components/button";
-import { useTranslation } from "react-i18next";
-import ciclegray from "../assets/img/home/ciclegray.png";
-import ciclepoppy from "../assets/img/home/ciclepoppy.png";
-import cicletree from "../assets/img/home/cicletree.png";
-import triangle from "../assets/img/home/triangle.png";
-import dot from "../assets/img/home/dot.png";
-import { useIntersectionObserver } from "@uidotdev/usehooks";
-import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png";
-import { Check } from "../assets/svg";
-import cloud from "../assets/img/products/facialsensevisitormanagement/cloudne.png";
-import premises from "../assets/img/products/facialsensevisitormanagement/cloud.png";
-import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
-import secure from "../assets/img/products/facialsensevisitormanagement/icon_brain_isecureometric_3d.png";
-import safe from "../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png";
-import online from "../assets/img/products/facialsensevisitormanagement/icon_brain_biomatric_3d.png";
-import automated from "../assets/img/products/facialsensevisitormanagement/icon_brain_server_3d.png";
-import realtime from "../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png";
-import electro from "../assets/img/products/facialsensevisitormanagement/icon_brain_electrion_3d.png";
-import data from "../assets/img/products/facialsensevisitormanagement/icon_brain_data_3d.png";
-import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png";
-import custom from "../assets/img/products/facialsensevisitormanagement/icon_brain_customer_3d.png";
-
+import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
-import { QuickStart } from "../components/common";
+import { BarChart } from "@mui/x-charts/BarChart";
+import { PieChart } from "@mui/x-charts/PieChart";
+import { useIntersectionObserver, useWindowSize } from "@uidotdev/usehooks";
+import { useTranslation } from "react-i18next";
+import "react-slideshow-image/dist/styles.css";
+import male from "../assets/img/home/Male.png";
+import ciclegray from "../assets/img/home/ciclegray.png";
+import ciclepoppy from "../assets/img/home/ciclepoppy.png";
+import cicletree from "../assets/img/home/cicletree.png";
+import dot from "../assets/img/home/dot.png";
+import triangle from "../assets/img/home/triangle.png";
+import agriculture from "../assets/img/products/bioAttendance/agriculture.png";
+import companies from "../assets/img/products/bioAttendance/companies.png";
+import contactless from "../assets/img/products/bioAttendance/contactless.png";
+import education from "../assets/img/products/bioAttendance/education.png";
+import factories from "../assets/img/products/bioAttendance/factories.png";
+import healthcare from "../assets/img/products/bioAttendance/healthcare.png";
+import brainIsometric from "../assets/img/products/bioAttendance/icon_brain_isometric.png";
+import liveness from "../assets/img/products/bioAttendance/liveness.png";
+import locationIcon from "../assets/img/products/bioAttendance/location.png";
+import locationTracking from "../assets/img/products/bioAttendance/location_tracking.png";
+import multipleBiometrics from "../assets/img/products/bioAttendance/multiple_biometrics.png";
+import multipleFace from "../assets/img/products/bioAttendance/multiple_face.png";
+import office from "../assets/img/products/bioAttendance/office.png";
+import otherArea from "../assets/img/products/bioAttendance/other_area.png";
+import realTimeFace from "../assets/img/products/bioAttendance/real_time_face.png";
+import reporting from "../assets/img/products/bioAttendance/reporting.png";
+import retail from "../assets/img/products/bioAttendance/retail.png";
+import workforce from "../assets/img/products/bioAttendance/workforce.png";
+import left from "../assets/img/products/facialsensevisitormanagement/about-left.png.png";
+import right from "../assets/img/products/facialsensevisitormanagement/about-shape.png.png";
+import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png";
+import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
+import premises from "../assets/img/products/facialsensevisitormanagement/cloud.png";
+import cloud from "../assets/img/products/facialsensevisitormanagement/cloudne.png";
+import hospitality from "../assets/img/products/facialsensevisitormanagement/div.hotel-image.png";
+import { Check } from "../assets/svg";
+import { LeafButton, PoppyButton } from "../components/button";
+import { Question, QuickStart } from "../components/common";
+import { AccordionTollge } from "../components/accordion";
+import { t } from "i18next";
 
 const benefits = [
   {
-    title: "For the institution",
+    title: "products.bioattendance.benefits.body.0.title",
     content: [
       {
-        title: "Cost Effective",
-        content:
-          "no ID cards, badges or other equipment is needed for the system users, they just use biometrics.",
+        title: "products.bioattendance.benefits.body.0.content.0.title",
+        content: "products.bioattendance.benefits.body.0.content.0.content",
       },
       {
-        title: "High accuracy and security",
-        content:
-          "identification based on multi modal biometrics facilitates very high accuracy and is reliable for fraud prevention.",
+        title: "products.bioattendance.benefits.body.0.content.1.title",
+        content: "products.bioattendance.benefits.body.0.content.1.content",
       },
       {
-        title: 'No "buddy punching"',
-        content:
-          "nobody can do a fake check-in or check-out on behalf of another employee / user / attendee.",
+        title: "products.bioattendance.benefits.body.0.content.2.title",
+        content: "products.bioattendance.benefits.body.0.content.2.content",
       },
       {
-        title: "Useful integrations",
-        content:
-          "CheckID FacialSense provides flexible data exporting to a range of popular payroll systems.",
+        title: "products.bioattendance.benefits.body.0.content.3.title",
+        content: "products.bioattendance.benefits.body.0.content.3.content",
       },
       {
-        title: "Increase the efficiency of attendance monitoring",
-        content:
-          "the use of passive recognition and identification while using surveillance cameras enables large workforces to be monitored with ease.",
+        title: "products.bioattendance.benefits.body.0.content.4.title",
+        content: "products.bioattendance.benefits.body.0.content.4.content",
       },
     ],
   },
   {
-    title: "For the user",
+    title: "products.bioattendance.benefits.body.1.title",
     content: [
       {
-        title: "Easy to Use",
-        content: "never worry about forgetting a time card.",
+        title: "products.bioattendance.benefits.body.1.content.0.title",
+        content: "products.bioattendance.benefits.body.1.content.0.content",
       },
       {
-        title: "Accurate",
-        content:
-          "by using face, fingerprint or iris recognition it ensures that your attendance is recorded accurately.",
+        title: "products.bioattendance.benefits.body.1.content.1.title",
+        content: "products.bioattendance.benefits.body.1.content.1.content",
       },
       {
-        title: "Anytime, Anywhere",
-        content:
-          "record attendance from wherever you are working using your personal smartphone.",
+        title: "products.bioattendance.benefits.body.1.content.2.title",
+        content: "products.bioattendance.benefits.body.1.content.2.content",
       },
       {
-        title: "Contact less attendance",
-        content:
-          "multi-modality scanning offers a more hygienic solution to attendance monitoring.",
+        title: "products.bioattendance.benefits.body.1.content.3.title",
+        content: "products.bioattendance.benefits.body.1.content.3.content",
       },
       {
-        title: "Off-line attendance",
-        content:
-          "never worry about no connectivity and miss of your wages. CheckID FacialSense Bio Attendance solution records your attendance securely offline.",
+        title: "products.bioattendance.benefits.body.1.content.4.title",
+        content: "products.bioattendance.benefits.body.1.content.4.content",
       },
     ],
-  },
-];
-const features = [
-  {
-    parameters: "Biometrics",
-    standard: "face, fingerprint, iris",
-    lite: "face",
-  },
-  {
-    parameters: "Automatic face detection and capture",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-  },
-  {
-    parameters: "Face liveness detection",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-  },
-  {
-    parameters: "Recognize all persons from group photo",
-    standard: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-    lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-  },
-  {
-    parameters: "Geo fence tracking /n (Location restriction)",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-  },
-  {
-    parameters: "GPS location logging",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-  },
-  {
-    parameters: "Offline attendance logging",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-  },
-  {
-    parameters: "Operating system support",
-    standard: "Windows, Android",
-    lite: "Windows, Android, iOS",
-  },
-  {
-    parameters: "Standalone operation",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-  },
-  {
-    parameters: "Access control",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-  },
-  {
-    parameters: "Kiosk mode",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-  },
-  {
-    parameters: "RFID, Barcode",
-    standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-    lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-  },
-  {
-    parameters: "Personal device /n (Use of your own device)",
-    standard: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
-    lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
-  },
-  {
-    parameters: "Price",
-    standard: "95 EUR / installation",
-    lite: "Free",
-  },
-];
-const bioAttendance = [
-  {
-    header: "Cloud",
-    title:
-      "Biometric employee management and access control system as a cloud service.",
-    img: cloud,
-    content: [
-      { title: "Monthly subscription" },
-      { title: "Subscription price depends on employee count" },
-      { title: "Free subscription supports up to 5 users" },
-      { title: "Support CheckID FacialSense Standatd and Lite client apps" },
-      {
-        title:
-          "No need to worry about server installation and no maintenance needed.",
-      },
-    ],
-    button: <LeafButton title="Sign up" />,
-  },
-  {
-    header: "On-premises",
-    title:
-      "Biometric employee management and access control system that can be hosted on your own.",
-    img: premises,
-    content: [
-      { title: "One time purchase" },
-      { title: "No limitation on employee count" },
-      { title: "Need a PC to install server software" },
-      { title: "Support CheckID FacialSense Standatd and Lite client apps" },
-      {
-        title: "Customer has the freedom to configure the server as they like",
-      },
-    ],
-    button: <PoppyButton title="Download trial" />,
   },
 ];
 
+const features = [
+  {
+    icon: brainIsometric,
+    title: "products.bioattendance.features.body.0.title",
+    description: "products.bioattendance.features.body.0.description",
+  },
+  {
+    icon: contactless,
+    title: "products.bioattendance.features.body.1.title",
+    description: "products.bioattendance.features.body.1.description",
+  },
+  {
+    icon: locationIcon,
+    title: "products.bioattendance.features.body.2.title",
+    description: "products.bioattendance.features.body.2.description",
+  },
+  {
+    icon: multipleBiometrics,
+    title: "products.bioattendance.features.body.3.title",
+    description: "products.bioattendance.features.body.3.description",
+  },
+  {
+    icon: reporting,
+    title: "products.bioattendance.features.body.4.title",
+    description: "products.bioattendance.features.body.4.description",
+  },
+  {
+    icon: locationTracking,
+    title: "products.bioattendance.features.body.5.title",
+    description: "products.bioattendance.features.body.5.description",
+  },
+  {
+    icon: liveness,
+    title: "products.bioattendance.features.body.6.title",
+    description: "products.bioattendance.features.body.6.description",
+  },
+  {
+    icon: realTimeFace,
+    title: "products.bioattendance.features.body.7.title",
+    description: "products.bioattendance.features.body.7.description",
+  },
+  {
+    icon: multipleFace,
+    title: "products.bioattendance.features.body.8.title",
+    description: "products.bioattendance.features.body.8.description",
+  },
+];
+const applications = [
+  {
+    icon: office,
+    title: "products.bioattendance.applicationIndustries.body.0.title",
+  },
+  {
+    icon: factories,
+    title: "products.bioattendance.applicationIndustries.body.1.title",
+  },
+  {
+    icon: workforce,
+    title: "products.bioattendance.applicationIndustries.body.2.title",
+  },
+  {
+    icon: hospitality,
+    title: "products.bioattendance.applicationIndustries.body.3.title",
+  },
+  {
+    icon: agriculture,
+    title: "products.bioattendance.applicationIndustries.body.4.title",
+  },
+  {
+    icon: companies,
+    title: "products.bioattendance.applicationIndustries.body.5.title",
+  },
+  {
+    icon: education,
+    title: "products.bioattendance.applicationIndustries.body.6.title",
+  },
+  {
+    icon: healthcare,
+    title: "products.bioattendance.applicationIndustries.body.7.title",
+  },
+  {
+    icon: retail,
+    title: "products.bioattendance.applicationIndustries.body.8.title",
+  },
+  {
+    icon: otherArea,
+    title: "products.bioattendance.applicationIndustries.body.9.title",
+  },
+];
+// Accordion
+const accordionData = [
+  {
+    header: "products.bioattendance.question.0.header",
+    body: "products.bioattendance.question.0.body",
+  },
+  {
+    header: "products.bioattendance.question.1.header",
+    body: "products.bioattendance.question.1.body",
+  },
+  {
+    header: "products.bioattendance.question.2.header",
+    body: "products.bioattendance.question.2.body",
+  },
+  {
+    header: "products.bioattendance.question.3.header",
+    body: "products.bioattendance.question.3.body",
+  },
+  {
+    header: "products.bioattendance.question.4.header",
+    body: "products.bioattendance.question.4.body",
+  },
+  {
+    header: "products.bioattendance.question.5.header",
+    items: [
+      {
+        header: (
+          <span className="font-bold">
+            {t("products.bioattendance.question.5.items.0.header")}
+          </span>
+        ),
+        body: "products.bioattendance.question.5.items.0.body",
+      },
+      {
+        header: (
+          <span className="font-bold">
+            {t("products.bioattendance.question.5.items.1.header")}
+          </span>
+        ),
+        body: "products.bioattendance.question.5.items.1.body",
+      },
+      {
+        header: (
+          <span className="font-bold">
+            {t("products.bioattendance.question.5.items.2.header")}
+          </span>
+        ),
+        body: "products.bioattendance.question.5.items.2.body",
+      },
+    ],
+  },
+  {
+    header: "products.bioattendance.question.6.header",
+    body: "products.bioattendance.question.6.body",
+  },
+];
 export const FacialsenseBioAttendannce = () => {
-  // const { width } = useWindowSize();
+  const { width } = useWindowSize();
   // Translations
   const { t, i18n } = useTranslation();
   // Pie chart
@@ -227,6 +269,112 @@ export const FacialsenseBioAttendannce = () => {
   });
 
   //End: Check if the element is in the viewport
+  // Data client
+  const client = [
+    {
+      header: "products.bioattendance.client.0.header",
+      title: "products.bioattendance.client.0.title",
+      img: cloud,
+      content: [
+        { title: "products.bioattendance.client.0.content.0.title" },
+        { title: "products.bioattendance.client.0.content.1.title" },
+        { title: "products.bioattendance.client.0.content.2.title" },
+        { title: "products.bioattendance.client.0.content.3.title" },
+        { title: "products.bioattendance.client.0.content.4.title" },
+      ],
+      button: (
+        <LeafButton title={t("products.bioattendance.client.0.button")} />
+      ),
+    },
+    {
+      header: "products.bioattendance.client.1.header",
+      title: "products.bioattendance.client.1.title",
+      img: premises,
+      content: [
+        { title: "products.bioattendance.client.1.content.0.title" },
+        { title: "products.bioattendance.client.1.content.1.title" },
+        { title: "products.bioattendance.client.1.content.2.title" },
+        { title: "products.bioattendance.client.1.content.3.title" },
+        { title: "products.bioattendance.client.1.content.4.title" },
+      ],
+      button: (
+        <PoppyButton title={t("products.bioattendance.client.1.button")} />
+      ),
+    },
+  ];
+  // Data server
+  const server = [
+    {
+      parameters: t("products.bioattendance.server.body.0.parameters"),
+      standard: t("products.bioattendance.server.body.0.standard"),
+      lite: t("products.bioattendance.server.body.0.lite"),
+    },
+    {
+      parameters: t("products.bioattendance.server.body.1.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.2.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.3.parameters"),
+      standard: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+      lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.4.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.5.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.6.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.7.parameters"),
+      standard: t("products.bioattendance.server.body.7.standard"),
+      lite: t("products.bioattendance.server.body.7.standard"),
+    },
+    {
+      parameters: t("products.bioattendance.server.body.8.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.9.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.10.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.11.parameters"),
+      standard: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+      lite: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.12.parameters"),
+      standard: <CloseRoundedIcon sx={{ color: "#E3162A", width: "18px" }} />,
+      lite: <CheckRoundedIcon sx={{ color: "#228920", width: "18px" }} />,
+    },
+    {
+      parameters: t("products.bioattendance.server.body.13.parameters"),
+      standard: t("products.bioattendance.server.body.13.standard"),
+      lite: t("products.bioattendance.server.body.13.lite"),
+    },
+  ];
   return (
     <>
       <div className=" xl:h-auto h-[610px]">
@@ -259,14 +407,13 @@ export const FacialsenseBioAttendannce = () => {
               alt=""
             />
             <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden">
-              CheckID FacialSense biometric attendance system
+              {t("products.bioattendance.intro.header")}
             </h1>
             <p className="text-lg text-[#9795B5]">
-              Accurate and efficient solution for registration, time management
-              and attendance.
+              {t("products.bioattendance.intro.description")}
             </p>
             <div className="flex gap-6 xl:justify-center sm:flex-col">
-              <LeafButton title={t("homepage.solution.get")} />
+              <LeafButton title={t("products.bioattendance.intro.button")} />
               <PoppyButton title={t("homepage.solution.request")} />
             </div>
           </div>
@@ -361,12 +508,12 @@ export const FacialsenseBioAttendannce = () => {
         <div className=" flex justify-center relative self-stretch ">
           {i18n.language === "en" ? (
             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
-              Biometric Visitor Management System
+              {t("products.bioattendance.benefits.header.bio")}
               <span
                 style={{ whiteSpace: "nowrap" }}
                 className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]"
               >
-                Benefits
+                {t("products.bioattendance.benefits.header.benefit")}
               </span>
             </h1>
           ) : (
@@ -375,9 +522,9 @@ export const FacialsenseBioAttendannce = () => {
                 style={{ whiteSpace: "nowrap" }}
                 className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
               >
-                Benefits
+                {t("products.bioattendance.benefits.header.benefit")}
               </span>
-              Biometric Visitor Management System
+              {t("products.bioattendance.benefits.header.bio")}
             </h1>
           )}
         </div>
@@ -394,11 +541,11 @@ export const FacialsenseBioAttendannce = () => {
             src="https://d1d661ml0e18pm.cloudfront.net/check-in.mp4"
           ></video>
           <div>
-            <div className="sm:flex-col flex mt-12 items-start gap-[50px]  ">
+            <div className="md:flex-col flex mt-12 items-start gap-[50px]  ">
               {benefits.map((benefit, index) => (
                 <div className="flex-1" key={index}>
                   <h2 className="text-[22px] leading-[33px] text-[#3A505F] font-semibold mb-[16px] max-w-[510px]">
-                    {benefit.title}
+                    {t(benefit.title)}
                   </h2>
                   <div className="flex sm:flex-col">
                     <ul className=" flex flex-col gap-4 sm:w-auto ">
@@ -406,9 +553,11 @@ export const FacialsenseBioAttendannce = () => {
                         <li className="flex text-lg items-start" key={index1}>
                           <Check className="m-[7px] min-w-[14px]" />
                           <p className=" font-Montserrat text-regular text-[#3A505F] text-[18px]	">
-                            <span className="font-semibold">{item.title}</span>
+                            <span className="font-semibold">
+                              {t(item.title)}
+                            </span>
                             {" - "}
-                            {item.content}
+                            {t(item.content)}
                           </p>
                         </li>
                       ))}
@@ -422,20 +571,35 @@ export const FacialsenseBioAttendannce = () => {
       </div>
       <div className="mx-auto max-w-[1300px] py-[50px] px-4">
         <div className="flex flex-col items-center items-center px-3">
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
-            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
-              CheckID
-            </span>
-            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
-              FacialSense
-            </span>
+          {i18n.language === "en" ? (
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                CheckID
+              </span>
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                FacialSense
+              </span>
 
-            <span style={{ whiteSpace: "wrap" }} className="block">
-              BioAttendance server
-            </span>
-          </h1>
-          <div className="max-h-[1100px] mx-auto flex gap-12">
-            {bioAttendance.map((item, index) => (
+              <span style={{ whiteSpace: "wrap" }} className="block">
+                {t("products.bioattendance.serverHeader")}
+              </span>
+            </h1>
+          ) : (
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+              <span style={{ whiteSpace: "wrap" }} className="block">
+                {t("products.bioattendance.serverHeader")}
+              </span>
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                CheckID
+              </span>
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                FacialSense
+              </span>
+            </h1>
+          )}
+
+          <div className="max-w-[1100px] mx-auto flex gap-12 md:flex-col">
+            {client.map((item, index) => (
               <div
                 className="flex-1 flex flex-col gap-[30px] relative px-[35px] py-5 text-lg text-[#1C2045] "
                 key={index}
@@ -447,15 +611,15 @@ export const FacialsenseBioAttendannce = () => {
                 />
                 <div>
                   <h2 className="text-[38px] text-[var(--tree-leaf)] font-extrabold mb-4">
-                    {item.header}
+                    {t(item.header)}
                   </h2>
-                  <p>{item.title}</p>
+                  <p>{t(item.title)}</p>
                 </div>
                 <ul className="flex flex-col gap-[15px]">
                   {item.content.map((item, index) => (
                     <li className="flex text-lg items-start" key={index}>
                       <Check className="m-[7px] min-w-4" />
-                      {item.title}
+                      {t(item.title)}
                     </li>
                   ))}
                 </ul>
@@ -466,15 +630,29 @@ export const FacialsenseBioAttendannce = () => {
         </div>
       </div>
       <div className="flex flex-col gap-10 items-center py-[50px] px-3 bg-[#EEF3FA]">
-        <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
-          <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
-            CheckID
-          </span>
-          <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
-            FacialSense
-          </span>
-          <span> BioAttendance Client</span>
-        </h1>
+        {i18n.language === "en" ? (
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              CheckID
+            </span>
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              FacialSense
+            </span>
+            <span> {t("products.bioattendance.clientHeader")}</span>
+          </h1>
+        ) : (
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+            {" "}
+            <span> {t("products.bioattendance.clientHeader")}</span>
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              CheckID
+            </span>
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              FacialSense
+            </span>
+          </h1>
+        )}
+
         <TableContainer
           sx={{ maxWidth: "1100px", padding: "20px", borderRadius: "8px" }}
           component={Paper}
@@ -498,7 +676,7 @@ export const FacialsenseBioAttendannce = () => {
                     width: "420px",
                   }}
                 >
-                  parameters
+                  {t("products.bioattendance.server.header.parameters")}
                 </TableCell>
                 <TableCell
                   align="center"
@@ -506,7 +684,7 @@ export const FacialsenseBioAttendannce = () => {
                     textTransform: "uppercase",
                   }}
                 >
-                  CheckID FacialSense Standard
+                  {t("products.bioattendance.server.header.standard")}
                 </TableCell>
                 <TableCell
                   align="center"
@@ -514,12 +692,12 @@ export const FacialsenseBioAttendannce = () => {
                     textTransform: "uppercase",
                   }}
                 >
-                  CheckID FacialSense Lite
+                  {t("products.bioattendance.server.header.lite")}
                 </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {features.map((feature, index) => (
+              {server.map((feature, index) => (
                 <TableRow
                   key={index}
                   sx={{
@@ -527,8 +705,7 @@ export const FacialsenseBioAttendannce = () => {
                       border: "none",
                       padding: "10px 25px",
                       fontSize: "18px",
-                      fontWeight:
-                        index == features.length - 1 ? "bold" : "auto",
+                      fontWeight: index == server.length - 1 ? "bold" : "auto",
                     },
                   }}
                 >
@@ -547,7 +724,7 @@ export const FacialsenseBioAttendannce = () => {
                             : "font-medium"
                         }
                       >
-                        {item}
+                        {t(item)}
                       </p>
                     ))}
                   </TableCell>
@@ -564,167 +741,107 @@ export const FacialsenseBioAttendannce = () => {
         <img src={choose1} className=" absolute right-0 top-[77px] "></img>
         <div className="max-w-[1300px] relative ">
           <div className=" flex items-center justify-center flex-col gap-[15px]">
-            {i18n.language === "en" ? (
-              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
-                {t("products.facialsensevisitormanagement.fearures.header")}
-                <span
-                  style={{ whiteSpace: "nowrap" }}
-                  className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]"
-                >
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.featureheader"
-                  )}
-                </span>
-              </h1>
-            ) : (
-              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
-                <span
-                  style={{ whiteSpace: "nowrap" }}
-                  className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
-                >
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.featureheader"
-                  )}
-                </span>
-                {t("products.facialsensevisitormanagement.fearures.header")}
-              </h1>
-            )}
-
+            <h1 className="text-5xl text-[#1C2045] font-extrabold inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              {t("products.bioattendance.features.header")}
+            </h1>
             <p className="text-[#3A505F] text-[18px] font-normal leading-[25px] max-w-[900px] text-center">
-              {t("products.facialsensevisitormanagement.fearures.description")}
+              {t("products.bioattendance.features.description")}
             </p>
           </div>
           <div className="my-[50px] flex flex-wrap sm:flex-col justify-between items-center">
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={secure} alt="" />
-              <div className="mt-[20px] ">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlesecure"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
-                  {t("products.facialsensevisitormanagement.fearures.secure")}
-                </p>
+            {features.map((feature, index) => (
+              <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  " key={index}>
+                <img src={feature.icon} alt="" />
+                <div className="mt-[20px] ">
+                  <p className="text-[#1C2045] font-montserrat font-bold">
+                    {t(feature.title)}
+                  </p>
+                  <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
+                    {t(feature.description)}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={safe} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlesafe"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
-                  {t("products.facialsensevisitormanagement.fearures.safe")}
-                </p>
-              </div>
-            </div>
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={online} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titleonline"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
-                  {t("products.facialsensevisitormanagement.fearures.online")}
-                </p>
-              </div>
-            </div>
-
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={automated} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titleautomated"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.automated"
-                  )}
-                </p>
-              </div>
-            </div>
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={realtime} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlerealtime"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px]  mlgd:h-[134px] font-normalmlgd:h-[134px] leading-[24px]">
-                  {t("products.facialsensevisitormanagement.fearures.realtime")}
-                </p>
-              </div>
-            </div>
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full ">
-              <img className="w-[84px] h-[70px]" src={electro} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titleelectronic"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.electronic"
-                  )}
-                </p>
-              </div>
-            </div>
-
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={data} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titledata"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
-                  {t("products.facialsensevisitormanagement.fearures.data")}
-                </p>
-              </div>
-            </div>
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={sabiofe} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlebiometric"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.biometric"
-                  )}
-                </p>
-              </div>
-            </div>
-            <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
-              <img className="w-[84px] h-[70px]" src={custom} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlecustomizable"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.customizable"
-                  )}
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+      <div className="flex flex-col items-center px-3 py-[50px] bg-[#EEF3FA] relative">
+        <img src={left} className=" absolute left-0 top-0 "></img>
+        <img src={right} className=" absolute right-0 bottom-0 "></img>
+        <h1 className="text-[46px] leading-[60px] font-extrabold mb-4 text-[#2F3032]">
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)]">
+            {t(
+              "products.bioattendance.applicationIndustries.header.application"
+            )}
+          </span>
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)]">
+            {t("products.bioattendance.applicationIndustries.header.and")}
+          </span>
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)]">
+            {t(
+              "products.bioattendance.applicationIndustries.header.industries"
+            )}
+          </span>
+        </h1>
+        <p className="text-lg text-[#3A505F]">
+          {t("products.bioattendance.applicationIndustries.description")}
+        </p>
+        <div className="flex justify-center max-w-[1100px] flex-wrap gap-[80px] mt-[50px]">
+          {applications.map((application, index) => (
+            <div
+              className="flex flex-col items-center py-5 px-[30px] h-[150px] w-[200px] rounded hover:bg-white hover:shadow-lg transition-all"
+              key={index}
+            >
+              <img
+                className="w-[60px] h-[60px]"
+                src={application.icon}
+                alt=""
+              />
+              <p className="text-base text-[#3A505F] text-center">
+                {t(application.title)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="bg-[#F2F5FE]">
+        <div className="max-w-[1300px] mx-auto  py-[100px] px-6">
+          {i18n.language === "en" ? (
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
+              {t("homepage.question.header.frequently")}
+              {width > 460 ? (
+                <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
+                  {t("homepage.question.header.asked")}
+                </span>
+              ) : (
+                t("homepage.question.header.asked")
+                  .split(" ")
+                  .map((item, index) => (
+                    <span
+                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]"
+                      key={index}
+                    >
+                      {item}
+                    </span>
+                  ))
+              )}
+            </h1>
+          ) : (
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
+              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
+                {t("homepage.question.header.asked")}
+              </span>
+              {t("homepage.question.header.frequently")}
+            </h1>
+          )}
+
+          <p className="text-[#3A505F] text-center mb-[50px]">
+            {t("homepage.question.description")}
+          </p>
+          <AccordionTollge accordionData={accordionData} type="default" />
+        </div>
+      </div>
+      <Question />
     </>
   );
 };

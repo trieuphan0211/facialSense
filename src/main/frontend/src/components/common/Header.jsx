@@ -1,19 +1,18 @@
-import { Link } from "react-router-dom";
-
-import { LeafButton, PoppyButton } from "../button";
-import { useWindowSize } from "@uidotdev/usehooks";
-import { useState } from "react";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
-import { useTranslation } from "react-i18next";
-import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-import { ReactComponent as ShoppingBag } from "../../assets/svg/shopping-bag.svg";
-import { ReactComponent as PlusCircle } from "../../assets/svg/plus-circle.svg";
-import { ReactComponent as OpenBook } from "../../assets/svg/open-book.svg";
+import { useWindowSize } from "@uidotdev/usehooks";
 import PropTypes from "prop-types";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { ReactComponent as OpenBook } from "../../assets/svg/open-book.svg";
+import { ReactComponent as PlusCircle } from "../../assets/svg/plus-circle.svg";
+import { ReactComponent as ShoppingBag } from "../../assets/svg/shopping-bag.svg";
+import { LeafButton, PoppyButton } from "../button";
 
 export const Header = ({ logo }) => {
   const { width } = useWindowSize();
@@ -530,10 +529,13 @@ export const Header = ({ logo }) => {
                           {t(subnav.name)}
                         </h3>
                       )}
-
                       <ul className={`${width > 450 ? "w-[356px]" : null}`}>
                         {subnav.item.map((sublink, index) => (
-                          <div className="group/subnavlink" key={index}>
+                          <div
+                            className="group/subnavlink"
+                            key={index}
+                            onClick={handleDrawerToggle}
+                          >
                             {sublink.name && (
                               <h4 className="text-[12px] font-medium rounded group-hover/subnavlink:text-[#958FED] group-hover/subnavlink:bg-[#F2F5FE]">
                                 {sublink.name}

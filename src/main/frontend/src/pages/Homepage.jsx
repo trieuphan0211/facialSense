@@ -1,33 +1,33 @@
-import { Question } from "../components/common";
-import Button from "@mui/material/Button";
-import female from "../assets/img/home/Female.png";
-import male from "../assets/img/home/Male.png";
-import male1 from "../assets/img/home/Male1.png";
-import { Check } from "../assets/svg";
-import { useIntersectionObserver, useWindowSize } from "@uidotdev/usehooks";
-import { PieChart } from "@mui/x-charts/PieChart";
-import { BarChart } from "@mui/x-charts/BarChart";
-import office_building from "../assets/img/home/office-building.png";
-import scan_man from "../assets/img/home/scan_man.png";
-import identity_female from "../assets/img/home/identify_female.png";
-import fixthelogo from "../assets/img/home/fixthephoto.png";
-import capterra from "../assets/img/home/capterra.png";
-import { useRef, useState } from "react";
-import MobileStepper from "@mui/material/MobileStepper";
 import EastRoundedIcon from "@mui/icons-material/EastRounded";
 import WestRoundedIcon from "@mui/icons-material/WestRounded";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import MobileStepper from "@mui/material/MobileStepper";
+import { BarChart } from "@mui/x-charts/BarChart";
+import { PieChart } from "@mui/x-charts/PieChart";
+import { useIntersectionObserver, useWindowSize } from "@uidotdev/usehooks";
+import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { LeafButton, PoppyButton } from "../components/button";
-import { useTranslation } from "react-i18next";
+import female from "../assets/img/home/Female.png";
+import male from "../assets/img/home/Male.png";
+import male1 from "../assets/img/home/Male1.png";
+import capterra from "../assets/img/home/capterra.png";
 import ciclegray from "../assets/img/home/ciclegray.png";
 import ciclepoppy from "../assets/img/home/ciclepoppy.png";
 import cicletree from "../assets/img/home/cicletree.png";
-import triangle from "../assets/img/home/triangle.png";
 import dot from "../assets/img/home/dot.png";
+import fixthelogo from "../assets/img/home/fixthephoto.png";
+import identity_female from "../assets/img/home/identify_female.png";
+import office_building from "../assets/img/home/office-building.png";
+import scan_man from "../assets/img/home/scan_man.png";
 import softwareadvice from "../assets/img/home/softwareadvice.png";
+import triangle from "../assets/img/home/triangle.png";
+import { Check } from "../assets/svg";
 import { AccordionTollge } from "../components/accordion";
+import { LeafButton, PoppyButton } from "../components/button";
+import { Question } from "../components/common";
 
 // Benefits
 const systemBenefits = [
@@ -797,7 +797,7 @@ export const Homepage = () => {
           <p className="text-[#3A505F] text-center mb-[50px]">
             {t("homepage.question.description")}
           </p>
-          <AccordionTollge accordionData={accordionData} type="default"  />
+          <AccordionTollge accordionData={accordionData} type="default" />
         </div>
       </div>
       <Question />

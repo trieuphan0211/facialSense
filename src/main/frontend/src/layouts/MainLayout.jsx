@@ -28,15 +28,17 @@ export const MainLayout = () => {
         setBg("bg-home bg-right-top bg-no-repeat");
         setLogoImg(logo);
         document.title =
-          "CheckID FacialSense Service | FacialSense Visitor Management";
+          "CheckID FacialSense Service | FacialSense Bio Attendance";
         break;
       case "/office-employee-time-attendance-monitoring-system":
-        setBg("bg-industries w bg-center-top bg-no-repeat");
+        setBg("bg-industries w bg-center-top bg-no-repeat bg-contain");
         setLogoImg(logoWhite);
         document.title =
           "CheckID FacialSense Service | FacialSense Visitor Management";
         break;
       default:
+        setBg("bg-home bg-right-top bg-no-repeat");
+        setLogoImg(logo);
         document.title = "CheckID FacialSense Service | Mobile-ID";
         break;
     }

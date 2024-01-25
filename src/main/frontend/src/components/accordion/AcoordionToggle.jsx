@@ -1,27 +1,25 @@
-import React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
+import React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import PropTypes from "prop-types";
 
-
-const AccordionToggle = ( ) => {
+const AccordionToggle = () => {
   const [expanded, setExpanded] = React.useState(false);
   const { t } = useTranslation();
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-  
+
   return (
     <div>
          <Accordion expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
           key={"panel1"}
       sx={{
-       
+        boxShadow:  expanded === "panel1" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
             border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
@@ -30,7 +28,6 @@ const AccordionToggle = ( ) => {
         "&:before": {
           display: "none",
         },
-        boxShadow: expanded === "panel1" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
       }}
     >
       <AccordionSummary expandIcon={
@@ -77,7 +74,7 @@ const AccordionToggle = ( ) => {
           key={"panel2"}
       sx={{
         boxShadow: expanded === "panel2" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
-        border: "1px solid #C9DCEC" ,
+            border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
         marginBottom: "20px",
@@ -137,7 +134,7 @@ const AccordionToggle = ( ) => {
           onChange={handleChange("panel3")}
           key={"panel3"}
       sx={{
-        boxShadow: expanded === "panel3" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
+        boxShadow:expanded === "panel3" ? "0px 4px 12px 0px rgba(12, 68, 204, 0.10)" : "none",
             border: "1px solid #C9DCEC" ,
         borderRadius: "6px",
         padding: "15px 35px",
@@ -306,15 +303,7 @@ const AccordionToggle = ( ) => {
       </AccordionDetails>
         </Accordion>
     </div>
-   
   );
-};
-AccordionToggle.propTypes = {
-  accordionData: PropTypes.array,
-  type: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  boxShadow: PropTypes.string,
-  border: PropTypes.string
 };
 
 export default AccordionToggle;

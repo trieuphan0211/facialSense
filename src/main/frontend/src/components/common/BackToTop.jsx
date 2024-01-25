@@ -23,7 +23,9 @@ export const BackToTop = () => {
 
   return (
     <div
-      className="fixed bottom-16 z-10 h-16 hidden"
+      className={`fixed ${
+        width < 430 ? "bottom-[90px]" : "bottom-16"
+      } z-10 h-16 hidden`}
       ref={backToTopRef}
       style={{
         left: width > 613 ? "calc(100vw - 150px)" : "calc(100vw - 100px)",

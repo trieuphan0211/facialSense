@@ -135,7 +135,7 @@ export default {
             ],
           },
           {
-            name: "QUẢN LÝ khách TRUY CẬP CHECKID FACIALSENSE",
+            name: "QUẢN LÝ KHÁCH TRUY CẬP CHECKID FACIALSENSE",
             item: [
               {
                 name: "Máy chủ tại chỗ",
@@ -221,7 +221,7 @@ export default {
             ],
           },
           {
-            name: "QUẢN LÝ khách TRUY CẬP CHECKID FACIALSENSE",
+            name: "QUẢN LÝ KHÁCH TRUY CẬP CHECKID FACIALSENSE",
             item: [
               {
                 name: "Đám mây",
@@ -311,7 +311,7 @@ export default {
       header:
         "Hệ Thống Quản lý khách truy cập Dựa Trên Nhận Diện Sinh Trắc Học",
       description:
-        "Hệ thống Quản lý khách truy cập sử dụng công nghệ nhận diện khuôn mặt, dấu vân tay và mống mắt để đăng ký, giám sát và quản lý khách truy cập, các cuộc hẹn của họ, chấm công và kiểm soát truy cập của bất kỳ tổ chức hoặc học viện nào.",
+        "Hệ thống Quản lý khách truy cập sử dụng công nghệ nhận diện khuôn mặt, dấu vân tay và mống mắt để đăng ký, giám sát và quản lý khách truy cập, các cuộc hẹn của họ, điểm danh và kiểm soát truy cập của bất kỳ tổ chức hoặc học viện nào.",
       description1:
         "Nó có thể được sử dụng để quản lý bất kỳ loại khách truy cập nào, chẳng hạn như khách hàng, khách mời, người tham dự, nhà cung cấp và hành khách.",
       features: {
@@ -442,13 +442,13 @@ export default {
         },
         {
           description:
-            "Nhận diện khuôn mặt hoạt động tốt với camera thông thường. Rất thuận tiện và hiệu quả chi phí và đáng giá tiền. Độ chính xác cao. Hệ thống hỗ trợ nhận diện sinh trắc học khuôn mặt, dấu vân tay và mống mắt.",
+            "Nhận diện khuôn mặt cũng hoạt động tốt với máy ảnh thông thường. Rất thuận tiện và hiệu quả chi phí và giá trị đồng tiền. Độ chính xác cao. Hệ thống có hỗ trợ sinh trắc học khuôn mặt, dấu vân tay và mống mắt.",
           name: "Rakesh B.",
           position: "Quản lý - Bộ phận Bán hàng & Tiếp thị, BioScan Solution",
         },
         {
           description:
-            "Đây là phần mềm hoàn hảo cho bất kỳ cá nhân hoặc công ty nào có thông tin cần được giữ kín. Mọi thứ đều được cập nhật, không có gì để chê cả. Chắc chắn là phần mềm tốt nhất cho bất cứ thứ gì bạn coi trọng.",
+            "Đây là phần mềm hoàn hảo cho bất kỳ cá nhân hoặc công ty nào có thông tin cần được bảo mật. Mọi thứ đều được cập nhật những gì không thích. Cung cấp phần mềm tốt nhất cho mọi thứ mà bạn đánh giá cao.",
           name: "Marcus D.",
           position: "Công nghệ Thông tin, Trường Ogle",
         },
@@ -460,7 +460,7 @@ export default {
         },
         {
           description:
-            "Chúng tôi đang sử dụng sản phẩm này cho mục đích chấm công, nó được thiết kế sao cho bất kỳ ai cũng có thể dễ dàng thiết lập cho tổ chức của họ. Chúng tôi đang sử dụng nhận diện khuôn mặt để xác thực. Ứng dụng di động cũng rất hữu ích đối với các nhân viên ngoại ô. Nó giúp chúng tôi dễ dàng ghi lại tất cả các nhân viên ngoại ô của mình, giúp quá trình xử lý lương mạch lạc dựa trên dữ liệu này.",
+            "Chúng tôi đang sử dụng sản phẩm này cho mục đích điểm danh, nó được thiết kế sao cho bất kỳ ai cũng có thể dễ dàng thiết lập cho tổ chức của họ. Chúng tôi đang sử dụng nhận diện khuôn mặt để xác thực. Ứng dụng di động cũng rất hữu ích đối với các nhân viên ngoại ô. Nó giúp chúng tôi dễ dàng ghi lại tất cả các nhân viên ngoại ô của mình, giúp quá trình xử lý lương mạch lạc dựa trên dữ liệu này.",
           name: "Kishan G.",
           position:
             "Công nghệ Thông tin và Dịch vụ, Innova Systems (Ấn Độ) Pvt. Ltd.",
@@ -473,13 +473,13 @@ export default {
         },
         {
           description:
-            "Ứng dụng rất tốt với các tính năng tốt hơn so với các ứng dụng khác. Cần một số cải tiến và sửa chữa nhỏ.",
+            "Ứng dụng rất tốt với các tính năng tốt hơn so với các ứng dụng khác. Cần một số cải tiến và sửa lỗi nhỏ.",
           name: "Shiv Kumar S.",
           position: "An ninh Mạng và Máy tính",
         },
         {
           description:
-            "Chấm công sinh học CheckID FacialSensec có thể làm thay đổi phần mềm chấm công nhân viên của bạn nhờ các tính năng của nó, rất dễ sử dụng, cập nhật và giảng dạy cho nhân viên. Cần một số cải thiện nhỏ về hướng dẫn sử dụng, màu sắc trên giao diện và cần nhiều menu có thể tùy chỉnh hơn khi lập trình chấm công.",
+            "Chấm công sinh học CheckID FacialSensec có thể làm thay đổi phần mềm chấm công nhân viên của bạn nhờ các tính năng của nó, rất dễ sử dụng, cập nhật và giảng dạy cho nhân viên. Cần một số cải thiện nhỏ về hướng dẫn sử dụng, màu sắc trên giao diện và cần nhiều menu có thể tùy chỉnh hơn khi lập trình điểm danh.",
           name: "Mary Ann R.",
           position: "Trợ lý điều hành, Hội đồng Địa phương Reina Mercedes",
         },
@@ -664,7 +664,19 @@ export default {
 
     industries: {
       biometricoffice: {
-        header: "Biến đổi",
+        header: "Hệ thống điểm danh văn phòng bằng ",
+        hoc: "sinh trắc học",
+        bio: "điểm danh văn phòng bằng sinh trắc học",
+        sys: "Hệ thống điểm danh văn",
+        bio2: "phòng bằng sinh trắc học",
+        sys2: "hệ thống điểm danh",
+        bio1: "sinh trắc học ",
+        off1: "văn phòng bằng",
+        bang: "bằng",
+        van: "văn phòng",
+        att1: "điểm danh",
+        sys1: "Hệ thống",
+
         titletransrom : "Biến đổi",
         transfrom: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
         transfromdes1: "Hệ thống chấm công văn phòng sinh trắc học CheckID FacialSense được các nhà tuyển dụng yêu thích vì khả năng duy trì và nâng cao ",
@@ -688,17 +700,19 @@ export default {
         footer: "* Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
         whychosse: " hệ thống chấm công văn phòng sử dụng sinh trắc học của chúng tôi cho doanh nghiệp của bạn?",
         whychossetitle: "Tại sao chọn",
-        increaseemploy: "Tăng cường Hài Lòng Nhân Viên",
+        why: "Tại sao",
+        choose: "chọn",
+        increaseemploy: "Tăng cường hài lòng nhân viên",
         increaseemploydes: "Không có gì làm giảm sự hài lòng của nhân viên hơn là lương không đúng. Tránh những vấn đề không cần thiết về lương với một hệ thống quản lý thời gian chính xác đảm bảo mỗi nhân viên được thanh toán công bằng cho công việc của họ.",
-        streamline: "Tối Ưu Hóa Bộ Phận Nhân Sự",
+        streamline: "Tối ưu hóa bộ phận nhân sự",
         streamlinedes: "Báo cáo tùy chỉnh mà CheckID FacialSense cung cấp cho doanh nghiệp của bạn giúp bạn dễ dàng theo dõi, phân tích và hiểu đội ngũ lao động của mình theo thời gian thực, giảm thiểu nhu cầu sử dụng giấy tờ làm phiền phức.",
-        reduce: "Giảm Sai Số",
+        reduce: "Giảm sai số",
         reducedes: "Giám sát thời gian làm việc và chấm công là một nhiệm vụ đòi hỏi dữ liệu lớn, dễ phát sinh sai sót từ con người. Phần mềm hệ thống chấm công văn phòng sử dụng sinh trắc học giảm nguy cơ phạm lỗi, đảm bảo ghi và trình bày dữ liệu một cách công bằng và theo trật tự.",
-        increaseproductivity: "Tăng Cường Năng Suất",
+        increaseproductivity: "Tăng cường năng suất",
         increaseproductivitydes: "Bộ quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh dấu thời gian làm việc cho nhân viên khác. Do đó, bạn có thể yên tâm với việc đội ngũ lao động của bạn làm việc theo giờ họ tuyên bố.",
-        cost: "Hiệu Quả Chi Phí",
+        cost: "Hiệu quả chi phí",
         costdes: "Không chỉ giảm chi phí lao động phát sinh từ các ghi chú không chính xác, mà tính năng nhận diện nhiều khuôn mặt còn giúp giảm thiểu thời gian đứng xếp hàng để sử dụng máy chấm công.",
-        compre: "Báo Cáo Toàn Diện",
+        compre: "Báo cáo toàn diện",
         comperdes: "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác, tất cả đều có thể được xuất khẩu vào hệ thống thanh toán lương."
       },
       retailworkforce: {
@@ -730,7 +744,7 @@ export default {
   
   footer: {
     description:
-      "Sản phẩm CheckID FacialSense nổi bật trên thị trường là giải pháp đa sinh trắc học tạo ra các ứng dụng hệ thống chính xác và linh hoạt. Hệ thống của chúng tôi được hỗ trợ bởi các thuật toán hàng đầu trong ngành (sinh trắc học) về đọc, bảo mật, nhận diện và xác thực đúng con người do Mobile-ID phát triển.",
+      "Sản phẩm CheckID FacialSense nổi bật trên thị trường là giải pháp đa sinh trắc học tạo ra các ứng dụng hệ thống chính xác và linh hoạt. Hệ thống của chúng tôi được hỗ trợ bởi các thuật toán hàng đầu trong ngành do Mobile-ID phát triển.",
     contact: {
       us: "Liên hệ",
       address:

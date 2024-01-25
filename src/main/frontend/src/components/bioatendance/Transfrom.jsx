@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export const Transfrom = ({ ischeck,thetitleStrong,titleStrong1,titlenormal1,title, titlenormal,subtitle1, effect, workfor, subtitle2, biomatriciden, checkid, subtitle3, userinf, around,  showAdditionalParagraph}) => {
 
   return (
-    <div className="max-w-[1300px] py-[100px] mx-auto relative">
+    <div className="max-w-[1300px] py-[50px] mx-auto relative">
       <div className="ml-[10px]">
         <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
           <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)]">

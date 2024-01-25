@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png";
+
 import { LeafButton, PoppyButton } from "../button";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useState } from "react";
@@ -12,13 +12,11 @@ import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownR
 import { ReactComponent as ShoppingBag } from "../../assets/svg/shopping-bag.svg";
 import { ReactComponent as PlusCircle } from "../../assets/svg/plus-circle.svg";
 import { ReactComponent as OpenBook } from "../../assets/svg/open-book.svg";
+import PropTypes from "prop-types";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-// import logoWhite from "../../assets/img/logo_white.png";
-import { useNavigate } from "react-router-dom";
 
-export const Header = () => {
+export const Header = ({ logo }) => {
   const { width } = useWindowSize();
-  const navigate = useNavigate();
   // Translate
   const { t } = useTranslation();
   // Begin: navLinks
@@ -36,7 +34,7 @@ export const Header = () => {
               item: [
                 {
                   name: "header.subproduct.0.item.0.item.0.name",
-                  path: "/",
+                  path: "/facialsense-bio-attendance",
                 },
                 {
                   name: "header.subproduct.0.item.0.item.1.name",
@@ -403,14 +401,20 @@ export const Header = () => {
   };
   //End: toggle menu
   return (
-    <header className=" w-full h-32    py-8 lg:py-2 lg:h-auto z-10">
+    <header className=" w-full h-32 py-8 lg:py-2 lg:h-auto z-10">
       <div className="flex max-w-[1300px] justify-between items-center px-2  mx-auto">
-        <img
+        <a
+          href="/"
           className="h-[66px] -ml-9 cursor-pointer"
-          onClick={() => navigate("/")}
-          src={logo}
-          alt=""
-        />
+          title="CheckID FacialSense Service"
+        >
+          <img
+            className="h-full"
+            src={logo}
+            alt=" CheckID FacialSense Service"
+          />
+        </a>
+
         <div className="flex gap-10 items-center lg:hidden">
           <nav>
             <ul className="flex gap-5 uppercase text-sm font-medium text-white ">
@@ -509,7 +513,7 @@ export const Header = () => {
           <nav className="flex flex-col uppercase text-sm font-medium  normal-case ">
             {navLinks.map((link) => (
               <details key={link.name} className="group">
-                <summary className="flex  justify-between group text-black group  hover:text-[#F7941D] group-open:text-[#F7941D] group-open:bg-[#F7941D]/[0.1]  block p-5  hover:bg-[#F7941D]/[0.1]">
+                <summary className="flex items-center  justify-between group text-black group  hover:text-[#F7941D] group-open:text-[#F7941D] group-open:bg-[#F7941D]/[0.1]  block p-5  hover:bg-[#F7941D]/[0.1]">
                   <p className="cursor-pointer">{t(link.name)}</p>
                   {link.subnav && (
                     <div className="group-open:rotate-180 transition-all cursor-pointer">
@@ -563,4 +567,7 @@ export const Header = () => {
       </Drawer>
     </header>
   );
+};
+Header.propTypes = {
+  logo: PropTypes.string,
 };

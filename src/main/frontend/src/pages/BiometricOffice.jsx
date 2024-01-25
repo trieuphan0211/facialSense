@@ -1,5 +1,6 @@
 
 // import vector from "../assets/img/industries/biometricoffice/Vector 2.png"
+import { useWindowSize } from "@uidotdev/usehooks";
 import { useTranslation } from "react-i18next";
 import { Question, QuickStart } from "../components/common";
 import { Features, Headerkeyfeatures, Transfrom, Whychoose } from "../components/bioatendance/"
@@ -8,11 +9,143 @@ import multiple from "../assets/img/industries/biometricoffice/multiple.png"
 import turnkey from "../assets/img/industries/biometricoffice/turnkey.png"
 import realtime from "../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png"
 import { Link } from 'react-router-dom';
+// import vector from "../assets/img/industries/biometricoffice/group3.png";
 export const BiometricOffice = () => { 
     const { t, i18n } = useTranslation()
-  
+    const { width } = useWindowSize() 
+    let content ;
+    if (width >= 969){
+
+        content = i18n.language === "en" ? 
+        (
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+            {t("industries.biometricoffice.header")}
+        </h1>
+        ) : (
+            <div>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.header")}</h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.hoc")}</h1>
+            </div>
+            
+        )
+
+    }else if(width < 969 && width >= 768 ){
+        content = i18n.language === "en" ? (<div>
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    {t("industries.biometricoffice.bio")}
+                    </h1>
+                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys")}</span>
+                    </div>) : (
+                    <div>
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    {t("industries.biometricoffice.sys")}
+                    </h1>
+                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio2")}</span>
+                    </div>
+                    )
+          
+        
+    }else if (width < 768 && width >= 535  ) {
+       content =  i18n.language === "en" ? (<div>
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    {t("industries.biometricoffice.bio2")}
+                    </h1>
+                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys2")}</span>
+        </div>) : (<div>
+             {
+                width > 689 ? (
+                    <div>
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        {t("industries.biometricoffice.sys")}
+                        </h1>
+                        <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio2")}</span>
+                        </div>
+                ) : (
+                    <div>
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        {t("industries.biometricoffice.sys1")}
+                        </h1>
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        {t("industries.biometricoffice.att1")}
+                        </h1>
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        {t("industries.biometricoffice.off1")}
+                        </h1>
+                        <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</span>
+                    </div>
+                )
+            }
+            </div>
+           )
+    }else if (width < 535 && width >= 453){
+        console.log("OK")
+        content = i18n.language === "en" ? (<div>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+        {t("industries.biometricoffice.bio2")}
+        </h1>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.attend1")}</h1> 
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys1")}</h1>
+        </div>) : (
+             <div>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             {t("industries.biometricoffice.sys1")}
+             </h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             {t("industries.biometricoffice.att1")}
+             </h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             {t("industries.biometricoffice.off1")}
+             </h1>
+             <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</span>
+         </div>
+        )
+    }else {
+        content = i18n.language === "en" ? ( <div>
+            <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+            {t("industries.biometricoffice.bio1")}
+        </h1>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.off1")}</h1> 
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.attend1")}</h1>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys1")}</h1>
+        </div>) : (
+             <div>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             {t("industries.biometricoffice.sys1")}
+             </h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             {t("industries.biometricoffice.att1")}
+             </h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             {t("industries.biometricoffice.van")}
+             </h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bang")}</h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</h1>
+         </div>
+        )
+    }
+
+
     return(
         <>
+            <div className=" bg-cover bg-center h-[360px] 4" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
+                {
+                    i18n.language === "en" ? (
+                        <div className="  max-w-[1300px] 460sm:pt-[48px] mx-auto px-4 pt-[68px]">
+                        {content}
+                        
+                        </div>
+                    ) : (
+                        <div className="  max-w-[1300px] 460sm:pt-[0px] mx-auto px-4 pt-[68px]">
+                        {content}
+                        
+                        </div>
+                    )
+                }
+               
+                
+            </div>
+
+              
             <div className=" bg-white">
                     <Transfrom 
                         title= {t("industries.biometricoffice.titletransrom")}
@@ -65,16 +198,39 @@ export const BiometricOffice = () => {
             <div className="bg-[#F1F6FA] ">
                 <div className=" mx-auto max-w-[1300px] pt-[50px] pb-[90px] flex flex-col gap-[50px] px-4 ">
                     <div className=" relative">{i18n.language === "en" ? (
-                        <div className=" flex flex-col gap-[15px] items-center ">
-                            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
-                                {t("industries.biometricoffice.whychossetitle")}
-                                </span>
-                                {t("industries.biometricoffice.whychosse")}
-                            </h1>
-                            
-                        </div>
+                         width > 374 ?
+                            (
+                                <div className=" flex flex-col gap-[15px] items-center ">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        {t("industries.biometricoffice.whychossetitle")}
+                                        </span>
+                                        {t("industries.biometricoffice.whychosse")}
+                                    </h1>
+                                    
+                                </div>
+                            ) :
+                            (
+                                <div className=" flex flex-col gap-[15px] items-center ">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        {t("industries.biometricoffice.why")}
+                                        </span>
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        {t("industries.biometricoffice.choose")}
+                                        </span>
+                                        <br />
+                                        {t("industries.biometricoffice.whychosse")}
+                                        
+                                      
+                                    </h1>
+                                    
+                                </div>
+                            ) 
+                        
+                       
                             ) : (
+                                width > 374 ? (
                         <div className=" flex flex-col gap-[15px] items-center " >
                             <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
                                 <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
@@ -83,12 +239,29 @@ export const BiometricOffice = () => {
                                 {t("industries.biometricoffice.whychosse")}
                             </h1>
                         
-                        </div>
+                        </div> ) : (
+                             <div className=" flex flex-col gap-[15px] items-center ">
+                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                 {t("industries.biometricoffice.why")}
+                                 </span>
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                 {t("industries.biometricoffice.choose")}
+                                 </span>
+                                 <br />
+                                 {t("industries.biometricoffice.whychosse")}
+                                 
+                               
+                             </h1>
+                             
+                         </div>
+                        )
                             )}
                     
                     </div>
                     <div className="flex flex-col gap-[20px]">
                         <div className=" mx-auto flex gap-[20px] sm:flex-col  ">
+
                             <Whychoose 
                                 title={t("industries.biometricoffice.increaseemploy")}
                                 des={t("industries.biometricoffice.increaseemploydes")}

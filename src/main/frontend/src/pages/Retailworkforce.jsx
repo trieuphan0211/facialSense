@@ -11,6 +11,13 @@ export const Retailworkforce = () => {
     const { t } = useTranslation() 
     return (
         <>
+           <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
+                <div className="  max-w-[1300px] mx-auto px-4 pt-[68px]">
+                {/* {content} */}
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">Retail Workforce</h1> 
+                </div>
+                
+            </div>
           <div className=" bg-white">
                     <Transfrom 
                         ischeck={true}

@@ -665,6 +665,14 @@ export default {
   industries: {
     biometricoffice: {
       header: "Biometric Office Attendance System",
+      bio: "Biometric Office Attendance",
+      sys: "System",
+      bio2: "Biometric Office",
+      sys2: "Attendance System",
+      bio1:"Biometric ",
+      off1:"Office",
+      attend1:"Attendance",
+      sys1:"System",
       titletransrom : "Transform",
       transfrom: " Your Office Workplace",
       transfromdes1: "The CheckID FacialSense biometric office attendance system is a favorite amongst employers for its ability to maintain and enhance an ",
@@ -688,6 +696,8 @@ export default {
       footer: "*For fingerprint or iris identification, the system requires an external fingerprint reader or iris scanner, both of which can be purchased from",
       whychosse: " our Biometric Office Attendance System for your business?",
       whychossetitle: "Why choose",
+      why: "Why",
+      choose: "choose",
       increaseemploy: " Increase Employee Satisfaction",
       increaseemploydes: "Nothing dents employee satisfaction more than unpaid wages. Avoid unnecessary wage issues with an accurate time and management system that ensures that every employee is fairly compensated for their work.",
       streamline: "Streamline your HR",

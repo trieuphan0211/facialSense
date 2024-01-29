@@ -84,6 +84,8 @@ module.exports = {
       },
       boxShadow: {
         hoverAppAndIns: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
+
+        shawdowDefault: "0px 4px 12px 0px rgba(12, 68, 204, 0.10)",
       },
       width: {
         2581: "calc(25% - 81px)",

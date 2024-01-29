@@ -37,11 +37,23 @@ export const MainLayout = () => {
           "CheckID FacialSense Service | FacialSense Visitor Management";
         break;
         case "/retail-workforce-time-attendance-monitoring-system":
-          setBg("bg-industries w bg-center-top bg-no-repeat");
+          setBg("bg-industries w bg-center-top bg-no-repeat max-w-full");
           setLogoImg(logoWhite);
           document.title =
             "CheckID FacialSense Service | FacialSense Visitor Management";
           break;
+          case "/mobile-workforce-time-attendance-monitoring-system":
+            setBg("bg-industries w bg-center-top bg-no-repeat max-w-full");
+            setLogoImg(logoWhite);
+            document.title =
+              "CheckID FacialSense Service | FacialSense Visitor Management";
+            break;
+            case "/biometric-school-attendance-monitoring-system":
+            setBg("bg-industries w bg-center-top bg-no-repeat max-w-full");
+            setLogoImg(logoWhite);
+            document.title =
+              "CheckID FacialSense Service | FacialSense Visitor Management";
+            break;
       default:
         document.title = "CheckID FacialSense Service | Mobile-ID";
         break;

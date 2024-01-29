@@ -171,6 +171,9 @@ export const BiometricOffice = () => {
                 <Headerkeyfeatures nameHader={t("industries.biometricoffice.biomatricfeature")} 
                                 underlineHeader={t("industries.biometricoffice.biomatricfeaturekey")}
                                 desHeader={t("industries.biometricoffice.biomatricfeaturedes")}
+                                descac={t("industries.retailworkforce.cac")}
+                                tinh={t("industries.retailworkforce.tinh")}
+                                check={false}
                 />
                         <div className=" flex relative mt-[50px] mb-[30px] sm:flex-col">
                             <Features 

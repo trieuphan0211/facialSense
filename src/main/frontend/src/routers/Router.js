@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce, MobileRemote, StudentAttendance } from "../pages";
+import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce, MobileRemote, StudentAttendance, ConstructionSite, Heathycare, Service } from "../pages";
 
 
 const context = "";
@@ -17,8 +17,10 @@ const Routers = () => {
                  { path: "/office-employee-time-attendance-monitoring-system",  element: <BiometricOffice />},
                  { path: "/retail-workforce-time-attendance-monitoring-system",  element: <Retailworkforce />},
                  { path: "/mobile-workforce-time-attendance-monitoring-system",  element: <MobileRemote />},
-                 { path: "/biometric-school-attendance-monitoring-system",  element: <StudentAttendance />}
-
+                 { path: "/biometric-school-attendance-monitoring-system",  element: <StudentAttendance />},
+                 { path: "/construction-site-time-attendance-monitoring-system",  element: <ConstructionSite />},
+                 { path: "/hospital-time-attendance-monitoring-system",  element: <Heathycare />},
+                 { path: "/service-and-hospitality-time-attendance-monitoring-system",  element: <Service />},
                
       ],
     },

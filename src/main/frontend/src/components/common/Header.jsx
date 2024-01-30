@@ -74,15 +74,15 @@ export const Header = ({ logo }) => {
                 },
                 {
                   name: "header.subindustries.0.item.0.item.4.name",
-                  path: "/",
+                  path: "/construction-site-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.5.name",
-                  path: "/",
+                  path: "/hospital-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.6.name",
-                  path: "/",
+                  path: "/service-and-hospitality-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.7.name",

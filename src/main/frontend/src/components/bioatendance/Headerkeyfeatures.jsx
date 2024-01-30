@@ -38,6 +38,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                                         {underlineHeader}
                                     
                                     </span>
+                            
                                 )
                             }
                           
@@ -63,10 +64,12 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                         {check == true ? (
                                 <div>
                                
-                                {nameHader1}
+                                    {nameHader1}
                                 </div>
                               
-                            ) : null}
+                            ) : <span>
+                            {underlineHeader}
+                            </span>}
                         
                     </h1>
                   
@@ -84,11 +87,11 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                                 {nameHader1}
                                 </div>
                               
-                            ) : null}
+                            ) : <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                            {nameHader}
+                            </span>}
                         
-                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
-                        {nameHader}
-                        </span>
+                       
                         {check == false ? (
                                
                                 <span>

@@ -7,6 +7,7 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
       md: { max: "767px" },
       mds: { min: "741px", max: "976px" },
+      mdsmin: { max: "740px" },
       smAndmd: { min: "640px", max: "1023px" },
       mds740: { min: "640px", max: "740px" },
       // => @media (max-width: 767px) { ... }
@@ -84,9 +85,14 @@ module.exports = {
       },
       boxShadow: {
         hoverAppAndIns: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
+
+        shawdowDefault: "0px 4px 12px 0px rgba(12, 68, 204, 0.10)",
       },
       width: {
         2581: "calc(25% - 81px)",
+      },
+      content: {
+        'none': 'none',
       },
     },
   },

@@ -1,12 +1,13 @@
 import Button from "@mui/material/Button";
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "@uidotdev/usehooks";
+
 export const Question = () => {
   // Translations
   const { t } = useTranslation();
   const { width } = useWindowSize();
   return (
-    <div className="bg-[#151686] ">
+    <div className="bg-[#151686]  ">
       <div className="max-w-[1300px] mx-auto px-2   py-10 flex justify-between items-center text-white lg:px-6 md:flex-col">
         <div>
           <h1 className="text-[38px] leading-[56px] font-extrabold mb-6 md:text-center">

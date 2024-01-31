@@ -958,111 +958,86 @@ export default {
     },
   },
 
-  industries: {
-    biometricoffice: {
-      header: "Hệ thống điểm danh văn phòng bằng ",
-      hoc: "sinh trắc học",
-      bio: "điểm danh văn phòng bằng sinh trắc học",
-      sys: "Hệ thống điểm danh văn",
-      bio2: "phòng bằng sinh trắc học",
-      sys2: "hệ thống điểm danh",
-      bio1: "sinh trắc học ",
-      off1: "văn phòng bằng",
-      bang: "bằng",
-      van: "văn phòng",
-      att1: "điểm danh",
-      sys1: "Hệ thống",
+    industries: {
+      biometricoffice: {
+        header: "Hệ thống điểm danh văn phòng bằng ",
+        hoc: "sinh trắc học",
+        bio: "điểm danh văn phòng bằng sinh trắc học",
+        sys: "Hệ thống điểm danh văn",
+        bio2: "phòng bằng sinh trắc học",
+        sys2: "hệ thống điểm danh",
+        bio1: "sinh trắc học ",
+        off1: "văn phòng bằng",
+        bang: "bằng",
+        van: "văn phòng",
+        att1: "điểm danh",
+        sys1: "Hệ thống",
 
-      titletransrom: "Biến đổi",
-      transfrom: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
-      transfromdes1:
-        "Hệ thống chấm công văn phòng sinh trắc học CheckID FacialSense được các nhà tuyển dụng yêu thích vì khả năng duy trì và nâng cao ",
-      effect: "hiệu quả, năng suất và tiết kiệm chi phí",
-      workfor: " của đội ngũ lao động, không cần phần cứng chuyên dụng.",
-      transfromdes2:
-        "Hệ thống của chúng tôi hoạt động bằng cách . Hệ thống chấm công văn phòng ",
-      biomatriciden:
-        "sử dụng nhận diện sinh trắc học khuôn mặt, vân tay và mống mắt",
-      checkid:
-        ". CheckID FacialSense tích hợp dễ dàng vào các hoạt động quản lý nhân sự và thanh toán lương của bạn, đảm bảo nhân viên của bạn được thanh toán đúng đắn mà còn loại bỏ các rủi ro trong quản lý lương của bạn.",
-      transfromdes3:
-        "Mặc dù công nghệ sinh trắc học mang lại khả năng nâng cao, báo cáo và ",
-      userinf: "giao diện người dùng đơn giản, trực quan và có thể tùy chỉnh",
-      around:
-        " theo yêu cầu kinh doanh của bạn, giúp bạn tận dụng những khả năng được trang bị bởi trí tuệ nhân tạo này cho doanh nghiệp của bạn.",
-      biomatricfeature: "Các tính năng",
-      biomatricfeaturekey:
-        " hệ thống chấm công văn phòng sử dụng sinh trắc học",
-      biomatricfeaturedes:
-        "Phần mềm này được thiết kế và xây dựng cẩn thận, với nhiều tính năng mạnh mẽ nhằm tăng cường hiệu suất và độ chính xác của quá trình giám sát thời gian làm việc và chấm công nhân viên trong văn phòng của bạn, bao gồm:",
-      multiple: "Nhận diện nhiều khuôn mặt",
-      multipledes:
-        "Hệ thống chấm công văn phòng của chúng tôi có thể nhận diện và nhận biết khuôn mặt của tất cả những người xuất hiện trong hình ảnh, giúp nhân viên không phải đứng xếp hàng để sử dụng máy chấm công.",
-      realtime: "Nhận diện khuôn mặt thời gian thực",
-      realtimedes:
-        "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
-      turnkey: "Giải pháp toàn diện",
-      turnkeydes:
-        "Hệ thống chấm công văn phòng CheckID FacialSense không đòi hỏi phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp thanh toán lương hàng đầu để đảm bảo tích hợp mượt mà vào các thực hành kinh doanh tiêu chuẩn của bạn.",
-      footer:
-        "* Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
-      whychosse:
-        " hệ thống chấm công văn phòng sử dụng sinh trắc học của chúng tôi cho doanh nghiệp của bạn?",
-      whychossetitle: "Tại sao chọn",
-      why: "Tại sao",
-      choose: "chọn",
-      increaseemploy: "Tăng cường hài lòng nhân viên",
-      increaseemploydes:
-        "Không có gì làm giảm sự hài lòng của nhân viên hơn là lương không đúng. Tránh những vấn đề không cần thiết về lương với một hệ thống quản lý thời gian chính xác đảm bảo mỗi nhân viên được thanh toán công bằng cho công việc của họ.",
-      streamline: "Tối ưu hóa bộ phận nhân sự",
-      streamlinedes:
-        "Báo cáo tùy chỉnh mà CheckID FacialSense cung cấp cho doanh nghiệp của bạn giúp bạn dễ dàng theo dõi, phân tích và hiểu đội ngũ lao động của mình theo thời gian thực, giảm thiểu nhu cầu sử dụng giấy tờ làm phiền phức.",
-      reduce: "Giảm sai số",
-      reducedes:
-        "Giám sát thời gian làm việc và chấm công là một nhiệm vụ đòi hỏi dữ liệu lớn, dễ phát sinh sai sót từ con người. Phần mềm hệ thống chấm công văn phòng sử dụng sinh trắc học giảm nguy cơ phạm lỗi, đảm bảo ghi và trình bày dữ liệu một cách công bằng và theo trật tự.",
-      increaseproductivity: "Tăng cường năng suất",
-      increaseproductivitydes:
-        "Bộ quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh dấu thời gian làm việc cho nhân viên khác. Do đó, bạn có thể yên tâm với việc đội ngũ lao động của bạn làm việc theo giờ họ tuyên bố.",
-      cost: "Hiệu quả chi phí",
-      costdes:
-        "Không chỉ giảm chi phí lao động phát sinh từ các ghi chú không chính xác, mà tính năng nhận diện nhiều khuôn mặt còn giúp giảm thiểu thời gian đứng xếp hàng để sử dụng máy chấm công.",
-      compre: "Báo cáo toàn diện",
-      comperdes:
-        "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác, tất cả đều có thể được xuất khẩu vào hệ thống thanh toán lương.",
+        titletransrom : "Biến đổi",
+        transfrom: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
+        transfromdes1: "Hệ thống chấm công văn phòng sinh trắc học CheckID FacialSense được các nhà tuyển dụng yêu thích vì khả năng duy trì và nâng cao ",
+        effect: "hiệu quả, năng suất và tiết kiệm chi phí",
+        workfor: " của đội ngũ lao động, không cần phần cứng chuyên dụng.",
+        transfromdes2: "Hệ thống của chúng tôi hoạt động bằng cách . Hệ thống chấm công văn phòng ",
+        biomatriciden: "sử dụng nhận diện sinh trắc học khuôn mặt, vân tay và mống mắt",
+        checkid: ". CheckID FacialSense tích hợp dễ dàng vào các hoạt động quản lý nhân sự và thanh toán lương của bạn, đảm bảo nhân viên của bạn được thanh toán đúng đắn mà còn loại bỏ các rủi ro trong quản lý lương của bạn.",
+        transfromdes3: "Mặc dù công nghệ sinh trắc học mang lại khả năng nâng cao, báo cáo và ",
+        userinf: "giao diện người dùng đơn giản, trực quan và có thể tùy chỉnh",
+        around: " theo yêu cầu kinh doanh của bạn, giúp bạn tận dụng những khả năng được trang bị bởi trí tuệ nhân tạo này cho doanh nghiệp của bạn.",
+        biomatricfeature: "Các tính năng",
+        biomatricfeaturekey: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
+        biomatricfeaturedes: "Phần mềm này được thiết kế và xây dựng cẩn thận, với nhiều tính năng mạnh mẽ nhằm tăng cường hiệu suất và độ chính xác của quá trình giám sát thời gian làm việc và chấm công nhân viên trong văn phòng của bạn, bao gồm:",
+        multiple: "Nhận diện nhiều khuôn mặt",
+        multipledes: "Hệ thống chấm công văn phòng của chúng tôi có thể nhận diện và nhận biết khuôn mặt của tất cả những người xuất hiện trong hình ảnh, giúp nhân viên không phải đứng xếp hàng để sử dụng máy chấm công.",
+        realtime: "Nhận diện khuôn mặt thời gian thực",
+        realtimedes: "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
+        turnkey: "Giải pháp toàn diện",
+        turnkeydes: "Hệ thống chấm công văn phòng CheckID FacialSense không đòi hỏi phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp thanh toán lương hàng đầu để đảm bảo tích hợp mượt mà vào các thực hành kinh doanh tiêu chuẩn của bạn.",
+        footer: "* Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
+        whychosse: " hệ thống chấm công văn phòng sử dụng sinh trắc học của chúng tôi cho doanh nghiệp của bạn?",
+        whychossetitle: "Tại sao chọn",
+        why: "Tại sao",
+        choose: "chọn",
+        increaseemploy: "Tăng cường hài lòng nhân viên",
+        increaseemploydes: "Không có gì làm giảm sự hài lòng của nhân viên hơn là lương không đúng. Tránh những vấn đề không cần thiết về lương với một hệ thống quản lý thời gian chính xác đảm bảo mỗi nhân viên được thanh toán công bằng cho công việc của họ.",
+        streamline: "Tối ưu hóa bộ phận nhân sự",
+        streamlinedes: "Báo cáo tùy chỉnh mà CheckID FacialSense cung cấp cho doanh nghiệp của bạn giúp bạn dễ dàng theo dõi, phân tích và hiểu đội ngũ lao động của mình theo thời gian thực, giảm thiểu nhu cầu sử dụng giấy tờ làm phiền phức.",
+        reduce: "Giảm sai số",
+        reducedes: "Giám sát thời gian làm việc và chấm công là một nhiệm vụ đòi hỏi dữ liệu lớn, dễ phát sinh sai sót từ con người. Phần mềm hệ thống chấm công văn phòng sử dụng sinh trắc học giảm nguy cơ phạm lỗi, đảm bảo ghi và trình bày dữ liệu một cách công bằng và theo trật tự.",
+        increaseproductivity: "Tăng cường năng suất",
+        increaseproductivitydes: "Bộ quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh dấu thời gian làm việc cho nhân viên khác. Do đó, bạn có thể yên tâm với việc đội ngũ lao động của bạn làm việc theo giờ họ tuyên bố.",
+        cost: "Hiệu quả chi phí",
+        costdes: "Không chỉ giảm chi phí lao động phát sinh từ các ghi chú không chính xác, mà tính năng nhận diện nhiều khuôn mặt còn giúp giảm thiểu thời gian đứng xếp hàng để sử dụng máy chấm công.",
+        compre: "Báo cáo toàn diện",
+        comperdes: "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác, tất cả đều có thể được xuất khẩu vào hệ thống thanh toán lương."
+      },
+      retailworkforce: {
+        headertitle: "Doanh nghiệp bán lẻ",
+        header: " hệ thống giám sát thời gian và chấm công",
+        theckeckid: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio",
+        uses: " sử dụng ",
+        biomatrici: "công nghệ nhận diện sinh trắc học khuôn mặt, vân tay và quét mống mắt",
+        desbiomatric: " để giám sát, quản lý và đăng ký chấm công một cách hiệu quả, mà không cần phải sử dụng phần cứng chuyên dụng.",
+        thisal: "Công nghệ sinh trắc học này được tích hợp trí tuệ nhân tạo giúp",
+        retail: " doanh nghiệp bán lẻ ",
+        tomain: "duy trì và nâng cao ",
+        effect:"hiệu suất, năng suất và hiệu quả về chi phí ",
+        workfore: "lực lượng lao động trong môi trường nhanh chóng của cửa hàng. Trong khi công nghệ sinh trắc học là tiên tiến, báo cáo rất đơn giản, trực quan và linh hoạt theo yêu cầu kinh doanh của bạn.",
+        theckeckidFacial: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio là một giải pháp toàn diện được thiết kế để tích hợp mượt mà vào hoạt động quản lý nhân sự và lương của doanh nghiệp bạn, đồng thời đảm bảo nhân viên được thanh toán chính xác cho các ca làm việc mà không cần sử dụng các thiết bị không thuận tiện như thẻ, thẻ thời gian hoặc máy đồng hồ chấm công.",
+        key: "Các tính năng",
+        feature: " nổi bật",
+        desfeature: "Hệ thống chấm công khuôn Mmặt CheckID FacialSense Bio có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất và độ chính xác trong việc giám sát thời gian và chấm công của nhân viên, bao gồm:",
+        multiple: "Nhận diện nhiều khuôn mặt",
+        multipledes: "Hệ thống chấm công văn phòng của chúng tôi có thể phát hiện và nhận diện các khuôn mặt của tất cả mọi người xuất hiện trong bức hình, giúp nhân viên không phải mất thời gian xếp hàng để đấu máy chấm công.",
+        contactless: "Theo dõi chấm công không tiếp xúc",
+        contactlessdes: "Không cần tiếp xúc vật lý khi người được nhận diện bằng khuôn mặt hoặc mống mắt.",
+        liveness: "Phát hiện sự sống động",
+        livenessdes: "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác thực rằng việc đăng ký/đăng xuất đang được thực hiện bởi một người thật sự.",
+        }
     },
-    retailworkforce: {
-      headertitle: "Doanh nghiệp bán lẻ",
-      header: " hệ thống giám sát thời gian và chấm công",
-      theckeckid: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio",
-      uses: " sử dụng ",
-      biomatrici:
-        "công nghệ nhận diện sinh trắc học khuôn mặt, vân tay và quét mống mắt",
-      desbiomatric:
-        " để giám sát, quản lý và đăng ký chấm công một cách hiệu quả, mà không cần phải sử dụng phần cứng chuyên dụng.",
-      thisal: "Công nghệ sinh trắc học này được tích hợp trí tuệ nhân tạo giúp",
-      retail: " doanh nghiệp bán lẻ ",
-      tomain: "duy trì và nâng cao ",
-      effect: "hiệu suất, năng suất và hiệu quả về chi phí ",
-      workfore:
-        "lực lượng lao động trong môi trường nhanh chóng của cửa hàng. Trong khi công nghệ sinh trắc học là tiên tiến, báo cáo rất đơn giản, trực quan và linh hoạt theo yêu cầu kinh doanh của bạn.",
-      theckeckidFacial:
-        "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio là một giải pháp toàn diện được thiết kế để tích hợp mượt mà vào hoạt động quản lý nhân sự và lương của doanh nghiệp bạn, đồng thời đảm bảo nhân viên được thanh toán chính xác cho các ca làm việc mà không cần sử dụng các thiết bị không thuận tiện như thẻ, thẻ thời gian hoặc máy đồng hồ chấm công.",
-      key: "Các tính năng",
-      feature: " nổi bật",
-      desfeature:
-        "Hệ thống chấm công khuôn Mmặt CheckID FacialSense Bio có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất và độ chính xác trong việc giám sát thời gian và chấm công của nhân viên, bao gồm:",
-      multiple: "Nhận diện nhiều khuôn mặt",
-      multipledes:
-        "Hệ thống chấm công văn phòng của chúng tôi có thể phát hiện và nhận diện các khuôn mặt của tất cả mọi người xuất hiện trong bức hình, giúp nhân viên không phải mất thời gian xếp hàng để đấu máy chấm công.",
-      contactless: "Theo dõi chấm công không tiếp xúc",
-      contactlessdes:
-        "Không cần tiếp xúc vật lý khi người được nhận diện bằng khuôn mặt hoặc mống mắt.",
-      liveness: "Phát hiện sự sống động",
-      livenessdes:
-        "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác thực rằng việc đăng ký/đăng xuất đang được thực hiện bởi một người thật sự.",
-    },
-  },
-
+  
+  
+  
   footer: {
     description:
       "Sản phẩm CheckID FacialSense nổi bật trên thị trường là giải pháp đa sinh trắc học tạo ra các ứng dụng hệ thống chính xác và linh hoạt. Hệ thống của chúng tôi được hỗ trợ bởi các thuật toán hàng đầu trong ngành do Mobile-ID phát triển.",

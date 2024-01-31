@@ -930,7 +930,7 @@ export default {
       increaseproductivitydes: "Biometric scanners remove the possibility of ‘buddy punching’, an employee clocking in and out for another. Therefore, you can rest easy knowing that your workforce is putting in the hours they say they are.",
       cost: "Cost Efficiency",
       costdes: "Not only does it reduce labor costs that arise as a result of inaccurate recordings, but the multiple face detection feature can be used to cut down on queues for the clocking in machine.",
-      
+      compredes1: "Find all of your comprehensive reports in one place, helping save the time and investment of managing different facets of the business separately and remove the worry of inaccurate reporting.",
       client: "Client",
       testimonials: " testimonials",
       items: {
@@ -940,6 +940,38 @@ export default {
         position: "Teacher, Red Roses Public School",
       }
      
+    },
+    factory:{
+      header: "Factory and Warehouse",
+      headerder2: "Factory and ",
+      warehose: "Warehouse ",
+      headerdes: " Employee Time & Attendance Monitoring System",
+      thecheckid: "The CheckID FacialSense Bio Attendance system is a favorite among employers for its ability to maintain and enhance an efficient, productive and cost effective workforce, without the need for specialist hardware.",
+      checkid: "CheckID FacialSense’s time and attendance monitoring system uses",
+      biometric: "biometric identification of face, fingerprint and iris scanning",
+      thesystem: ". The system is a simple turnkey integration into your HR and Payroll operations, ensuring your employees are accurately compensated whilst also removing bottlenecks in your payroll administration.",
+      whilst:"Whilst the biometric technology offers advanced capabilities, the reporting and",
+      user: " user interface is simple, intuitive and customizable",
+      around: " around your business requirements, allowing you to harness these AI-powered capabilities for your own business.",
+      key: "Key",
+      keyfeatures: "Key Features",
+      fearures: "Features",
+      keyfeaturesdes: "Our biometric systems have a number of powerful features designed to increase the efficiency of service by your business through effective time and attendance hospitality software. These include:",
+      multiple: "Multiple face detection",
+      multipledes: "Our biometric office attendance system can detect and recognize faces of all the people seen in the picture, meaning your staff do not have to waste time queuing for the clocking in machine.",
+      realtime: "Real-time face detection",
+      realtimedes: "The system can detect the face of a person passing by without requiring to stop and wait while the camera takes a picture.",
+      turnkey: "Turnkey solution",
+      turnkeydes: "CheckID FacialSense biometric office attendance system requires no specialist hardware*, and easily integrates with the leading payroll providers to allow for a seamless integration into your standard business practices.",
+      footer: "*For fingerprint or iris identification, the system requires an external fingerprint reader or iris scanner, both of which can be purchased from",
+    },
+    agriculture: {
+      header: "Agriculture",
+      headerdes: " Sector Time & Attendance Monitoring System",
+      thecheckid: "The CheckID FacialSense Bio Attendance uses biometric identification of face, fingerprint and iris scanning to efficiently monitor, manage and register attendance on a large and flexible scale, without the need for specialist hardware*.",
+      accurate: "Accurate and efficient reporting of site attendance is vital for the success of large agricultural projects. The management of the ever-changing and dynamic workforce is renowned for payroll errors, poor overtime management and uCheckID FacialSenseed absenteeism due to the constantly evolving schedules and project requirements. The CheckID FacialSense Bio Attendance system also prevents the fraudulent or incorrect attendance recording associated with other attendance systems such as time cards, fobs or registers.",
+      whilst: "Accurate and efficient reporting of site attendance is vital for the success of large agricultural projects. The management of the ever-changing and dynamic workforce is renowned for payroll errors, poor overtime management and uCheckID FacialSenseed absenteeism due to the constantly evolving schedules and project requirements. The CheckID FacialSense Bio Attendance system also prevents the fraudulent or incorrect attendance recording associated with other attendance systems such as time cards, fobs or registers.",
+      fearuresdes: "Our biometric systems have a number of powerful features designed to increase the efficiency of service by your business through effective time and attendance hospitality software. These include:",
     }
   },
   

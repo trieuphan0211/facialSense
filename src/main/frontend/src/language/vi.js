@@ -865,7 +865,7 @@ export default {
     hardhatdes: "Hệ thống chấm công văn phòng sinh trắc học của chúng tôi có thể phát hiện và nhận dạng khuôn mặt của tất cả mọi người xuất hiện trong hình ảnh, nghĩa là nhân viên của bạn không cần phải mất thời gian xếp hàng đợi để đến máy đánh giờ.",
     remote: "Quản lý vị trí từ xa",
     remotedes: "Thời gian làm việc của nhân viên có thể được theo dõi và tính toán dễ dàng ngay cả khi họ làm việc từ xa. Người dùng có thể đăng ký và đăng xuất một cách đơn giản với thiết bị di động, máy tính bảng hoặc máy tính cá nhân của họ.",
-    identification: "Nhận Diện Khi Đeo Mặt Nạ",
+    identification: "Nhận diện khi đeo mặt nạ",
     identificationdes: "Hệ thống chấm công sinh trắc học của chúng tôi có khả năng nhận diện một người ngay cả khi họ đang đeo mặt nạ, đảm bảo việc nhận dạng an toàn và hợp vệ vệ sinh."
   },
   healthcare: {
@@ -922,17 +922,17 @@ export default {
     multipledes: "Hệ thống chấm công văn phòng sinh trắc học của chúng tôi có thể phát hiện và nhận dạng khuôn mặt của tất cả mọi người xuất hiện trong hình ảnh, nghĩa là nhân viên của bạn không cần phải mất thời gian xếp hàng đợi để đến máy đánh giờ.",
     nospecific: "Không cần phần cứng người dùng cụ thể*",
     nospecificdes: "Phần mềm theo dõi thời gian làm việc từ xa của chúng tôi có thể được sử dụng bởi nhân viên làm việc từ xa của bạn qua điện thoại, máy tính bảng hoặc máy tính!",
-    liveness: "Phát hiện tính 'sống'",
+    liveness: "Phát hiện tính sống",
     livenessdes: "Trước khi bắt đầu nhận dạng khuôn mặt, hệ thống có thể xác nhận rằng việc đăng ký / đăng xuất đang được thực hiện bởi một người thực sự.",
     location: "Theo dõi vị trí",
     locationdes: "Hệ thống điểm danh của chúng tôi có thể theo dõi vị trí địa lý của người đóng cửa / mở cửa.",
-    remote: "Quản lý Vị trí Từ xa",
+    remote: "Quản lý vị trí từ xa",
     remotedes: "Thời gian làm việc của nhân viên có thể được theo dõi và tính toán dễ dàng ngay cả khi họ làm việc từ xa. Người dùng có thể đăng ký và đăng xuất một cách đơn giản với thiết bị di động, máy tính bảng hoặc máy tính cá nhân của họ.",
     compre: "Báo cáo Toàn diện",
     comperdes: "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và thông tin khác có thể xuất khẩu vào hệ thống thanh toán tiền lương.",
     footer: "*Đối với nhận dạng bằng vân tay hoặc mống mắt, hệ thống yêu cầu một bộ đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
     benefit: "Lợi ích",
-    foryou: "cho doanh nghiệp dịch vụ của bạn?",
+    foryou: " cho doanh nghiệp dịch vụ của bạn?",
     employee: "Sự Hài lòng của Nhân viên",
     employeedes: "Tránh những vấn đề lương không cần thiết với một hệ thống quản lý thời gian chính xác đảm bảo mọi nhân viên được bồi thường một cách công bằng cho công việc của họ.",
     streamline: "Tối ưu hóa Phòng nhân sự của bạn",
@@ -943,15 +943,55 @@ export default {
     increaseproductivitydes: "Các máy quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh giờ cho người khác. Do đó, bạn có thể yên tâm biết rằng nhân sự của bạn đang đầu tư giờ làm việc mà họ nói họ đang làm.",
     cost: "Hiệu quả chi phí",
     costdes: "Không chỉ giảm chi phí lao động phát sinh do ghi âm không chính xác, mà tí",
-    client: "Khách hàng",
-    testimonials: "Đánh giá từ khách hàng",
+    client: "Đánh giá từ ",
+    compredes1: "Tìm tất cả các báo cáo toàn diện của bạn tại một địa điểm, giúp tiết kiệm thời gian và đầu tư trong việc quản lý các khía cạnh khác nhau của doanh nghiệp một cách riêng lẻ và loại bỏ lo ngại về báo cáo không chính xác.",
+    testimonials: "khách hàng",
     items: {
       description:
         "“Chúng tôi đang sử dụng phần mềm này trong trường học của chúng tôi để chấm công nhân viên và thấy rất hữu ích. Phần mềm này đăng ký tất cả thông tin và thông tin sinh trắc học của nhân viên chúng tôi nhanh chóng và chúng tôi ngay lập tức bắt đầu chấm công nhân viên của mình. Chúng tôi đã có thể theo dõi những người vắng mặt và những người đến muộn của nhân viên. Chúng tôi đã có thể lấy báo cáo chấm công hàng ngày một cách nhanh chóng mà không gặp bất kỳ vấn đề nào.”",
       name: "Seema C.",
       position: "Giáo viên, Trường Trung học Red Roses",
     }
+  },
+  factory: {
+    header: "Nhà máy và kho hàng",
+    headerder2: "Nhà máy và ",
+    warehose: "kho hàng",
+    headerdes: " bằng hệ thống giám sát thời gian làm việc và chấm công nhân viên",
+    thecheckid: "Hệ thống chấm công The CheckID FacialSense Bio là lựa chọn ưa thích của các nhà tuyển dụng nhờ khả năng duy trì và nâng cao năng suất làm việc hiệu quả, hiệu quả chi phí, mà không cần đến phần cứng chuyên biệt.",
+    checkid: "Hệ thống giám sát thời gian và chấm công của CheckID FacialSense sử dụng",
+    biometric: " nhận dạng sinh trắc học khuôn mặt, dấu vân tay và quét mống mắt",
+    thesystem: ". Hệ thống tích hợp đơn giản vào hoạt động Nhân sự và Lương của bạn, đảm bảo nhân viên của bạn được thanh toán chính xác và đồng thời loại bỏ các nút thắt trong quản lý lương của bạn.",
+    whilst: "Mặc dù công nghệ sinh trắc học cung cấp những khả năng tiên tiến, báo cáo và",
+    user: " giao diện người dùng đơn giản, trực quan và có thể tùy chỉnh",
+    around: " xung quanh các yêu cầu kinh doanh của bạn, giúp bạn tận dụng những khả năng được cung cấp bởi trí tuệ nhân tạo cho doanh nghiệp của mình.",
+    key: "Chìa khóa",
+    keyfeatures: "Tính Năng Chính",
+    fearures: "Tính Năng",
+    keyfeaturesdes: "Hệ thống sinh trắc học của chúng tôi có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất dịch vụ của doanh nghiệp bạn thông qua phần mềm chấm công và giám sát thời gian hiệu quả. Các tính năng này bao gồm:",
+    multiple: "Nhận diện nhiều khuôn mặt",
+    multipledes: "Hệ thống chấm công của chúng tôi có thể nhận diện và nhận ra khuôn mặt của tất cả mọi người xuất hiện trong hình ảnh, điều này có nghĩa là nhân viên của bạn không cần phải lãng phí thời gian xếp hàng trước máy chấm công.",
+    realtime: "Nhận diện khuôn mặt thời gian thực",
+    realtimedes: "Hệ thống có thể nhận diện khuôn mặt của một người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp ảnh.",
+    turnkey: "Giải pháp tích hợp",
+    turnkeydes: "Hệ thống chấm công sinh trắc học của CheckID FacialSense không yêu cầu phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp lương hàng đầu để cho phép tích hợp liền mạch vào các thực hành kinh doanh thông thường của bạn.",
+    footer: "*Đối với nhận dạng vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoài, cả hai đều có thể được mua từ",
+  },
+  agriculture: {
+    header: "Nông nghiệp",
+    header1: "nông nghiệp",
+    nong:"Nông ",
+    nong1: "nông",
+    nghiep: "nghiệp",
+    headerdes: " Hệ thống giám sát thời gian và chấm công trong ",
+    thecheckid: "Hệ thống chấm công The CheckID FacialSense Bio sử dụng nhận dạng sinh trắc học khuôn mặt, dấu vân tay và quét mống mắt để giám sát, quản lý và đăng ký chấm công một cách hiệu quả trên quy mô lớn và linh hoạt, mà không cần đến phần cứng chuyên biệt*.",
+    accurate: "Báo cáo chính xác và hiệu quả về chấm công tại hiện trường là quan trọng cho sự thành công của các dự án nông nghiệp lớn. Quản lý đội ngũ lao động đang thay đổi liên tục và linh hoạt nổi tiếng với các lỗi tính lương, quản lý thời gian làm thêm giờ kém, và vắng mặt không được kiểm soát do các lịch trình và yêu cầu dự án thay đổi liên tục. Hệ thống chấm công The CheckID FacialSense Bio cũng ngăn chặn việc ghi chấm công gian lận hoặc không chính xác liên quan đến các hệ thống chấm công khác như thẻ thời gian, fobs hoặc sổ chấm công.",
+    whilst: "Báo cáo chính xác và hiệu quả về chấm công tại hiện trường là quan trọng cho sự thành công của các dự án nông nghiệp lớn. Quản lý đội ngũ lao động đang thay đổi liên tục và linh hoạt nổi tiếng với các lỗi tính lương, quản lý thời gian làm thêm giờ kém, và vắng mặt không được kiểm soát do các lịch trình và yêu cầu dự án thay đổi liên tục. Hệ thống chấm công The CheckID FacialSense Bio cũng ngăn chặn việc ghi chấm công gian lận hoặc không chính xác liên quan đến các hệ thống chấm công khác như thẻ thời gian, fobs hoặc sổ chấm công.",
+    fearuresdes: "Hệ thống sinh trắc học của chúng tôi có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất dịch vụ của doanh nghiệp bạn thông qua phần mềm chấm công và giám sát thời gian hiệu quả. Các tính năng này bao gồm:",
+
   }
+  
+  
     
 
   

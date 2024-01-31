@@ -86,11 +86,11 @@ export const Header = ({ logo }) => {
                 },
                 {
                   name: "header.subindustries.0.item.0.item.7.name",
-                  path: "/",
+                  path: "/factory-and-warehouse-employee-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.8.name",
-                  path: "/",
+                  path: "/agriculture-sector-time-attendance-monitoring-system",
                 },
               ],
             },

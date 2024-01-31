@@ -146,7 +146,7 @@ export const BiometricOffice = () => {
             <div className=" bg-cover bg-center h-[360px] 4" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
                 {
                     i18n.language === "en" ? (
-                        <div className="  max-w-[1300px] 460sm:pt-[48px] mx-auto px-4 pt-[68px]">
+                        <div className="  max-w-[1300px] 460sm:pt-[48px] mx-auto px-4 pt-[68px]  minxl:pt-[100px]">
                         {content}
                         
                         </div>

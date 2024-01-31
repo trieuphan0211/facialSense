@@ -36,14 +36,14 @@ export const MainLayout = () => {
         document.title =
           "CheckID FacialSense Service | FacialSense Visitor Management";
         break;
-<<<<<<< HEAD
+
       case "/retail-workforce-time-attendance-monitoring-system":
         setBg("bg-industries w bg-center-top bg-no-repeat bg-contain");
         setLogoImg(logoWhite);
         document.title =
           "CheckID FacialSense Service | FacialSense Visitor Management";
         break;
-=======
+
         case "/retail-workforce-time-attendance-monitoring-system":
           setBg("bg-industries w bg-center-top bg-no-repeat max-w-full");
           setLogoImg(logoWhite);
@@ -92,13 +92,12 @@ export const MainLayout = () => {
                 document.title =
                     "CheckID FacialSense Service | FacialSense Visitor Management";
                 break;    
->>>>>>> facialsensevisitormanagement
-      default:
-        setBg("bg-home bg-right-top bg-no-repeat");
-        setLogoImg(logo);
-        document.title = "CheckID FacialSense Service | Mobile-ID";
-        break;
-    }
+          default:
+            setBg("bg-home bg-right-top bg-no-repeat");
+            setLogoImg(logo);
+            document.title = "CheckID FacialSense Service | Mobile-ID";
+            break;
+        }
   }, [location]);
 
   return (

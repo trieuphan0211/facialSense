@@ -989,7 +989,39 @@ export default {
     whilst: "Báo cáo chính xác và hiệu quả về chấm công tại hiện trường là quan trọng cho sự thành công của các dự án nông nghiệp lớn. Quản lý đội ngũ lao động đang thay đổi liên tục và linh hoạt nổi tiếng với các lỗi tính lương, quản lý thời gian làm thêm giờ kém, và vắng mặt không được kiểm soát do các lịch trình và yêu cầu dự án thay đổi liên tục. Hệ thống chấm công The CheckID FacialSense Bio cũng ngăn chặn việc ghi chấm công gian lận hoặc không chính xác liên quan đến các hệ thống chấm công khác như thẻ thời gian, fobs hoặc sổ chấm công.",
     fearuresdes: "Hệ thống sinh trắc học của chúng tôi có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất dịch vụ của doanh nghiệp bạn thông qua phần mềm chấm công và giám sát thời gian hiệu quả. Các tính năng này bao gồm:",
 
-  }
+  }, 
+  organizations: {
+    header: "Tổ chức",
+    headerdes: "Gặp một người trong ",
+    headernone: "tổ chức",
+    usually: "Thường, trong một tổ chức, nhân viên phải gặp khách của họ đến văn phòng hoặc bất kỳ địa điểm nào khác. Tùy thuộc vào tình hình, cuộc họp có thể diễn ra trong bên trong văn phòng (tại phòng họp) hoặc bất kỳ địa điểm nào khác. Đối với tình huống này, hệ thống quản lý khách hàng CheckID FacialSense có thể được sử dụng để thiết lập lịch hẹn tại địa điểm họp. Khách hàng có thể đặt cuộc hẹn cho khoảng thời gian này, và nhân viên có thể hoàn thành tất cả các cuộc họp với khách trong thời gian ngắn.",
+    thecheckid: "Hệ thống quản lý khách hàng CheckID FacialSense có thể được cấu hình để gửi thông báo về các sự kiện khác nhau, cả cho nhân viên và khách. Chẳng hạn như thông báo cho nhân viên khi khách check-in với hệ thống. Sau đó, nhân viên cần đến địa điểm chỉ định để gặp khách.",
+    when: "Khi sử dụng hệ thống quản lý khách hàng CheckID FacialSense, nhân viên có thể gặp gỡ tất cả khách trong khoảng thời gian ngắn, vì gặp gỡ khách suốt cả ngày là không thực tế, do đó nhân viên có thể dành một khoảng thời gian hoặc thời gian rảnh rỗi của họ cho mục đích đó. Cũng như khách có thể đến và gặp nhân viên mà không cần đợi ở khu vực sảnh văn phòng. Vì vậy, cả thời gian của nhân viên và khách đều không bị lãng phí.",
+    usecase: "Trường hợp sử dụng",
+    use: "Sử",
+    case: " trường hợp",
+    usecaseheader: "ví dụ",
+    employee: "Nhân viên: Xác định lịch trình thời gian",
+    employeedes: "Nhân viên có thể quyết định khe thời gian và địa điểm mà anh ấy/cô ấy muốn gặp khách. Sau đó, từ hệ thống tạo lịch theo đó.",
+    consumer: "Người tiêu dùng điền mẫu dẫn",
+    consumerdes: "Bước đầu tiên cho một dẫn là người tiêu dùng quan tâm yêu cầu thông tin về một dịch vụ trên trang web chất lượng cao.",
+    fresh: "Fresh Leads phối hợp dẫn với người mua",
+    freshdes: "Người mua trong hệ thống của chúng tôi đặt loại và tiêu chí dẫn họ muốn nhận. Hệ thống của chúng tôi tìm người mua phù hợp cho dẫn, dựa trên các tùy chọn họ đã chọn trong thời gian thực.",
+    buyer: "Người mua gọi điện thoại cho dẫn của họ",
+    buyerdes: "Dẫn có thể xem trong CRM của chúng tôi, hoặc có thể đồng bộ hóa với một trong 700 hệ thống CRM.",
+    leads: "Dẫn được phân loại",
+    leadsdes: "Dẫn được phân loại dựa trên việc chúng có trở thành một giao dịch, không quan tâm, hoặc đề xuất cho dịch vụ.",
+    buytweak: "Người mua điều chỉnh nguồn dẫn của họ",
+    buytweakdes: "Dữ liệu phân loại cho phép người mua xem chính xác chi phí mỗi giao dịch trên mỗi trang web họ nhận được dẫn từ đó.",
+    keyfeatures: "Đặc điểm quan trọng",
+    thecheckid1: "Hệ thống quản lý khách hàng CheckID FacialSense có nhiều tính năng mạnh mẽ được thiết kế để cung cấp trải nghiệm thuận tiện và an toàn cho tất cả khách trong khi giảm bớt sự phức tạp và gánh nặng của quản lý khách cho nhân viên. Hệ thống của chúng tôi có nhiều tính năng bao gồm:",
+    online: "Đặt trước trực tuyến",
+    onlinedes: "Đặt trước trực tuyến cho phép khách truy cập lên kế hoạch cho chuyến thăm của họ trước và truy cập một cách thuận tiện.",
+    secure: "Truy cập khách hàng an toàn",
+    securedes: "Mã vạch, RFID, khuôn mặt, dấu vân tay và nhận diện người hồi sinh cung cấp quy trình truy cập nhanh chóng, hiệu quả và an toàn cho cuộc hẹn và giao tiếp với khách.",
+    safe: "An toàn và vệ sinh",
+    safedes: "Công nghệ nhận diện không tiếp xúc như mã vạch, RFID, khuôn mặt và nhận diện người hồi sinh không tạo tiếp xúc."
+}
   
   
     

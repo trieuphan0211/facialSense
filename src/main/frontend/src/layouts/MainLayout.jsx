@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import logoWhite from "../assets/img/logo_white.png";
-
 export const MainLayout = () => {
   const location = useLocation();
   const [bg, setBg] = useState("bg-home bg-right-top bg-no-repeat");
@@ -83,7 +82,13 @@ export const MainLayout = () => {
                 setLogoImg(logoWhite);
                 document.title =
                     "CheckID FacialSense Service | FacialSense Visitor Management";
-                break;    
+                break;   
+            case "/meet-a-person-in-organization":
+                  setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                  setLogoImg(logoWhite);
+                  document.title =
+                      "CheckID FacialSense Service | FacialSense Visitor Management";
+                  break;   
       default:
         document.title = "CheckID FacialSense Service | Mobile-ID";
         break;

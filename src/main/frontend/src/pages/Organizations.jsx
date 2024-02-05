@@ -5,6 +5,9 @@ import point from "../assets/img/industries/organization/point.svg.png"
 import point1 from "../assets/img/industries/organization/point1.png"
 import leadfrom from "../assets/img/industries/organization/lead-form.svg.png"
 import leadtobuyer from "../assets/img/industries/organization/lead-to-buyer.svg.png"
+import dissponint from "../assets/img/industries/organization/disapointed-leads.svg.png"
+import buyercall from "../assets/img/industries/organization/buyer-call.png.png"
+import buyertwwed from "../assets/img/industries/organization/buyers-tweed.png.png"
 import imagepint from "../assets/svg/img-ponit.svg"
 // import { useWindowSize } from "@uidotdev/usehooks";
 
@@ -67,7 +70,7 @@ export const Organizations = () => {
 
                 </object></div>
                 <img className="absolute top-[625px] left-[50%] transform translate-x-[-49%]" alt="Before" src={point1} />
-                <div className="absolute top-[142px] left-1/2 w-[3px] bg-gradient-to-b from-teal-500 via-teal-300 to-transparent h-[4491px]">
+                <div className="absolute top-[142px] left-1/2 w-[3px] bg-gradient-to-b from-teal-500 via-teal-300 to-transparent h-[5300px]">
   
  
                  </div>
@@ -126,7 +129,7 @@ export const Organizations = () => {
                 </object></div>
                 <img className="absolute top-[210px] left-[50%] transform translate-x-[-49%]" alt="Before" src={point1} />
                     <div className="flex justify-between items-center">
-                        <img  className="minxl:w-[700px] minxl:h-[500px]" src={leadfrom} alt="" />
+                        <img  className="minxl:w-[700px] minxl:h-[500px]" src={buyercall} alt="" />
                         <div className="pr-[100px]  " >
                                     <h1 className=" font-bold text-[22px] text-[#37474F]  ">{t("industries.organizations.employee")}   </h1>
                                     <p className="font-normal mt-[40px] w-[434px] h-[123px] text-[16px] text-[#37474F] ">{t("industries.organizations.employeedes")}</p> 
@@ -136,8 +139,37 @@ export const Organizations = () => {
                     
                     
                 </div>
-              
-               
+                <div className=" relative  mt-[420px]  mx-auto ">
+                <div className="absolute top-[240px]  left-[55%] transform translate-x-[-49%] "><object type="image/svg+xml" data={imagepint}>
+                </object></div>
+                <img className="absolute top-[210px] left-[50%] transform translate-x-[-49%]" alt="Before" src={point1} />
+                    <div className="flex justify-between items-center">
+                    <div className="px-[140px]" >
+                                    <h1 className=" font-bold text-[22px] text-[#37474F]  ">{t("industries.organizations.employee")}   </h1>
+                                    <p className="font-normal mt-[40px] w-[434px] h-[123px] text-[16px] text-[#37474F] ">{t("industries.organizations.employeedes")}</p> 
+                        </div>
+                        <img  className="minxl:w-[700px] minxl:h-[500px]" src={dissponint} alt="" />
+                        
+                    </div>
+                   
+                    
+                    
+                </div>
+                <div className=" relative  mt-[420px]  mx-auto ">
+                <div className="absolute top-[240px] scale-x-[-1] right-[55%] transform -translate-x-[-49%] "><object type="image/svg+xml" data={imagepint}>
+                </object></div>
+                <img className="absolute top-[210px] left-[50%] transform translate-x-[-49%]" alt="Before" src={point1} />
+                    <div className="flex justify-between items-center">
+                        <img  className="minxl:w-[700px] minxl:h-[500px]" src={buyertwwed} alt="" />
+                        <div className="pr-[100px]  " >
+                                    <h1 className=" font-bold text-[22px] text-[#37474F]  ">{t("industries.organizations.employee")}   </h1>
+                                    <p className="font-normal mt-[40px] w-[434px] h-[123px] text-[16px] text-[#37474F] ">{t("industries.organizations.employeedes")}</p> 
+                        </div>
+                    </div>
+                   
+                    
+                    
+                </div>
             </div>
         </>
     )

@@ -570,7 +570,7 @@ export default {
         descriptioncloud:
           "Biometric visitor authentication and management with access control system as a cloud service.",
         monthly: "Monthly subscription",
-        subscription: "Subscription price depends on visitor count",
+        subscription: "Subscription price is based on visitor count",
         free: "Free subscription supports up to 5 appointments",
         support: "Support CheckID FacialSense Visitor Management client",
         noneed:
@@ -652,27 +652,27 @@ export default {
         howcan: "Can it be deployed on Mobile platform?",
         howcandes:
           "Yes, CheckID FacialSense Visitor Management client for Windows and Android provides the following visitor management functions",
-        howcandes1: "Visitor walk-in registration kiosk",
+        howcandes1: "Visitor walk in registration kiosk",
         howcandes2: "Visitor biometric attendance and access control",
         howcandes3: "Visitor information display",
         howcandes4: "Visitor assistant ",
 
-        cani: "Is it a contactless and paper free system?",
-        canides: " Our system is contactless and paper free. ",
+        cani: "Can it be pure contact-less system and paper free?",
+        canides: " it is pure contactless and paper free. ",
         canides1:
-          "Biometric only walk-in registration using facial recognition or contactless iris/fingerprint capture devices.",
+          "Biometric only walk in registration with using face or non touched iris or fingerprint capture devices.",
         canides2:
-          "Online registration support to register from visitors own device",
+          "Online registration support to register from visitor own device",
         canides3:
-          "Notification email of Visitor pass or QR code to use if required",
+          "Notification email of Visitor pass on QR code o use if required",
         canides4: "Visitor registration with their own RFID Identity card",
 
-        whatare: "Is the system customizable with no or little charges?",
+        whatare: "Does the system customizable with no or little charges?",
         whataredes:
-          "Yes, the system is highly configurable for different requirements. Any customer specific requirements can be added with an extension without compromizing any future product update capabilities.",
-        isit: "Is the system scalable? ",
+          "Yes. System is highly configurable for different requirements. Any customer soecific requirements can be added with an extention without compromizing the fututure product update capability.",
+        isit: "Does the system scalable?",
         desisit:
-          "The CheckID FacialSense Visitor Management system is based on microservices and can be scaled according to project size.",
+          "The CheckID FacialSense Visitor Management system is based on micro services and can be scalled to any volume.",
       },
       still: {
         header: "Still have questions?",
@@ -1137,6 +1137,8 @@ export default {
       why: "Why",
       choose: "choose",
       increasetem: "Increase Team Satisfaction",
+      quickstart:"Step-by-step guides are provided for you to start with our time tracking software for remote employees",
+
 
 
 
@@ -1256,7 +1258,7 @@ export default {
       cusztom: "Customizable around your business requirements",
       our:"Our time and attendance software for hospitality system is a turnkey solution that has been designed to fit seamlessly into your business HR and payroll operations.",
       simmular: "Simultaneously, it will ensure your employees are accurately compensated for the time they invest during working hours. ",
-      contactwithstart:" Contact us to get started ",
+      contactwithstart:" Contact Us To Get Started ",
 
       keyfeatures: "Key Features",
       key: "Key",

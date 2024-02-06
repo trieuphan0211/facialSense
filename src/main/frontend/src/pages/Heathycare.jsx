@@ -37,13 +37,17 @@ export const Heathycare = () => {
     let check ;
     let content ;
     let content1;
-    if (width > 506){
-        content = contentHeading(t("industries.healthcare.header"), undefined, "[#B9AAFD]", "white")
+    if (width > 519){
+        
+        content = i18n.language === "en" ? (contentHeading(t("industries.healthcare.header"), undefined, "[#B9AAFD]", "white"))
+        : (contentHeading("Chăm Sóc Sức Khoẻ", undefined, "[#B9AAFD]", "white"))
         check = true;
         content1 = contentHeading(t("industries.healthcare.header"), undefined,  "[var(--tree-poppy)]", "[#1C2045]")
     }
-    else if (width < 507 && width >= 364) {
-        content =  contentHeading(t("industries.healthcare.cham"), t("industries.healthcare.khoe"), "[#B9AAFD]", "white")
+    else if (width < 519 && width >= 364) {
+        content = i18n.language === "en" ? (contentHeading(t("industries.healthcare.cham"), t("industries.healthcare.khoe"), "[#B9AAFD]", "white")) : (
+            (contentHeading("Chăm Sóc Sức", "Khoẻ", "[#B9AAFD]", "white"))
+        )
         check = true;
         content1 = i18n.language === "en" ? (contentHeading(t("industries.healthcare.header"), undefined,  "[var(--tree-poppy)]", "[#1C2045]")) :
         (
@@ -53,7 +57,9 @@ export const Heathycare = () => {
 
            
     }else{
-        content =   contentHeading(t("industries.healthcare.chamsoc"), t("industries.healthcare.suckhoe"), "[#B9AAFD]", "white")    
+        content =  i18n.language === "en" ? ( contentHeading(t("industries.healthcare.chamsoc"), t("industries.healthcare.suckhoe"), "[#B9AAFD]", "white")   ) : (
+            contentHeading("Chăm sóc", "Sức Khoẻ",  "[#B9AAFD]", "white")
+        ) 
         check = true;
         content1 = i18n.language === "en" ? (contentHeading(t("industries.healthcare.header"), undefined,  "[var(--tree-poppy)]", "[#1C2045]")) : 
         (

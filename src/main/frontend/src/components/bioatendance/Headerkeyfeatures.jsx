@@ -47,7 +47,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                                 <span>{nameHader1}</span>
                         
                         </h1>
-                        <p className=" text-center text-[#3A505F] font-normal max-w-[806px]">{desHeader}</p>
+                        <p className=" text-center text-[#3A505F] text-[18px] font-normal max-w-[950px]">{desHeader}</p>
                         </div>
             ) : (
                 width < 358 ? ( 
@@ -73,7 +73,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                         
                     </h1>
                   
-                    <p className="text-center text-[#3A505F] max-w-[1000px]">{desHeader}</p>
+                    <p className="text-center text-[18px] text-[#3A505F] max-w-[1000px]">{desHeader}</p>
                 </div>
                 ) : (
                 <div className=" flex flex-col gap-[15px] items-center " >
@@ -102,7 +102,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                             ) : null}
                        
                     </h1>
-                    <p className="text-center text-[#3A505F] max-w-[1000px]">{desHeader}</p>
+                    <p className="text-center text-[#3A505F] text-[18px] max-w-[1000px]">{desHeader}</p>
                 </div>)
             )}
 

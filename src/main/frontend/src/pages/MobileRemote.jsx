@@ -2,12 +2,13 @@
 import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { QuickStart } from "../components/common";
 import { Question } from "../components/common";
 import {  Headerkeyfeatures, Features, Whychoose } from "../components/bioatendance/"
 import multiple from "../assets/img/industries/biometricoffice/multiple.png"
 import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
-
+import left from "../assets/img/products/facialsensevisitormanagement/about-left.png.png";
+import right from "../assets/img/products/facialsensevisitormanagement/about-shape.png.png";
+import { LeafButton, PoppyButton } from "../components/button";
 import liveness from "../assets/img/industries/biometricoffice/liveness.png"
 import { Link } from 'react-router-dom';
 
@@ -48,37 +49,37 @@ export const MobileRemote = () => {
             generateHeader(t("industries.mobileandremote.header"),undefined,"[#B9AAFD]", 'white')
             ) : (
             <div>
-                {width < 944 && width >= 780 && (
+                {width < 983 && width >= 826 && (
                     <div>
                         <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
-                        {t("industries.mobileandremote.hadernhan1")}
+                        Nhân Viên Di Động Và Làm Việc
                       
                         </h1>
                         <br />
                         <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                            {t("industries.mobileandremote.tuxa")}
+                            Từ Xa
                         </h1>
                         
                        
                     </div>
                 )}
                 {
-                    width < 780 && (
+                    width < 826 && (
                         <div>
                         <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
-                        {t("industries.mobileandremote.hadernhan2")}
+                        Nhân Viên Di Động Và Làm
                       
                         </h1>
                         <br />
                         <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                            {t("industries.mobileandremote.tuxa2")}
+                        Việc Từ Xa
                         </h1>
                         
                       
                     </div>
                     )
                 }
-                {width > 943 && (generateHeader(t("industries.mobileandremote.header"),undefined,"[#B9AAFD]", 'white'))}
+                {width > 982 && (generateHeader("Nhân Viên Di Động Và Làm Việc Từ Xa",undefined,"[#B9AAFD]", 'white'))}
             </div>
         );
         
@@ -119,7 +120,7 @@ export const MobileRemote = () => {
             </div>
         );
     } 
-    else if (width <= 735 && width > 518) {
+    else if (width < 735 ) {
         console.log(width)
         content = i18n.language === "en" ? ( generateHeader(t("industries.mobileandremote.header3"),t("industries.mobileandremote.employee"),"[#B9AAFD]",'white')
         ) : (
@@ -127,35 +128,56 @@ export const MobileRemote = () => {
             {width < 735  && width >= 501 && (
                 <div>
                     <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
-                    {t("industries.mobileandremote.headernhan")}
+                    Nhân Viên Di Động
                   
                     </h1>
                     <br />
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                        {t("industries.mobileandremote.xa")}
+                        Và Làm Việc Từ Xa
                     </h1>
                    
                 </div>
             )}
             {
-                width < 501 && (
+                width < 501 && width >= 353 && (
                     <div>
                     <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
-                    {t("industries.mobileandremote.employee")}
+                         Nhân Viên Di
                   
                     </h1>
                     <br />
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                        {t("industries.mobileandremote.mobile1")}
+                         Động Và Làm
                     </h1>
                     <br />
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                        {t("industries.mobileandremote.lam")}
+                        Việc Từ Xa
                     </h1>
                    
                 </div>
             )}
-
+            {
+                width < 353 && (
+                    <div>
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        Nhân Viên
+                  
+                    </h1>
+                    <br />
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                       Di Động
+                    </h1>
+                    <br />
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                       Và Làm
+                    </h1>
+                    <br />
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                       Từ Xa
+                    </h1>
+                </div>
+                )
+            }
           
             </div>
         );
@@ -201,7 +223,7 @@ export const MobileRemote = () => {
                 </div>
             )}
             {
-                width < 501 && (
+                width < 501 && width >= 353 && (
                     <div>
                     <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
                     {t("industries.mobileandremote.employee")}
@@ -219,78 +241,33 @@ export const MobileRemote = () => {
                 </div>
                 )
             }
-            </div>
-          );
-        }
-       else {
-        content = i18n.language === "en" ? (
-          <div>
-           <div>
-            {generateHeader(t("industries.mobileandremote.header2"),t("industries.mobileandremote.remote"),"[#B9AAFD]",'white')}
-            {generateHeader(t("industries.mobileandremote.employee"),undefined,"[#B9AAFD]",'white')}
-          </div>
-          </div>
-        ) : (
-            <div>
-            <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
-            {t("industries.mobileandremote.employee")}
-          
-            </h1>
-            <br />
-            <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                {t("industries.mobileandremote.mobile1")}
-            </h1>
-            <br />
-            <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                {t("industries.mobileandremote.lam")}
-            </h1>
-           
-        </div>
-        );
-        checkne = true;
-        content1 = i18n.language === "en" ? (
-                <div>
-                <div className="inline-block 460sm:block">
+             {
+                width < 353 && (
+                    <div>
                     <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
-                        {t("industries.mobileandremote.header2")}
-                    </h1>
-                    <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
-                        {t("industries.mobileandremote.remote")}
-                    </h1>
-
-                    <br />
-                
-                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
-                        {t("industries.mobileandremote.employee")} 
-                        
-                        </h1>
-                        <br />
-                        {t("industries.mobileandremote.headermobile")}
-                    
-                </div>
-            
-            </div>
-        
-           
-          ) : (
-            <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
-                    {t("industries.mobileandremote.employee")}
+                        Nhân viên
                   
                     </h1>
                     <br />
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
-                        {t("industries.mobileandremote.mobile1")}
+                       di động
                     </h1>
                     <br />
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
-                        {t("industries.mobileandremote.lam")}
+                       và làm
+                    </h1>
+                    <br />
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                       từ xa
                     </h1>
                     {t("industries.mobileandremote.headermobile")}
                 </div>
+                )
+            }
+            </div>
           );
-      }
+        }
+     
   
     return (
         <>
@@ -321,7 +298,20 @@ export const MobileRemote = () => {
                             </div>
                         </div>
             </div>      
-            <QuickStart />
+            <div className=" bg-[#293990] relative ">
+                    <img src={left} className=" absolute top-0 left-0 "></img>
+                    <img src={right} className=" absolute right-0 bottom-0 "></img>
+                    <div className=" flex items-center justify-center">
+                        <div className="flex flex-col gap-[30px] py-[50px] lg:px-[35px]  px-[250px] items-center sm:items-stretch ">
+                            <h1 className="text-center text-[#eef3fa] font-extrabold  text-[38px] leading-[56px]" >{t("products.facialsensevisitormanagement.quickstartguide.header")}</h1>
+                            <p className="text-center text-[#eef3fa] font-normal  text-[16px] leading-[24px] max-w-[540px]">{t("industries.mobileandremote.quickstart")}</p>
+                            <div className="flex  gap-6 xl:justify-center sm:flex-col ">
+                            <PoppyButton title={t("products.facialsensevisitormanagement.quickstartguide.cloud")} />
+                            <LeafButton title={t("products.facialsensevisitormanagement.quickstartguide.onpremises")} />
+                            </div>
+                        </div>
+                    </div>
+             </div>
             <div className="relative">
                 <img src={choose1} className="w-[574px] h-[737px] absolute top-[-50px] right-0 " alt="" />
                 <div className="  max-w-[1300px]  mx-auto pt-[90px] pb-[50px] flex flex-col items-center relative ">

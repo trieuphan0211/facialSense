@@ -546,7 +546,7 @@ export const Facialsensevisitormanagement = () => {
                 </span>
               </h1>
             ) : (
-              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  ">
                 <span
                   style={{ whiteSpace: "nowrap" }}
                   className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
@@ -567,7 +567,7 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={secure} alt="" />
               <div className="mt-[20px] ">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+                <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlesecure"
                   )}
@@ -580,11 +580,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={safe} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlesafe"
-                  )}
-                </p>
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
+                    {t(
+                      "products.facialsensevisitormanagement.fearures.titlesafe"
+                    )}
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titlesafe"
+                    )}
+                    </p>
+                  )
+                }
+            
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t("products.facialsensevisitormanagement.fearures.safe")}
                 </p>
@@ -593,11 +604,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={online} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titleonline"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titleonline"
+                    )}
+                    </p>
+                  )
+                }
+               
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t("products.facialsensevisitormanagement.fearures.online")}
                 </p>
@@ -607,11 +629,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={automated} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titleautomated"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titleautomated"
+                    )}
+                    </p>
+                  )
+                }
+               
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t(
                     "products.facialsensevisitormanagement.fearures.automated"
@@ -622,7 +655,7 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={realtime} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+                <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlerealtime"
                   )}
@@ -635,11 +668,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full ">
               <img className="w-[84px] h-[70px]" src={electro} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titleelectronic"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titleelectronic"
+                    )}
+                    </p>
+                  )
+                }
+               
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t(
                     "products.facialsensevisitormanagement.fearures.electronic"
@@ -651,11 +695,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={data} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
+                {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
+                  {  t(
                     "products.facialsensevisitormanagement.fearures.titledata"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titledata"
+                    )}
+                    </p>
+                  )
+                }
+                
                 <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
                   {t("products.facialsensevisitormanagement.fearures.data")}
                 </p>
@@ -664,11 +719,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={sabiofe} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlebiometric"
                   )}
                 </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titlebiometric"
+                    )}
+                    </p>
+                  )
+                }
+                
                 <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
                   {t(
                     "products.facialsensevisitormanagement.fearures.biometric"
@@ -679,7 +745,7 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={custom} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+                <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlecustomizable"
                   )}

@@ -222,11 +222,11 @@ export const StudentAttendance = () => {
                             <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
                                 {content1}
                             </h1>
-                            <p className="text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">
+                            <p className="text-[#3A505F] leading-[25px] text-[20px] font-montserrat mt-[15px]">
                                
                                 <strong>{t("industries.student.thecheckid")}</strong>
                             </p>
-                            <p className="text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">
+                            <p className="text-[#3A505F] leading-[25px] text-[20px] font-montserrat mt-[15px]">
                                
                                 <strong>{t("industries.student.wehave")}</strong>
                             </p>

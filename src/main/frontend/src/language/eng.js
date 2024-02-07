@@ -1064,6 +1064,7 @@ export default {
     },
     retailworkforce: {
       headertitle: "Retail Workforce",
+      headertitle1: "Retail Workforce",
       retail1: "Retail",
       work: "Workforce",
       header: " Time & Attendance Monitoring System",

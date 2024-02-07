@@ -8,7 +8,7 @@ import multiple from "../assets/img/industries/biometricoffice/multiple.png"
 import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
 import left from "../assets/img/products/facialsensevisitormanagement/about-left.png.png";
 import right from "../assets/img/products/facialsensevisitormanagement/about-shape.png.png";
-import { LeafButton, PoppyButton } from "../components/button";
+import { CloudButton, LeafButton } from "../components/button";
 import liveness from "../assets/img/industries/biometricoffice/liveness.png"
 import { Link } from 'react-router-dom';
 
@@ -306,7 +306,7 @@ export const MobileRemote = () => {
                             <h1 className="text-center text-[#eef3fa] font-extrabold  text-[38px] leading-[56px]" >{t("products.facialsensevisitormanagement.quickstartguide.header")}</h1>
                             <p className="text-center text-[#eef3fa] font-normal  text-[16px] leading-[24px] max-w-[540px]">{t("industries.mobileandremote.quickstart")}</p>
                             <div className="flex  gap-6 xl:justify-center sm:flex-col ">
-                            <PoppyButton title={t("products.facialsensevisitormanagement.quickstartguide.cloud")} />
+                            <CloudButton title={t("products.facialsensevisitormanagement.quickstartguide.cloud")} />
                             <LeafButton title={t("products.facialsensevisitormanagement.quickstartguide.onpremises")} />
                             </div>
                         </div>

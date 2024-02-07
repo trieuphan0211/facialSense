@@ -9,7 +9,7 @@ export default {
             name: "",
             item: [
               {
-                name: "chấm công sinh trắc học CheckID FacialSense",
+                name: "Chấm công sinh trắc học CheckID FacialSense",
               },
               {
                 name: "Quản lý khách truy cập CheckID FacialSense",
@@ -526,9 +526,10 @@ export default {
     },
   },
   products: {
-    facialsensevisitormanagement : {
+    facialsensevisitormanagement: {
       solution: {
-        header: "Hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt CheckID FacialSense",
+        header:
+          "Hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt CheckID FacialSense",
         description:
           "Giải pháp chính xác và hiệu quả để quản lý các cuộc hẹn và cung cấp quyền truy cập cho khách hàng",
         get: "Thử nghiệm miễn phí",
@@ -539,84 +540,109 @@ export default {
         day: "Thứ Sáu, ngày 12 tháng 8 năm 2022",
         time: "07:55:41 AM",
         checkid: "CheckID FacialSense VMS",
-        titlecheckid: "Đây là lời nhắc rằng bạn có một cuộc hẹn được lên lịch vào ngày mai lúc 10 giờ sáng.",
-        time1: "Hiện nay"
+        titlecheckid:
+          "Đây là lời nhắc rằng bạn có một cuộc hẹn được lên lịch vào ngày mai lúc 10 giờ sáng.",
+        time1: "Hiện nay",
       },
       benefits: {
-        header: " của hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+        header:
+          " của hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
         benefitheader: "Các lợi ích",
         institution: "Đối với tổ chức",
         titlesecurity: "Bảo mật",
-        security: " - khách hàng được xác thực trước khi nhập cơ sở, đảm bảo chỉ có quyền truy cập được ủy quyền.",
+        security:
+          " - khách hàng được xác thực trước khi nhập cơ sở, đảm bảo chỉ có quyền truy cập được ủy quyền.",
         titleappointment: "Đặt hẹn mà không gặp rắc rối",
         appointment: " - hệ thống tự động quản lý các khe cắm.",
         titleincrease: "Tăng hiệu suất theo dõi chấm công",
-        increase: " - sử dụng nhận diện bằng quan sát thông minh sử dụng camera giúp theo dõi các nhóm công nhân lớn một cách dễ dàng.",
-  
+        increase:
+          " - sử dụng nhận diện bằng quan sát thông minh sử dụng camera giúp theo dõi các nhóm công nhân lớn một cách dễ dàng.",
+
         user: "Đối với người dùng",
         titleconvenience: "Thuận tiện",
         convenience: " - dễ dàng đặt hẹn từ bất kỳ đâu và bất kỳ lúc nào.",
         titleautomatic: "Cảnh báo tự động",
-        automatic: " - hệ thống sẽ nhắc bạn về các cuộc hẹn, trong trường hợp bạn quên điều đó.",
+        automatic:
+          " - hệ thống sẽ nhắc bạn về các cuộc hẹn, trong trường hợp bạn quên điều đó.",
         titlecontactless: "Check-in không tiếp xúc ",
-        contactless: " - quét đa dạng giúp tạo ra một giải pháp vệ sinh hơn để truy cập cơ sở.",
+        contactless:
+          " - quét đa dạng giúp tạo ra một giải pháp vệ sinh hơn để truy cập cơ sở.",
       },
       systemserver: {
-        header: "Máy chủ hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
-  
+        header:
+          "Máy chủ hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+
         cloud: "Đám mây",
-        descriptioncloud: "Quản lý và xác thực sinh trắc học của khách truy cập với hệ thống kiểm soát truy cập dưới dạng dịch vụ đám mây.",
+        descriptioncloud:
+          "Quản lý và xác thực sinh trắc học của khách truy cập với hệ thống kiểm soát truy cập dưới dạng dịch vụ đám mây.",
         monthly: "Đăng ký hàng tháng",
         subscription: "Giá đăng ký phụ thuộc vào số lượng khách truy cập",
         free: "Đăng ký miễn phí hỗ trợ tới 5 cuộc hẹn",
-        support: "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
-        noneed: "Không cần lo lắng về việc cài đặt máy chủ và không cần bảo trì.",
+        support:
+          "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
+        noneed:
+          "Không cần lo lắng về việc cài đặt máy chủ và không cần bảo trì.",
         signup: "Đăng ký",
-  
+
         premises: "Trên cơ sở",
-        descriptionpremises: "Hệ thống quản lý và xác thực khách truy cập sinh trắc học với kiểm soát truy cập có thể được lưu trữ tại cơ sở của riêng bạn.",
+        descriptionpremises:
+          "Hệ thống quản lý và xác thực khách truy cập sinh trắc học với kiểm soát truy cập có thể được lưu trữ tại cơ sở của riêng bạn.",
         one: "Mua một lần",
         nolimitation: "Không giới hạn về số lượng cuộc hẹn",
         needno: "Cần cài đặt máy chủ bởi chính bạn",
-        support1: "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
-        customer: "Khách hàng có quyền tự do cài đặt và cấu hình máy chủ Hệ thống Quản lý Khách hàng sử dụng công nghệ nhận diện khuôn mặt",
-        download: "Tải bản dùng thử"
+        support1:
+          "Hỗ trợ cho khách hàng của CheckID FacialSense Visitor Management",
+        customer:
+          "Khách hàng có quyền tự do cài đặt và cấu hình máy chủ Hệ thống Quản lý Khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+        download: "Tải bản dùng thử",
       },
       quickstartguide: {
         header: "Hướng dẫn bắt đầu nhanh chóng",
-        description: "Hướng dẫn từng bước được cung cấp để bạn có thể bắt đầu sử dụng hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt CheckID FacialSense.",
+        description:
+          "Hướng dẫn từng bước được cung cấp để bạn có thể bắt đầu sử dụng hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt CheckID FacialSense.",
         cloud: "Đám mây",
-        onpremises: "Trên cơ sở"
+        onpremises: "Trên cơ sở",
       },
-  
+
       fearures: {
-        header: " của hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
+        header:
+          " của hệ thống quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt",
         featureheader: "Các tính năng",
-        description: "Đội ngũ giàu kinh nghiệm và chuyên nghiệp của chúng tôi đã phát triển một phần mềm quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt đầy đủ các tính năng độc đáo để đưa quản lý khách hàng của doanh nghiệp bạn lên một tầm cao mới",
+        description:
+          "Đội ngũ giàu kinh nghiệm và chuyên nghiệp của chúng tôi đã phát triển một phần mềm quản lý khách hàng sử dụng công nghệ nhận diện khuôn mặt đầy đủ các tính năng độc đáo để đưa quản lý khách hàng của doanh nghiệp bạn lên một tầm cao mới",
         titlesecure: "Bảo vệ quyền truy cập của khách hàng",
-        secure: "Quét mã vạch, RFID, khuôn mặt, vân tay và nhận diện mống mắt cung cấp quyền truy cập nhanh chóng, hiệu quả và an toàn cho các cuộc hẹn và giao tiếp với khách hàng.",
+        secure:
+          "Quét mã vạch, RFID, khuôn mặt, vân tay và nhận diện mống mắt cung cấp quyền truy cập nhanh chóng, hiệu quả và an toàn cho các cuộc hẹn và giao tiếp với khách hàng.",
         titlesafe: "An toàn và vệ sinh",
         safe: "Công nghệ nhận diện không tiếp xúc với mã vạch, RFID, khuôn mặt và mống mắt không tạo ra sự tiếp xúc với khách hàng.",
         titleonline: "Đặt hẹn trước trực tuyến",
-        online: "Đặt hẹn trước trực tuyến cho phép khách hàng lên kế hoạch cho cuộc thăm của họ trước và truy cập một cách thuận lợi.",
+        online:
+          "Đặt hẹn trước trực tuyến cho phép khách hàng lên kế hoạch cho cuộc thăm của họ trước và truy cập một cách thuận lợi.",
         titleautomated: "Kiểm soát truy cập tự động",
-        automated: "Các cổng hạn chế và cho phép khách hàng được kiểm soát bằng các thiết bị chấm công.",
+        automated:
+          "Các cổng hạn chế và cho phép khách hàng được kiểm soát bằng các thiết bị chấm công.",
         titlerealtime: "Phân tích thời gian thực về khách hàng",
-        realtime: "Các thiết bị chấm công của khách hàng ghi lại thông tin về việc cho phép và từ chối truy cập trong hệ thống.",
+        realtime:
+          "Các thiết bị chấm công của khách hàng ghi lại thông tin về việc cho phép và từ chối truy cập trong hệ thống.",
         titleelectronic: "Thẻ điện tử",
-        electronic: "Tự động tạo ra thẻ hoặc thẻ điện tử cụ thể như mã vạch, RFID và biển số xe được phép sử dụng làm thẻ khách.",
+        electronic:
+          "Tự động tạo ra thẻ hoặc thẻ điện tử cụ thể như mã vạch, RFID và biển số xe được phép sử dụng làm thẻ khách.",
         titledata: "Quyền riêng tư dữ liệu",
         data: "Các hoạt động của khách hàng được thực hiện bởi nhân viên ủy quyền, do đó thông tin về khách hàng và cuộc thăm được bảo vệ khỏi việc truy cập trái phép",
-        titlebiometric: "Nhận diện khách hàng bằng công nghệ nhận diện khuôn mặt",
-        biometric: "Hệ thống kiểm soát và quản lý sử dụng nhiều công nghệ nhận diện khuôn mặt, vân tay và mống mắt.",
+        titlebiometric:
+          "Nhận diện khách hàng bằng công nghệ nhận diện khuôn mặt",
+        biometric:
+          "Hệ thống kiểm soát và quản lý sử dụng nhiều công nghệ nhận diện khuôn mặt, vân tay và mống mắt.",
         titlecustomizable: "Ghi chú cuộc thăm có thể tùy chỉnh",
-        customizable: "Ghi chú cuộc thăm được tùy chỉnh với các biểu mẫu và đính kèm có thể được sử dụng để tạo ra nhật ký chi tiết về khách hàng.",
+        customizable:
+          "Ghi chú cuộc thăm được tùy chỉnh với các biểu mẫu và đính kèm có thể được sử dụng để tạo ra nhật ký chi tiết về khách hàng.",
       },
       applications: {
         header: "Ứng dụng và công nghiệp",
         applica: "Ứng dụng và",
         insdus: " công nghiệp",
-        description: "Hệ thống chấm công Sinh học của chúng tôi có thể được sử dụng thành công bởi nhiều doanh nghiệp và tổ chức khác nhau.",
+        description:
+          "Hệ thống chấm công Sinh học của chúng tôi có thể được sử dụng thành công bởi nhiều doanh nghiệp và tổ chức khác nhau.",
         organizations: "Tổ chức",
         travel: "Du lịch và chuyến đi",
         hotel: "Khách sạn và nhà hàng",
@@ -624,177 +650,477 @@ export default {
         bank: "Ngân hàng",
         building: "Công trình và căn hộ",
         school: "Trường học và khuôn viên",
-        customer: "Hỗ trợ khách hàng"
+        customer: "Hỗ trợ khách hàng",
       },
-  
+
       askedquestions: {
-        header : "Câu hỏi thường gặp",
+        header: "Câu hỏi thường gặp",
         description: "Mọi thông tin bạn cần biết về sản phẩm và thanh toán.",
-        
-          howi: "Hệ thống quản lý khách hàng có hỗ trợ đám mây không?",
-          howides: "Có.",
-          howcan: "Có thể triển khai trên nền tảng di động không?",
-          howcandes: "Có, ứng dụng quản lý khách hàng CheckID FacialSense cho Windows và Android cung cấp các chức năng quản lý khách thăm sau đây:",
-          howcandes1: "Kiosk đăng ký đến làm khách hàng",
-          howcandes2: "Chấm công và kiểm soát truy cập bằng sinh trắc học của khách hàng",
-          howcandes3: "Hiển thị thông tin của khách hàng",
-          howcandes4: "Trợ lý của khách hàng",
-        
-          cani: "Có phải là một hệ thống không tiếp xúc và không sử dụng giấy không?",
-          canides: "Hệ thống của chúng tôi không tiếp xúc và không sử dụng giấy.",
-          canides1: "Chỉ cần đăng ký bằng sinh trắc học sử dụng nhận dạng khuôn mặt hoặc thiết bị chụp vân tay/retina không tiếp xúc.",
-          canides2: "Hỗ trợ đăng ký trực tuyến để đăng ký từ thiết bị của khách",
-          canides3: "Email thông báo về thẻ vào hoặc mã QR để sử dụng nếu cần",
-          canides4: "Đăng ký khách hàng với thẻ nhận diện RFID riêng của họ",
-        
-          whatare: "Hệ thống có thể tùy chỉnh mà không tốn phí hoặc tốn ít phí không?",
-          whataredes: "Có, hệ thống có khả năng tùy chỉnh cao cho các yêu cầu khác nhau. Bất kỳ yêu cầu cụ thể của khách hàng nào cũng có thể được thêm vào mà không ảnh hưởng đến khả năng cập nhật sản phẩm trong tương lai.",
-          isit: "Hệ thống có thể mở rộng được không?",
-          desisit: "Hệ thống quản lý khách hàng CheckIDFacialSense được xây dựa trên kiến trúc microservices và có thể mở rộng theo kích thước dự án."
-        
-        
+
+        howi: "Hệ thống quản lý khách hàng có hỗ trợ đám mây không?",
+        howides: "Có.",
+        howcan: "Có thể triển khai trên nền tảng di động không?",
+        howcandes:
+          "Có, ứng dụng quản lý khách hàng CheckID FacialSense cho Windows và Android cung cấp các chức năng quản lý khách thăm sau đây:",
+        howcandes1: "Kiosk đăng ký đến làm khách hàng",
+        howcandes2:
+          "Chấm công và kiểm soát truy cập bằng sinh trắc học của khách hàng",
+        howcandes3: "Hiển thị thông tin của khách hàng",
+        howcandes4: "Trợ lý của khách hàng",
+
+        cani: "Có phải là một hệ thống không tiếp xúc và không sử dụng giấy không?",
+        canides: "Hệ thống của chúng tôi không tiếp xúc và không sử dụng giấy.",
+        canides1:
+          "Chỉ cần đăng ký bằng sinh trắc học sử dụng nhận dạng khuôn mặt hoặc thiết bị chụp vân tay/retina không tiếp xúc.",
+        canides2: "Hỗ trợ đăng ký trực tuyến để đăng ký từ thiết bị của khách",
+        canides3: "Email thông báo về thẻ vào hoặc mã QR để sử dụng nếu cần",
+        canides4: "Đăng ký khách hàng với thẻ nhận diện RFID riêng của họ",
+
+        whatare:
+          "Hệ thống có thể tùy chỉnh mà không tốn phí hoặc tốn ít phí không?",
+        whataredes:
+          "Có, hệ thống có cấu hình cao cho các yêu cầu khác nhau. Bất kỳ yêu cầu cụ thể nào của khách hàng đều có thể được thêm vào với tiện ích mở rộng mà không cần kết hợp bất kỳ khả năng cập nhật sản phẩm nào trong tương lai.",
+        isit: "Hệ thống có thể mở rộng được không?",
+        desisit:
+          "Hệ thống quản lý khách truy cập CheckID FacialSense dựa trên các dịch vụ vi mô và có thể được gọi đến bất kỳ khối lượng nào",
       },
       still: {
         header: "Vẫn còn câu hỏi?",
-        description: "Liên hệ với chúng tôi ngay bây giờ để mọi thắc mắc - chúng tôi ở đây để giúp bạn.",
-        contact: "Liên hệ với chúng tôi"
-      }
-    }
+        description:
+          "Liên hệ với chúng tôi ngay bây giờ để mọi thắc mắc - chúng tôi ở đây để giúp bạn.",
+        contact: "Liên hệ với chúng tôi",
+      },
+    },
+    bioattendance: {
+      intro: {
+        header: "CheckID FacialSense hệ thống chấm công sinh trắc học",
+        description:
+          "Giải pháp chính xác và hiệu quả cho đăng ký, quản lý thời gian và chấm công.",
+        button: "Thử miễn phí",
+      },
+      benefits: {
+        header: {
+          bio: " hệ thống Quản lý Khách và Nhân viên qua Sinh trắc học",
+          benefit: "Lợi ích",
+        },
+        body: [
+          {
+            title: "Đối với tổ chức",
+            content: [
+              {
+                title: "Hiệu quả chi phí",
+                content:
+                  "Không cần thẻ ID, thẻ nhận dạng hoặc trang thiết bị khác cho người dùng hệ thống, họ chỉ cần sử dụng sinh trắc học.",
+              },
+              {
+                title: "Độ chính xác và bảo mật cao",
+                content:
+                  "Nhận diện dựa trên sinh trắc học đa phương tiện giúp đạt được độ chính xác rất cao và đáng tin cậy để ngăn chặn gian lận.",
+              },
+              {
+                title: 'Không có "buddy punching"',
+                content:
+                  "Không ai có thể đăng ký hoặc đăng xuất giả mạo thay mặt người lao động / người dùng / người tham dự khác.",
+              },
+              {
+                title: "Tích hợp linh hoạt",
+                content:
+                  "CheckID FacialSense cung cấp khả năng xuất dữ liệu linh hoạt đến nhiều hệ thống lương phổ biến.",
+              },
+              {
+                title: "Tăng cường hiệu suất giám sát chấm công",
+                content:
+                  "Sử dụng nhận diện và xác định không chủ động trong khi sử dụng camera giám sát giúp giám sát một lực lượng lao động lớn một cách dễ dàng.",
+              },
+            ],
+          },
+          {
+            title: "Đối với người sử dụng",
+            content: [
+              {
+                title: "Dễ sử dụng",
+                content: "Không bao giờ lo lắng về việc quên thẻ thời gian.",
+              },
+              {
+                title: "Chính xác",
+                content:
+                  "Bằng cách sử dụng nhận diện khuôn mặt, vân tay hoặc mống mắt đảm bảo rằng thời gian làm việc của bạn được ghi lại chính xác.",
+              },
+              {
+                title: "Bất kỳ lúc, ở mọi nơi",
+                content:
+                  "Ghi lại thời gian làm việc từ bất kỳ đâu bạn đang làm việc bằng điện thoại thông minh cá nhân của bạn.",
+              },
+              {
+                title: "Chấm công không tiếp xúc",
+                content:
+                  "Quét đa dạng sinh trắc học cung cấp một giải pháp sạch sẽ hơn cho giám sát chấm công.",
+              },
+              {
+                title: "Chấm công ngoại tuyến",
+                content:
+                  "Không bao giờ lo lắng về việc không có kết nối và lỡ lãi. Giải pháp chấm công sinh trắc học CheckID FacialSense ghi lại thời gian làm việc của bạn an toàn khi ngoại tuyến.",
+              },
+            ],
+          },
+        ],
+      },
+
+      clientHeader: "Máy khách BioAttendance",
+      client: [
+        {
+          header: "Đám mây",
+          title:
+            "Hệ thống quản lý nhân viên và kiểm soát truy cập sinh trắc học dưới dạng dịch vụ đám mây.",
+          content: [
+            { title: "Đăng ký hàng tháng" },
+            { title: "Giá đăng ký phụ thuộc vào số lượng nhân viên" },
+            { title: "Đăng ký miễn phí hỗ trợ tối đa 5 người dùng" },
+            {
+              title:
+                "Hỗ trợ ứng dụng khách CheckID FacialSense Standard và Lite",
+            },
+            {
+              title:
+                "Không cần lo lắng về cài đặt máy chủ và không cần bảo trì.",
+            },
+          ],
+          button: "Đăng ký",
+        },
+        {
+          header: "On-premises",
+          title:
+            "Hệ thống quản lý nhân viên và kiểm soát truy cập sinh trắc học có thể tự lưu trữ trên máy chủ của bạn.",
+          content: [
+            { title: "Mua một lần" },
+            { title: "Không có giới hạn về số lượng nhân viên" },
+            { title: "Cần một máy tính để cài đặt phần mềm máy chủ" },
+            {
+              title:
+                "Hỗ trợ ứng dụng khách CheckID FacialSense Standard và Lite",
+            },
+            {
+              title: "Khách hàng có tự do cấu hình máy chủ theo ý muốn của họ",
+            },
+          ],
+          button: "Tải bản thử nghiệm",
+        },
+      ],
+      serverHeader: "Máy chủ BioAttendance",
+      server: {
+        header: {
+          parameters: "Tham số",
+          standard: "CheckID FacialSense Standard",
+          lite: "CheckID FacialSense Lite",
+        },
+        body: [
+          {
+            parameters: "Sinh trắc học",
+            standard: "khuôn mặt, vân tay, mống mắt",
+            lite: "khuôn mặt",
+          },
+          { parameters: "Tự động phát hiện và chụp khuôn mặt" },
+          { parameters: "Phát hiện tính sống của khuôn mặt" },
+          { parameters: "Nhận diện tất cả mọi người từ ảnh nhóm" },
+          { parameters: "Theo dõi hàng rào địa lý /n (Hạn chế vị trí)" },
+          { parameters: "Đăng nhập vị trí GPS" },
+          { parameters: "Ghi lại chấm công ngoại tuyến" },
+          {
+            parameters: "Hỗ trợ hệ điều hành",
+            standard: "Windows, Android",
+            lite: "Windows, Android, iOS",
+          },
+          { parameters: "Hoạt động độc lập" },
+          { parameters: "Kiểm soát truy cập" },
+          { parameters: "Chế độ kiosk" },
+          { parameters: "RFID, Mã vạch" },
+          { parameters: "Thiết bị cá nhân /n (Sử dụng thiết bị của bạn)" },
+          { parameters: "Giá", standard: "95 EUR / cài đặt", lite: "Miễn phí" },
+        ],
+      },
+
+      features: {
+        header: "Tính năng",
+        description:
+          "Các tính năng độc đáo của sản phẩm của chúng tôi đưa theo dõi thời gian và chấm công lên một tầm cao mới.",
+        body: [
+          {
+            title: "Nhận diện với khẩu trang",
+            description:
+              "Hệ thống chấm công sinh trắc học của chúng tôi có thể nhận diện một người ngay cả khi họ đang đeo khẩu trang, đảm bảo việc nhận diện an toàn và sạch sẽ.",
+          },
+          {
+            title: "Không tiếp xúc và sạch sẽ",
+            description:
+              "Không cần tiếp xúc vật lý khi người được nhận diện qua khuôn mặt hoặc mống mắt.",
+          },
+          {
+            title: "Nhiều sinh trắc học",
+            description:
+              "Không cần tiếp xúc vật lý khi người được nhận diện qua khuôn mặt hoặc mống mắt.",
+          },
+          {
+            title: "Theo dõi vị trí",
+            description:
+              "Báo cáo bao gồm tổng hợp giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác có thể được xuất khẩu vào hệ thống lương.",
+          },
+          {
+            title: "Báo cáo toàn diện",
+            description:
+              "Hệ thống chấm công của chúng tôi có thể theo dõi vị trí địa lý của người đó đăng ký/đăng xuất.",
+          },
+          {
+            title: "Phát hiện tính sống",
+            description:
+              "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác nhận rằng việc đăng ký đang được thực hiện bởi một người thật.",
+          },
+          {
+            title: "Phát hiện khuôn mặt thời gian thực",
+            description:
+              "Hệ thống có thể phát hiện khuôn mặt của một người đi qua mà không cần dừng lại và chờ camera chụp hình.",
+          },
+          {
+            title: "Nhiều phát hiện khuôn mặt",
+            description:
+              "Hệ thống chấm công sinh trắc học của chúng tôi có thể phát hiện và nhận diện khuôn mặt của tất cả mọi người xuất hiện trong bức ảnh.",
+          },
+        ],
+      },
+      applicationIndustries: {
+        header: {
+          application: "Ứng dụng",
+          and: "và",
+          industries: "Ngành công nghiệp",
+        },
+        description:
+          "Hệ thống Chấm công Sinh trắc học của chúng tôi có thể được sử dụng thành công bởi nhiều doanh nghiệp và tổ chức khác nhau.",
+        body: [
+          { title: "Văn phòng" },
+          { title: "Nhà máy và Kho" },
+          { title: "Lực lượng lao động di động" },
+          { title: "Dịch vụ và Lữ hành" },
+          { title: "Nông nghiệp" },
+          { title: "Công ty Xây dựng" },
+          { title: "Các Tổ chức Giáo dục" },
+          { title: "Tổ chức Y tế" },
+          { title: "Bán lẻ" },
+          { title: "Các lĩnh vực khác" },
+        ],
+      },
+      question: [
+        {
+          header: "Làm thế nào để thử nghiệm FacialSense Bio Attendance?",
+          body: "Bạn có thể đăng ký và sử dụng miễn phí với gói đăng ký đám mây không giới hạn thời gian (tối đa 5 người dùng) hoặc tải xuống và cài đặt phiên bản thử nghiệm, miễn phí trong 30 ngày.",
+        },
+        {
+          header:
+            "Làm thế nào để nâng cấp từ phiên bản thử nghiệm lên phiên bản trả phí?",
+          body: "Đối với FacialSense Bio Attendance Cloud, chỉ cần đăng nhập và nâng cấp gói đăng ký của bạn.",
+        },
+        {
+          header:
+            "Tôi có thể sử dụng dữ liệu từ phiên bản thử nghiệm trong phiên bản trả phí không?",
+          body: "Có, bạn có thể tiếp tục sử dụng dữ liệu thu thập được trong suốt thời gian thử nghiệm.",
+        },
+        {
+          header: "Yêu cầu về phần mềm và phần cứng là gì?",
+          body: "Hệ thống có thể chạy trên tất cả các PC Windows, máy tính bảng Windows và thiết bị Android (đối với iOS chỉ có ứng dụng khách cho nhân viên/người sử dụng). Cần có một camera để thực hiện nhận diện khuôn mặt. Hệ thống hỗ trợ webcam và camera tích hợp. Đối với việc nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoài. Các thiết bị được hỗ trợ được liệt kê ở đây. Khi kết nối, các thiết bị quét và camera được hỗ trợ được phát hiện và cấu hình tự động.",
+        },
+        {
+          header:
+            "Có cần phải có kết nối internet để sử dụng FacialSense Bio Attendance không?",
+          body: "Phiên bản trả phí On-Premises có thể chạy mà không cần kết nối internet. Kết nối internet cần thiết để kích hoạt giấy phép, sử dụng phiên bản thử nghiệm và cho phiên bản đám mây.",
+        },
+        {
+          header:
+            "Sự khác biệt giữa FacialSense Standard, FacialSense Server và FacialSense Lite là gì?",
+          items: [
+            {
+              header: "FacialSense Standard",
+              body: "- Ứng dụng chấm công đầy đủ chức năng với tất cả ba phương thức có sẵn (khuôn mặt, vân tay, mống mắt).",
+            },
+            {
+              header: "FacialSense Server",
+              body: "- Thích hợp để sử dụng trên máy chủ đã chọn của bạn và hoạt động như cơ sở dữ liệu trung tâm (bao gồm cả web cho quản trị viên).",
+            },
+            {
+              header: "FacialSense Lite",
+              body: "- Là ứng dụng đơn giản và miễn phí với thời gian không giới hạn, là một bổ sung cho các sản phẩm trả phí. Chỉ phù hợp để nhận diện người dùng (đăng ký/đăng xuất) thông qua khuôn mặt.",
+            },
+          ],
+        },
+        {
+          header:
+            "Dưới trường hợp mất kết nối (nếu bạn chạy FacialSense Bio Attendance trên máy chủ của bạn), điều gì sẽ xảy ra?",
+          body: "Bạn có thể cấu hình thiết bị để chạy ở chế độ ngoại tuyến. Khi máy chủ mất kết nối, thiết bị vẫn có thể thực hiện nhận diện nhân viên cục bộ và ghi lại chấm công. Phần mềm terminal chấm công cập nhật dữ liệu thu thập được ngoại tuyến ngay khi kết nối lại với máy chủ.",
+        },
+      ],
+    },
   },
 
   industries: {
-      biometricoffice: {
-        header: "Hệ thống điểm danh văn phòng bằng ",
-        hoc: "sinh trắc học",
-        bio: "điểm danh văn phòng bằng sinh trắc học",
-        sys: "Hệ thống điểm danh văn",
-        bio2: "phòng bằng sinh trắc học",
-        sys2: "hệ thống điểm danh",
-        bio1: "sinh trắc học ",
-        off1: "văn phòng bằng",
-        bang: "bằng",
-        van: "văn phòng",
-        att1: "điểm danh",
-        sys1: "Hệ thống",
 
-        titletransrom : "Biến đổi",
-        transfrom: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
-        transfromdes1: "Hệ thống chấm công văn phòng sinh trắc học CheckID FacialSense được các nhà tuyển dụng yêu thích vì khả năng duy trì và nâng cao ",
-        effect: "hiệu quả, năng suất và tiết kiệm chi phí",
-        workfor: " của đội ngũ lao động, không cần phần cứng chuyên dụng.",
-        transfromdes2: "Hệ thống của chúng tôi hoạt động bằng cách . Hệ thống chấm công văn phòng ",
-        biomatriciden: "sử dụng nhận diện sinh trắc học khuôn mặt, vân tay và mống mắt",
-        checkid: ". CheckID FacialSense tích hợp dễ dàng vào các hoạt động quản lý nhân sự và thanh toán lương của bạn, đảm bảo nhân viên của bạn được thanh toán đúng đắn mà còn loại bỏ các rủi ro trong quản lý lương của bạn.",
-        transfromdes3: "Mặc dù công nghệ sinh trắc học mang lại khả năng nâng cao, báo cáo và ",
-        userinf: "giao diện người dùng đơn giản, trực quan và có thể tùy chỉnh",
-        around: " theo yêu cầu kinh doanh của bạn, giúp bạn tận dụng những khả năng được trang bị bởi trí tuệ nhân tạo này cho doanh nghiệp của bạn.",
-        biomatricfeature: "Các tính năng",
-        biomatricfeaturekey: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
-        biomatricfeaturedes: "Phần mềm này được thiết kế và xây dựng cẩn thận, với nhiều tính năng mạnh mẽ nhằm tăng cường hiệu suất và độ chính xác của quá trình giám sát thời gian làm việc và chấm công nhân viên trong văn phòng của bạn, bao gồm:",
-        multiple: "Nhận diện nhiều khuôn mặt",
-        multipledes: "Hệ thống chấm công văn phòng của chúng tôi có thể nhận diện và nhận biết khuôn mặt của tất cả những người xuất hiện trong hình ảnh, giúp nhân viên không phải đứng xếp hàng để sử dụng máy chấm công.",
-        realtime: "Nhận diện khuôn mặt thời gian thực",
-        realtimedes: "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
-        turnkey: "Giải pháp toàn diện",
-        turnkeydes: "Hệ thống chấm công văn phòng CheckID FacialSense không đòi hỏi phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp thanh toán lương hàng đầu để đảm bảo tích hợp mượt mà vào các thực hành kinh doanh tiêu chuẩn của bạn.",
-        footer: "* Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
-        whychosse: " hệ thống chấm công văn phòng sử dụng sinh trắc học của chúng tôi cho doanh nghiệp của bạn?",
-        whychossetitle: "Tại sao chọn",
-        why: "Tại sao",
-        choose: "chọn",
-        increaseemploy: "Tăng cường hài lòng nhân viên",
-        increaseemploydes: "Không có gì làm giảm sự hài lòng của nhân viên hơn là lương không đúng. Tránh những vấn đề không cần thiết về lương với một hệ thống quản lý thời gian chính xác đảm bảo mỗi nhân viên được thanh toán công bằng cho công việc của họ.",
-        streamline: "Tối ưu hóa bộ phận nhân sự",
-        streamlinedes: "Báo cáo tùy chỉnh mà CheckID FacialSense cung cấp cho doanh nghiệp của bạn giúp bạn dễ dàng theo dõi, phân tích và hiểu đội ngũ lao động của mình theo thời gian thực, giảm thiểu nhu cầu sử dụng giấy tờ làm phiền phức.",
-        reduce: "Giảm sai số",
-        reducedes: "Giám sát thời gian làm việc và chấm công là một nhiệm vụ đòi hỏi dữ liệu lớn, dễ phát sinh sai sót từ con người. Phần mềm hệ thống chấm công văn phòng sử dụng sinh trắc học giảm nguy cơ phạm lỗi, đảm bảo ghi và trình bày dữ liệu một cách công bằng và theo trật tự.",
-        increaseproductivity: "Tăng cường năng suất",
-        increaseproductivitydes: "Bộ quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh dấu thời gian làm việc cho nhân viên khác. Do đó, bạn có thể yên tâm với việc đội ngũ lao động của bạn làm việc theo giờ họ tuyên bố.",
-        cost: "Hiệu quả chi phí",
-        costdes: "Không chỉ giảm chi phí lao động phát sinh từ các ghi chú không chính xác, mà tính năng nhận diện nhiều khuôn mặt còn giúp giảm thiểu thời gian đứng xếp hàng để sử dụng máy chấm công.",
-        compre: "Báo cáo toàn diện",
-        comperdes: "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác, tất cả đều có thể được xuất khẩu vào hệ thống thanh toán lương."
-      },
-      retailworkforce: {
-        doanh3: "Doanh",
-        nghiep3: "nghiệp",
-        headertitle: "Doanh nghiệp bán lẻ",
-        doanh: "Doanh nghiệp bán",
-        le: "lẻ",
-        doanh1: "Doanh nghiệp ",
-        le1: "bán lẻ",
-        header: " hệ thống giám sát thời gian và chấm công",
-        theckeckid: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio",
-        uses: " sử dụng ",
-        biomatrici: "công nghệ nhận diện sinh trắc học khuôn mặt, vân tay và quét mống mắt",
-        desbiomatric: " để giám sát, quản lý và đăng ký chấm công một cách hiệu quả, mà không cần phải sử dụng phần cứng chuyên dụng.",
-        thisal: "Công nghệ sinh trắc học này được tích hợp trí tuệ nhân tạo giúp",
-        retail: " doanh nghiệp bán lẻ ",
-        tomain: "duy trì và nâng cao ",
-        effect:"hiệu suất, năng suất và hiệu quả về chi phí ",
-        workfore: "lực lượng lao động trong môi trường nhanh chóng của cửa hàng. Trong khi công nghệ sinh trắc học là tiên tiến, báo cáo rất đơn giản, trực quan và linh hoạt theo yêu cầu kinh doanh của bạn.",
-        theckeckidFacial: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio là một giải pháp toàn diện được thiết kế để tích hợp mượt mà vào hoạt động quản lý nhân sự và lương của doanh nghiệp bạn, đồng thời đảm bảo nhân viên được thanh toán chính xác cho các ca làm việc mà không cần sử dụng các thiết bị không thuận tiện như thẻ, thẻ thời gian hoặc máy đồng hồ chấm công.",
-        key: "Các tính năng",
-        cac: "Các tính",
-        tinh: "năng",
-        feature: " nổi bật",
-        desfeature: "Hệ thống chấm công khuôn Mmặt CheckID FacialSense Bio có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất và độ chính xác trong việc giám sát thời gian và chấm công của nhân viên, bao gồm:",
-        multiple: "Nhận diện nhiều khuôn mặt",
-        multipledes: "Hệ thống chấm công văn phòng của chúng tôi có thể phát hiện và nhận diện các khuôn mặt của tất cả mọi người xuất hiện trong bức hình, giúp nhân viên không phải mất thời gian xếp hàng để đấu máy chấm công.",
-        contactless: "Theo dõi chấm công không tiếp xúc",
-        contactlessdes: "Không cần tiếp xúc vật lý khi người được nhận diện bằng khuôn mặt hoặc mống mắt.",
-        liveness: "Phát hiện sự sống động",
-        livenessdes: "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác thực rằng việc đăng ký/đăng xuất đang được thực hiện bởi một người thật sự.",
-        },
-        mobileandremote: {
-          header: "Nhân viên di động và làm việc từ xa",
-          headernhan: "Nhân viên di động ",
-          hadernhan1: "Nhân viên di động và làm việc",
-          hadernhan2: "Nhân viên di động và làm ",
-          tuxa: " từ xa",
-          tuxa2: "việc từ xa",
-          xa: "và làm việc từ xa",
-          mobile1: "di động và",
-          and1: "và",
-          lam: " làm việc",
-          remote: "Từ xa",
-          employee: "Nhân viên",
-          headermobile: " phần mềm theo dõi thời gian",
-          recognise: "Chúng tôi nhận ra rằng trong thế giới làm việc linh hoạt hiện nay, công ty của bạn có thể đối mặt với những thách thức mà trước đây chưa từng có, đặc biệt là khi đến việc theo dõi chấm công.",
-          wewant: "Chúng tôi muốn đảm bảo rằng bạn sẽ không gặp vấn đề trong việc theo dõi chấm công một cách chính xác khi làm việc từ xa.",
-          thecheckid: "Hệ thống theo dõi thời gian nhân viên làm việc từ xa CheckID Facialsense, được trang bị công nghệ nhận dạng sinh trắc học bao gồm nhận diện khuôn mặt, vân tay và quét mống mắt",
-          toeffect: " để theo dõi, quản lý và đăng ký chấm công hiệu quả, ngay cả đối với nhân viên di động hoặc làm việc từ xa.",
-          thisall: "Công nghệ sinh trắc học AI này sẽ giúp",
-          yourbussiness: " doanh nghiệp của bạn",
-          and: "và những doanh nghiệp khác duy trì và nâng cao ",
-          effect :"hiệu suất hiệu quả và chi phí",
-          workfore: "lao động mặc dù có những thách thức của việc nhân viên làm việc tại nơi khác nhau. Trong khi công nghệ sinh trắc học có khả năng cao cấp, báo cáo và giao diện người dùng đơn giản, trực quan và linh hoạt theo yêu cầu kinh doanh của bạn. Phần mềm theo dõi thời gian nhân viên làm việc từ xa của chúng tôi là một giải pháp tích hợp được thiết kế để tích hợp mạch lạc vào hoạt động quản lý nhân sự và lương của doanh nghiệp bạn.",
-          thesystem: "Hệ thống dễ sử dụng đối với nhân viên của bạn. Nếu họ có điện thoại, máy tính xách tay hoặc máy tính bảng, họ có thể đăng ký chấm công một cách dễ dàng, nhanh chóng và chính xác!",
-          key : "Các tính năng",
-          features: "Các tính",
-          nang: "năng",
-          keyfeatures: "Các tính năng",
-          keyfeaturesdes: " của hệ thống theo dõi thời gian nhân viên làm việc từ xa",
-          carefull: "Được thiết kế và xây dựng cẩn thận, đội ngũ tại CheckID FacialSense đã phát triển một phần mềm với nhiều tính năng mạnh mẽ, nhằm tăng cường hiệu suất kinh doanh của các công ty với lực lượng lao động di động, bao gồm;",
-          nospecific: "Không yêu cầu phần cứng cụ thể cho người dùng*",
-          nospecificdes:"Phần mềm theo dõi thời gian nhân viên làm việc từ xa của chúng tôi có thể được sử dụng bởi nhân viên từ xa của bạn thông qua điện thoại, máy tính bảng hoặc máy tính!",
-          real: "Nhận diện khuôn mặt trực tiếp",
-          realdes: "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
-          liveness: "Nhận diện tính thực tế",
-          livenessdes: "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác nhận rằng việc đăng ký/đăng xuất đang được thực hiện bởi một người thực sự.",
-          footer: "*Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoài, cả hai đều có thể được mua từ",
-          whychoose: " phần mềm theo dõi thời gian bằng sinh trắc học cho nhân viên làm việc từ xa của chúng tôi?",
-          whychossetitle: "Tại sao chọn",
-          why: "Tại sao",
-          choose: "chọn",
-          increasetem: "Tăng sự hài lòng của nhóm"
+    biometricoffice: {
+      header: "Hệ Thống Điểm Danh Văn Phòng Bằng ",
+      hoc: "Sinh Trắc Học",
+      bio: "điểm danh văn phòng bằng sinh trắc học",
+      sys: "Hệ thống điểm danh văn",
+      bio2: "phòng bằng sinh trắc học",
+      sys2: "hệ thống điểm danh",
+      bio1: "sinh trắc học ",
+      off1: "văn phòng bằng",
+      bang: "bằng",
+      van: "văn phòng",
+      att1: "điểm danh",
+      sys1: "Hệ thống",
+
+      titletransrom: "Biến đổi",
+      transfrom: " hệ thống chấm công văn phòng sử dụng sinh trắc học",
+      transfromdes1:
+        "Hệ thống chấm công văn phòng sinh trắc học CheckID FacialSense được các nhà tuyển dụng yêu thích vì khả năng duy trì và nâng cao ",
+      effect: "hiệu quả, năng suất và tiết kiệm chi phí",
+      workfor: " của đội ngũ lao động, không cần phần cứng chuyên dụng.",
+      transfromdes2:
+        "Hệ thống của chúng tôi hoạt động bằng cách . Hệ thống chấm công văn phòng ",
+      biomatriciden:
+        "sử dụng nhận diện sinh trắc học khuôn mặt, vân tay và mống mắt",
+      checkid:
+        ". CheckID FacialSense tích hợp dễ dàng vào các hoạt động quản lý nhân sự và thanh toán lương của bạn, đảm bảo nhân viên của bạn được thanh toán đúng đắn mà còn loại bỏ các rủi ro trong quản lý lương của bạn.",
+      transfromdes3:
+        "Mặc dù công nghệ sinh trắc học mang lại khả năng nâng cao, báo cáo và ",
+      userinf: "giao diện người dùng đơn giản, trực quan và có thể tùy chỉnh",
+      around:
+        " theo yêu cầu kinh doanh của bạn, giúp bạn tận dụng những khả năng được trang bị bởi trí tuệ nhân tạo này cho doanh nghiệp của bạn.",
+      biomatricfeature: "Các tính năng",
+      biomatricfeaturekey:
+        " hệ thống chấm công văn phòng sử dụng sinh trắc học",
+      biomatricfeaturedes:
+        "Phần mềm này được thiết kế và xây dựng cẩn thận, với nhiều tính năng mạnh mẽ nhằm tăng cường hiệu suất và độ chính xác của quá trình giám sát thời gian làm việc và chấm công nhân viên trong văn phòng của bạn, bao gồm:",
+      multiple: "Nhận diện nhiều khuôn mặt",
+      multipledes:
+        "Hệ thống chấm công văn phòng của chúng tôi có thể nhận diện và nhận biết khuôn mặt của tất cả những người xuất hiện trong hình ảnh, giúp nhân viên không phải đứng xếp hàng để sử dụng máy chấm công.",
+      realtime: "Nhận diện khuôn mặt thời gian thực",
+      realtimedes:
+        "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
+      turnkey: "Giải pháp toàn diện",
+      turnkeydes:
+        "Hệ thống chấm công văn phòng CheckID FacialSense không đòi hỏi phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp thanh toán lương hàng đầu để đảm bảo tích hợp mượt mà vào các thực hành kinh doanh tiêu chuẩn của bạn.",
+      footer:
+        "* Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoài, cả hai đều có thể được mua từ",
+      whychosse:
+        " hệ thống chấm công văn phòng sử dụng sinh trắc học của chúng tôi cho doanh nghiệp của bạn?",
+      whychossetitle: "Tại sao chọn",
+      why: "Tại sao",
+      choose: "chọn",
+      increaseemploy: "Tăng cường hài lòng nhân viên",
+      increaseemploydes:
+        "Không có gì làm giảm sự hài lòng của nhân viên hơn là lương không đúng. Tránh những vấn đề không cần thiết về lương với một hệ thống quản lý thời gian chính xác đảm bảo mỗi nhân viên được thanh toán công bằng cho công việc của họ.",
+      streamline: "Tối ưu hóa bộ phận nhân sự",
+      streamlinedes:
+        "Báo cáo tùy chỉnh mà CheckID FacialSense cung cấp cho doanh nghiệp của bạn giúp bạn dễ dàng theo dõi, phân tích và hiểu đội ngũ lao động của mình theo thời gian thực, giảm thiểu nhu cầu sử dụng giấy tờ làm phiền phức.",
+      reduce: "Giảm sai số",
+      reducedes:
+        "Giám sát thời gian làm việc và chấm công là một nhiệm vụ đòi hỏi dữ liệu lớn, dễ phát sinh sai sót từ con người. Phần mềm hệ thống chấm công văn phòng sử dụng sinh trắc học giảm nguy cơ phạm lỗi, đảm bảo ghi và trình bày dữ liệu một cách công bằng và theo trật tự.",
+      increaseproductivity: "Tăng cường năng suất",
+      increaseproductivitydes:
+        "Bộ quét sinh trắc học loại bỏ khả năng 'buddy punching', một nhân viên đánh dấu thời gian làm việc cho nhân viên khác. Do đó, bạn có thể yên tâm với việc đội ngũ lao động của bạn làm việc theo giờ họ tuyên bố.",
+      cost: "Hiệu quả chi phí",
+      costdes:
+        "Không chỉ giảm chi phí lao động phát sinh từ các ghi chú không chính xác, mà tính năng nhận diện nhiều khuôn mặt còn giúp giảm thiểu thời gian đứng xếp hàng để sử dụng máy chấm công.",
+      compre: "Báo cáo toàn diện",
+      comperdes:
+        "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và các thông tin liên quan khác, tất cả đều có thể được xuất khẩu vào hệ thống thanh toán lương.",
+
+     
+      
     },
+    retailworkforce: {
+    doanh3: "Doanh",
+    nghiep3: "nghiệp",
+    nghiep3content: "Nghiệp",
+    headertitle: "Doanh Nghiệp Bán Lẻ",
+    headertitle1: "Doanh nghiệp bán lẻ",
+    doanh: "Doanh Nghiệp Bán",
+    le: "Lẻ",
+    doanhcontent1: "Doanh nghiệp bán",
+    lecontent1: "lẻ",
+    doanh1: "Doanh Nghiệp ",
+    le1: "Bán Lẻ",
+    doanh1content1: "Doanh nghiệp ",
+    le1content1: "bán lẻ",
+    header: " hệ thống giám sát thời gian và chấm công",
+    theckeckid: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio",
+    uses: " sử dụng ",
+    biomatrici: "công nghệ nhận diện sinh trắc học khuôn mặt, vân tay và quét mống mắt",
+    desbiomatric: " để giám sát, quản lý và đăng ký chấm công một cách hiệu quả, mà không cần phải sử dụng phần cứng chuyên dụng.",
+    thisal: "Công nghệ sinh trắc học này được tích hợp trí tuệ nhân tạo giúp",
+    retail: " doanh nghiệp bán lẻ ",
+    tomain: "duy trì và nâng cao ",
+    effect:"hiệu suất, năng suất và hiệu quả về chi phí ",
+    workfore: "lực lượng lao động trong môi trường nhanh chóng của cửa hàng. Trong khi công nghệ sinh trắc học là tiên tiến, báo cáo rất đơn giản, trực quan và linh hoạt theo yêu cầu kinh doanh của bạn.",
+    theckeckidFacial: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio là một giải pháp toàn diện được thiết kế để tích hợp mượt mà vào hoạt động quản lý nhân sự và lương của doanh nghiệp bạn, đồng thời đảm bảo nhân viên được thanh toán chính xác cho các ca làm việc mà không cần sử dụng các thiết bị không thuận tiện như thẻ, thẻ thời gian hoặc máy đồng hồ chấm công.",
+    key: "Các tính năng",
+    cac: "Các tính",
+    tinh: "năng",
+    feature: " nổi bật",
+    desfeature: "Hệ thống chấm công khuôn mặt CheckID FacialSense Bio có nhiều tính năng mạnh mẽ được thiết kế để tăng cường hiệu suất và độ chính xác trong việc giám sát thời gian và chấm công của nhân viên, bao gồm:",
+    multiple: "Nhận diện nhiều khuôn mặt",
+    multipledes: "Hệ thống chấm công văn phòng của chúng tôi có thể phát hiện và nhận diện các khuôn mặt của tất cả mọi người xuất hiện trong bức hình, giúp nhân viên không phải mất thời gian xếp hàng để đấu máy chấm công.",
+    contactless: "Theo dõi chấm công không tiếp xúc",
+    contactlessdes: "Không cần tiếp xúc vật lý khi người được nhận diện bằng khuôn mặt hoặc mống mắt.",
+    liveness: "Phát hiện sự sống động",
+    livenessdes: "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác thực rằng việc đăng ký/đăng xuất đang được thực hiện bởi một người thật sự.",
+    },
+    mobileandremote: {
+      header: "Nhân viên di động và làm việc từ xa",
+      headernhan: "Nhân viên di động ",
+      hadernhan1: "Nhân viên di động và làm việc",
+      hadernhan2: "Nhân viên di động và làm ",
+      tuxa: " từ xa",
+      tuxa2: "việc từ xa",
+      xa: "và làm việc từ xa",
+      mobile1: "di động và",
+      and1: "và",
+      lam: " làm việc từ xa",
+      remote: "Từ xa",
+      employee: "Nhân viên",
+      headermobile: " phần mềm theo dõi thời gian",
+      recognise: "Chúng tôi nhận ra rằng trong thế giới làm việc linh hoạt hiện nay, công ty của bạn có thể đối mặt với những thách thức mà trước đây chưa từng có, đặc biệt là khi đến việc theo dõi chấm công.",
+      wewant: "Chúng tôi muốn đảm bảo rằng bạn sẽ không gặp vấn đề trong việc theo dõi chấm công một cách chính xác khi làm việc từ xa.",
+      thecheckid: "Hệ thống theo dõi thời gian nhân viên làm việc từ xa CheckID Facialsense, được trang bị công nghệ nhận dạng sinh trắc học bao gồm nhận diện khuôn mặt, vân tay và quét mống mắt",
+      toeffect: " để theo dõi, quản lý và đăng ký chấm công hiệu quả, ngay cả đối với nhân viên di động hoặc làm việc từ xa.",
+      thisall: "Công nghệ sinh trắc học AI này sẽ giúp",
+      yourbussiness: " doanh nghiệp của bạn",
+      and: "và những doanh nghiệp khác duy trì và nâng cao ",
+      effect :"hiệu suất hiệu quả và chi phí",
+      workfore: "lao động mặc dù có những thách thức của việc nhân viên làm việc tại nơi khác nhau. Trong khi công nghệ sinh trắc học có khả năng cao cấp, báo cáo và giao diện người dùng đơn giản, trực quan và linh hoạt theo yêu cầu kinh doanh của bạn. Phần mềm theo dõi thời gian nhân viên làm việc từ xa của chúng tôi là một giải pháp tích hợp được thiết kế để tích hợp mạch lạc vào hoạt động quản lý nhân sự và lương của doanh nghiệp bạn.",
+      thesystem: "Hệ thống dễ sử dụng đối với nhân viên của bạn. Nếu họ có điện thoại, máy tính xách tay hoặc máy tính bảng, họ có thể đăng ký chấm công một cách dễ dàng, nhanh chóng và chính xác!",
+      key : "Các tính năng",
+      features: "Các tính",
+      nang: "năng",
+      keyfeatures: "Các tính năng",
+      keyfeaturesdes: " của hệ thống theo dõi thời gian nhân viên làm việc từ xa",
+      carefull: "Được thiết kế và xây dựng cẩn thận, đội ngũ tại CheckID FacialSense đã phát triển một phần mềm với nhiều tính năng mạnh mẽ, nhằm tăng cường hiệu suất kinh doanh của các công ty với lực lượng lao động di động, bao gồm:",
+      nospecific: "Không yêu cầu phần cứng cụ thể cho người dùng*",
+      nospecificdes:"Phần mềm theo dõi thời gian nhân viên làm việc từ xa của chúng tôi có thể được sử dụng bởi nhân viên từ xa của bạn thông qua điện thoại, máy tính bảng hoặc máy tính!",
+      real: "Nhận diện khuôn mặt trực tiếp",
+      realdes: "Hệ thống có thể nhận diện khuôn mặt của người đi qua mà không cần dừng lại và đợi trong khi máy ảnh chụp hình.",
+      liveness: "Nhận diện tính thực tế",
+      livenessdes: "Trước khi bắt đầu nhận diện khuôn mặt, hệ thống có thể xác nhận rằng việc đăng ký/đăng xuất đang được thực hiện bởi một người thực sự.",
+      footer: "*Đối với nhận diện vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoài, cả hai đều có thể được mua từ",
+      whychoose: " phần mềm theo dõi thời gian bằng sinh trắc học cho nhân viên làm việc từ xa của chúng tôi?",
+      whychossetitle: "Tại sao chọn",
+      why: "Tại sao",
+      choose: "chọn",
+      increasetem: "Tăng sự hài lòng của nhóm",
+      quickstart:"Hướng dẫn từng bước được cung cấp để bạn bắt đầu sử dụng phần mềm theo dõi thời gian cho nhân viên làm việc từ xa của chúng tôi",
+},
     student: {
-      header: "Chấm công học sinh",
-      student: "học sinh",
-      student1: "Chấm công học",
-      sinh: "sinh",
-      attent: "Chấm công",
+      header: "Chấm Công Học Sinh",
+      student: "Học Sinh",
+      student1: "Chấm Công Học",
+      sinh: "Sinh",
+      attent: "Chấm Công",
       school: "Hệ thống chấm công học sinh bằng ",
       schooldes1: "sinh trắc học cho trường ",
       hoc: "học",
@@ -836,8 +1162,8 @@ export default {
       environdes: "Giảm giấy tờ trong trường bằng cách từ bỏ sổ đăng ký và danh sách sự hiện diện.",
       comprehensive: "Báo cáo toàn diện",
       comprehensivedes: "Báo cáo bao gồm tổng kết về sự hiện diện của học sinh, số ngày nghỉ, nghỉ ốm và các dữ liệu khác liên quan.",
-  },
-  constructtion: {
+    },
+    constructtion: {
     header: "Công trường xây dựng",
     construct: " xây dựng",
     header3: "Công trường xây ",
@@ -867,8 +1193,8 @@ export default {
     remotedes: "Thời gian làm việc của nhân viên có thể được theo dõi và tính toán dễ dàng ngay cả khi họ làm việc từ xa. Người dùng có thể đăng ký và đăng xuất một cách đơn giản với thiết bị di động, máy tính bảng hoặc máy tính cá nhân của họ.",
     identification: "Nhận diện khi đeo mặt nạ",
     identificationdes: "Hệ thống chấm công sinh trắc học của chúng tôi có khả năng nhận diện một người ngay cả khi họ đang đeo mặt nạ, đảm bảo việc nhận dạng an toàn và hợp vệ vệ sinh."
-  },
-  healthcare: {
+    },
+    healthcare: {
     header: "Chăm sóc sức khỏe",
     cham: "Chăm sóc sức",
     khoe: " khoẻ",
@@ -892,17 +1218,17 @@ export default {
     mulbio: "Nhiều sinh trắc học",
     muldes: "Có sẵn 3 phương pháp sinh trắc học - khuôn mặt, ngón tay và mống mắt.",multiple: "Quét nhiều khuôn mặt",
     multipledes: "Hệ thống chấm công văn phòng sinh trắc học của chúng tôi có thể phát hiện và nhận dạng khuôn mặt của tất cả mọi người xuất hiện trong hình ảnh, nghĩa là nhân viên của bạn không cần phải mất thời gian xếp hàng đợi để đến máy đánh giờ.",
-  },
-  service: {
+    },
+    service: {
     header: "Dịch vụ và lưu trú",
     header2: "Dịch vụ và",
     hopital: "lưu trú",
     hopitaldes: "Phần mềm quản lý thời gian và điểm danh cho ",
-    thecheckid: "CheckID FacialSense Bio Attendance sử dụng nhận dạng sinh trắc học của",
-    face: "khuôn mặt, vân tay và quét mống mắt",
+    thecheckid: "CheckID FacialSense Bio Attendance sử dụng nhận dạng sinh trắc học của ",
+    face: "khuôn mặt, vân tay và quét mống mắt ",
     to: "để giám sát, quản lý và đăng ký điểm danh một cách hiệu quả trên quy mô lớn và linh hoạt, mà không cần thiết bị chuyên dụng.",
     thisal: "Công nghệ sinh trắc học được trang bị trí tuệ nhân tạo này sẽ giúp",
-    retail: "doanh nghiệp lưu trú ",
+    retail: " doanh nghiệp lưu trú ",
     tomain: "duy trì và nâng cao hiệu suất ",
     effect: "hiệu quả, sản xuất và tiết kiệm chi phí ",
     workfore: "nhân sự trong môi trường dịch vụ hối hả.",
@@ -912,8 +1238,8 @@ export default {
     cusztom: "Tuỳ chỉnh theo yêu cầu kinh doanh của bạn",
     our: "Phần mềm quản lý thời gian và điểm danh của chúng tôi là một giải pháp tích hợp đã được thiết kế để tích hợp mượt mà vào hoạt động quản lý nhân sự và thanh toán của doanh nghiệp của bạn.",
     simmular: "Đồng thời, nó sẽ đảm bảo nhân viên của bạn được bồi thường một cách chính xác cho thời gian họ đầu tư trong giờ làm việc.",
-    contactwithstart: "Liên hệ với chúng tôi để bắt đầu",
-  
+    contactwithstart: "Liên Hệ Với Chúng Tôi Để Bắt Đầu",
+
     keyfeatures: "Tính năng chính",
     key: "Tính",
     fearures: "Năng",
@@ -930,7 +1256,7 @@ export default {
     remotedes: "Thời gian làm việc của nhân viên có thể được theo dõi và tính toán dễ dàng ngay cả khi họ làm việc từ xa. Người dùng có thể đăng ký và đăng xuất một cách đơn giản với thiết bị di động, máy tính bảng hoặc máy tính cá nhân của họ.",
     compre: "Báo cáo toàn diện",
     comperdes: "Báo cáo bao gồm tóm tắt về giờ làm việc, làm thêm giờ, nghỉ phép, nghỉ ốm và thông tin khác có thể xuất khẩu vào hệ thống thanh toán tiền lương.",
-    footer: "*Đối với nhận dạng bằng vân tay hoặc mống mắt, hệ thống yêu cầu một bộ đọc vân tay hoặc máy quét mống mắt bên ngoại, cả hai đều có thể được mua từ",
+    footer: "*Đối với nhận dạng bằng vân tay hoặc mống mắt, hệ thống yêu cầu một bộ đọc vân tay hoặc máy quét mống mắt bên ngoài, cả hai đều có thể được mua từ",
     benefit: "Lợi ích",
     foryou: " cho doanh nghiệp dịch vụ của bạn?",
     employee: "Sự hài lòng của nhân viên",
@@ -952,8 +1278,8 @@ export default {
       name: "Seema C.",
       position: "Giáo viên, Trường Trung học Red Roses",
     }
-  },
-  factory: {
+    },
+    factory: {
     header: "Nhà máy và kho hàng",
     headerder2: "Nhà máy và ",
     warehose: "kho hàng",
@@ -976,8 +1302,8 @@ export default {
     turnkey: "Giải pháp tích hợp",
     turnkeydes: "Hệ thống chấm công sinh trắc học của CheckID FacialSense không yêu cầu phần cứng chuyên biệt*, và dễ dàng tích hợp với các nhà cung cấp lương hàng đầu để cho phép tích hợp liền mạch vào các thực hành kinh doanh thông thường của bạn.",
     footer: "*Đối với nhận dạng vân tay hoặc mống mắt, hệ thống yêu cầu một đầu đọc vân tay hoặc máy quét mống mắt bên ngoài, cả hai đều có thể được mua từ",
-  },
-  agriculture: {
+    },
+    agriculture: {
     header: "Nông nghiệp",
     header1: "nông nghiệp",
     nong:"Nông ",
@@ -1023,14 +1349,8 @@ export default {
     safedes: "Công nghệ nhận diện không tiếp xúc như mã vạch, RFID, khuôn mặt và nhận diện người hồi sinh không tạo tiếp xúc."
 }
   
-  
-    
 
-  
-  
-    },
-  
-  
+      },
   
   footer: {
     description:

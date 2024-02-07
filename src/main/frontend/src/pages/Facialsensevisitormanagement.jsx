@@ -1,38 +1,38 @@
 import { useIntersectionObserver, useWindowSize } from "@uidotdev/usehooks";
-import { Question, QuickStart } from "../components/common";
+import { useTranslation } from "react-i18next";
 import male1 from "../assets/img/home/Male1.png";
 import ciclegray from "../assets/img/home/ciclegray.png";
 import ciclepoppy from "../assets/img/home/ciclepoppy.png";
 import cicletree from "../assets/img/home/cicletree.png";
-import triangle from "../assets/img/home/triangle.png";
 import dot from "../assets/img/home/dot.png";
-import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png";
-import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
-import { Check } from "../assets/svg";
-import cloud from "../assets/img/products/facialsensevisitormanagement/cloudne.png";
-import premises from "../assets/img/products/facialsensevisitormanagement/cloud.png";
-import { LeafButton, PoppyButton } from "../components/button";
-import { useTranslation } from "react-i18next";
+import triangle from "../assets/img/home/triangle.png";
 import left from "../assets/img/products/facialsensevisitormanagement/about-left.png.png";
 import right from "../assets/img/products/facialsensevisitormanagement/about-shape.png.png";
-import secure from "../assets/img/products/facialsensevisitormanagement/icon_brain_isecureometric_3d.png";
-import safe from "../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png";
-import online from "../assets/img/products/facialsensevisitormanagement/icon_brain_biomatric_3d.png";
-import automated from "../assets/img/products/facialsensevisitormanagement/icon_brain_server_3d.png";
-import realtime from "../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png";
-import electro from "../assets/img/products/facialsensevisitormanagement/icon_brain_electrion_3d.png";
-import data from "../assets/img/products/facialsensevisitormanagement/icon_brain_data_3d.png";
-import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png";
-import custom from "../assets/img/products/facialsensevisitormanagement/icon_brain_customer_3d.png";
-import organiza from "../assets/img/products/facialsensevisitormanagement/div.default-image.png";
-import travel from "../assets/img/products/facialsensevisitormanagement/div.travel-image.png";
-import hotels from "../assets/img/products/facialsensevisitormanagement/div.hotel-image.png";
-import consul from "../assets/img/products/facialsensevisitormanagement/div.consulting-image.png";
+import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png";
+import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
+import premises from "../assets/img/products/facialsensevisitormanagement/cloud.png";
+import cloud from "../assets/img/products/facialsensevisitormanagement/cloudne.png";
 import banking from "../assets/img/products/facialsensevisitormanagement/div.bank-image.png";
 import building from "../assets/img/products/facialsensevisitormanagement/div.building-image.png";
-import school from "../assets/img/products/facialsensevisitormanagement/div.school-image.png";
+import consul from "../assets/img/products/facialsensevisitormanagement/div.consulting-image.png";
 import customer from "../assets/img/products/facialsensevisitormanagement/div.customer-image.png";
+import organiza from "../assets/img/products/facialsensevisitormanagement/div.default-image.png";
+import hotels from "../assets/img/products/facialsensevisitormanagement/div.hotel-image.png";
+import school from "../assets/img/products/facialsensevisitormanagement/div.school-image.png";
+import travel from "../assets/img/products/facialsensevisitormanagement/div.travel-image.png";
+import online from "../assets/img/products/facialsensevisitormanagement/icon_brain_biomatric_3d.png";
+import custom from "../assets/img/products/facialsensevisitormanagement/icon_brain_customer_3d.png";
+import data from "../assets/img/products/facialsensevisitormanagement/icon_brain_data_3d.png";
+import electro from "../assets/img/products/facialsensevisitormanagement/icon_brain_electrion_3d.png";
+import secure from "../assets/img/products/facialsensevisitormanagement/icon_brain_isecureometric_3d.png";
+import safe from "../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png";
+import realtime from "../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png";
+import automated from "../assets/img/products/facialsensevisitormanagement/icon_brain_server_3d.png";
+import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png";
+import { Check } from "../assets/svg";
 import AccordionToggle from "../components/accordion/AcoordionToggle";
+import { LeafButton, PoppyButton } from "../components/button";
+import { Question, QuickStart } from "../components/common";
 
 export const Facialsensevisitormanagement = () => {
   const { width } = useWindowSize();
@@ -167,7 +167,7 @@ export const Facialsensevisitormanagement = () => {
               </span>
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px]">
               <span
                 style={{ whiteSpace: "nowrap" }}
                 className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
@@ -546,7 +546,7 @@ export const Facialsensevisitormanagement = () => {
                 </span>
               </h1>
             ) : (
-              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  ">
                 <span
                   style={{ whiteSpace: "nowrap" }}
                   className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
@@ -567,7 +567,7 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={secure} alt="" />
               <div className="mt-[20px] ">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+                <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlesecure"
                   )}
@@ -580,11 +580,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={safe} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.titlesafe"
-                  )}
-                </p>
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
+                    {t(
+                      "products.facialsensevisitormanagement.fearures.titlesafe"
+                    )}
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titlesafe"
+                    )}
+                    </p>
+                  )
+                }
+            
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t("products.facialsensevisitormanagement.fearures.safe")}
                 </p>
@@ -593,11 +604,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={online} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titleonline"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titleonline"
+                    )}
+                    </p>
+                  )
+                }
+               
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t("products.facialsensevisitormanagement.fearures.online")}
                 </p>
@@ -607,11 +629,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={automated} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titleautomated"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titleautomated"
+                    )}
+                    </p>
+                  )
+                }
+               
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t(
                     "products.facialsensevisitormanagement.fearures.automated"
@@ -622,7 +655,7 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={realtime} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+                <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlerealtime"
                   )}
@@ -635,11 +668,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full ">
               <img className="w-[84px] h-[70px]" src={electro} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+              {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titleelectronic"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titleelectronic"
+                    )}
+                    </p>
+                  )
+                }
+               
                 <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
                   {t(
                     "products.facialsensevisitormanagement.fearures.electronic"
@@ -651,11 +695,22 @@ export const Facialsensevisitormanagement = () => {
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={data} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
+                {
+                  i18n.language === "en" ? (
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
+                  {  t(
                     "products.facialsensevisitormanagement.fearures.titledata"
                   )}
-                </p>
+                  </p>
+                  ) : (
+                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                    {  t(
+                      "products.facialsensevisitormanagement.fearures.titledata"
+                    )}
+                    </p>
+                  )
+                }
+                
                 <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
                   {t("products.facialsensevisitormanagement.fearures.data")}
                 </p>
@@ -663,23 +718,43 @@ export const Facialsensevisitormanagement = () => {
             </div>
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={sabiofe} alt="" />
-              <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
-                  {t(
+             
+              {
+                  i18n.language === "en" ? (
+                    <div className="mt-[20px] flex flex-col gap-[20px]">
+                    <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
+                    {t(
                     "products.facialsensevisitormanagement.fearures.titlebiometric"
-                  )}
-                </p>
-                <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.biometric"
-                  )}
-                </p>
-              </div>
+                    )}
+                  </p>
+                    <p className=" text-[#3A505F] font-montserrat font-normal h-[96px]  mlgd:h-[134px] leading-[24px]">
+                    {t(
+                      "products.facialsensevisitormanagement.fearures.biometric"
+                    )}
+                    </p>
+                    </div>
+                  ) : (
+                    <div className="mt-[20px]  flex flex-col gap-[20px]">
+                        <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                        {  t(
+                          "products.facialsensevisitormanagement.fearures.titlebiometric"
+                        )}
+                        </p>
+                        <p className="pt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px]  mlgd:h-[134px] leading-[24px]">
+                        {t(
+                          "products.facialsensevisitormanagement.fearures.biometric"
+                        )}
+                      </p>
+                  </div>
+                  )
+                }
+                
+            
             </div>
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={custom} alt="" />
               <div className="mt-[20px]">
-                <p className="text-[#1C2045] font-montserrat font-bold">
+                <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
                   {t(
                     "products.facialsensevisitormanagement.fearures.titlecustomizable"
                   )}

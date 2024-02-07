@@ -16,7 +16,7 @@ export const Retailworkforce = () => {
     let check = false;
     const generateHeader = (title, subTitle, borderColor, textColor) => (
         <div className="inline-block 460sm:block">
-          <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px] border-${borderColor}`}>
+          <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px]  border-${borderColor}`}>
             {title}
           </h1>
         
@@ -35,12 +35,12 @@ export const Retailworkforce = () => {
         </div>
     );
 
-      if (width >= 566) {
+      if (width >= 588) {
         content = generateHeader(t("industries.retailworkforce.headertitle"),undefined,"[#B9AAFD]", 'white');
         check = true;
-        content1 =  generateHeader(t("industries.retailworkforce.headertitle"),undefined,"[var(--tree-poppy)]", '[#1C2045]');
-      } else if (width <= 565 && width > 504) {
-        
+        content1 =  generateHeader(t("industries.retailworkforce.headertitle1"),undefined,"[var(--tree-poppy)]", '[#1C2045]');
+      } 
+      else if (width <= 587 && width > 513) {
         content = i18n.language === "en" ? (
           generateHeader(t("industries.retailworkforce.headertitle"), undefined, "[#B9AAFD]", 'white')
         ) : (
@@ -50,13 +50,13 @@ export const Retailworkforce = () => {
         content1 = i18n.language === "en" ? (
             generateHeader(t("industries.retailworkforce.headertitle"), undefined, "[var(--tree-poppy)]", '[#1C2045]')
           ) : (
-            generateHeader(t("industries.retailworkforce.doanh"), t("industries.retailworkforce.le"), "[var(--tree-poppy)]", '[#1C2045]')
+            generateHeader(t("industries.retailworkforce.doanhcontent1"), t("industries.retailworkforce.lecontent1"), "[var(--tree-poppy)]", '[#1C2045]')
           );
-      } else if (width <= 504 && width > 394) {
+      } else if (width <= 513 && width > 399) {
         content = i18n.language === "en" ? (
           <div>
-            {width < 466 && generateHeader(t("industries.retailworkforce.retail1"), t("industries.retailworkforce.work"),"[#B9AAFD]",'white')}
-            {width >= 466 && generateHeader(t("industries.retailworkforce.headertitle"),undefined,"[#B9AAFD]",'white')}
+            {width < 466 && width >=504 && generateHeader(t("industries.retailworkforce.retail1"), t("industries.retailworkforce.work"),"[#B9AAFD]",'white')}
+            {width >= 466 && generateHeader(t("industries.retailworkforce.headertitle1"),undefined,"[#B9AAFD]",'white')}
           </div>
         ) : (
           generateHeader(t("industries.retailworkforce.doanh1"), t("industries.retailworkforce.le1"),"[#B9AAFD]",'white')
@@ -65,10 +65,10 @@ export const Retailworkforce = () => {
         content1 = i18n.language === "en" ? (
             <div>
               {width < 466 && generateHeader(t("industries.retailworkforce.retail1"), t("industries.retailworkforce.work"),"[var(--tree-poppy)]",'[#1C2045]')}
-              {width >= 466 && generateHeader(t("industries.retailworkforce.headertitle"),undefined,"[var(--tree-poppy)]",'[#1C2045]')}
+              {width >= 466 && generateHeader(t("industries.retailworkforce.headertitle1"),undefined,"[var(--tree-poppy)]",'[#1C2045]')}
             </div>
           ) : (
-            generateHeader(t("industries.retailworkforce.doanh1"), t("industries.retailworkforce.le1"),"[var(--tree-poppy)]",'[#1C2045]')
+            generateHeader(t("industries.retailworkforce.doanh1content1"), t("industries.retailworkforce.le1content1"),"[var(--tree-poppy)]",'[#1C2045]')
           );
       } else {
         content = i18n.language === "en" ? (
@@ -77,7 +77,7 @@ export const Retailworkforce = () => {
           </div>
         ) : (
           <div>
-            {generateHeader(t("industries.retailworkforce.doanh3"), t("industries.retailworkforce.nghiep3"),"[#B9AAFD]",'white')}
+            {generateHeader(t("industries.retailworkforce.doanh3"), t("industries.retailworkforce.nghiep3content"),"[#B9AAFD]",'white')}
             {generateHeader(t("industries.retailworkforce.le1"),undefined,"[#B9AAFD]",'white')}
           </div>
         );
@@ -99,7 +99,7 @@ export const Retailworkforce = () => {
                 <br />
                
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
-                    {t("industries.retailworkforce.le1")} 
+                    bán lẻ
                     
                     </h1>
                      {t("industries.retailworkforce.header")}

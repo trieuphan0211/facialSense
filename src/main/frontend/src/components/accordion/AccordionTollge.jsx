@@ -8,8 +8,13 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import AddIcon from "@mui/icons-material/Add";
 
-export const AccordionTollge = ({ accordionData, type, backgroundColor, boxShadow, border }) => {
- 
+export const AccordionTollge = ({
+  accordionData,
+  type,
+  backgroundColor,
+  boxShadow,
+  border,
+}) => {
   // Translations
   const { t } = useTranslation();
   // Begin: Accordion
@@ -25,13 +30,12 @@ export const AccordionTollge = ({ accordionData, type, backgroundColor, boxShado
     <div>
       {accordionData.map((item, index) => (
         <Accordion
-       
           expanded={expanded === `panel${index + 1}`}
           onChange={handleChange(`panel${index + 1}`)}
           key={`panel${index + 1}`}
           sx={{
             boxShadow: boxShadow || "0px 4px 12px 0px rgba(12, 68, 204, 0.10)",
-            border: border || "none" ,
+            border: border || "none",
             borderRadius: "6px",
             padding: "15px 35px",
             marginBottom: "20px",
@@ -85,7 +89,14 @@ export const AccordionTollge = ({ accordionData, type, backgroundColor, boxShado
                 color: "#3A505F",
               }}
             >
-              {t(item.body)}
+              {item.body && t(item.body)}
+              {item.items &&
+                item.items.map((item, index) => (
+                  <p key={index}>
+                    {item.header}
+                    {t(item.body)}
+                  </p>
+                ))}
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -98,5 +109,5 @@ AccordionTollge.propTypes = {
   type: PropTypes.string,
   backgroundColor: PropTypes.string,
   boxShadow: PropTypes.string,
-  border: PropTypes.string
+  border: PropTypes.string,
 };

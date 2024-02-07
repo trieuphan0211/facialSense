@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next"
 import { useWindowSize } from "@uidotdev/usehooks";
 import { LeafButton } from "../components/button";
-import { QuickStart } from "../components/common";
+import { Question, QuickStart } from "../components/common";
 
 import {  Headerkeyfeatures, Features, Whychoose } from "../components/bioatendance/";
 import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
@@ -102,9 +102,9 @@ export const Service = () => {
                                 {t("industries.service.workfore")}
                             </p>
                             <ul className="list-disc text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">{t("industries.service.whilst")}
-                                <li className="ml-[24px]">{t("industries.service.simple")}</li>
-                                <li className="ml-[24px]">{t("industries.service.intuitive")}</li>
-                                <li className="ml-[24px]">{t("industries.service.cusztom")}</li>
+                                <li className="ml-[34px]">{t("industries.service.simple")}</li>
+                                <li className="ml-[34px]">{t("industries.service.intuitive")}</li>
+                                <li className="ml-[34px]">{t("industries.service.cusztom")}</li>
                             </ul>
                             <p className="text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">{t("industries.service.our")}
                             <br />
@@ -334,6 +334,7 @@ export const Service = () => {
                     <SingleItem />
                 </div>
             </div>
+            <Question />
         </>
     )
 }

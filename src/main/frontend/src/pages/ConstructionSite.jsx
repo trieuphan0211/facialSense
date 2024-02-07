@@ -47,15 +47,15 @@ export const ConstructionSite = () => {
        
         content = i18n.language === "en" ? (contentHeading(t("industries.constructtion.header"), undefined, "[#B9AAFD]", "white")): (
             width > 590 ? (
-                contentHeading(t("industries.constructtion.header"),undefined, "[#B9AAFD]", "white")
+                contentHeading("Công Trường Xây Dựng",undefined, "[#B9AAFD]", "white")
             ) : (
                 <div>
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                    {t("industries.constructtion.header3")}
+                    Công Trường Xây
                     </h1>
                     <br />
                     <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
-                    {t("industries.constructtion.dung")}
+                   Dựng
                     </h1>
                 </div>
             )
@@ -110,7 +110,7 @@ export const ConstructionSite = () => {
         content = i18n.language === "en" ? (
             contentHeading(t("industries.constructtion.header"), undefined,  "[#B9AAFD]", "white")
         ) : (
-            contentHeading(t("industries.constructtion.header3"), t("industries.constructtion.dung"), "[#B9AAFD]", "white")
+            contentHeading("Công Trường Xây", "Dựng", "[#B9AAFD]", "white")
         )
         check = true;
         content1 = i18n.language === "en" ? (
@@ -171,7 +171,7 @@ export const ConstructionSite = () => {
         content = i18n.language === "en" ? (
             contentHeading(t("industries.constructtion.construct"),  t("industries.constructtion.site"),  "[#B9AAFD]", "white")
         ) : (
-            contentHeading(t("industries.constructtion.site1"), t("industries.constructtion.construct"), "[#B9AAFD]", "white")
+            contentHeading("Công Trường", "Xây Dựng", "[#B9AAFD]", "white")
         )
         check = true;
         content1 = i18n.language === "en" ? (

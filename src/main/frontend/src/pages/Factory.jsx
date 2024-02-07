@@ -39,9 +39,9 @@ export const Factory = () => {
     if (width > 433){
         {
             width > 626 ? (
-                content =  contentHeading(t("industries.factory.header"), undefined, "[#B9AAFD]", "white")
+                content = i18n.language === "en" ? ( contentHeading(t("industries.factory.header"), undefined, "[#B9AAFD]", "white") ) : (contentHeading("Nhà Máy Và Kho Hàng", undefined, "[#B9AAFD]", "white"))
             ) : (
-                content =  contentHeading(t("industries.factory.headerder2"), t("industries.factory.warehose"), "[#B9AAFD]", "white")
+                content = i18n.language === "en" ? (contentHeading(t("industries.factory.headerder2"), t("industries.factory.warehose"), "[#B9AAFD]", "white")) :   (contentHeading("Nhà Máy Và", "Kho Hàng", "[#B9AAFD]", "white") )
             )
            
             
@@ -60,7 +60,7 @@ export const Factory = () => {
         content =  i18n.language === "en" ? (
             contentHeading(t("industries.factory.headerder2"), t("industries.factory.warehose"), "[#B9AAFD]", "white") 
        ) : (
-           contentHeading(t("industries.factory.headerder2"), t("industries.factory.warehose"), "[#B9AAFD]", "white") 
+           contentHeading("Nhà Máy Và", "Kho Hàng", "[#B9AAFD]", "white") 
        )
        check = true;
             content1 =  contentHeading(t("industries.factory.headerder2"), t("industries.factory.warehose"), "[var(--tree-poppy)]", "[#1C2045]")

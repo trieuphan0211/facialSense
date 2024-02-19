@@ -65,31 +65,31 @@ export const Header = ({ logo }) => {
                 },
                 {
                   name: "header.subindustries.0.item.0.item.2.name",
-                  path: "/",
+                  path: "/mobile-workforce-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.3.name",
-                  path: "/",
+                  path: "/biometric-school-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.4.name",
-                  path: "/",
+                  path: "/construction-site-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.5.name",
-                  path: "/",
+                  path: "/hospital-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.6.name",
-                  path: "/",
+                  path: "/service-and-hospitality-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.7.name",
-                  path: "/",
+                  path: "/factory-and-warehouse-employee-time-attendance-monitoring-system",
                 },
                 {
                   name: "header.subindustries.0.item.0.item.8.name",
-                  path: "/",
+                  path: "/agriculture-sector-time-attendance-monitoring-system",
                 },
               ],
             },

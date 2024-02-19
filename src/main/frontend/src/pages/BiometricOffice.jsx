@@ -108,6 +108,21 @@ export const BiometricOffice = () => {
         <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.attend1")}</h1>
         <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys1")}</h1>
         </div>) : (
+            width > 364 ? (
+                <div>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                {t("industries.biometricoffice.sys1")}
+                </h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                {t("industries.biometricoffice.att1")}
+                </h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                {t("industries.biometricoffice.van")}
+                </h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bang")}</h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</h1>
+            </div>
+            ) : (
              <div>
              <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
              {t("industries.biometricoffice.sys1")}
@@ -118,9 +133,10 @@ export const BiometricOffice = () => {
              <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
              {t("industries.biometricoffice.van")}
              </h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bang")}</h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</h1>
-         </div>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">bằng sinh</h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">trắc học</h1>
+            </div>
+            )
         )
     }
 
@@ -130,7 +146,7 @@ export const BiometricOffice = () => {
             <div className=" bg-cover bg-center h-[360px] 4" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
                 {
                     i18n.language === "en" ? (
-                        <div className="  max-w-[1300px] 460sm:pt-[48px] mx-auto px-4 pt-[68px]">
+                        <div className="  max-w-[1300px] 460sm:pt-[48px] mx-auto px-4 pt-[68px]  minxl:pt-[100px]">
                         {content}
                         
                         </div>
@@ -171,6 +187,9 @@ export const BiometricOffice = () => {
                 <Headerkeyfeatures nameHader={t("industries.biometricoffice.biomatricfeature")} 
                                 underlineHeader={t("industries.biometricoffice.biomatricfeaturekey")}
                                 desHeader={t("industries.biometricoffice.biomatricfeaturedes")}
+                                descac={t("industries.retailworkforce.cac")}
+                                tinh={t("industries.retailworkforce.tinh")}
+                                check={false}
                 />
                         <div className=" flex relative mt-[50px] mb-[30px] sm:flex-col">
                             <Features 

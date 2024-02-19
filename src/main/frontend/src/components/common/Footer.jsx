@@ -25,12 +25,15 @@ export const Footer = () => {
                   </span>
                 ))}
             </p>
-            <a
-              className="hover:text-[#4B2BE3] text-[#3A505F] inline-block"
-              href="mailto:info@mobile-id.vn"
-            >
+            <p>
               {t("footer.contact.email")}
-            </a>
+              <a
+                className="hover:text-[#4B2BE3] text-[#3A505F] inline-block"
+                href="mailto:info@mobile-id.vn"
+              >
+                {t("footer.contact.emailName")}
+              </a>
+            </p>
           </div>
           <div className="flex flex-col gap-[10px] max-w-[220px]">
             <h3 className="text-base font-bold">

@@ -676,7 +676,7 @@ export const FacialsenseBioAttendannce = () => {
                     width: "420px",
                   }}
                 >
-                  {t("products.bioattendance.server.header.parameters")}
+                  {/* {t("products.bioattendance.server.header.parameters")} */}
                 </TableCell>
                 <TableCell
                   align="center"

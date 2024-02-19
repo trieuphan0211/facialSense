@@ -9,7 +9,7 @@ export default {
             name: "",
             item: [
               {
-                name: "chấm công sinh trắc học CheckID FacialSense",
+                name: "Chấm công sinh trắc học CheckID FacialSense",
               },
               {
                 name: "Quản lý khách truy cập CheckID FacialSense",
@@ -22,7 +22,7 @@ export default {
     industries: "Ngành nghề",
     subindustries: [
       {
-        name: "chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
+        name: "Chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
         item: [
           {
             name: "",
@@ -37,7 +37,7 @@ export default {
                 name: "Nhân viên di động và làm việc từ xa",
               },
               {
-                name: "chấm công học sinh",
+                name: "Chấm công học sinh",
               },
               {
                 name: "Công trường xây dựng",
@@ -105,7 +105,7 @@ export default {
             name: "",
             item: [
               {
-                name: "chấm công sinh trắc học CheckID FacialSense",
+                name: "Chấm công sinh trắc học CheckID FacialSense",
               },
               {
                 name: "Quản lý khách truy cập CheckID FacialSense",
@@ -121,7 +121,7 @@ export default {
         name: "sản phẩm",
         item: [
           {
-            name: "chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
+            name: "Chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
             item: [
               {
                 name: "Máy chủ tại chỗ",
@@ -177,7 +177,7 @@ export default {
             name: "HƯỚNG DẪN NGƯỜI DÙNG",
             item: [
               {
-                name: "chấm công sinh trắc học CheckID FacialSense",
+                name: "Chấm công sinh trắc học CheckID FacialSense",
               },
               {
                 name: "Quản lý khách thăm CheckID FacialSense",
@@ -210,7 +210,7 @@ export default {
         name: "HƯỚNG DẪN BẮT ĐẦU NHANH",
         item: [
           {
-            name: "chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
+            name: "Chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
             item: [
               {
                 name: "Đám mây",
@@ -279,7 +279,7 @@ export default {
       request: "Yêu cầu bản demo",
       janedoe: "Jane Doe",
       employee: "Nhân viên",
-      checkin: "chấm công",
+      checkin: "Chấm công",
       day1: "Thứ Sáu, 12 tháng 8, 2022",
       visitor: "Khách truy cập",
       welcome: "Chào mừng",
@@ -1071,7 +1071,8 @@ export default {
       address:
         "Địa chỉ: 19 Đặng Tiến Đông, Phường An Phú, Thành Phố Thủ Đức, Thành Phố Hồ Chí Minh",
       phone: "Điện thoại:/n 1900 6884/n +84 28 3636 6015",
-      email: "Email: info@mobile-id.vn",
+      email: "Email: ",
+      emailName: "info@mobile-id.vn",
     },
     legal: {
       infomation: "Thông tin pháp lý",

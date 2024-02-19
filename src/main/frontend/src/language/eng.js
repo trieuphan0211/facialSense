@@ -1103,7 +1103,8 @@ export default {
       address:
         "Address: 19 Dang Tien Dong, An Phu Ward, Thu Duc City, Ho Chi Minh City",
       phone: "Phone:/n 1900 6884/n +84 28 3636 6015",
-      email: "Email: info@mobile-id.vn",
+      email: "Email: ",
+      emailName: "info@mobile-id.vn",
     },
     legal: {
       infomation: "Legal information",

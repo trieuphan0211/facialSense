@@ -58,7 +58,7 @@ export const Service = () => {
         content =  i18n.language === "en" ? (
             contentHeading(t("industries.service.header2"), t("industries.service.hopital"), "[#B9AAFD]", "white") 
        ) : (
-           contentHeading(t("industries.service.header2"), t("industries.service.hopital"), "[#B9AAFD]", "white") 
+           contentHeading(t("industries.service.header2"), t("industries.service.hopitalup"), "[#B9AAFD]", "white") 
        )
     }
     return (

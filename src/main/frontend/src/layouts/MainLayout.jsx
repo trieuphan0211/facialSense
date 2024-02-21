@@ -88,6 +88,12 @@ export const MainLayout = () => {
                 document.title =
                     "CheckID FacialSense Service | FacialSense Visitor Management";
                 break;    
+            case "/meet-a-person-in-organization":
+                  setBg("bg-[#0A0A51] w bg-center-top bg-no-repeat max-w-full");
+                  setLogoImg(logoWhite);
+                  document.title =
+                      "CheckID FacialSense Service | FacialSense Visitor Management";
+                  break;    
           default:
             setBg("bg-home bg-right-top bg-no-repeat");
             setLogoImg(logo);

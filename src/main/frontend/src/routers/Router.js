@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce, MobileRemote, StudentAttendance, ConstructionSite, Heathycare, Service, Factory, Agriculture } from "../pages";
+import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce, MobileRemote, StudentAttendance, ConstructionSite, Heathycare, Service, Factory, Agriculture, Organizations } from "../pages";
 
 
 const context = "";
@@ -23,6 +23,7 @@ const Routers = () => {
                  { path: "/service-and-hospitality-time-attendance-monitoring-system",  element: <Service />},
                  { path: "/factory-and-warehouse-employee-time-attendance-monitoring-system",  element: <Factory />},
                  { path: "/agriculture-sector-time-attendance-monitoring-system",  element: <Agriculture />},
+                 { path: "/meet-a-person-in-organization",  element: <Organizations />},
                
       ],
     },

@@ -167,7 +167,7 @@ export const Facialsensevisitormanagement = () => {
               </span>
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px]">
               <span
                 style={{ whiteSpace: "nowrap" }}
                 className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
@@ -718,29 +718,38 @@ export const Facialsensevisitormanagement = () => {
             </div>
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={sabiofe} alt="" />
-              <div className="mt-[20px]">
+             
               {
                   i18n.language === "en" ? (
+                    <div className="mt-[20px] flex flex-col gap-[20px]">
                     <p className="text-[#1C2045] text-[22px] font-montserrat font-bold">
-                  {t(
+                    {t(
                     "products.facialsensevisitormanagement.fearures.titlebiometric"
-                  )}
-                </p>
-                  ) : (
-                    <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
-                    {  t(
-                      "products.facialsensevisitormanagement.fearures.titlebiometric"
+                    )}
+                  </p>
+                    <p className=" text-[#3A505F] font-montserrat font-normal h-[96px]  mlgd:h-[134px] leading-[24px]">
+                    {t(
+                      "products.facialsensevisitormanagement.fearures.biometric"
                     )}
                     </p>
+                    </div>
+                  ) : (
+                    <div className="mt-[20px]  flex flex-col gap-[20px]">
+                        <p className="text-[#1C2045] text-[22px] h-[66px] font-montserrat font-bold">
+                        {  t(
+                          "products.facialsensevisitormanagement.fearures.titlebiometric"
+                        )}
+                        </p>
+                        <p className="pt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px]  mlgd:h-[134px] leading-[24px]">
+                        {t(
+                          "products.facialsensevisitormanagement.fearures.biometric"
+                        )}
+                      </p>
+                  </div>
                   )
                 }
                 
-                <p className="mt-[20px] text-[#3A505F] font-montserrat font-normal h-[96px] mlgd:h-[134px] leading-[24px]">
-                  {t(
-                    "products.facialsensevisitormanagement.fearures.biometric"
-                  )}
-                </p>
-              </div>
+            
             </div>
             <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  ">
               <img className="w-[84px] h-[70px]" src={custom} alt="" />

@@ -36,19 +36,25 @@ export const Agriculture = () => {
   );
 
   if (width > 350) {
-    content = contentHeading(
-      t("industries.agriculture.header"),
-      undefined,
-      "[#B9AAFD]",
-      "white"
-    );
+    content =
+      i18n.language === "en"
+        ? contentHeading(
+            t("industries.agriculture.header"),
+            undefined,
+            "[#B9AAFD]",
+            "white"
+          )
+        : contentHeading("Nông Nghiệp", undefined, "[#B9AAFD]", "white");
   } else {
-    content = contentHeading(
-      t("industries.agriculture.nong"),
-      t("industries.agriculture.nghiep"),
-      "[#B9AAFD]",
-      "white"
-    );
+    content =
+      i18n.language === "en"
+        ? contentHeading(
+            t("industries.agriculture.nong"),
+            t("industries.agriculture.nghiep"),
+            "[#B9AAFD]",
+            "white"
+          )
+        : contentHeading("Nông", "Nghiệp", "[#B9AAFD]", "white");
   }
 
   return (

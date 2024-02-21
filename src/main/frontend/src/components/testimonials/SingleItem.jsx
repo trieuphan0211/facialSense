@@ -1,13 +1,12 @@
 
 import Slider from "react-slick";
-import fixthelogo from "../../assets/img/home/fixthephoto.png";
-import capterra from "../../assets/img/home/capterra.png";
-import softwareadvice from "../../assets/img/home/softwareadvice.png";
+
 import svg from "../../assets/img/industries/biometricoffice/SVG.png";
 import { useTranslation } from "react-i18next";
 import "slick-carousel/slick/slick.css";
 import { useWindowSize } from "@uidotdev/usehooks";
-
+import review from "../../assets/img/industries/biometricoffice/reviews-from-capterra-1-e1667983702240.png.png"
+import sofeware from "../../assets/img/industries/biometricoffice/image 9.png"
 import "slick-carousel/slick/slick-theme.css";
 import PropTypes from "prop-types"; // Import PropTypes
 import EastRoundedIcon from "@mui/icons-material/EastRounded";
@@ -77,67 +76,67 @@ SampleNextArrow.propTypes = {
   
 const carousel = [
     {
-      img: capterra,
+      img: review,
       description: "industries.service.items.description",
       name: "homepage.testimonials.items.0.name",
       position: "homepage.testimonials.items.0.position",
     },
     {
-      img: fixthelogo,
+      img: sofeware,
       description: "homepage.testimonials.items.1.description",
       name: "homepage.testimonials.items.1.name",
       position: "homepage.testimonials.items.1.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.2.description",
       name: "homepage.testimonials.items.2.name",
       position: "homepage.testimonials.items.2.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.3.description",
       name: "homepage.testimonials.items.3.name",
       position: "homepage.testimonials.items.3.position",
     },
     {
-      img: softwareadvice,
+      img: sofeware,
       description: "homepage.testimonials.items.4.description",
       name: "homepage.testimonials.items.4.name",
       position: "homepage.testimonials.items.4.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.5.description",
       name: "homepage.testimonials.items.5.name",
       position: "homepage.testimonials.items.5.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.6.description",
       name: "homepage.testimonials.items.6.name",
       position: "homepage.testimonials.items.6.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.7.description",
       name: "homepage.testimonials.items.7.name",
       position: "homepage.testimonials.items.7.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.8.description",
       name: "homepage.testimonials.items.8.name",
       position: "homepage.testimonials.items.8.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.9.description",
       name: "homepage.testimonials.items.9.name",
       position: "homepage.testimonials.items.9.position",
     },
     {
-      img: capterra,
+      img: review,
       description: "homepage.testimonials.items.10.description",
       name: "homepage.testimonials.items.10.name",
       position: "homepage.testimonials.items.10.position",
@@ -178,7 +177,7 @@ export const SingleItem = () => {
                    <div className=" ">
                      <div className="flex mds:flex-col mdsmin:flex-col gap-[35px] justify-between mdsmin:items-center mds:items-center ">
                         <div className="relative"> 
-                            <div className="absolute top-[50px] mds:top-[28px] mdsmin:top-[30px]  mds:left-[100px] left-1/2 mt-[50px] -translate-x-1/2">
+                            <div className="absolute top-[50px] mds:top-[28px] mdsmin:top-[30px]  mds:left-[100px] left-[48%] mt-[50px] -translate-x-1/2">
                                 <img
                                     className="w-[200px]  h-[75px] mds:w-[100px] mdsmin:w-[100px]  mds:h-[35px] mdsmin:h-[35px]"
                                     src={item.img}

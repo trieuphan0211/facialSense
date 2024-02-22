@@ -1,16 +1,16 @@
 
 import { useTranslation } from "react-i18next"
 import { useWindowSize } from "@uidotdev/usehooks";
-import { Question, QuickStart } from "../components/common";
-import { Features, Headerkeyfeatures } from "../components/bioatendance/"
+import { Question, QuickStart } from "../../../components/common";
+import { Features, Headerkeyfeatures } from "../../../components/bioatendance"
 import { Link } from 'react-router-dom';
-import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import turnkey from "../assets/img/industries/biometricoffice/turnkey.png"
-import realtime from "../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png"
-import locaiton from "../assets/img/industries/biometricoffice/locationservice.png"
-import remote from "../assets/img/industries/biometricoffice/remoteservice_3d.png";
-import identifer from "../assets/img/industries/biometricoffice/identifier.png"
+import choose1 from "../../../assets/img/products/facialsensevisitormanagement/choose.png";
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import turnkey from "../../../assets/img/industries/biometricoffice/turnkey.png"
+import realtime from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png"
+import locaiton from "../../../assets/img/industries/biometricoffice/locationservice.png"
+import remote from "../../../assets/img/industries/biometricoffice/remoteservice_3d.png";
+import identifer from "../../../assets/img/industries/biometricoffice/identifier.png"
 
 export const Agriculture = () => {
     const { t,i18n }  = useTranslation();

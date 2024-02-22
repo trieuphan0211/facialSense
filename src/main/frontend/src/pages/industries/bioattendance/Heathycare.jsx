@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next"
 import { useWindowSize } from "@uidotdev/usehooks";
-import { Question, QuickStart } from "../components/common";
-import {  Headerkeyfeatures, Features } from "../components/bioatendance/";
-import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
-import safe from "../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png";
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import liveness from "../assets/img/industries/biometricoffice/livenessheath.png"
+import { Question, QuickStart } from "../../../components/common";
+import {  Headerkeyfeatures, Features } from "../../../components/bioatendance";
+import choose from "../../../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
+import safe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png";
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import liveness from "../../../assets/img/industries/biometricoffice/livenessheath.png"
 
 
 

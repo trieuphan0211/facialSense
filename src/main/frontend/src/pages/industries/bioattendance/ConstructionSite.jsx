@@ -1,17 +1,17 @@
 
 import { useTranslation } from "react-i18next"
 import { useWindowSize } from "@uidotdev/usehooks";
-import { Question, QuickStart } from "../components/common";
-import {  Headerkeyfeatures, Features } from "../components/bioatendance/";
+import { Question, QuickStart } from "../../../components/common";
+import {  Headerkeyfeatures, Features } from "../../../components/bioatendance";
 
-import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import location from "../assets/img/industries/biometricoffice/location.png"
-import remote from "../assets/img/industries/biometricoffice/remote.png"
-import identifer from "../assets/img/industries/biometricoffice/identifier.png"
-import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
+import choose from "../../../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import location from "../../../assets/img/industries/biometricoffice/location.png"
+import remote from "../../../assets/img/industries/biometricoffice/remote.png"
+import identifer from "../../../assets/img/industries/biometricoffice/identifier.png"
+import sabiofe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
 
-import liveness from "../assets/img/industries/biometricoffice/liveness.png"
+import liveness from "../../../assets/img/industries/biometricoffice/liveness.png"
 
 export const ConstructionSite = () => {
     const { t,i18n }  = useTranslation();

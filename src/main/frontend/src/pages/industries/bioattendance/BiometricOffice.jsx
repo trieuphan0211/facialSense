@@ -1,15 +1,15 @@
 
-// import vector from "../assets/img/industries/biometricoffice/Vector 2.png"
+// import vector from "../../../assets/img/industries/biometricoffice/Vector 2.png"
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useTranslation } from "react-i18next";
-import { Question, QuickStart } from "../components/common";
-import { Features, Headerkeyfeatures, Transfrom, Whychoose } from "../components/bioatendance/"
-import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import turnkey from "../assets/img/industries/biometricoffice/turnkey.png"
-import realtime from "../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png"
+import { Question, QuickStart } from "../../../components/common";
+import { Features, Headerkeyfeatures, Transfrom, Whychoose } from "../../../components/bioatendance"
+import choose from "../../../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import turnkey from "../../../assets/img/industries/biometricoffice/turnkey.png"
+import realtime from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_realtime_3d.png"
 import { Link } from 'react-router-dom';
-// import vector from "../assets/img/industries/biometricoffice/group3.png";
+// import vector from "../../../assets/img/industries/biometricoffice/group3.png";
 export const BiometricOffice = () => { 
     const { t, i18n } = useTranslation()
     const { width } = useWindowSize() 

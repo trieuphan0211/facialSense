@@ -180,7 +180,7 @@ export default {
                 name: "chấm công sinh trắc học CheckID FacialSense",
               },
               {
-                name: "Quản lý khách thăm CheckID FacialSense",
+                name: "Quản lý khách hàng CheckID FacialSense",
               },
               {
                 name: "Hướng dẫn dành cho nhà phát triển",
@@ -661,7 +661,7 @@ export default {
         howides: "Có.",
         howcan: "Có thể triển khai trên nền tảng di động không?",
         howcandes:
-          "Có, ứng dụng quản lý khách hàng CheckID FacialSense cho Windows và Android cung cấp các chức năng quản lý khách thăm sau đây:",
+          "Có, ứng dụng quản lý khách hàng CheckID FacialSense cho Windows và Android cung cấp các chức năng quản lý khách hàng sau đây:",
         howcandes1: "Kiosk đăng ký đến làm khách hàng",
         howcandes2:
           "Chấm công và kiểm soát truy cập bằng sinh trắc học của khách hàng",
@@ -1325,7 +1325,7 @@ export default {
 
   }, 
   organizations: {
-    header: "Tổ chức",
+    header: "Tổ Chức",
     
     headerdes: "Gặp một người trong ",
     headernone: "tổ chức",
@@ -1342,21 +1342,66 @@ export default {
     consumerdes: "Khách có thể kiểm tra trực tuyến và đặt lịch hẹn để gặp nhân viên. Nếu cho phép lịch hẹn không đặt trước, khách có thể đặt lịch hẹn từ kiosk đăng ký.",
     fresh: "Khách: Check-in vào cuộc hẹn",
     freshdes: "Sau khi nhập vào khu vực, khách có thể check-in với hệ thống bằng ID cuộc hẹn của họ. Hệ thống có thể được cấu hình để sử dụng một ID được tạo tự động hoặc một ID vật lý như thẻ ID của chính phủ.",
-    buyer: "Tiến triển và kết luận",
-    buyerdes: "Các cơ hội được xem trong CRM của chúng tôi, hoặc có thể được đồng bộ hóa với một trong 700 hệ thống CRM.",
+    
     leads: "Tiến triển và kết luận",
-    leadsdes: "Nhân viên có thể đến gặp khách khi nhận được thông báo. Sau cuộc họp, khách sẽ check-out khỏi nơi gặp gỡ và nhân viên có thể đánh dấu cuộc hẹn là hoàn thành.",
+    leadsdes: "Nhân viên có thể đến gặp khách khi nhận được thông báo. Sau cuộc họp, khách sẽ trả phòng tại địa điểm họp và nhân viên có thể đánh dấu cuộc hẹn là đã hoàn thành.",
     buytweak: "Người mua điều chỉnh nguồn cung cấp cơ hội của họ",
     buytweakdes: "Dữ liệu xếp loại cho phép người mua thấy chính xác chi phí cho mỗi bán hàng mỗi trang web họ nhận được cơ hội từ đó.",
     keyfeatures: "Tính năng chính",
     thecheckid2: "Hệ thống quản lý khách CheckID FacialSense có nhiều tính năng mạnh mẽ được thiết kế để cung cấp trải nghiệm thuận tiện và an toàn cho tất cả khách hàng trong khi giảm bớt sự phức tạp và gánh nặng quản lý khách trên nhân viên. Hệ thống của chúng tôi có nhiều tính năng bao gồm:",
-    auto: "Mã thông báo được tạo tự động",
-    autodes: "Hệ thống có thể tự động tạo mã thông báo hoặc sử dụng mã thông báo điện tử được chỉ định như mã vạch, RFID, biển số xe hợp pháp làm mã thông báo khách",
-    overhead: "Hiển thị trên đầu",
-    overheaddes: "Thiết bị khách quản lý khách có thể được cấu hình như một hiển thị trên đầu để hiển thị cuộc hẹn hiện tại và tiếp theo",
-    feedback: "Phản hồi khi check-out",
-    feedbackdes: "Khách hàng có thể đánh giá trải nghiệm của họ khi check-out. Thông tin như vậy sẽ hữu ích để đánh giá chất lượng dịch vụ của nhân viên."
+    online: "Đặt hẹn trước trực tuyến",
+    onlinedes: "Đặt hẹn trước trực tuyến cho phép khách hàng lên kế hoạch cho chuyến thăm của họ từ trước và truy cập một cách dễ dàng.",
+    secure: "Truy cập khách hàng an toàn",
+    securedes: "Công nghệ nhận dạng mã vạch, RFID, khuôn mặt, dấu vân tay và mắt cung cấp truy cập nhanh chóng, hiệu quả và an toàn cho các cuộc hẹn với khách hàng và tương tác với khách hàng.",
+    feedback: "An toàn và vệ sinh",
+    feedbackdes: "Công nghệ nhận dạng không tiếp xúc bằng mã vạch, RFID, khuôn mặt và mắt giúp xác định khách hàng mà không cần tiếp xúc."
+
+  },
+  travel: {
+    header: "Du Lịch Và Tham Quan",
+    headerTravel: "Du lịch và tham quan",
+    after: "Sau đại dịch Covid-19, ngành du lịch mới bắt đầu phục hồi. Nhiều điểm đến du lịch trên thế giới đã mở cửa lại hoạt động với nhiều biện pháp an toàn và sức khỏe hơn. Việc chấp nhận khách du lịch từ các quốc gia khác nhau và duy trì sức khỏe và an toàn là một trách nhiệm lớn đối với một điểm đến du lịch. Ở đây, chúng ta đang xem xét tất cả các công viên, bảo tàng, điểm đến lịch sử hoặc hấp dẫn khác cung cấp dịch vụ cho tất cả du khách.",
+    asan: "Là một tổ chức, mỗi điểm đến du lịch cần một số thông tin về khách hàng. Trong tình hình hiện tại sau đại dịch, trạng thái tiêm chủng của khách hàng là điều cần phải biết. Ngoài ra, tổ chức cần biết tên, tuổi, ngôn ngữ của khách hàng, v.v. để cung cấp trải nghiệm cá nhân hóa. Ví dụ, ngôn ngữ có thể được sử dụng để cung cấp hướng dẫn bằng ngôn ngữ của du khách. Ngoài ra, một số nơi như bảo tàng cần vé cho du khách, và du khách có thể muốn đặt vé cho một ngày thăm trong tương lai.",
+    with: "Với CheckID FacialSense Quản lý khách hàng, các điểm đến/ tổ chức du lịch như vậy có thể thu thập thông tin họ cần từ du khách. Những thông tin này có thể được tùy chỉnh theo yêu cầu. Với cơ sở đặt vé trực tuyến, du khách có thể đặt vé cho một ngày trong tương lai cũng được. Những người muốn thăm trong cùng một ngày, kiosk tự động thu thập thông tin tương tự như đăng ký trực tuyến. Ngoài việc đặt vé, việc phát hành và in vé cũng có thể được thực hiện với cài đặt như vậy.",
+    organiza: "Tổ chức: xác định các khe thời gian cho du khách",
+    organizades: "Quản lý tại điểm đến du lịch/ điểm thu hút du khách có thể xác định các khe thời gian mà du khách có thể thăm và xem. Cùng một lúc, vé có thể được bán từ hệ thống.",
+    visitor: "Khách thăm: đặt một cuộc hẹn",
+    visitordes: "Du khách có thể kiểm tra trực tuyến và đặt một cuộc hẹn để thăm địa điểm. Nếu vé/ thẻ ra vào được phát từ cổng, nó có thể được quản lý bằng một hoặc nhiều thiết bị kiosk khác tại cửa vào.",
+    visitorCheckin: "Khách thăm: Check-in tại địa điểm",
+    visitorCheckindes: "Sau khi vào địa điểm, dữ liệu của du khách sẽ được sử dụng để cung cấp trải nghiệm cá nhân hóa bên trong cơ sở. Truy cập vào một số phần có thể bị hạn chế, sở thích ngôn ngữ của du khách có thể được sử dụng để cung cấp chi tiết bằng ngôn ngữ của họ, sử dụng ngôn ngữ khác nhau cho trẻ em v.v là một số trường hợp sử dụng dữ liệu của du khách.",
+    ending: "Kết thúc cuộc thăm và rời đi",
+    endingdes: "Khi du khách hoàn tất việc khám phá địa điểm, họ có thể để lại phản hồi và rời đi.",
+    keyfeaturesdes: "Hệ thống quản lý khách hàng CheckID FacialSense có một số tính năng mạnh mẽ được thiết kế để cung cấp trải nghiệm thuận tiện và an toàn cho tất cả du khách trong khi giảm bớt sự phức tạp và gánh nặng về quản lý khách hàng cho nhân viên. Hệ thống của chúng tôi có nhiều tính năng bao gồm:",
+    custom: "Đăng ký tùy chỉnh",
+    customdes: "Việc đặt vé trực tuyến và đặt vé kiosk có thể được sửa đổi để thu thập các thông tin khác nhau của du khách dựa trên yêu cầu của khách hàng.",
+    contact: "Truy cập không tiếp xúc",
+    contactdes: "Không cần tiếp xúc vật lý khi người được nhận diện bằng khuôn mặt hoặc mống mắt.",
+    issuing: "Phát hành vé",
+    issuingdes: "Một vé hoặc một thẻ có thể được tạo ra và in. Nội dung của vé có thể được sửa đổi theo nhu cầu của khách hàng.",
+  },
+  banking: {
+    header: "Ngân Hàng Hoặc Các Tổ Chức Tài Chính",
+    headernone: "Ngân hàng hoặc các tổ chức tài chính",
+    finacial: "Các tổ chức tài chính như ngân hàng chủ yếu tập trung vào an ninh. Các tổ chức như vậy cần xem xét an toàn của nhân viên và tài sản của họ, cũng như các khách hàng đến ngân hàng. Vì xác minh cá nhân là điểm quan trọng nhất, hầu hết các ngân hàng sử dụng sinh trắc học cho mục đích xác thực.",
+    there: "Có một số khu vực trong ngân hàng mà không được phép cho khách hàng. Điều quan trọng là đảm bảo không có khách hàng nào sẽ vào những khu vực đó. Ngân hàng thu thập một số dữ liệu riêng tư đáng kể từ khách hàng của họ, vì vậy cần đảm bảo an toàn của họ bằng mọi giá.",
+    checkid: "Quản lý khách hàng CheckID FacialSense cung cấp các mô đun sinh trắc học \"Khuôn mặt\", \"Vân tay\" và \"Mống mắt\" được cung cấp bởi SDK Sinh trắc học đáng tin cậy nhất của Neurotechnology. Ngoài ra, bước xác minh bổ sung có thể được giới thiệu để nâng cao an ninh.",
+    bank: "Ngân hàng: xác định giờ làm việc cho khách hàng",
+    bankdes: "Quản lý của ngân hàng có thể xác định giờ làm việc cho khách hàng. Mỗi mục đích sẽ có một vị trí liên quan. (Ví dụ: Yêu cầu vay: tại phòng tín dụng)",
+    custom: "Khách hàng: đặt một cuộc hẹn với ngân hàng",
+    customdes: "Khách hàng có thể gửi yêu cầu bằng cách giải thích yêu cầu của họ. Một nhân viên từ ngân hàng có thể kiểm tra yêu cầu và có thể chấp nhận/sửa đổi hoặc từ chối yêu cầu.",
+    customvisit: "Khách hàng: thăm ngân hàng",
+    customvisitdes: "Khách hàng sẽ được xác thực khi đến. Ngân hàng có thể sử dụng sinh trắc học của khách hàng để nhận biết người. Như một biện pháp an toàn bổ sung, ngân hàng có thể yêu cầu quét sổ tiết kiệm hoặc thẻ ID. sau khi xác minh, khách hàng được phép vào phần liên quan.",
+    leave: "Rời khỏi địa điểm",
+    leavedes: "Sau khi hoàn thành công việc được yêu cầu từ ngân hàng, khách hàng có thể để lại phản hồi trên thiết bị check-out và rời khỏi địa điểm.",
+    fearuresdes: "Hệ thống Quản lý khách hàng CheckID FacialSense có một số tính năng mạnh mẽ được thiết kế để cung cấp trải nghiệm thuận tiện và an toàn cho tất cả du khách trong khi giảm bớt sự phức tạp và gánh nặng về quản lý khách hàng cho nhân viên. Hệ thống của chúng tôi có nhiều tính năng bao gồm:",
+    biometric: "Nhận diện khách hàng sinh trắc học",
+    biometricdes: "Nhận diện khuôn mặt, vân tay và mống mắt của khách hàng trong kiểm soát truy cập và quản lý khách hàng",
+    contact: "Kiểm soát truy cập không tiếp xúc",
+    contactdes: "Không cần tiếp xúc vật lý khi người được nhận diện bằng khuôn mặt hoặc mống mắt và thiết bị kiểm soát truy cập chỉ hoạt động cho khách hàng được xác thực.",
+    data: "Bảo mật dữ liệu",
+    datades: "Các hoạt động của khách hàng được thực hiện bởi nhân viên được ủy quyền, do đó thông tin về khách hàng và việc thăm được bảo đảm không bị truy cập trái phép."
   }
+  
   
   
 

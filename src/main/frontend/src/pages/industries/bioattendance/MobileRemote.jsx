@@ -1,15 +1,15 @@
 
-import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
+import choose1 from "../../../assets/img/products/facialsensevisitormanagement/choose.png";
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { Question } from "../components/common";
-import {  Headerkeyfeatures, Features, Whychoose } from "../components/bioatendance/"
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
-import left from "../assets/img/products/facialsensevisitormanagement/about-left.png.png";
-import right from "../assets/img/products/facialsensevisitormanagement/about-shape.png.png";
-import { CloudButton, LeafButton } from "../components/button";
-import liveness from "../assets/img/industries/biometricoffice/liveness.png"
+import { Question } from "../../../components/common";
+import {  Headerkeyfeatures, Features, Whychoose } from "../../../components/bioatendance"
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import sabiofe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
+import left from "../../../assets/img/products/facialsensevisitormanagement/about-left.png.png";
+import right from "../../../assets/img/products/facialsensevisitormanagement/about-shape.png.png";
+import { CloudButton, LeafButton } from "../../../components/button";
+import liveness from "../../../assets/img/industries/biometricoffice/liveness.png"
 import { Link } from 'react-router-dom';
 
 export const MobileRemote = () => {

@@ -1,12 +1,12 @@
 
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "@uidotdev/usehooks";
-import {  Question, QuickStart } from "../components/common";
-import {  Headerkeyfeatures, Features } from "../components/bioatendance/";
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import choose from "../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
-import safe from "../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png"
-import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
+import {  Question, QuickStart } from "../../../components/common";
+import {  Headerkeyfeatures, Features } from "../../../components/bioatendance";
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import choose from "../../../assets/img/products/facialsensevisitormanagement/choose-shape.png.png"
+import safe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png"
+import sabiofe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
 
 export const Retailworkforce = () => {  
     const { t, i18n } = useTranslation() 

@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next"
 import { useWindowSize } from "@uidotdev/usehooks";
-import { QuickStart } from "../components/common";
-import {   Features, Headerkeyfeatures, Whychoose } from "../components/bioatendance/"
-import { Question } from "../components/common"
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import sabiofe from "../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
-
-import liveness from "../assets/img/industries/biometricoffice/liveness.png"
-import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
+import { QuickStart } from "../../../components/common";
+import {   Features, Headerkeyfeatures, Whychoose } from "../../../components/bioatendance"
+import { Question } from "../../../components/common"
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import sabiofe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_visitor_3d.png"
+import liveness from "../../../assets/img/industries/biometricoffice/liveness.png"
+import choose1 from "../../../assets/img/products/facialsensevisitormanagement/choose.png";
 
 
 

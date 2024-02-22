@@ -89,7 +89,19 @@ export const MainLayout = () => {
                     "CheckID FacialSense Service | FacialSense Visitor Management";
                 break;    
             case "/meet-a-person-in-organization":
-                  setBg("bg-[#0A0A51] w bg-center-top bg-no-repeat max-w-full");
+                  setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                  setLogoImg(logoWhite);
+                  document.title =
+                      "CheckID FacialSense Service | FacialSense Visitor Management";
+                  break;    
+            case "/travel-and-excursion":
+                  setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                  setLogoImg(logoWhite);
+                  document.title =
+                      "CheckID FacialSense Service | FacialSense Visitor Management";
+                  break;    
+            case "/banking-or-financial-institutes":
+                  setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
                   setLogoImg(logoWhite);
                   document.title =
                       "CheckID FacialSense Service | FacialSense Visitor Management";

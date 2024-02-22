@@ -1,20 +1,20 @@
 
 import { useTranslation } from "react-i18next"
 import { useWindowSize } from "@uidotdev/usehooks";
-import { LeafButton } from "../components/button";
-import { Question, QuickStart } from "../components/common";
+import { LeafButton } from "../../../components/button";
+import { Question, QuickStart } from "../../../components/common";
 
-import {  Headerkeyfeatures, Features, Whychoose } from "../components/bioatendance/";
-import choose1 from "../assets/img/products/facialsensevisitormanagement/choose.png";
-import remote from "../assets/img/industries/biometricoffice/remoteservice_3d.png";
-import multiple from "../assets/img/industries/biometricoffice/multiple.png"
-import liveness from "../assets/img/industries/biometricoffice/liveness.png"
-import nore from "../assets/img/industries/biometricoffice/norequi.png"
-import locaiton from "../assets/img/industries/biometricoffice/locationservice.png"
-import compre from "../assets/img/industries/biometricoffice/compreservice_3d.png"
+import {  Headerkeyfeatures, Features, Whychoose } from "../../../components/bioatendance";
+import choose1 from "../../../assets/img/products/facialsensevisitormanagement/choose.png";
+import remote from "../../../assets/img/industries/biometricoffice/remoteservice_3d.png";
+import multiple from "../../../assets/img/industries/biometricoffice/multiple.png"
+import liveness from "../../../assets/img/industries/biometricoffice/liveness.png"
+import nore from "../../../assets/img/industries/biometricoffice/norequi.png"
+import locaiton from "../../../assets/img/industries/biometricoffice/locationservice.png"
+import compre from "../../../assets/img/industries/biometricoffice/compreservice_3d.png"
 
 import { Link } from 'react-router-dom';
-import { SingleItem } from "../components/testimonials";
+import { SingleItem } from "../../../components/testimonials";
 
 
 

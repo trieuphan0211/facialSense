@@ -105,7 +105,25 @@ export const MainLayout = () => {
                   setLogoImg(logoWhite);
                   document.title =
                       "CheckID FacialSense Service | FacialSense Visitor Management";
-                  break;    
+                  break;  
+            case "/hotels-and-restaurants":
+                    setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                    setLogoImg(logoWhite);
+                    document.title =
+                        "CheckID FacialSense Service | FacialSense Visitor Management";
+                    break;    
+            case "/consultation-services":
+                      setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                      setLogoImg(logoWhite);
+                      document.title =
+                          "CheckID FacialSense Service | FacialSense Visitor Management";
+                      break;    
+            case "/buildings-and-apartments":
+                      setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                      setLogoImg(logoWhite);
+                      document.title =
+                          "CheckID FacialSense Service | FacialSense Visitor Management";
+                      break;    
           default:
             setBg("bg-home bg-right-top bg-no-repeat");
             setLogoImg(logo);

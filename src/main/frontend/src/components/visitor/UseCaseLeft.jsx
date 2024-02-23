@@ -12,10 +12,6 @@ export const UseCaseLeft = ( { imageSrc, title, description, number } ) => {
                         <div className="minlg:border-r-2  460sm:max-w-[340px] max-w-[550px] xl:border-l-2 xl:text-left xl:px-[28px] group-hover:border-[#F7941D] border-solid text-right border-gray-200 pr-[28px] py-[15px] text-[#607D94] text-[16px] font-normal w-[550px] mb-[15px]">  {description}</div>
                      </div>
       
-
-
-              
-
     )
 }
 

@@ -115,15 +115,15 @@ export const Header = ({ logo }) => {
                 },
                 {
                   name: "header.subindustries.1.item.0.item.3.name",
-                  path: "/",
+                  path: "/hotels-and-restaurants",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.4.name",
-                  path: "/",
+                  path: "/consultation-services",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.5.name",
-                  path: "/",
+                  path: "/buildings-and-apartments",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.6.name",

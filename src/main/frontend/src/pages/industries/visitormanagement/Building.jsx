@@ -14,10 +14,10 @@ import choose from "../../../assets/img/products/facialsensevisitormanagement/ch
 import calender from "../../../assets/img/industries/organization/calender.png"
 import calender1 from "../../../assets/img/industries/organization/calender2.png"
 import {  UseCaseLeft, UseCaseRight } from "../../../components/visitor";
-import { Features, Headerkeyfeatures } from "../../../components/bioatendance";
-import online from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_isecureometric_3d.png";
-import safe from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_biomatric_3d.png";
-import secure from "../../../assets/img/products/facialsensevisitormanagement/icon_brain_isometric_3d.png";
+import { Features, Headerkeyfeatures, Whychoose } from "../../../components/bioatendance";
+import online from "../../../assets/img/industries/organization/wifibuilding.png";
+import safe from "../../../assets/img/industries/organization/realtimebuilidng.png";
+import secure from "../../../assets/img/industries/organization/securebuilding.png";
 
 
 
@@ -224,18 +224,18 @@ export const Building = () => {
                         <div className=" flex relative mt-[50px] mb-[30px] sm:flex-col">
                             <Features 
                                 image={online}
-                                title={t("industries.consultation.electronic")}
-                                des={t("industries.consultation.electronicdes")}
+                                title={t("industries.building.automated")}
+                                des={t("industries.building.automateddes")}
                             />
                             <Features 
                                 image={secure}
-                                title={t("industries.consultation.contact")}
-                                des={t("industries.consultation.contactdes")}
+                                title={t("industries.building.secure")}
+                                des={t("industries.building.securedes")}
                             />
                              <Features 
                                 image={safe}
-                                title={t("industries.consultation.customer")}
-                                des={t("industries.consultation.customerdes")}
+                                title={t("industries.building.realtime")}
+                                des={t("industries.building.realtimedes")}
                             />
                         </div>
 
@@ -244,7 +244,60 @@ export const Building = () => {
             </div>
             
             </div>
+            <div className="bg-[#F1F6FA] ">
+                <div className=" mx-auto max-w-[1300px] pt-[50px] pb-[90px] flex flex-col gap-[50px] px-4 ">
+                    <div className=" relative">
+                       
+                                <div className=" flex flex-col gap-[15px] items-center ">
+            
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                        {t("industries.building.whycheckid")}
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        {t("industries.building.apartment")}
+                                        </span>
+                                        {t("industries.building.willmake")}
+                                    </h1>
+                                    
+                                </div>
+                    
+                    </div>
+                    <div className="flex flex-col gap-[20px]">
+                        <div className=" mx-auto flex gap-[20px] sm:flex-col  ">
+
+                            <Whychoose 
+                                title={t("industries.building.increase")}
+                                des={t("industries.building.increasedes")}
+                            />
+                            <Whychoose 
+                                title={t("industries.building.see")}
+                                des={t("industries.building.seedes")}
+                            />
+                            <Whychoose 
+                                title={t("industries.building.automatedaccess")}
+                                des={t("industries.building.automatedaccessdes")}
+                            />
+                        </div>
+                            <div className=" mx-auto flex gap-[20px] sm:flex-col  ">
+                            <Whychoose 
+                                title={t("industries.building.data")}
+                                des={t("industries.building.datades")}
+                            />
+                            <Whychoose 
+                                title={t("industries.building.quickly")}
+                                des={t("industries.building.quicklydes")}
+                            />
+                            <Whychoose 
+                                title={t("industries.building.customizable")}
+                                des={t("industries.building.customizabledes")}
+                            />
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
             <Question />
+
                 
                 
                 

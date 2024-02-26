@@ -124,6 +124,24 @@ export const MainLayout = () => {
                       document.title =
                           "CheckID FacialSense Service | FacialSense Visitor Management";
                       break;    
+            case "/customer-support":
+                        setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                        setLogoImg(logoWhite);
+                        document.title =
+                            "CheckID FacialSense Service | FacialSense Visitor Management";
+                        break;   
+            case "/entertainment":
+                          setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                          setLogoImg(logoWhite);
+                          document.title =
+                              "CheckID FacialSense Service | FacialSense Visitor Management";
+                          break;    
+            case "/schools-and-campuses":
+                            setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                            setLogoImg(logoWhite);
+                            document.title =
+                                "CheckID FacialSense Service | FacialSense Visitor Management";
+                            break;    
           default:
             setBg("bg-home bg-right-top bg-no-repeat");
             setLogoImg(logo);

@@ -268,7 +268,7 @@ export const StudentAttendance = () => {
                 </div>
             </div>
             <div className="bg-[#F1F6FA] ">
-                <div className=" mx-auto max-w-[1300px] pt-[50px] pb-[90px] flex flex-col gap-[50px] px-4 ">
+                <div className=" mx-auto max-w-[1300px]  pb-[90px] flex flex-col gap-[50px] px-4 ">
                     <div className=" relative">{i18n.language === "en" ? (
                          width > 374 ?
                             (

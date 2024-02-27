@@ -169,7 +169,7 @@ export const Service = () => {
                             </div>
                            
                             <p className="text-center italic font-light text-[#3A505f] relative text-[16px] md:px-[0px] px-[150px]">{t("industries.biometricoffice.footer")}
-                            <Link style={{ color: '#151686', textDecoration: 'underline' }} to="https://checkid.mobile-id.vn" > https://checkid.mobile-id.vn</Link>
+                            <Link style={{ color: '#151686', textDecoration: 'underline' }} to="https://www.mobile-id.vn/" > https://www.mobile-id.vn/</Link>
                             </p>
                         </div>
             </div>

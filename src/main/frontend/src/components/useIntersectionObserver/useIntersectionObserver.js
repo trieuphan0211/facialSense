@@ -8,12 +8,9 @@ const useIntersectionObserver = (targetRef) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
+        setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.5 }
+      { threshold: 0} // Chỉ cần một phần trăm xuất hiện để kích hoạt
     );
 
     if (targetRef.current) {
@@ -25,7 +22,7 @@ const useIntersectionObserver = (targetRef) => {
         observer.unobserve(targetRef.current);
       }
     };
-  }, [targetRef]);
+  }, []);
 
   return isVisible;
 };

@@ -89,7 +89,7 @@ export const Organizations = () => {
             </div>
             <div ref={targetDivRef} className={`animation-fadeIn bg-white`}>
             {isVisible && (
-            <div className=" animate-show-nav duration-300">
+            <div className=" animate-show-nav">
             <div className="bg-white relative pb-[50px] ">
                 <img src={choose} className="w-[574px] h-[737px] absolute top-[-50px] left-[-50px]" alt="" />
                 

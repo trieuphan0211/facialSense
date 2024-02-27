@@ -90,7 +90,7 @@ export const Agriculture = () => {
                             <p className="text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">{t("industries.agriculture.accurate")}</p>
                             <p className="text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">{t("industries.agriculture.whilst")}</p>
                             <p className="text-center italic font-light text-[#3A505f] mt-[30px] relative text-[16px] md:px-[0px] px-[80px]">{t("industries.biometricoffice.footer")}
-                            <Link style={{ color: '#151686', textDecoration: 'underline' }} to="https://checkid.mobile-id.vn" > https://checkid.mobile-id.vn</Link>
+                            <Link style={{ color: '#151686', textDecoration: 'underline' }} to="https://www.mobile-id.vn/" > https://www.mobile-id.vn</Link>
                         </p>
                         </div>
                     </div>

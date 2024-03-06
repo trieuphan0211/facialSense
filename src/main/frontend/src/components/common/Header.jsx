@@ -107,35 +107,35 @@ export const Header = ({ logo }) => {
                 },
                 {
                   name: "header.subindustries.1.item.0.item.1.name",
-                  path: "/",
+                  path: "/travel-and-excursion",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.2.name",
-                  path: "/",
+                  path: "/banking-or-financial-institutes",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.3.name",
-                  path: "/",
+                  path: "/hotels-and-restaurants",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.4.name",
-                  path: "/",
+                  path: "/consultation-services",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.5.name",
-                  path: "/",
+                  path: "/buildings-and-apartments",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.6.name",
-                  path: "/",
+                  path: "/customer-support",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.7.name",
-                  path: "/",
+                  path: "/entertainment",
                 },
                 {
                   name: "header.subindustries.1.item.0.item.8.name",
-                  path: "/",
+                  path: "/schools-and-campuses",
                 },
               ],
             },

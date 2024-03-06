@@ -15,11 +15,14 @@ module.exports = {
       mlgd: { min: "767px", max: "1023px" },
       // => @media (max-width: 1023px) { ... }
       xl: { max: "1279px" },
+      xlmaxmin: {min: "1024px", max: "1279px"},
       // => @media (max-width: 1279px) { ... }
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
       "460sm": { max: "462px" },
+      "460max": {min: "463px", max: "1023px"},
       minxl: { min: "1400px" },
+      minlg: { min: "1280px"},
     },
 
     extend: {
@@ -43,6 +46,7 @@ module.exports = {
         movesquare: "movesquare 10s linear infinite",
         "movesquare-slow": "movesquare 15s linear infinite",
         "spin-slow": "spin 6s linear infinite",
+        "fadeIn": "fadeIn 3s ease"
       },
       keyframes: {
         "show-nav": {
@@ -52,6 +56,10 @@ module.exports = {
         "scale-up": {
           "0%": { transform: "scale(0)" },
           "100%": { transform: "scale(1)" },
+        },
+        "fadeIn": {
+          "0%": { opacity: 0 },
+          "100%": {opacity: 1}
         },
         movesquare: {
           "0%": {
@@ -82,6 +90,7 @@ module.exports = {
           " 100%": {
             transform: "translate(0,0) rotate(0)",
           },
+         
         },
       },
       boxShadow: {

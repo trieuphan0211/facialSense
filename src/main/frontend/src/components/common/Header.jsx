@@ -145,7 +145,7 @@ export const Header = ({ logo }) => {
     },
     {
       name: "header.pricing",
-      path: "/",
+      path: "",
       position: "",
       subnav: [
         {
@@ -156,7 +156,7 @@ export const Header = ({ logo }) => {
               item: [
                 {
                   name: "header.subpricing.0.item.0.item.0.name",
-                  path: "/",
+                  path: "/pricing",
                 },
                 {
                   name: "header.subpricing.0.item.0.item.1.name",
@@ -429,7 +429,7 @@ export const Header = ({ logo }) => {
                     {t(link.name)}
                     <KeyboardArrowDownRoundedIcon className="group-hover/nav:rotate-180 rotate-0 transition-[all] duration-[2000ms]" />
                   </Link>
-                  <div
+                   <div
                     className={`hidden gap-5 absolute normal-case shadow-lg  z-10 top-16   ${link.position}  group-hover/nav:flex group-hover/nav:animate-show-nav  bg-white text-black font-semibold p-5  rounded`}
                   >
                     {link.subnav &&

@@ -1632,6 +1632,42 @@ export default {
   
 
 },
+  pricing: {
+    header: "Pricing",
+    headernone: "CheckID FacialSense Bio Attendance",
+    cloud: "Cloud",
+    onpremises: "On-premises",
+    price: "Price per user free",
+    price1: "Price per user 1$",
+    price2: "Price per user 0.87$",
+    price3: "Price per user 0.73$",
+    free: "Free Plan",
+  
+      free1: "Plan 20",
+      free2: "Plan 50",
+      free3: "Plan 100",
+    month: "/ month",
+    users: "Users",
+    mostporpular: "Most popular",
+    getstart: "Get Started Now",
+    prices: "Prices do not include local import duties or taxes",
+    freeclient: "Free client applications",
+    foremploy: " for employees/users (Windows, Android and iOS operating systems) are available.",
+    custom: "Custom solutions",
+    make: "Make sure to leave us a message and we will be sure to get back to you as soon as possible.",
+    licensefor: "1 license for 1 device - 95$",
+    license: "License",
+    one: "/ one time purchase",
+    these: "These licenses can be used by following applications:",
+    checkid: "CheckID FacialSense on-premise server (supported up to 100 users)",
+    checkidstandrad: "CheckID FacialSense Standard client",
+    addtocart: "Add to cart",
+    formore: "For more than 100 users or more than 10 devices please ",
+    contactus: "contact us",
+    customsolu: "Custom solutions",
+    makesolu: "Make sure to leave us a message and we will be sure to get back to you as soon as possible.",
+    customus: "Contact us"
+  },
   footer: {
     description:
       "CheckID FacialSense products stand out in the market as multi biometric solutions creating accurate and flexible system applications. Our systems are powered by industry-leading algorithms developed by Mobile-ID.",

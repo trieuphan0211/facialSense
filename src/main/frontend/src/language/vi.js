@@ -1614,6 +1614,39 @@ export default {
       }
   
     },
+    pricing: {
+      header: "Giá cả",
+      headernone: "CheckID FacialSense Bio Điểm danh",
+      cloud: "Đám mây",
+      onpremises: "Trên cơ sở",
+      price: "Giá cho một người dùng miễn phí",
+      
+      price1: "Giá cho một người dùng 1$",
+      price2: "Giá cho một người dùng 0.87$",
+      price3: "Giá cho một người dùng 0.73$",
+      free: "Gói miễn phí",
+      free1: "Gói 20",
+      free2: "Gói 50",
+      free3: "Gói 100",
+      month: "/ tháng",
+      users: "Người dùng",
+      mostporpular: "Phổ biến nhất",
+      getstart: "Bắt đầu ngay bây giờ",
+      prices: "Giá không bao gồm thuế và phí nhập khẩu địa phương",
+      freeclient: "Ứng dụng khách hàng miễn phí",
+      foremploy: " cho nhân viên/người dùng (hệ điều hành Windows, Android và iOS) đã sẵn có.",
+      custom: "Giải pháp tùy chỉnh",
+      make: "Đừng quên để lại cho chúng tôi một tin nhắn và chúng tôi sẽ chắc chắn sẽ trả lời bạn ngay khi có thể.",
+      licensefor: "1 giấy phép cho 1 thiết bị - 95$",
+      license: "Giấy phép",
+      one: "/ mua một lần",
+      these: "Những giấy phép này có thể được sử dụng bởi các ứng dụng sau:",
+      checkid: "Máy chủ trên nền tảng CheckID FacialSense (hỗ trợ tối đa 100 người dùng)",
+      checkidstandrad: "Khách hàng tiêu chuẩn CheckID FacialSense",
+      addtocart: "Thêm vào giỏ hàng",
+      formore: "Đối với hơn 100 người dùng hoặc hơn 10 thiết bị, vui lòng",
+  },
+  
   
   footer: {
     description:

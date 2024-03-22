@@ -22,7 +22,7 @@ export default {
     industries: "Ngành nghề",
     subindustries: [
       {
-        name: "chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
+        name: "Chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
         item: [
           {
             name: "",
@@ -105,7 +105,7 @@ export default {
             name: "",
             item: [
               {
-                name: "chấm công sinh trắc học CheckID FacialSense",
+                name: "Chấm công sinh trắc học CheckID FacialSense",
               },
               {
                 name: "Quản lý khách truy cập CheckID FacialSense",
@@ -177,7 +177,7 @@ export default {
             name: "HƯỚNG DẪN NGƯỜI DÙNG",
             item: [
               {
-                name: "chấm công sinh trắc học CheckID FacialSense",
+                name: "Chấm công sinh trắc học CheckID FacialSense",
               },
               {
                 name: "Quản lý khách hàng CheckID FacialSense",
@@ -210,7 +210,7 @@ export default {
         name: "HƯỚNG DẪN BẮT ĐẦU NHANH",
         item: [
           {
-            name: "chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
+            name: "Chấm công SINH TRẮC HỌC CHECKID FACIALSENSE",
             item: [
               {
                 name: "Đám mây",

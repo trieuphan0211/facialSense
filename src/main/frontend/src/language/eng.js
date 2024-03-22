@@ -1666,7 +1666,22 @@ export default {
     contactus: "contact us",
     customsolu: "Custom solutions",
     makesolu: "Make sure to leave us a message and we will be sure to get back to you as soon as possible.",
-    customus: "Contact us"
+    customus: "Contact us",
+    vissit: "Visitor Management",
+    appoint : "Price per appointment free",
+    appoint1: "Price per appointment 0.03$",
+    appoint2: "Price per appointment 0.02$",
+    appoint3: "Price per appointment 0.02$",
+    dayaponit: "Appointments/day",
+    preces: "Prices do not include local import duties or taxes",
+    server: "Server License",
+    unlitmit: "CheckID FacialSense Visitor management on-premise server (unlimited appointments)",
+    client: "CheckID FacialSense Visitor client",
+    ser: "CheckID FacialSense Visitor management server",
+    freemon: "Free",
+
+
+
   },
   footer: {
     description:

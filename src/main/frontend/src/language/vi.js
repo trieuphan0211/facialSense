@@ -1632,7 +1632,7 @@ export default {
       users: "Người dùng",
       mostporpular: "Phổ biến nhất",
       getstart: "Bắt đầu ngay bây giờ",
-      prices: "Giá không bao gồm thuế và phí nhập khẩu địa phương",
+      prices: "Giá không bao gồm thuế và phí nhập khẩu địa phương.",
       freeclient: "Ứng dụng khách hàng miễn phí",
       foremploy: " cho nhân viên/người dùng (hệ điều hành Windows, Android và iOS) đã sẵn có.",
       custom: "Giải pháp tùy chỉnh",
@@ -1645,6 +1645,23 @@ export default {
       checkidstandrad: "Khách hàng tiêu chuẩn CheckID FacialSense",
       addtocart: "Thêm vào giỏ hàng",
       formore: "Đối với hơn 100 người dùng hoặc hơn 10 thiết bị, vui lòng",
+      contactus: " liên hệ chúng tôi",
+      customsolu: "Giải pháp tùy chỉnh",
+      makesolu: "Đảm bảo để lại tin nhắn cho chúng tôi và chúng tôi sẽ chắc chắn sẽ trả lời bạn càng sớm càng tốt.",
+      customus: "Liên hệ chúng tôi",
+      vissit: "quản lý khách hàng",
+      appoint: "Giá mỗi cuộc hẹn: Miễn phí",
+      dayaponit: "Cuộc hẹn/ngày",
+      preces: "Giá không bao gồm thuế hoặc phí nhập khẩu địa phương",
+      server: "Giấy phép máy chủ",
+      unlitmit: "Máy chủ quản lý khách hàng CheckID FacialSense trên nền tảng (không giới hạn cuộc hẹn)",
+      client: "CheckID FacialSense quản lý khách hàng",
+      ser: "Máy chủ quản lý khách hàng CheckID FacialSense",
+      appoint1: "Giá mỗi cuộc hẹn: 0,03$",
+      appoint2: "Giá mỗi cuộc hẹn: 0,02$",
+      appoint3: "Giá mỗi cuộc hẹn: 0,02$",
+      freemon: "Miễn phí"
+
   },
   
   

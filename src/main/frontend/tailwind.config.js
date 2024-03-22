@@ -10,6 +10,7 @@ module.exports = {
       mdsmin: { max: "740px" },
       smAndmd: { min: "640px", max: "1023px" },
       mds740: { min: "640px", max: "740px" },
+      sm840: {max: "840px" },
       // => @media (max-width: 767px) { ... }
       lg: { max: "1023px" },
       mlgd: { min: "767px", max: "1023px" },

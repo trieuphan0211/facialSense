@@ -160,7 +160,7 @@ export const Header = ({ logo }) => {
                 },
                 {
                   name: "header.subpricing.0.item.0.item.1.name",
-                  path: "/",
+                  path: "/pricing-visitor-management",
                 },
               ],
             },

@@ -147,7 +147,13 @@ export const MainLayout = () => {
                               setLogoImg(logoWhite);
                               document.title =
                                   "CheckID FacialSense Service | FacialSense Visitor Management";
-                              break;    
+                              break; 
+            case "/pricing-visitor-management":
+                                setBg("bg-organization w bg-center-top bg-no-repeat max-w-full");
+                                setLogoImg(logoWhite);
+                                document.title =
+                                    "CheckID FacialSense Service | FacialSense Visitor Management";
+                                break;       
           default:
             setBg("bg-home bg-right-top bg-no-repeat");
             setLogoImg(logo);

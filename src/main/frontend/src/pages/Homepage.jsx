@@ -8,6 +8,8 @@ import { PieChart } from "@mui/x-charts/PieChart";
 import { useIntersectionObserver, useWindowSize } from "@uidotdev/usehooks";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+
+
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import female from "../assets/img/home/Female.png";

@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce, MobileRemote, StudentAttendance, ConstructionSite, Heathycare, Service, Factory, Agriculture, Organizations, Travel, Banking, Hotels, Consultation, Building, CustomerSupport, Entertainment, SchoolsAndCampuses } from "../pages";
+import { BiometricOffice, Facialsensevisitormanagement, Homepage, Retailworkforce, FacialsenseBioAttendannce, MobileRemote, StudentAttendance, ConstructionSite, Heathycare, Service, Factory, Agriculture, Organizations, Travel, Banking, Hotels, Consultation, Building, CustomerSupport, Entertainment, SchoolsAndCampuses, BioAttendance, VisitorManagement } from "../pages";
 
 
 const context = "";
@@ -32,6 +32,8 @@ const Routers = () => {
                  { path: "/customer-support",  element: <CustomerSupport />},
                  { path: "/entertainment",  element: <Entertainment />},
                  { path: "/schools-and-campuses",  element: <SchoolsAndCampuses />},
+                 { path: "/pricing",  element: <BioAttendance />},
+                 { path: "/pricing-visitor-management",  element: <VisitorManagement />},
                
       ],
     },

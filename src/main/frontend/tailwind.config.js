@@ -10,9 +10,11 @@ module.exports = {
       mdsmin: { max: "740px" },
       smAndmd: { min: "640px", max: "1023px" },
       mds740: { min: "640px", max: "740px" },
+      sm840: {max: "840px" },
       // => @media (max-width: 767px) { ... }
       lg: { max: "1023px" },
       mlgd: { min: "767px", max: "1023px" },
+      "mlgd1160":  { min: "767px", max: "1160px" },
       // => @media (max-width: 1023px) { ... }
       xl: { max: "1279px" },
       xlmaxmin: {min: "1024px", max: "1279px"},
@@ -20,6 +22,8 @@ module.exports = {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
       "460sm": { max: "462px" },
+      max740to460: { min: "463px", max: "740px"},
+      "max429": { max: "428px" },
       "460max": {min: "463px", max: "1023px"},
       minxl: { min: "1400px" },
       minlg: { min: "1280px"},
@@ -97,6 +101,7 @@ module.exports = {
         hoverAppAndIns: "0px 12px 30px 0px rgba(24, 92, 255, 0.18)",
 
         shawdowDefault: "0px 4px 12px 0px rgba(12, 68, 204, 0.10)",
+        shawdowprice: "-9px 7px 52px 0px rgba(0, 0, 0, 0.09), 0px 2px 6px 0px rgba(0, 0, 0, 0.04);"
       },
       width: {
         2581: "calc(25% - 81px)",

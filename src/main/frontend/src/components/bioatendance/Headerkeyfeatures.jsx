@@ -11,7 +11,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
 
                         <div className=" flex flex-col gap-[15px] items-center ">
                             
-                        <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px] leading-[60px] ">
+                        <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px] leading-[60px] sm:text-4xl">
                             
                             {nameHader}
                             {

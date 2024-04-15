@@ -20,14 +20,14 @@ export const ConstructionSite = () => {
     let check = false;
 
     const contentHeading = (title , subtitle, border, text) => (
-        <div>
-             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+        <div className="sm:text-4xl">
+             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border} sm:text-4xl`}>
                     {title}
             </h1>
             {subtitle && <br />}
             {
                 subtitle && (
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border} sm:text-4xl`}>
                         {subtitle} 
                     </h1>
                 )

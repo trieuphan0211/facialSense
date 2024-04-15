@@ -363,7 +363,7 @@ export const Header = ({ logo }) => {
               item: [
                 {
                   name: "header.subcompany.0.item.0.item.0.name",
-                  path: "",
+                  path: "/company",
                 },
                 {
                   name: "header.subcompany.0.item.0.item.1.name",

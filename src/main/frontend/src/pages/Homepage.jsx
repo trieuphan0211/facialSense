@@ -258,7 +258,7 @@ export const Homepage = () => {
   return (
     <>
       <div className=" xl:h-auto ">
-        <div className="max-w-[1300px] overflow-hidden px-2 mx-auto flex items-center justify-between xl:flex-col-reverse">
+        <div className="max-w-[1300px] overflow-hidden px-2 mx-auto flex items-center justify-between sm840:flex-col-reverse">
           <img
             className="absolute right-36 top-36 opacity-50 animate-bounce-slow"
             src={ciclegray}
@@ -275,7 +275,7 @@ export const Homepage = () => {
             src={dot}
             alt=""
           />
-          <div className="relative mt-28 max-w-[616px] flex flex-col gap-5">
+          <div className="relative mt-28 max-w-[616px] xl:max-w-[400px] flex flex-col gap-5 sm840:!max-w-none">
             <img
               className="absolute right-[20%] top-[150px]  animate-movesquare"
               src={ciclepoppy}

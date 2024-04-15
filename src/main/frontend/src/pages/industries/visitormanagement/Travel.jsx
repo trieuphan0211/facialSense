@@ -33,20 +33,20 @@ export const Travel = () => {
                                          </h1>
                                     ) : (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Travel and</span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Excursion</span>
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Travel and</span><br />
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Excursion</span>
                                          </h1>
                                     )
                                    
                                 ):(
                                     width > 593 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.travel.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.travel.header")}</span>
                                          </h1>
                                     ) : (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                              <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Du Lịch Và</span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tham Quan</span>
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tham Quan</span>
                                          </h1>
                                     )
                                 )

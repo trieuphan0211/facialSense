@@ -38,12 +38,12 @@ export const CustomerSupport = () => {
                                 i18n.language === "en" ? (
                                     width > 568 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.customer.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0">{t("industries.customer.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Customer</span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Support</span>
+                                        <h1 className="text-5xl sm:text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Customer</span><br />
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Support</span>
                                          </h1>
                                     )
                                    
@@ -51,12 +51,12 @@ export const CustomerSupport = () => {
                                     width > 405 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                    
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.customer.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0">{t("industries.customer.header")}</span>
                                          </h1>
                                     ): (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Hỗ Trợ</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Khách Hàng</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Hỗ Trợ</span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Khách Hàng</span>
                                          </h1>
                                     )
                                    

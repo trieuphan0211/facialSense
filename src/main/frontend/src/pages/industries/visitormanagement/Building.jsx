@@ -41,12 +41,12 @@ export const Building = () => {
                                 i18n.language === "en" ? (
                                     width > 715 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[59px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Building and</span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Apartments</span>
+                                        <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0">Building and</span><br />
+                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0">Apartments</span>
                                          </h1>
                                     )
                                    
@@ -54,12 +54,12 @@ export const Building = () => {
                                     width > 503 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                    
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[59px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
                                          </h1>
                                     ): (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Toà Nhà Và</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Căn Hộ</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Toà Nhà Và</span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Căn Hộ</span>
                                          </h1>
                                     )
                                    
@@ -93,7 +93,7 @@ export const Building = () => {
                                         width > 606 ? (
                                             <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
                                             Visitor Management <br /> <span className="ml-4">System for</span> 
-                                            <span className="inline-block border-b-[10px]  h-[51px] border-[var(--tree-poppy)] "> Apartments </span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] "> Apartments </span><br />
                                             <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">and Building</span>
                                         
                                             </h1>

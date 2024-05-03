@@ -17,24 +17,24 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                             {
                                 check == true ? (
                                     width > 358 ? (
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px] pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
                                         {underlineHeader}
                                     
                                         </span>
                                     ) : (
                                         <>
-                                            <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                            <span className="border-b-[10px]  pl-2 inline-block sm:h-[40px] h-[50px] border-[var(--tree-poppy)]">
                                             {t("industries.student.key")}
                                         
                                             </span>
-                                            <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                            <span className="border-b-[10px]  pl-2 inline-block sm:h-[40px] h-[50px] border-[var(--tree-poppy)]">
                                             {t("industries.student.features")}
                                         
                                             </span>
                                         </>
                                     )
                                 ): (
-                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] ">
                                         {underlineHeader}
                                     
                                     </span>

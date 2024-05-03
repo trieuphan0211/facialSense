@@ -8,7 +8,7 @@ import { ReactComponent as Email} from "../../assets/svg/Symbol.svg";
 export const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="bg-[#F1F6FA] pt-[50px] text-[#1C2045]">
+    <footer className="bg-[#F1F6FA] pt-[50px] text-[#1C2045] sm: pl-[15px]">
       <div className="flex justify-between pb-5 px-2 mb-5 border-b-[1px] border-[#C9DCEC] max-w-[1300px] mx-auto lg:flex-col lg:items-center lg:gap-5">
         <div className="w-[420px] flex flex-col  items-start lg:w-3/4 md:!w-full">
           <img src={logo} className="h-[74px] -ml-10 mb-3" alt="" />
@@ -70,7 +70,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center pb-5 text-sm text-[#3A505F] max-w-[1300px] mx-auto md:px-4">
+      <div className="flex justify-between items-center pb-5 text-sm text-[#3A505F] max-w-[1300px] mx-auto md:px-4 sm:px-3">
         <div className="md:hidden"></div>
         <div>
           <p>

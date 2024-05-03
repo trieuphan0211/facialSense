@@ -656,7 +656,7 @@ export const Homepage = () => {
           </h1>
         )}
 
-        <div className="flex gap-[30px] justify-center md:flex-col md:items-center">
+        <div className="flex gap-[30px] justify-center md:flex-col md:items-center xl: ml-[92px] xl: mr-[84px]">
           {systemBenefits.map((item, index) => (
             <div className="max-w-[350px] p-[30px] md:max-w-none" key={index}>
               <div className="w-20 h-20 bg-white flex items-center justify-center rounded-full">

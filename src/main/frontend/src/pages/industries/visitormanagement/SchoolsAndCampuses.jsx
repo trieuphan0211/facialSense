@@ -47,30 +47,30 @@ export const SchoolsAndCampuses = () => {
                             i18n.language === "en" ? (
                                 width > 609  ? (
                                     <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.school.header")}</span>
+                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">{t("industries.school.header")}</span>
                                      </h1>
                                 ): (
                                     <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Schools and</span><br />
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Campuses</span>
+                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Schools and</span><br />
+                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Campuses</span>
                                      </h1>
                                 )
                             ) : (
                                 width > 870  ? (
                                     <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.school.header")}</span>
+                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">{t("industries.school.header")}</span>
                                      </h1>
                                  ) : (
                                     width > 426 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Trường Học Và</span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Các Khuôn Viên</span>
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Trường Học Và</span><br />
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Các Khuôn Viên</span>
                                          </h1>
                                     ) : (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Trường Học </span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Và Các </span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Khuôn Viên</span>
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Trường Học </span><br />
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Và Các </span><br />
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Khuôn Viên</span>
                                          </h1>
                                     )
                                    
@@ -90,9 +90,9 @@ export const SchoolsAndCampuses = () => {
                                 {
                                     i18n.language === "en" ? (
                                        
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                                  <span className="">{t("industries.school.visitor")}</span>
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">{t("industries.school.school")}</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.school.school")}</span>
                                            
                                            
                                             </h1>
@@ -123,7 +123,7 @@ export const SchoolsAndCampuses = () => {
             <div className="bg-white relative pb-[50px] ">
             <img src={choose} className="w-[574px] h-[737px] absolute top-[-100px]  right-0" alt="" />
                
-                    <div className=" mx-auto  max-w-[1040px] items-center  flex flex-wrap gap-[15px] lg:justify-center lg:flex-col relative ">
+                    <div className=" mx-auto  max-w-[1040px] items-center  flex flex-wrap gap-[15px] lg:justify-center lg:flex-col relative">
                                       <UseCaseRight
                                     imageSrc={calender}
                                     title={t("industries.school.classdefine")}
@@ -172,7 +172,7 @@ export const SchoolsAndCampuses = () => {
                 <LeafButton title={t("products.facialsensevisitormanagement.quickstartguide.onpremises")} />
                 </div>
                 <p className="text-center text-[#eef3fa] font-normal  text-[16px] leading-[24px] max-w-[1110px]">{t("industries.school.if")}
-                <Link style={{color: '#eef3fa', textDecoration: 'underline' }} to="https://www.biometricsupply.com/" > contact us</Link>
+                <Link style={{color: '#eef3fa', textDecoration: 'underline' }} to="https://www.biometricsupply.com/" > {t("industries.school.contact")}</Link>
                 {t("industries.school.anda")}
                 </p>
             </div>
@@ -182,7 +182,7 @@ export const SchoolsAndCampuses = () => {
             <div className="relative bg-white pb-[50px]">
             <img src={choose1} className="w-[574px] h-[737px] absolute top-[-50px] left-[-50px]" alt="" />
 
-            <div className="  max-w-[1300px]  mx-auto pt-[90px] pb-[100px] flex flex-col items-center relative ">
+            <div className="  max-w-[1300px]  mx-auto pt-[90px] pb-0 flex flex-col items-center relative ">
                   <Headerkeyfeatures nameHader1={t("industries.school.ofour")} 
                                           underlineHeader={t("industries.school.keyfeatures")}
                                           desHeader={t("industries.school.keyfeaturesdes")}
@@ -248,13 +248,13 @@ export const SchoolsAndCampuses = () => {
             
             </div>
             <div className="bg-[#F1F6FA] ">
-                <div className=" mx-auto max-w-[1300px] pt-[50px] pb-[50px] flex flex-col gap-[50px] px-4 ">
+                <div className=" mx-auto max-w-[1300px] pt-[85px] pb-[50px] flex flex-col gap-[50px] px-4 ">
                     <div className=" relative">
                        
                                 <div className=" flex flex-col gap-[15px] items-center ">
             
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.school.transfrom")}
                                         </span>
                                         {t("industries.school.howyou")}

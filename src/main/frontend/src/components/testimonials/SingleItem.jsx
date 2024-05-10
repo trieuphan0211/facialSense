@@ -1,6 +1,4 @@
-
 import Slider from "react-slick";
-
 import svg from "../../assets/img/industries/biometricoffice/SVG.png";
 import { useTranslation } from "react-i18next";
 import "slick-carousel/slick/slick.css";

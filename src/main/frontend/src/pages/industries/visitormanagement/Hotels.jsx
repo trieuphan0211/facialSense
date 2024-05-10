@@ -40,12 +40,12 @@ export const Hotels = () => {
                                 i18n.language === "en" ? (
                                     width > 613 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.hotel.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.hotel.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Hotels and</span><br />
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Restaurants</span>
+                                        <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Hotels and</span><br />
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Restaurants</span>
                                          </h1>
                                     )
                                    
@@ -53,12 +53,12 @@ export const Hotels = () => {
                                     width > 689 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                    
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.hotel.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.hotel.header")}</span>
                                          </h1>
                                     ): (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Khách Sạn Và</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Nhà Hàng</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Khách Sạn Và</span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Nhà Hàng</span>
                                          </h1>
                                     )
                                    

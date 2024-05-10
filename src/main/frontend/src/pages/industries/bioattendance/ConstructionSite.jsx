@@ -20,14 +20,14 @@ export const ConstructionSite = () => {
     let check = false;
 
     const contentHeading = (title , subtitle, border, text) => (
-        <div>
-             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+        <div className="sm:text-4xl">
+             <h1 className={`inline-block border-b-[10px] sm:h-[39px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border} sm:text-4xl`}>
                     {title}
             </h1>
             {subtitle && <br />}
             {
                 subtitle && (
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+                    <h1 className={`inline-block border-b-[10px] sm:h-[39px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border} sm:text-4xl`}>
                         {subtitle} 
                     </h1>
                 )
@@ -220,7 +220,7 @@ export const ConstructionSite = () => {
         <>
          <div>
                 <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px]">
+                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[105px]">
                             {content}
                     </div>
                 

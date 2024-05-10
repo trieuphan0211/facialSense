@@ -1308,7 +1308,7 @@ export default {
       headerdes: " Employee Time & Attendance Monitoring System",
       thecheckid: "The CheckID FacialSense Bio Attendance system is a favorite among employers for its ability to maintain and enhance an efficient, productive and cost effective workforce, without the need for specialist hardware.",
       checkid: "CheckID FacialSense’s time and attendance monitoring system uses",
-      biometric: "biometric identification of face, fingerprint and iris scanning",
+      biometric: " biometric identification of face, fingerprint and iris scanning",
       thesystem: ". The system is a simple turnkey integration into your HR and Payroll operations, ensuring your employees are accurately compensated whilst also removing bottlenecks in your payroll administration.",
       whilst:"Whilst the biometric technology offers advanced capabilities, the reporting and",
       user: " user interface is simple, intuitive and customizable",
@@ -1683,15 +1683,17 @@ export default {
 
 
   },
+  company: {
+    header: "About Us",
+  },
   footer: {
     description:
       "CheckID FacialSense products stand out in the market as multi biometric solutions creating accurate and flexible system applications. Our systems are powered by industry-leading algorithms developed by Mobile-ID.",
     contact: {
       us: "Contact Us",
       address:
-        "Address: 19 Dang Tien Dong, An Phu Ward, Thu Duc City, Ho Chi Minh City",
-      phone: "Phone:/n 1900 6884/n +84 28 3636 6015",
-      email: "Email: ",
+        " 19 Dang Tien Dong, An Phu Ward, Thu Duc City, Ho Chi Minh City",
+      phone: " 1900 6884/n +84 28 3636 6015",
       emailName: "info@mobile-id.vn",
     },
     legal: {

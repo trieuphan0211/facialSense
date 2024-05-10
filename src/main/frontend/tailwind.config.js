@@ -34,6 +34,7 @@ module.exports = {
         home: "url('./assets/img/home/bg.png')",
         industries: "url('./assets/img/home/bg1.png')",
         organization: "url('./assets/img/industries/organization/Section.png')",
+        company: "url('./assets/img/company/aboutus.png')",
         shape: "url('./assets/img/home/shape.png')",
         "gradient-filter":
           "linear-gradient(180deg, #E1E1E1 0%, rgba(255, 255, 255, 0.50) 100%)",

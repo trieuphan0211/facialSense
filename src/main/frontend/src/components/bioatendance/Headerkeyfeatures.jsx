@@ -11,30 +11,30 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
 
                         <div className=" flex flex-col gap-[15px] items-center ">
                             
-                        <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px] leading-[60px] ">
+                        <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px] leading-[60px] sm:text-4xl">
                             
                             {nameHader}
                             {
                                 check == true ? (
                                     width > 358 ? (
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px] pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
                                         {underlineHeader}
                                     
                                         </span>
                                     ) : (
                                         <>
-                                            <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                            <span className="border-b-[10px]  pl-2 inline-block sm:h-[40px] h-[50px] border-[var(--tree-poppy)]">
                                             {t("industries.student.key")}
                                         
                                             </span>
-                                            <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                            <span className="border-b-[10px]  pl-2 inline-block sm:h-[40px] h-[50px] border-[var(--tree-poppy)]">
                                             {t("industries.student.features")}
                                         
                                             </span>
                                         </>
                                     )
                                 ): (
-                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] ">
                                         {underlineHeader}
                                     
                                     </span>
@@ -53,7 +53,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                 width < 358 ? ( 
                 <div className=" flex flex-col gap-[15px] items-center " >
                     <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] ">
                         {descac}
                         </span>
                         <br />

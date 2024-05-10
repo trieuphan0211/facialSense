@@ -29,13 +29,13 @@ export const Service = () => {
     const contentHeading = (title , subtitle, border, text) => (
         <div>
             
-             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border} sm:h-[40px] sm:text-4xl`}>
                     {title}
             </h1>
             {subtitle && <br />}
             {
                 subtitle && (
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border} sm:h-[40px] sm:text-4xl`}>
                         {subtitle} 
                     </h1>
                 )
@@ -64,7 +64,7 @@ export const Service = () => {
     return (
         <>
             <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px]">
+                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[105px]">
                             {
                                content
                             }
@@ -77,9 +77,9 @@ export const Service = () => {
                         <div className="ml-[10px]">
                             {
                                 i18n.language === "en" ? (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] 460sm:text-4xl xl:text-5xl">
                                     {t("industries.service.hopitaldes")}
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">{t("industries.service.hopital")}</span>
+                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 460sm:h-[40px] xl:h-[46px]">{t("industries.service.hopital")}</span>
                                      </h1>
                                 ) : (
                                     <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
@@ -277,7 +277,7 @@ export const Service = () => {
                         i18n.language === "en" ? (
                             width >= 741 ? (
                                 <div>
-                                <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px]   leading-[60px] ">
+                                <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px]   leading-[60px]">
                                 {t("industries.service.client")}
                                 <span className="border-b-[10px]  ml-[16px] mdsmin:ml-[-8px]  inline-block  h-[50px] border-[var(--tree-poppy)]">
                                 {t("industries.service.testimonials")}
@@ -289,10 +289,10 @@ export const Service = () => {
                                
                             ) : (
                                 <div>
-                                      <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px]   leading-[60px] ">
+                                      <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px]   leading-[60px] sm:text-4xl ">
                                 {t("industries.service.client")}
                                 <br />
-                                <span className="border-b-[10px]  ml-[16px] mdsmin:ml-[-8px]  inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                <span className="border-b-[10px]  ml-[16px] mdsmin:ml-[-8px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[37px]">
                                 {t("industries.service.testimonials")}
                                 </span>
                                                

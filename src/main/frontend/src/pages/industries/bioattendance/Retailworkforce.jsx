@@ -55,10 +55,11 @@ export const Retailworkforce = () => {
       } else if (width <= 513 && width > 399) {
         content = i18n.language === "en" ? (
           <div>
-            {width < 466 && width >=504 && generateHeader(t("industries.retailworkforce.retail1"), t("industries.retailworkforce.work"),"[#B9AAFD]",'white')}
+            {(width < 466 || width >=504) &&  generateHeader(t("industries.retailworkforce.retail1"), t("industries.retailworkforce.work"),"[#B9AAFD]",'white')}
             {width >= 466 && generateHeader(t("industries.retailworkforce.headertitle1"),undefined,"[#B9AAFD]",'white')}
           </div>
         ) : (
+          // <div></div>
           generateHeader(t("industries.retailworkforce.doanh1"), t("industries.retailworkforce.le1"),"[#B9AAFD]",'white')
         );
         check = true;
@@ -114,7 +115,7 @@ export const Retailworkforce = () => {
     return (
         <>
            <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
-                <div className="  max-w-[1300px] mx-auto px-4 pt-[68px] minxl:pt-[100px]">
+                <div className="  max-w-[1300px] mx-auto px-4 pt-[68px] minxl:pt-[100px] 460sm:pt-[80px] xl:pt-[108px]">
                   {content}
                 </div>
             

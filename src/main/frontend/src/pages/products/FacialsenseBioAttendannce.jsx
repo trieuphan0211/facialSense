@@ -507,7 +507,7 @@ export const FacialsenseBioAttendannce = () => {
         />
         <div className=" flex justify-center relative self-stretch ">
           {i18n.language === "en" ? (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+            <h1 className="text-center text-5xl text-[#1C2045] sm:text-4xl font-extrabold  max-w-[832px]">
               {t("products.bioattendance.benefits.header.bio")}
               <span
                 style={{ whiteSpace: "nowrap" }}
@@ -572,7 +572,7 @@ export const FacialsenseBioAttendannce = () => {
       <div className="mx-auto max-w-[1300px] py-[50px] px-4">
         <div className="flex flex-col items-center items-center px-3">
           {i18n.language === "en" ? (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
               <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
                 CheckID
               </span>
@@ -585,7 +585,7 @@ export const FacialsenseBioAttendannce = () => {
               </span>
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
               <span style={{ whiteSpace: "wrap" }} className="block">
                 {t("products.bioattendance.serverHeader")}
               </span>
@@ -631,7 +631,7 @@ export const FacialsenseBioAttendannce = () => {
       </div>
       <div className="flex flex-col gap-10 items-center py-[50px] px-3 bg-[#EEF3FA]">
         {i18n.language === "en" ? (
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
             <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
               CheckID
             </span>
@@ -641,7 +641,7 @@ export const FacialsenseBioAttendannce = () => {
             <span> {t("products.bioattendance.clientHeader")}</span>
           </h1>
         ) : (
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8">
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
             {" "}
             <span> {t("products.bioattendance.clientHeader")}</span>
             <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
@@ -748,7 +748,7 @@ export const FacialsenseBioAttendannce = () => {
               {t("products.bioattendance.features.description")}
             </p>
           </div>
-          <div className="my-[50px] flex flex-wrap sm:flex-col justify-between items-center">
+          <div className="my-[50px] flex flex-wrap sm:flex-col justify-between items-stretch">
             {features.map((feature, index) => (
               <div className="p-[20px] w-1/3 mds:w-1/2 sm:w-full  " key={index}>
                 <img src={feature.icon} alt="" />
@@ -756,7 +756,7 @@ export const FacialsenseBioAttendannce = () => {
                   <p className="text-[#1C2045] font-montserrat font-bold">
                     {t(feature.title)}
                   </p>
-                  <p className="mt-[20px] text-[#3A505F] font-montserrat h-[96px] mlgd:h-[134px] font-normal leading-[24px]">
+                  <p className="mt-[20px] text-[#3A505F] font-montserrat mlgd:h-[134px] font-normal leading-[24px]">
                     {t(feature.description)}
                   </p>
                 </div>

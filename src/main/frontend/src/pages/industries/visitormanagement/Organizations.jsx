@@ -35,13 +35,13 @@ export const Organizations = () => {
                     <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] ">
                             {
                                 i18n.language === "en" ? (
-                                    <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.organizations.header")}</span>
+                                    <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                    <span className="inline-block  border-b-[10px] h-[55px] border-[#2B159C] sm:h-[42px] sm:ml-0">{t("industries.organizations.header")}</span>
                                      </h1>
                                 ):(
                                     <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                    
-                                    <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.organizations.header")}</span>
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.organizations.header")}</span>
                                      </h1>
                                 )
                             }
@@ -52,18 +52,18 @@ export const Organizations = () => {
             <div className=" bg-white">
                     <div className="max-w-[1300px] pt-[100px] pb-[50px] mx-auto relative">
                         <div className="ml-[10px]">
-                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
+                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px] ">
                             { i18n.language === "en" ? (
                                 width > 437 ? (
-                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl ">
                                      {t("industries.organizations.headerdes")}
                                     <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">  {t("industries.organizations.header")}</span>
                                    
                                 </h1>
                                 ) : (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                     <span>Meet a </span><br /><span>person in the</span>
-                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">  {t("industries.organizations.header")}</span>
+                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]  lowercase">  {t("industries.organizations.header")}</span>
                                   
                                     </h1>
                                 )

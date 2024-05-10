@@ -122,7 +122,8 @@ export const MobileRemote = () => {
     } 
     else if (width < 735 ) {
         console.log(width)
-        content = i18n.language === "en" ? ( generateHeader(t("industries.mobileandremote.header3"),t("industries.mobileandremote.employee"),"[#B9AAFD]",'white')
+        content = i18n.language === "en" ? (<> {generateHeader(t("industries.mobileandremote.header2"),t("industries.mobileandremote.remote"),"[#B9AAFD]",'white')}
+        {generateHeader(t("industries.mobileandremote.employee"),"","[#B9AAFD]",'white')}</>
         ) : (
             <div>
             {width < 735  && width >= 501 && (
@@ -188,12 +189,14 @@ export const MobileRemote = () => {
                 <div>
                 <div className="inline-block 460sm:block">
                     <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
-                        {t("industries.mobileandremote.header3")}
+                        {t("industries.mobileandremote.header2")}
                     </h1>
                    
                     
                     <br />
-                
+                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                            {t("industries.mobileandremote.remote")} 
+                        </h1>
                         <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
                         {t("industries.mobileandremote.employee")} 
                         
@@ -272,7 +275,7 @@ export const MobileRemote = () => {
     return (
         <>
             <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px]">
+                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[65px]">
                     {content}
                     </div>
             </div>
@@ -371,7 +374,7 @@ export const MobileRemote = () => {
                                         {t("industries.biometricoffice.choose")}
                                         </span>
                                         <br />
-                                        {t("industries.mobileandremote.whychoose")}
+                                        {t("industries.mobileandremote.whychosse")}
                                         
                                       
                                     </h1>

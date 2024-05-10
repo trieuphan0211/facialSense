@@ -92,7 +92,7 @@ export const SchoolsAndCampuses = () => {
                                        
                                             <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                                  <span className="">{t("industries.school.visitor")}</span>
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">{t("industries.school.school")}</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.school.school")}</span>
                                            
                                            
                                             </h1>
@@ -254,7 +254,7 @@ export const SchoolsAndCampuses = () => {
                                 <div className=" flex flex-col gap-[15px] items-center ">
             
                                     <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.school.transfrom")}
                                         </span>
                                         {t("industries.school.howyou")}

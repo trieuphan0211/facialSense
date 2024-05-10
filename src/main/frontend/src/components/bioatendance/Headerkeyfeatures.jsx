@@ -53,7 +53,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                 width < 358 ? ( 
                 <div className=" flex flex-col gap-[15px] items-center " >
                     <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] ">
                         {descac}
                         </span>
                         <br />

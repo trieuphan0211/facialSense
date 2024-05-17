@@ -21,13 +21,13 @@ export const StudentAttendance = () => {
 
     const contentHeading = (title , subtitle, border, text) => (
         <div>
-             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} sm:text-4xl sm:h-[40px] font-extrabold leading-[60px] border-${border}`}>
                     {title}
             </h1>
             {subtitle && <br />}
             {
                 subtitle && (
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} sm:text-4xl sm:h-[40px] font-extrabold leading-[60px] border-${border}`}>
                         {subtitle} 
                     </h1>
                 )
@@ -58,7 +58,7 @@ export const StudentAttendance = () => {
                 <div>
                     {
                         width >= 895 && (
-                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] `}>
                             {t("industries.student.school")}
                             <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.schooldes")}</span>                    
                         </h1>
@@ -107,7 +107,7 @@ export const StudentAttendance = () => {
                 {
                     width < 449 && (
                         <div>
-                            <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                            <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] `}>
                         
                             <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.school1")}</span> 
                             <br />   
@@ -170,13 +170,15 @@ export const StudentAttendance = () => {
             {
                 width < 449 && (
                     <div>
-                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl `}>
                     
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.school1")}</span> 
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.student.school1")}</span> 
                         <br />   
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.bio1")}</span>       
-                        </h1>               
-                        {t("industries.student.schooldes")}              
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.student.bio1")}</span>       
+                        </h1>  
+                        <h1 className="text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl">             
+                        {t("industries.student.schooldes")}         
+                        </h1>      
                     </div>
                 )
             }
@@ -188,13 +190,13 @@ export const StudentAttendance = () => {
                 <div>
               
                 
-                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl`}>
                         {t("industries.student.school")}
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.sinhtrac")}</span> 
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.student.sinhtrac")}</span> 
                         <br />   
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.hoccho")}</span>          
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.student.hoccho")}</span>          
                         <br />   
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.student.truonghoc")}</span>                                                              
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]  sm:h-[40px]">{t("industries.student.truonghoc")}</span>                                                              
                     </h1>
                     
                 
@@ -272,9 +274,9 @@ export const StudentAttendance = () => {
                     <div className=" relative">{i18n.language === "en" ? (
                          width > 374 ?
                             (
-                                <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                <div className=" flex flex-col gap-[15px] items-center">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px]  sm:text-4xl ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.student.whychossetitle")}
                                         </span>
                                         {t("industries.student.whychosse")}
@@ -284,11 +286,11 @@ export const StudentAttendance = () => {
                             ) :
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px]  sm:text-4xl ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]  sm:h-[40px]">
                                         {t("industries.student.why")}
                                         </span>
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]  sm:h-[40px]">
                                         {t("industries.student.choose")}
                                         </span>
                                         <br />
@@ -304,8 +306,8 @@ export const StudentAttendance = () => {
                             ) : (
                                 width > 374 ? (
                         <div className=" flex flex-col gap-[15px] items-center " >
-                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold  sm:text-4xl ">
+                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px] ">
                                 {t("industries.student.whychossetitle")}
                                 </span>
                                 {t("industries.student.whychosse")}
@@ -313,11 +315,11 @@ export const StudentAttendance = () => {
                         
                         </div> ) : (
                              <div className=" flex flex-col gap-[15px] items-center ">
-                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px]  sm:text-4xl ">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]  sm:h-[40px]">
                                  {t("industries.student.why")}
                                  </span>
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]  sm:h-[40px]">
                                  {t("industries.student.choose")}
                                  </span>
                                  <br />

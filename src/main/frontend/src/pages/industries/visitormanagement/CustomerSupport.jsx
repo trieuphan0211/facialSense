@@ -41,22 +41,22 @@ export const CustomerSupport = () => {
                                         <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0">{t("industries.customer.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl sm:text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Customer</span><br />
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Support</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Customer</span><br />
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Support</span>
                                          </h1>
                                     )
                                    
                                 ):(
-                                    width > 405 ? (
+                                    width > 568 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                    
                                         <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0">{t("industries.customer.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Hỗ Trợ</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Khách Hàng</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Hỗ Trợ</span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Khách Hàng</span>
                                          </h1>
                                     )
                                    
@@ -74,26 +74,26 @@ export const CustomerSupport = () => {
                                 width > 568 ? (
                                 <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
                                    
-                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">  {t("industries.customer.headernone")}</span>
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">  {t("industries.customer.headernone")}</span>
                                    
                                 </h1>
                                 ) : (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">Customer</span><br />
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">support</span>
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">Customer</span><br />
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] lowercase">support</span>
                                     </h1>
                                 )
                                 
                             ) : (
                                 width > 405 ? (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
                                
-                                    <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">{t("industries.customer.headernone")}</span>
+                                    <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">{t("industries.customer.headernone")}</span>
                                      </h1>
                                 ): (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Hỗ trợ</span><br />
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">khách hàng</span>
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Hỗ trợ</span><br />
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">khách hàng</span>
                                      </h1>
                                 )
                                

@@ -159,7 +159,7 @@ export const Facialsensevisitormanagement = () => {
               {t("products.facialsensevisitormanagement.benefits.header")}
               <span
                 style={{ whiteSpace: "nowrap" }}
-                className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]"
+                className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]"
               >
                 {t(
                   "products.facialsensevisitormanagement.benefits.benefitheader"
@@ -167,10 +167,10 @@ export const Facialsensevisitormanagement = () => {
               </span>
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px]">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1000px] sm:text-4xl">
               <span
                 style={{ whiteSpace: "nowrap" }}
-                className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
+                className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]"
               >
                 {t(
                   "products.facialsensevisitormanagement.benefits.benefitheader"
@@ -302,10 +302,10 @@ export const Facialsensevisitormanagement = () => {
           <h1 className="text-center text-5xl sm:text-4xl text-[#1C2045] font-extrabold ">
             {width < 639 ? (
               <>
-                <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                   CheckID
                 </span>
-                <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                   FacialSense
                 </span>
               </>
@@ -329,8 +329,8 @@ export const Facialsensevisitormanagement = () => {
               alt=""
               className=" absolute bottom-0 right-0 w-[300px] h-[300px] "
             />
-            <div className="flex flex-col gap-1 items-stretch h-[150px] mds:h-[160px]">
-              <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] ">
+            <div className="flex flex-col gap-1 items-stretch h-[150px] mds:h-[160px] ">
+              <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] sm:text-4xl ">
                 {t("products.facialsensevisitormanagement.systemserver.cloud")}
               </p>
               <p className="text-[#1c2045] font-montserrat font-normal 	leading-[25px] max-w-[485px]">
@@ -430,7 +430,7 @@ export const Facialsensevisitormanagement = () => {
               className=" absolute bottom-0 right-0 w-[300px] h-[300px] md:h-[400px]"
             />
             <div className="flex flex-col gap-1 h-[150px] mds:h-[160px] sm:h-auto">
-              <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] mds:w-[300px]">
+              <p className="text-[#151686] font-montserrat text-[38px] font-extrabold leading-[56px] mds:w-[300px] sm:text-4xl">
                 {t(
                   "products.facialsensevisitormanagement.systemserver.premises"
                 )}
@@ -539,7 +539,7 @@ export const Facialsensevisitormanagement = () => {
                 
                 <span
                   style={{ whiteSpace: "nowrap" }}
-                  className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]"
+                  className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]"
                 >
                   {t(
                     "products.facialsensevisitormanagement.fearures.featureheader"
@@ -547,13 +547,13 @@ export const Facialsensevisitormanagement = () => {
                 </span>
               </h1>
             ) : (
-              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  ">
+              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold sm:text-4xl ">
                   {t(
                     "products.facialsensevisitormanagement.fearures.featureheader"
                   ).split(" ").map((e,index)=>(
                     <span
                   style={{ whiteSpace: "nowrap" }}
-                  className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] pr-2"
+                  className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px] pr-2"
                   key={index}
                 >
                   {e}
@@ -782,15 +782,15 @@ export const Facialsensevisitormanagement = () => {
             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px] sm:text-4xl">
               {width < 745 ? (
                 <>
-                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                     Applications
                   </span>
                   {/* {width < 473 && ( */}
-                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                     and{" "}
                   </span>
                   {/* </span>)} */}
-                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                     {t(
                       "products.facialsensevisitormanagement.applications.insdus"
                     )}
@@ -808,15 +808,15 @@ export const Facialsensevisitormanagement = () => {
               )}
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px] sm:text-4xl">
               {width < 745 ? (
                 <>
-                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                     {t(
                       "products.facialsensevisitormanagement.applications.applica"
                     )}
                   </span>
-                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                     {t(
                       "products.facialsensevisitormanagement.applications.insdus"
                     )}
@@ -937,7 +937,7 @@ export const Facialsensevisitormanagement = () => {
       <div className="bg-[#fff]">
         <div className="max-w-[1300px] mx-auto  py-[100px] px-6">
           {i18n.language === "en" ? (
-            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4 sm:text-4xl">
               {t("homepage.question.header.frequently")}
               {width > 460 ? (
                 <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
@@ -948,7 +948,7 @@ export const Facialsensevisitormanagement = () => {
                   .split(" ")
                   .map((item, index) => (
                     <span
-                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]"
+                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]"
                       key={index}
                     >
                       {item}
@@ -957,8 +957,8 @@ export const Facialsensevisitormanagement = () => {
               )}
             </h1>
           ) : (
-            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
-              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4 sm:text-4xl">
+              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 {t("homepage.question.header.asked")}
               </span>
               {t("homepage.question.header.frequently")}

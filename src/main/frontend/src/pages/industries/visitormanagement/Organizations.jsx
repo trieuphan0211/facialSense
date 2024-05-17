@@ -32,22 +32,19 @@ export const Organizations = () => {
     return (
         <>
             <div className=" bg-cover bg-center h-[260px]">
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] ">
-                            {
-                                i18n.language === "en" ? (
-                                    <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] sm:pt-[90px]">
+                    {
+                        i18n.language === "en" ? (                            
+                                <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
                                     <span className="inline-block  border-b-[10px] h-[55px] border-[#2B159C] sm:h-[42px] sm:ml-0">{t("industries.organizations.header")}</span>
-                                     </h1>
-                                ):(
-                                    <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                   
-                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.organizations.header")}</span>
-                                     </h1>
-                                )
-                            }
-                    </div>
-                   
-                
+                                </h1>                            
+                        ):(                            
+                                <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">{t("industries.organizations.header")}</span>
+                                </h1>
+                        )
+                    } 
+                </div>
             </div>
             <div className=" bg-white">
                     <div className="max-w-[1300px] pt-[100px] pb-[50px] mx-auto relative">
@@ -63,16 +60,16 @@ export const Organizations = () => {
                                 ) : (
                                     <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                     <span>Meet a </span><br /><span>person in the</span>
-                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]  lowercase">  {t("industries.organizations.header")}</span>
+                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] lowercase">  {t("industries.organizations.header")}</span>
                                   
                                     </h1>
                                 )
                                 
                             ) : (
                                
-                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl ">
                                     {t("industries.organizations.headerdes")}
-                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">  {t("industries.organizations.header")}</span>
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase sm:h-[40px]">  {t("industries.organizations.header")}</span>
                                 </h1>
                                
                              )} 
@@ -96,21 +93,21 @@ export const Organizations = () => {
                     <div className="  max-w-[1300px] mx-auto py-[50px] flex flex-col items-center relative ">
                         {
                             i18n.language === "en" ? (
-                                <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] ">
-                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]"> {t("industries.organizations.usecase")}   </span>
+                                <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]"> {t("industries.organizations.usecase")}   </span>
                                     {t("industries.organizations.usecaseheader")}   
                                 </h1>   
                             ): (
                                 width > 537 ? (
-                                    <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] ">
-                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]"> {t("industries.organizations.usecase")}   </span>
+                                    <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]"> {t("industries.organizations.usecase")}</span>
                                     {t("industries.organizations.usecaseheader")}   
                                     </h1>   
                                 ) : (
-                                    <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] ">
-                                      <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]">Trường hợp </span>
+                                    <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
+                                      <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">Trường hợp </span>
                                       <br />
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]">sử dụng</span>
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">sử dụng</span>
                                         <br />
                                     {t("industries.organizations.usecaseheader")}   
                                     </h1>   

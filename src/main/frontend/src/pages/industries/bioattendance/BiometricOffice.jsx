@@ -18,12 +18,12 @@ export const BiometricOffice = () => {
 
         content = i18n.language === "en" ? 
         (
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
             {t("industries.biometricoffice.header")}
         </h1>
         ) : (
             <div>
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.header")}</h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl">{t("industries.biometricoffice.header")}</h1>
                 <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.hoc")}</h1>
             </div>
             
@@ -31,47 +31,47 @@ export const BiometricOffice = () => {
 
     }else if(width < 969 && width >= 768 ){
         content = i18n.language === "en" ? (<div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                     {t("industries.biometricoffice.bio")}
                     </h1>
-                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys")}</span>
+                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.sys")}</span>
                     </div>) : (
                     <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                     {t("industries.biometricoffice.sys")}
                     </h1>
-                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio2")}</span>
+                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.bio2")}</span>
                     </div>
                     )
           
         
     }else if (width < 768 && width >= 535  ) {
        content =  i18n.language === "en" ? (<div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                     {t("industries.biometricoffice.bio2")}
                     </h1>
-                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys2")}</span>
+                    <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.sys2")}</span>
         </div>) : (<div>
              {
                 width > 689 ? (
                     <div>
-                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                         {t("industries.biometricoffice.sys")}
                         </h1>
-                        <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio2")}</span>
+                        <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.bio2")}</span>
                         </div>
                 ) : (
                     <div>
-                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                         {t("industries.biometricoffice.sys1")}
                         </h1>
-                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                         {t("industries.biometricoffice.att1")}
                         </h1>
-                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                         {t("industries.biometricoffice.off1")}
                         </h1>
-                        <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</span>
+                        <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.bio1")}</span>
                     </div>
                 )
             }
@@ -80,61 +80,61 @@ export const BiometricOffice = () => {
     }else if (width < 535 && width >= 453){
         console.log("OK")
         content = i18n.language === "en" ? (<div>
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
         {t("industries.biometricoffice.bio2")}
         </h1>
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.attend1")}</h1> 
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys1")}</h1>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.attend1")}</h1> 
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.sys1")}</h1>
         </div>) : (
              <div>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
              {t("industries.biometricoffice.sys1")}
              </h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
              {t("industries.biometricoffice.att1")}
              </h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
              {t("industries.biometricoffice.off1")}
              </h1>
-             <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</span>
+             <span className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.bio1")}</span>
          </div>
         )
     }else {
         content = i18n.language === "en" ? ( <div>
-            <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+            <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
             {t("industries.biometricoffice.bio1")}
         </h1>
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.off1")}</h1> 
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.attend1")}</h1>
-        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.sys1")}</h1>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.off1")}</h1> 
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.attend1")}</h1>
+        <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.sys1")}</h1>
         </div>) : (
             width > 364 ? (
                 <div>
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                 {t("industries.biometricoffice.sys1")}
                 </h1>
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                 {t("industries.biometricoffice.att1")}
                 </h1>
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                 {t("industries.biometricoffice.van")}
                 </h1>
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bang")}</h1>
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">{t("industries.biometricoffice.bio1")}</h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.bang")}</h1>
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">{t("industries.biometricoffice.bio1")}</h1>
             </div>
             ) : (
              <div>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
              {t("industries.biometricoffice.sys1")}
              </h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
              {t("industries.biometricoffice.att1")}
              </h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
              {t("industries.biometricoffice.van")}
              </h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">bằng sinh</h1>
-             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">trắc học</h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">bằng sinh</h1>
+             <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">trắc học</h1>
             </div>
             )
         )
@@ -146,12 +146,12 @@ export const BiometricOffice = () => {
             <div className=" bg-cover bg-center h-[360px] 4" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
                 {
                     i18n.language === "en" ? (
-                        <div className="  max-w-[1300px] 460sm:pt-[48px] mx-auto px-4 pt-[68px]  minxl:pt-[100px] xl:pt-[84px]">
+                        <div className="  max-w-[1300px] 460sm:pt-[61px] mx-auto px-4 pt-[68px]  minxl:pt-[100px] xl:pt-[84px]">
                         {content}
                         
                         </div>
                     ) : (
-                        <div className="  max-w-[1300px] 460sm:pt-[18px] mx-auto px-4 pt-[68px]">
+                        <div className="  max-w-[1300px] 460sm:pt-[51px] mx-auto px-4 pt-[68px]">
                         {content}
                         
                         </div>
@@ -220,8 +220,8 @@ export const BiometricOffice = () => {
                          width > 374 ?
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.biometricoffice.whychossetitle")}
                                         </span>
                                         {t("industries.biometricoffice.whychosse")}
@@ -231,11 +231,11 @@ export const BiometricOffice = () => {
                             ) :
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px]  sm:text-4xl">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.biometricoffice.why")}
                                         </span>
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.biometricoffice.choose")}
                                         </span>
                                         <br />
@@ -251,8 +251,8 @@ export const BiometricOffice = () => {
                             ) : (
                                 width > 374 ? (
                         <div className=" flex flex-col gap-[15px] items-center " >
-                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold sm:text-4xl">
+                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px] ">
                                 {t("industries.biometricoffice.whychossetitle")}
                                 </span>
                                 {t("industries.biometricoffice.whychosse")}
@@ -260,11 +260,11 @@ export const BiometricOffice = () => {
                         
                         </div> ) : (
                              <div className=" flex flex-col gap-[15px] items-center ">
-                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                  {t("industries.biometricoffice.why")}
                                  </span>
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                  {t("industries.biometricoffice.choose")}
                                  </span>
                                  <br />

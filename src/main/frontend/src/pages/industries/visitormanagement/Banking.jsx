@@ -24,53 +24,65 @@ export const Banking = () => {
     return(
         <>
             <div className=" bg-cover bg-center h-[260px]">
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[18px] pt-[68px] ">
+                    
                             {
                                 i18n.language === "en" ? (
                                     width > 840 ? (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.banking.header")}</span>
-                                         </h1>
+                                        <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[52px] pt-[68px] ">
+                                            <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                                <span className="inline-block border-b-[10px] h-[57px] border-[#2B159C] sm:ml-0 sm:h-[40px]">{t("industries.banking.header")}</span>
+                                            </h1>
+                                         </div>  
                                     ) : (
                                         width > 550 ? (
-                                            <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Banking or Financial</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Institutes</span>
-                                             </h1>
+                                            <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[52px] pt-[57px] ">
+                                                <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                                    <span className="inline-block border-b-[10px] h-[57px] border-[#2B159C] sm:ml-0">Banking or Financial</span><br />
+                                                    <span className="inline-block border-b-[10px] h-[57px] border-[#2B159C] sm:ml-0">Institutes</span>
+                                                </h1>
+                                             </div>  
                                         ) : (
-                                            <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Banking or </span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Financial</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Institutes</span>
-                                             </h1>
+                                            <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[52px] pt-[68px] ">
+                                                <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                                    <span className="inline-block border-b-[10px] h-[57px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Banking or </span><br />
+                                                    <span className="inline-block border-b-[10px] h-[57px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Financial</span><br />
+                                                    <span className="inline-block border-b-[10px] h-[57px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Institutes</span>
+                                                </h1>
+                                            </div>  
                                         )
                                        
                                     )
-                                   
+                                    
                                 ):(
                                     width > 1068 ? (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.banking.header")}</span>
-                                         </h1>
+                                        <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[39px] pt-[68px] ">
+                                            <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[45px]">
+                                                <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.banking.header")}</span>
+                                            </h1>
+                                        </div>
                                     ) : (
                                         width > 559 ? (
-                                            <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Ngân Hàng Hoặc Các</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tổ Chức Tài Chính</span>
-                                             </h1>
+                                            <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[39px] pt-[68px] ">
+                                                <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[45px]">
+                                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Ngân Hàng Hoặc Các</span><br />
+                                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tổ Chức Tài Chính</span>
+                                                </h1>
+                                             </div>
                                         ) : (
-                                            <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Ngân Hàng </span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Hoặc Các</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tổ Chức </span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tài Chính</span>
-                                             </h1>
+                                            <div className="  max-w-[1300px] mx-auto pl-[10px] sm:pt-[39px] pt-[68px] ">
+                                                <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[45x] sm:text-4xl">
+                                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Ngân Hàng </span><br />
+                                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Hoặc Các</span><br />
+                                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Tổ Chức </span><br />
+                                                    <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Tài Chính</span>
+                                                </h1>
+                                             </div>
                                         )
                                        
                                     )
                                 )
                             }
-                    </div>
+                   
                    
                 
             </div>
@@ -81,20 +93,20 @@ export const Banking = () => {
                             {
                                 i18n.language === "en" ? (
                                     width > 840 ? (
-                                        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Banking or financial institutes</span>
+                                        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Banking or financial institutes</span>
                                          </h1>
                                     ) : (
                                         width > 550 ? (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Banking or financial</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">institutes</span>
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Banking or financial</span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">institutes</span>
                                              </h1>
                                         ) : (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Banking or </span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">financial</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">institutes</span>
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Banking or </span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">financial</span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">institutes</span>
                                              </h1>
                                         )
                                        
@@ -102,21 +114,21 @@ export const Banking = () => {
                                    
                                 ):(
                                     width > 1068 ? (
-                                        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Ngân hàng hoặc các tổ chức tài chính</span>
+                                        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Ngân hàng hoặc các tổ chức tài chính</span>
                                          </h1>
                                     ) : (
                                         width > 559 ? (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Ngân hàng hoặc các</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">tổ chức tài chính</span>
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Ngân hàng hoặc các</span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">tổ chức tài chính</span>
                                              </h1>
                                         ) : (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Ngân hàng </span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">hoặc các</span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">tổ chức </span><br />
-                                            <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">tài chính</span>
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Ngân hàng </span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">hoặc các</span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">tổ chức </span><br />
+                                            <span className="inline-block ml-[0px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">tài chính</span>
                                              </h1>
                                         )
                                        

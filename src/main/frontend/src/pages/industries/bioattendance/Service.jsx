@@ -82,9 +82,9 @@ export const Service = () => {
                                     <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 460sm:h-[40px] xl:h-[46px]">{t("industries.service.hopital")}</span>
                                      </h1>
                                 ) : (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
                                     {t("industries.service.hopitaldes")}
-                                    <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">{t("industries.service.hopital")}</span>
+                                    <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] sm:ml-0">{t("industries.service.hopital")}</span>
                                  </h1>
                                 )
                             }
@@ -179,8 +179,8 @@ export const Service = () => {
                          width > 374 ?
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px]  sm:text-4xl">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[38px]">
                                         {t("industries.service.benefit")}
                                         </span>
                                         {t("industries.service.foryou")}
@@ -190,8 +190,8 @@ export const Service = () => {
                             ) :
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[38px]">
                                         {t("industries.service.benefit")}
                                         </span>
                                        
@@ -208,8 +208,8 @@ export const Service = () => {
                             ) : (
                                 width > 374 ? (
                         <div className=" flex flex-col gap-[15px] items-center " >
-                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold sm:text-4xl">
+                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px] ">
                                 {t("industries.service.benefit")}
                                 </span>
                                 {t("industries.service.foryou")}
@@ -217,15 +217,14 @@ export const Service = () => {
                         
                         </div> ) : (
                              <div className=" flex flex-col gap-[15px] items-center ">
-                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
-                                 {t("industries.student.why")}
+                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
+                                 {t("industries.service.benefit")}
                                  </span>
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
-                                 {t("industries.student.choose")}
-                                 </span>
+                                
+                                 {t("industries.service.foryou")}
                                  <br />
-                                 {t("industries.student.whychosse")}
+                                 {/* {t("industries.service.foryou")} */}
                                  
                                
                              </h1>
@@ -304,9 +303,9 @@ export const Service = () => {
                         (
                             width >= 348 ? (
                                 <div>
-                                <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl">
                             
-                                    <span className="border-b-[10px]  mr-[16px] inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <span className="border-b-[10px]  mr-[16px] inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                     {t("industries.service.client")}
                                     </span>
                                     {t("industries.service.testimonials")}     
@@ -314,14 +313,12 @@ export const Service = () => {
                                 </div>
                             ) : (
                                 <div>
-                                <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
                             
-                                    <span className="border-b-[10px]  mr-[16px] inline-block  h-[50px] border-[var(--tree-poppy)]">
-                                   Đánh giá
+                                    <span className="border-b-[10px]  mr-[16px] inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
+                                    {t("industries.service.client")}
                                     </span>
-                                    <span className="border-b-[10px]  mr-[16px] inline-block  h-[50px] border-[var(--tree-poppy)]">
-                                   từ
-                                    </span>
+                                 
                                     {t("industries.service.testimonials")}     
                                     </h1>
                                 </div>

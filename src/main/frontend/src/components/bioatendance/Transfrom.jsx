@@ -5,8 +5,8 @@ export const Transfrom = ({ ischeck,thetitleStrong,titleStrong1,titlenormal1,tit
   return (
     <div className="max-w-[1300px] py-[50px] mx-auto relative">
       <div className="ml-[10px]">
-        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
-          <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)]">
+        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px] sm:text-4xl ">
+          <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
             {title}
           </span>
           {titlenormal}

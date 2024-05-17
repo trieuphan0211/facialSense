@@ -15,14 +15,14 @@ export const Retailworkforce = () => {
     let content1;
     let check = false;
     const generateHeader = (title, subTitle, borderColor, textColor) => (
-        <div className="inline-block 460sm:block">
-          <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px]  border-${borderColor}`}>
+        <div className="inline-block 460sm:block ">
+          <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px] sm:text-4xl sm:h-[40px] border-${borderColor}`}>
             {title}
           </h1>
         
           {subTitle && <br />}
           {subTitle && (
-            <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px] border-${borderColor}`}>
+            <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px] sm:text-4xl sm:h-[40px] border-${borderColor}`}>
               {subTitle} 
               
             </h1>
@@ -90,16 +90,16 @@ export const Retailworkforce = () => {
           ) : (
             <div>
              <div className="inline-block 460sm:block">
-                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
+                <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]">
                     {t("industries.retailworkforce.doanh3")}
                 </h1>
                 <br />
-                <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                     {t("industries.retailworkforce.nghiep3")}
                 </h1>
                 <br />
                
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                     bán lẻ
                     
                     </h1>
@@ -114,16 +114,22 @@ export const Retailworkforce = () => {
 
     return (
         <>
-           <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
-                <div className="  max-w-[1300px] mx-auto px-4 pt-[68px] minxl:pt-[100px] 460sm:pt-[80px] xl:pt-[108px]">
+          <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
+            { i18n.language === "en" ? (
+                <div className="  max-w-[1300px] mx-auto px-4 pt-[68px] minxl:pt-[100px] 460sm:pt-[112px] xl:pt-[108px] ">
                   {content}
                 </div>
-            
-            </div>
+              ) : (
+                <div className="  max-w-[1300px] mx-auto px-4 pt-[68px] minxl:pt-[100px] 460sm:pt-[90px] xl:pt-[108px] ">
+                  {content}
+                </div>
+              )
+            }
+          </div>
           <div className=" bg-white">
                     <div className="max-w-[1300px] py-[50px] mx-auto relative">
                         <div className="ml-[10px]">
-                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
+                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px] sm:text-4xl">
                             
                                {content1}
                          

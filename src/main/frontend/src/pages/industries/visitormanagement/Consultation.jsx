@@ -42,21 +42,21 @@ export const Consultation = () => {
                                          </h1>
                                     ): (
                                         <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0 ">Consultation</span><br />
-                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0">Services</span>
+                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Consultation</span><br />
+                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Services</span>
                                          </h1>
                                     )
                                    
                                 ):(
                                     width > 405 ? (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
                                    
-                                        <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0">{t("industries.consultation.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0 sm:h-[40px]">{t("industries.consultation.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Dịch Vụ</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tư Vấn</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Dịch Vụ</span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Tư Vấn</span>
                                          </h1>
                                     )
                                    
@@ -72,28 +72,28 @@ export const Consultation = () => {
                             <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
                             { i18n.language === "en" ? (
                                 width > 568 ? (
-                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                    
-                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">  {t("industries.consultation.headernone")}</span>
+                                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">  {t("industries.consultation.headernone")}</span>
                                    
                                 </h1>
                                 ) : (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">Consultation</span><br />
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">Services</span>
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px]  sm:text-4xl">
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">Consultation</span><br />
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] lowercase">Services</span>
                                     </h1>
                                 )
                                 
                             ) : (
                                 width > 405 ? (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
                                
-                                    <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">{t("industries.consultation.headernone")}</span>
+                                    <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">{t("industries.consultation.headernone")}</span>
                                      </h1>
                                 ): (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">Dịch vụ</span><br />
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">tư vấn</span>
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">Dịch vụ</span><br />
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">tư vấn</span>
                                      </h1>
                                 )
                                

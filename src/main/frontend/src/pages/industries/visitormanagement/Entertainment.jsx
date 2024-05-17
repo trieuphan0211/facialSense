@@ -58,15 +58,15 @@ export const Entertainment = () => {
                     </span>
                   </h1>
                 ) : (
-                  <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                  <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                     <span className="">
                       {t("industries.entertainment.headerdes")}
                     </span>
-                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">
+                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                       System
                     </span>
                     <br />
-                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">
+                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                       Solution
                     </span>
                   </h1>
@@ -91,12 +91,12 @@ export const Entertainment = () => {
                   </span>
                 </h1>
               ) : (
-                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
-                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">
+                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
+                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                     Giải pháp hệ
                   </span>
                   <br />
-                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">
+                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                     thống{" "}
                   </span>
                   <span className="">
@@ -129,25 +129,25 @@ export const Entertainment = () => {
               />
               <div className="  max-w-[1300px] mx-auto py-[50px] flex flex-col items-center relative ">
                 {i18n.language === "en" ? (
-                  <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] ">
+                  <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                     {t("industries.entertainment.control")}
-                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]">
+                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                       {" "}
                       {t("industries.entertainment.simplicity")}{" "}
                     </span>
                   </h1>
                 ) : width > 537 ? (
-                  <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] ">
+                  <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                     {t("industries.entertainment.control")}
-                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]">
+                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                       {" "}
                       {t("industries.entertainment.simplicity")}{" "}
                     </span>
                   </h1>
                 ) : (
-                  <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] ">
+                  <h1 className="text-5xl text-center text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                     {t("industries.entertainment.control")}
-                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] mr-[16px]">
+                    <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                       sự đơn giản{" "}
                     </span>
                     <br />
@@ -245,8 +245,8 @@ export const Entertainment = () => {
         <div className=" mx-auto max-w-[1300px] pt-[50px] pb-[90px] flex flex-col gap-[50px] px-4 ">
           <div className=" relative">
             <div className=" flex flex-col gap-[15px] items-center ">
-              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+              <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl">
+                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                   {t("industries.student.whychossetitle")}
                 </span>
                 {t("industries.entertainment.whychossedes")}

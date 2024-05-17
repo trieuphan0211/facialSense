@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "@uidotdev/usehooks"; 
-export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, descac , tinh, check, nameHader1 } ) => {
+export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, descac , check, nameHader1 } ) => {
     const { t ,i18n } = useTranslation()
     const { width } = useWindowSize()
     return (
@@ -17,7 +17,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                             {
                                 check == true ? (
                                     width > 358 ? (
-                                        <span className="border-b-[10px] pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px] pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {underlineHeader}
                                     
                                         </span>
@@ -34,7 +34,7 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                                         </>
                                     )
                                 ): (
-                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] ">
+                                <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {underlineHeader}
                                     
                                     </span>
@@ -52,15 +52,15 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
             ) : (
                 width < 358 ? ( 
                 <div className=" flex flex-col gap-[15px] items-center " >
-                    <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] ">
+                    <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold sm:text-4xl">
+                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                         {descac}
                         </span>
                         <br />
-                        <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                        {/* <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                         {tinh}
                         </span>
-                        <br />
+                        <br /> */}
                         {check == true ? (
                                 <div>
                                
@@ -77,17 +77,17 @@ export const Headerkeyfeatures = ( {nameHader, underlineHeader, desHeader, desca
                 </div>
                 ) : (
                 <div className=" flex flex-col gap-[15px] items-center " >
-                    <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
+                    <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold sm:text-4xl">
                         
                             {check == true ? (
                                 <div>
-                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                {underlineHeader}
                                </span>
                                 {nameHader1}
                                 </div>
                               
-                            ) : <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                            ) : <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                             {nameHader}
                             </span>}
                         
@@ -119,7 +119,7 @@ Headerkeyfeatures.propTypes = {
     underlineHeader : PropTypes.string,
     desHeader: PropTypes.string,
     descac: PropTypes.string,
-    tinh: PropTypes.string,
+    // tinh: PropTypes.string,
     check: PropTypes.bool,
     nameHader1: PropTypes.string
 }

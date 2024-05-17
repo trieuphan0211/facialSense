@@ -406,7 +406,7 @@ export const FacialsenseBioAttendannce = () => {
               src={cicletree}
               alt=""
             />
-            <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden">
+            <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden sm:text-4xl">
               {t("products.bioattendance.intro.header")}
             </h1>
             <p className="text-lg text-[#9795B5]">
@@ -511,16 +511,16 @@ export const FacialsenseBioAttendannce = () => {
               {t("products.bioattendance.benefits.header.bio")}
               <span
                 style={{ whiteSpace: "nowrap" }}
-                className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)]"
+                className="border-b-[10px]  inline-block pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]"
               >
                 {t("products.bioattendance.benefits.header.benefit")}
               </span>
             </h1>
           ) : (
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px]">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[832px] sm:text-4xl">
               <span
                 style={{ whiteSpace: "nowrap" }}
-                className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]"
+                className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]"
               >
                 {t("products.bioattendance.benefits.header.benefit")}
               </span>
@@ -573,10 +573,10 @@ export const FacialsenseBioAttendannce = () => {
         <div className="flex flex-col items-center items-center px-3">
           {i18n.language === "en" ? (
             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
-              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 CheckID
               </span>
-              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 FacialSense
               </span>
 
@@ -589,10 +589,10 @@ export const FacialsenseBioAttendannce = () => {
               <span style={{ whiteSpace: "wrap" }} className="block">
                 {t("products.bioattendance.serverHeader")}
               </span>
-              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 CheckID
               </span>
-              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+              <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 FacialSense
               </span>
             </h1>
@@ -610,7 +610,7 @@ export const FacialsenseBioAttendannce = () => {
                   alt=""
                 />
                 <div>
-                  <h2 className="text-[38px] text-[var(--tree-leaf)] font-extrabold mb-4">
+                  <h2 className="text-[38px] text-[var(--tree-leaf)] font-extrabold mb-4 sm:text-4xl">
                     {t(item.header)}
                   </h2>
                   <p>{t(item.title)}</p>
@@ -632,10 +632,10 @@ export const FacialsenseBioAttendannce = () => {
       <div className="flex flex-col gap-10 items-center py-[50px] px-3 bg-[#EEF3FA]">
         {i18n.language === "en" ? (
           <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
-            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               CheckID
             </span>
-            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               FacialSense
             </span>
             <span> {t("products.bioattendance.clientHeader")}</span>
@@ -644,10 +644,10 @@ export const FacialsenseBioAttendannce = () => {
           <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-8 sm:text-4xl">
             {" "}
             <span> {t("products.bioattendance.clientHeader")}</span>
-            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               CheckID
             </span>
-            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+            <span className="inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               FacialSense
             </span>
           </h1>
@@ -740,8 +740,8 @@ export const FacialsenseBioAttendannce = () => {
       <div className="px-4 py-[90px] flex flex-col items-center relative">
         <img src={choose1} className=" absolute right-0 top-[77px] "></img>
         <div className="max-w-[1300px] relative ">
-          <div className=" flex items-center justify-center flex-col gap-[15px]">
-            <h1 className="text-5xl text-[#1C2045] font-extrabold inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)]">
+          <div className=" flex items-center justify-center flex-col gap-[15px] ">
+            <h1 className="text-5xl text-[#1C2045] font-extrabold inline-block border-b-[10px] pl-2 h-11 border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]">
               {t("products.bioattendance.features.header")}
             </h1>
             <p className="text-[#3A505F] text-[18px] font-normal leading-[25px] max-w-[900px] text-center">
@@ -768,21 +768,44 @@ export const FacialsenseBioAttendannce = () => {
       <div className="flex flex-col items-center px-3 py-[50px] bg-[#EEF3FA] relative">
         <img src={left} className=" absolute left-0 top-0 "></img>
         <img src={right} className=" absolute right-0 bottom-0 "></img>
-        <h1 className="text-[46px] leading-[60px] font-extrabold mb-4 text-[#2F3032]">
-          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)]">
+        {i18n.language === "en" ? (
+        <h1 className="text-[46px] leading-[60px] font-extrabold mb-4 text-[#2F3032] sm:text-4xl">
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
             {t(
               "products.bioattendance.applicationIndustries.header.application"
             )}
           </span>
-          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)]">
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
             {t("products.bioattendance.applicationIndustries.header.and")}
           </span>
-          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)]">
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
             {t(
               "products.bioattendance.applicationIndustries.header.industries"
             )}
           </span>
         </h1>
+        ):(
+          <h1 className="text-[46px] leading-[60px] font-extrabold mb-4 text-[#2F3032] sm:text-4xl">
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
+            {t(
+              "products.bioattendance.applicationIndustries.header.application"
+            )}
+          </span>
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
+            {t("products.bioattendance.applicationIndustries.header.and")}
+          </span>
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
+            {t(
+              "products.bioattendance.applicationIndustries.header.industries1"
+            )}
+          </span>
+          <span className="inline-block border-b-[10px] pl-2 h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
+            {t(
+              "products.bioattendance.applicationIndustries.header.industries2"
+            )}
+          </span>
+        </h1>
+        )}
         <p className="text-lg text-[#3A505F]">
           {t("products.bioattendance.applicationIndustries.description")}
         </p>
@@ -807,7 +830,7 @@ export const FacialsenseBioAttendannce = () => {
       <div className="bg-[#F2F5FE]">
         <div className="max-w-[1300px] mx-auto  py-[100px] px-6">
           {i18n.language === "en" ? (
-            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4 sm:text-4xl">
               {t("homepage.question.header.frequently")}
               {width > 460 ? (
                 <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
@@ -818,7 +841,7 @@ export const FacialsenseBioAttendannce = () => {
                   .split(" ")
                   .map((item, index) => (
                     <span
-                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]"
+                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]"
                       key={index}
                     >
                       {item}
@@ -827,8 +850,8 @@ export const FacialsenseBioAttendannce = () => {
               )}
             </h1>
           ) : (
-            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
-              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4 sm:text-4xl">
+              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 {t("homepage.question.header.asked")}
               </span>
               {t("homepage.question.header.frequently")}

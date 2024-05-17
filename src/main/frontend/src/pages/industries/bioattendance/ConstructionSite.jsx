@@ -144,21 +144,21 @@ export const ConstructionSite = () => {
                 <div>
               {
                         width < 554 && width >= 488 && (
-                            <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                            <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl`}>
                             {t("industries.constructtion.headerdes")}
-                            <span className="border-b-[10px]  inline-block  h-[50px]  border-[var(--tree-poppy)]">{t("industries.constructtion.site")}</span> 
+                            <span className="border-b-[10px]  inline-block  h-[50px]  border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.constructtion.site")}</span> 
                             <br />   
-                            <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.constructtion.construct")}</span>                                    
+                            <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.constructtion.construct")}</span>                                    
                         </h1>
                         )
                 }
                 {
                     width < 488 && (
-                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                        <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl`}>
                         {t("industries.constructtion.headerdes")}
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.constructtion.site")}</span> 
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.constructtion.site")}</span> 
                         <br />   
-                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.constructtion.construct")}</span>          
+                        <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.constructtion.construct")}</span>          
                         
                     </h1>
                     )
@@ -185,11 +185,11 @@ export const ConstructionSite = () => {
                 <div>
                     
                 
-                    <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                    <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl`}>
                     {t("industries.constructtion.headerdes")}
-                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.constructtion.site")}</span> 
+                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.constructtion.site")}</span> 
                     <br />   
-                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">{t("industries.constructtion.construct")}</span>          
+                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.constructtion.construct")}</span>          
                     
                 </h1>
 
@@ -198,13 +198,13 @@ export const ConstructionSite = () => {
                     <div>
                     
                 
-                    <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px]`}>
+                    <h1 className={`  text-[#1C2045] text-5xl font-extrabold leading-[60px] sm:text-4xl`}>
                     {t("industries.constructtion.headerdes")}
-                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">công</span> 
+                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">công</span> 
                     <br />   
-                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">trường xây</span>    
+                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">trường xây</span>    
                     <br />   
-                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)]">dựng</span>                
+                    <span className="border-b-[10px]  inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">dựng</span>                
                     
                      </h1>
 

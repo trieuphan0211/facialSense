@@ -897,6 +897,8 @@ export default {
           application: "Ứng dụng",
           and: "và",
           industries: "Ngành công nghiệp",
+          industries1: "Ngành công",
+          industries2: "nghiệp",
         },
         description:
           "Hệ thống Chấm công Sinh trắc học của chúng tôi có thể được sử dụng thành công bởi nhiều doanh nghiệp và tổ chức khác nhau.",
@@ -1335,7 +1337,7 @@ export default {
     usecase: "Trường hợp sử dụng",
     use: "Sử dụng",
     case: " trường hợp",
-    usecaseheader: "ví dụ",
+    usecaseheader: " ví dụ",
     employee: "Nhân viên: Xác định lịch trình thời gian",
     employeedes: "Nhân viên có thể quyết định khung giờ và địa điểm mà anh ấy/cô ấy muốn gặp khách. Sau đó từ hệ thống tạo một lịch trình theo đó.",
     consumer: "Khách: Đặt lịch hẹn",

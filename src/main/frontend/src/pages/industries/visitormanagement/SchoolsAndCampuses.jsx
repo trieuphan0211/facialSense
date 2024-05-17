@@ -50,9 +50,9 @@ export const SchoolsAndCampuses = () => {
                                     <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">{t("industries.school.header")}</span>
                                      </h1>
                                 ): (
-                                    <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Schools and</span><br />
-                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Campuses</span>
+                                    <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:h-[40px] sm:ml-2">Schools and</span><br />
+                                    <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:h-[40px] sm:ml-2">Campuses</span>
                                      </h1>
                                 )
                             ) : (
@@ -67,10 +67,10 @@ export const SchoolsAndCampuses = () => {
                                         <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Các Khuôn Viên</span>
                                          </h1>
                                     ) : (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Trường Học </span><br />
-                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Và Các </span><br />
-                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-2">Khuôn Viên</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:h-[40px] sm:ml-2">Trường Học </span><br />
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:h-[40px] sm:ml-2">Và Các </span><br />
+                                        <span className="inline-block ml-[10px] border-b-[10px] h-[51px] border-[#2B159C] sm:h-[40px] sm:ml-2">Khuôn Viên</span>
                                          </h1>
                                     )
                                    
@@ -98,9 +98,9 @@ export const SchoolsAndCampuses = () => {
                                             </h1>
                                     ): (
                                        
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                                 <span className="">{t("industries.school.visitor")}</span>
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">{t("industries.school.school")}</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">{t("industries.school.school")}</span>
                                             
                                             </h1>
                                        
@@ -187,7 +187,7 @@ export const SchoolsAndCampuses = () => {
                                           underlineHeader={t("industries.school.keyfeatures")}
                                           desHeader={t("industries.school.keyfeaturesdes")}
                                           descac={t("industries.school.keyfeatures")}
-                                          tinh={t("industries.school.keyfeatures")}
+                                        //   tinh={t("industries.school.keyfeatures")}
                                           check={true}
                     />
                         <div className=" flex relative mt-[50px] mb-[30px] sm:flex-col">

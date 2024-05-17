@@ -1344,7 +1344,7 @@ export default {
       usecase: "Use case",
       use: "Use",
       case: " case",
-      usecaseheader: "example",
+      usecaseheader: " example",
       employee: "Employee: Define time schedule",
       employeedes: "Employee may decide the time slot and place that he/she wish to meet visitors. Then from the system create a schedule according to that.",
       consumer: "Visitor: Place an appointment",

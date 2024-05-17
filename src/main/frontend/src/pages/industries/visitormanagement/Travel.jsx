@@ -24,7 +24,7 @@ export const Travel = () => {
     return(
         <>
             <div className=" bg-cover bg-center h-[260px]">
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] ">
+                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px]">
                             {
                                 i18n.language === "en" ? (
                                     width > 593 ? (
@@ -32,9 +32,9 @@ export const Travel = () => {
                                         <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.travel.header")}</span>
                                          </h1>
                                     ) : (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Travel and</span><br />
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Excursion</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Travel and</span><br />
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Excursion</span>
                                          </h1>
                                     )
                                    
@@ -44,9 +44,9 @@ export const Travel = () => {
                                         <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">{t("industries.travel.header")}</span>
                                          </h1>
                                     ) : (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                             <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Du Lịch Và</span><br />
-                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Tham Quan</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                             <span className="inline-block ml-[16px] border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Du Lịch Và</span><br />
+                                        <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Tham Quan</span>
                                          </h1>
                                     )
                                 )
@@ -65,10 +65,10 @@ export const Travel = () => {
                                     <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] "> {t("industries.travel.headerTravel")}</span>
                                 </h1>
                                 ) : (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                    
-                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">Travel and</span><br />
-                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">excursion</span>
+                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">Travel and</span><br />
+                                   <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] lowercase">excursion</span>
                                     </h1>
                                 )
                                 
@@ -79,10 +79,10 @@ export const Travel = () => {
                                         <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] "> {t("industries.travel.headerTravel")}</span>
                                     </h1>
                                     ) : (
-                                        <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                        <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                        
-                                       <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">Du lịch và</span><br />
-                                       <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] lowercase">tham quan</span>
+                                       <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">Du lịch và</span><br />
+                                       <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] lowercase">tham quan</span>
                                         </h1>
                                     )
                                     

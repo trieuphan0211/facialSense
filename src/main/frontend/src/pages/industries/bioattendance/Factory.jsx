@@ -14,13 +14,13 @@ export const Factory = () => {
     const contentHeading = (title , subtitle, border, text) => (
         <div>
             
-             <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+             <h1 className={`inline-block border-b-[10px] h-[51px] sm:text-4xl sm:h-[40px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
                     {title}
             </h1>
             {subtitle && <br />}
             {
                 subtitle && (
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] sm:text-4xl sm:h-[40px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}>
                         {subtitle} 
                     </h1>
                 )
@@ -79,7 +79,7 @@ export const Factory = () => {
             <div className=" bg-white">
                     <div className="max-w-[1300px] py-[50px] mx-auto relative">
                         <div className="ml-[10px]">
-                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
+                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px] sm:text-4xl">
                                 {content1}
                             </h1>
                            

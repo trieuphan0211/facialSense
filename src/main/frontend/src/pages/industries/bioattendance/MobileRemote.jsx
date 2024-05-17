@@ -17,13 +17,13 @@ export const MobileRemote = () => {
     const { width } = useWindowSize() 
     const generateHeader = (title, subTitle, borderColor, textColor) => (
         <div className="inline-block 460sm:block">
-          <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px] border-${borderColor}`}>
+          <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} sm:text-4xl sm:h-[40px] font-extrabold leading-[60px] border-${borderColor}`}>
             {title}
           </h1>
         
           {subTitle && <br />}
           {subTitle && (
-            <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} font-extrabold leading-[60px] border-${borderColor}`}>
+            <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-${textColor} sm:text-4xl sm:h-[40px] font-extrabold leading-[60px] border-${borderColor}`}>
               {subTitle} 
               
             </h1>
@@ -56,7 +56,7 @@ export const MobileRemote = () => {
                       
                         </h1>
                         <br />
-                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                             Từ Xa
                         </h1>
                         
@@ -128,12 +128,12 @@ export const MobileRemote = () => {
             <div>
             {width < 735  && width >= 501 && (
                 <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                     Nhân Viên Di Động
                   
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                         Và Làm Việc Từ Xa
                     </h1>
                    
@@ -142,16 +142,16 @@ export const MobileRemote = () => {
             {
                 width < 501 && width >= 353 && (
                     <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                          Nhân Viên Di
                   
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                          Động Và Làm
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                         Việc Từ Xa
                     </h1>
                    
@@ -160,20 +160,19 @@ export const MobileRemote = () => {
             {
                 width < 353 && (
                     <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]">
                         Nhân Viên
-                  
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                        Di Động
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                        Và Làm
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
                        Từ Xa
                     </h1>
                 </div>
@@ -188,21 +187,23 @@ export const MobileRemote = () => {
             <div>
                 <div>
                 <div className="inline-block 460sm:block">
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]">
                         {t("industries.mobileandremote.header2")}
                     </h1>
                    
                     
                     <br />
-                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                             {t("industries.mobileandremote.remote")} 
                         </h1>
-                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                        <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                         {t("industries.mobileandremote.employee")} 
                         
                         </h1>
-                        
+                        <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px]  sm:text-4xl">
+
                         {t("industries.mobileandremote.headermobile")}
+                        </h1>
                     
                 </div>
             
@@ -214,12 +215,12 @@ export const MobileRemote = () => {
             <div>
             {width < 735  && width >= 501 && (
                 <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]">
                     {t("industries.mobileandremote.headernhan")}
                   
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                         {t("industries.mobileandremote.xa")}
                     </h1>
                     {t("industries.mobileandremote.headermobile")}
@@ -228,42 +229,46 @@ export const MobileRemote = () => {
             {
                 width < 501 && width >= 353 && (
                     <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]">
                     {t("industries.mobileandremote.employee")}
                   
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                         {t("industries.mobileandremote.mobile1")}
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                         {t("industries.mobileandremote.lam")}
                     </h1>
-                    {t("industries.mobileandremote.headermobile")}
+                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px]  sm:text-4xl">
+                        {t("industries.mobileandremote.headermobile")}
+                    </h1>
                 </div>
                 )
             }
              {
                 width < 353 && (
                     <div>
-                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]">
+                    <h1 className="inline-block border-b-[10px] h-[51px] text-5xl text-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]">
                         Nhân viên
                   
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                        di động
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                        và làm
                     </h1>
                     <br />
-                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)]`}>
+                    <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl ext-[#1C2045] font-extrabold leading-[60px] border-[var(--tree-poppy)] sm:text-4xl sm:h-[40px]`}>
                        từ xa
                     </h1>
-                    {t("industries.mobileandremote.headermobile")}
+                    <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px]  sm:text-4xl">
+                        {t("industries.mobileandremote.headermobile")}
+                    </h1>
                 </div>
                 )
             }
@@ -275,14 +280,21 @@ export const MobileRemote = () => {
     return (
         <>
             <div className=" bg-cover bg-center h-[360px]" style={{ backgroundImage: "url('/src/assets/img/industries/biometricoffice/group.png')" }}>
-                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[65px]">
+                { i18n.language === "en" ? (
+                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[88px] ">
                     {content}
                     </div>
+                ) : (
+                    <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[65px] ">
+                    {content}
+                    </div>
+                )
+            }
             </div>
             <div className=" bg-white">
                         <div className="max-w-[1300px] py-[50px] mx-auto relative">
                             <div className="ml-[10px]">
-                                <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
+                                <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]  ">
                                     {content1}
                                 </h1>
                             <p className="text-[#3A505F] leading-[25px] text-[18px] font-montserrat mt-[15px]">
@@ -355,8 +367,8 @@ export const MobileRemote = () => {
                          width > 374 ?
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.biometricoffice.whychossetitle")}
                                         </span>
                                         {t("industries.mobileandremote.whychosse")}
@@ -366,11 +378,11 @@ export const MobileRemote = () => {
                             ) :
                             (
                                 <div className=" flex flex-col gap-[15px] items-center ">
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.biometricoffice.why")}
                                         </span>
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.biometricoffice.choose")}
                                         </span>
                                         <br />
@@ -386,8 +398,8 @@ export const MobileRemote = () => {
                             ) : (
                                 width > 374 ? (
                         <div className=" flex flex-col gap-[15px] items-center " >
-                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold ">
-                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+                            <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold sm:text-4xl">
+                                <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                 {t("industries.biometricoffice.whychossetitle")}
                                 </span>
                                 {t("industries.mobileandremote.whychoose")}
@@ -395,11 +407,11 @@ export const MobileRemote = () => {
                         
                         </div> ) : (
                              <div className=" flex flex-col gap-[15px] items-center ">
-                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                             <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                  {t("industries.biometricoffice.why")}
                                  </span>
-                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                 <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                  {t("industries.biometricoffice.choose")}
                                  </span>
                                  <br />

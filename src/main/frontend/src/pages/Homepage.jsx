@@ -286,7 +286,7 @@ export const Homepage = () => {
               src={cicletree}
               alt=""
             />
-            <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden">
+            <h1 className="text-[#151686] text-[46px]  font-[800] leading-[60px] focus-visible:hidden sm:text-4xl">
               {t("homepage.solution.header")}
             </h1>
             <p className="text-lg text-[#9795B5]">
@@ -365,15 +365,15 @@ export const Homepage = () => {
       </div>
       <div className="bg-shape bg-no-repeat bg-[left_top_-115px] py-[100px] px-4">
         {i18n.language === "en" ? (
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12 sm:text-4xl">
             {t("homepage.product.our")}
-            <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
+            <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               {t("homepage.product.products")}
             </span>
           </h1>
         ) : (
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
-            <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12 sm:text-4xl">
+            <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               {t("homepage.product.products")}
             </span>
             {t("homepage.product.our")}
@@ -382,7 +382,7 @@ export const Homepage = () => {
 
         <div className="max-w-[1300px] px-2 mx-auto mb-12 flex justify-between xl:flex-col-reverse xl:items-center">
           <div className="w-[570px] sm:w-auto">
-            <h2 className="text-[38px] font-extrabold leading-[56px] text-[#1C2045] mb-5">
+            <h2 className="text-[38px] font-extrabold leading-[56px] text-[#1C2045] mb-5 sm:text-4xl">
               {t("homepage.product.header")}
             </h2>
             <p className="text-lg text-[#3A505F] mb-8 max-w-[510px]">
@@ -525,7 +525,7 @@ export const Homepage = () => {
         </div>
         <div className="max-w-[1300px] px-2 mx-auto flex flex-row-reverse justify-between xl:flex-col-reverse xl:items-center">
           <div className="w-[590px] sm:w-auto">
-            <h2 className="text-[38px] font-extrabold capitalize leading-[56px] text-[#1C2045] mb-5">
+            <h2 className="text-[38px] font-extrabold capitalize leading-[56px] text-[#1C2045] mb-5 sm:text-4xl">
               {t("homepage.visitor.header")}
             </h2>
             <p className="text-lg text-[#3A505F] mb-5 max-w-[510px]">
@@ -641,15 +641,15 @@ export const Homepage = () => {
       </div>
       <div className="bg-[#F2F5FE] p-[100px] lg:px-3">
         {i18n.language === "en" ? (
-          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12">
+          <h1 className="text-center text-5xl text-[#1C2045] font-extrabold mb-12 sm:text-4xl">
             {t("homepage.benefit.header.bio")}
-            <span className="border-b-[10px] pl-2 inline-block pl-2 h-11 border-[var(--tree-poppy)]">
+            <span className="border-b-[10px] pl-2 inline-block pl-2 h-11 border-[var(--tree-poppy)] sm:h-[40px]">
               {t("homepage.benefit.header.benefit")}
             </span>
           </h1>
         ) : (
-          <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold mb-12">
-            <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)]">
+          <h1 className="text-center text-5xl leading-tight text-[#1C2045] font-extrabold mb-12 sm:text-4xl">
+            <span className="border-b-[10px]  inline-block h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
               {t("homepage.benefit.header.benefit")}
             </span>
             {t("homepage.benefit.header.bio")}
@@ -685,7 +685,7 @@ export const Homepage = () => {
       <div className="max-w-[1300px] mx-auto px-2 pt-[100px] pb-16">
         <Box sx={{ display: "flex", gap: "50px", flexDirection: "column" }}>
           <div className="flex items-center justify-between sm:flex-col sm:gap-2 px-3">
-            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]">
+            <h1 className="text-center text-5xl text-[#1C2045] font-extrabold border-b-[10px] inline-block h-11 border-[var(--tree-poppy)]  sm:text-4xl sm:h-[40px]">
               {t("homepage.testimonials.header")}
             </h1>
             <MobileStepper
@@ -768,10 +768,10 @@ export const Homepage = () => {
       <div className="bg-[#F2F5FE]">
         <div className="max-w-[1300px] mx-auto  py-[100px] px-6">
           {i18n.language === "en" ? (
-            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4 sm:text-4xl">
               {t("homepage.question.header.frequently")}
               {width > 460 ? (
-                <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]">
+                <span className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                   {t("homepage.question.header.asked")}
                 </span>
               ) : (
@@ -779,7 +779,7 @@ export const Homepage = () => {
                   .split(" ")
                   .map((item, index) => (
                     <span
-                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)]"
+                      className="border-b-[10px] pl-2 inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]"
                       key={index}
                     >
                       {item}
@@ -788,8 +788,8 @@ export const Homepage = () => {
               )}
             </h1>
           ) : (
-            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4">
-              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)]">
+            <h1 className="text-center text-[46px] leading-[1] text-[#1C2045] font-extrabold mb-4 sm:text-4xl">
+              <span className="border-b-[10px]  inline-block h-11 border-[var(--tree-poppy)] sm:h-[40px]">
                 {t("homepage.question.header.asked")}
               </span>
               {t("homepage.question.header.frequently")}

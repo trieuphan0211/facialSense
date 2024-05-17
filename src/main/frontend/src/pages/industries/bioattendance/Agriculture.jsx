@@ -20,14 +20,14 @@ export const Agriculture = () => {
   const contentHeading = (title, subtitle, border, text) => (
     <div>
       <h1
-        className={`inline-block border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}
+        className={`inline-block border-b-[10px] h-[51px] sm:text-4xl sm:h-[40px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}
       >
         {title}
       </h1>
       {subtitle && <br />}
       {subtitle && (
         <h1
-          className={`inline-block  border-b-[10px] h-[51px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}
+          className={`inline-block  border-b-[10px] h-[51px] sm:text-4xl sm:h-[40px] text-5xl text-${text} font-extrabold leading-[60px] border-${border}`}
         >
           {subtitle}
         </h1>
@@ -66,47 +66,51 @@ export const Agriculture = () => {
             "url('/src/assets/img/industries/biometricoffice/group.png')",
         }}
       >
-        <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[105px]">
+        
           {i18n.language === "en" ? (
-            <h1
-              className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD]`}
-            >
-              {t("industries.agriculture.header")}
-            </h1>
+            <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[122px]">
+              <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}>
+                {t("industries.agriculture.header")}
+              </h1>
+            </div>
           ) : (
-            content
+            <div className="  max-w-[1300px] mx-auto pl-[10px] pt-[68px] minxl:pt-[100px] xl:pt-[115px] 460sm:pt-[126px]">
+              <h1 className={`inline-block border-b-[10px] h-[51px] text-5xl text-white font-extrabold leading-[60px] border-[#B9AAFD] sm:text-4xl sm:h-[40px]`}> 
+              {content}
+              </h1>
+            </div>
           )}
-        </div>
+        
       </div>
       <div className=" bg-white">
         <div className="max-w-[1300px] py-[50px] mx-auto relative">
           <div className="ml-[10px]">
             <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1110px] leading-[60px]">
               {i18n.language === "en" ? (
-                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
-                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)]">
+                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
+                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                     {" "}
                     {t("industries.agriculture.header")}
                   </span>
                   {t("industries.agriculture.headerdes")}
                 </h1>
               ) : width < 350 ? (
-                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                   {t("industries.agriculture.headerdes")}
-                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                     {" "}
                     {t("industries.agriculture.nong1")}
                   </span>
                   <br />
-                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                     {" "}
                     {t("industries.agriculture.nghiep")}
                   </span>
                 </h1>
               ) : (
-                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                   {t("industries.agriculture.headerdes")}
-                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)]">
+                  <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">
                     {" "}
                     {t("industries.agriculture.header1")}
                   </span>

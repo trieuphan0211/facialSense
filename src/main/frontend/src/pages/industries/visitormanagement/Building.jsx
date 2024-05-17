@@ -41,25 +41,25 @@ export const Building = () => {
                                 i18n.language === "en" ? (
                                     width > 715 ? (
                                         <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block border-b-[10px] h-[59px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
                                          </h1>
                                     ): (
                                         <h1 className="text-5xl sm:text-4xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0">Building and</span><br />
-                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0">Apartments</span>
+                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0 sm:h-[43px]">Building and</span><br />
+                                        <span className="inline-block border-b-[10px] h-[47px] border-[#2B159C] sm:ml-0 sm:h-[43px]">Apartments</span>
                                          </h1>
                                     )
                                    
                                 ):(
                                     width > 503 ? (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
                                    
-                                        <span className="inline-block border-b-[10px] h-[59px] border-[#2B159C] sm:ml-0">{t("industries.building.header")}</span>
+                                        <span className="inline-block border-b-[10px] h-[55px] border-[#2B159C] sm:ml-0 sm:h-[40px]">{t("industries.building.header")}</span>
                                          </h1>
                                     ): (
-                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px]">
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Toà Nhà Và</span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0">Căn Hộ</span>
+                                        <h1 className="text-5xl text-white font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl">
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Toà Nhà Và</span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[#2B159C] sm:ml-0 sm:h-[40px]">Căn Hộ</span>
                                          </h1>
                                     )
                                    
@@ -75,33 +75,33 @@ export const Building = () => {
                             <h1 className="text-5xl text-[#1C2045] font-extrabold  leading-[60px]">
                             { i18n.language === "en" ? (
                                 width > 1155 ? (
-                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                     {t("industries.building.headerdes")}
-                                    <span className="inline-block border-b-[10px] ml-[16px] h-[51px] border-[var(--tree-poppy)] "> Apartments </span>
+                                    <span className="inline-block border-b-[10px] ml-[16px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] "> Apartments </span>
                                     <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">and Building</span>
                                    
                                 </h1>
                                 ) : (
                                     width > 824 ? (
                                         
-                                        <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                        <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                             {t("industries.building.headerdes")}
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">Apartments and Building</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px] ">Apartments and Building</span>
                                    
                                         </h1>
                                     ) : (
                                         width > 606 ? (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                             Visitor Management <br /> <span className="ml-4">System for</span> 
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] "> Apartments </span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">and Building</span>
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]"> Apartments </span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">and Building</span>
                                         
                                             </h1>
                                         ): (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] ">
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold leading-[60px] sm:text-4xl">
                                             Visitor Management <br />System for <br />
-                                            <span className="inline-block border-b-[10px]  h-[51px] border-[var(--tree-poppy)] "> Apartments </span><br />
-                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] ">and Building</span>
+                                            <span className="inline-block border-b-[10px]  h-[51px] border-[var(--tree-poppy)] sm:h-[40px]"> Apartments </span><br />
+                                            <span className="inline-block border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:h-[40px]">and Building</span>
                                         
                                             </h1>
                                         )
@@ -112,7 +112,7 @@ export const Building = () => {
                                 
                             ) : (
                                 width > 1071 ? (
-                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                    <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]  ">
                                         {t("industries.building.headerdes")}  <span className="inline-block border-b-[10px]  h-[51px] border-[var(--tree-poppy)] "> căn hộ  </span><br />
                                     <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">và toà nhà</span>
                                      </h1>
@@ -125,17 +125,17 @@ export const Building = () => {
                                         </h1>
                                     ): (
                                         width > 464 ? (
-                                        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                        <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl ">
                                         Hệ thống quản lý <br/> khách hàng cho 
                                     
-                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0"> căn hộ và toà nhà</span>
+                                        <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]"> căn hộ và toà nhà</span>
                                         </h1>
                                         ): (
-                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px]">
+                                            <h1 className="text-5xl text-[#1C2045] font-extrabold max-w-[1210px] leading-[60px] sm:text-4xl ">
                                                
-                                                 Hệ thống <br/>quản lý<br /> khách hàng <br></br>cho  <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">căn hộ </span>
+                                                 Hệ thống <br/>quản lý<br /> khách hàng <br></br>cho  <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">căn hộ </span>
                                     
-                                                <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0">và toà nhà</span>
+                                                <span className="inline-block  border-b-[10px] h-[51px] border-[var(--tree-poppy)] sm:ml-0 sm:h-[40px]">và toà nhà</span>
                                             </h1>
                                         )
                                         
@@ -250,9 +250,9 @@ export const Building = () => {
                        
                                 <div className=" flex flex-col gap-[15px] items-center ">
             
-                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] ">
+                                    <h1 className="text-center text-5xl text-[#1C2045] font-extrabold  max-w-[1290px] leading-[60px] sm:text-4xl ">
                                         {t("industries.building.whycheckid")}
-                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)]">
+                                        <span className="border-b-[10px]  pl-2 inline-block  h-[50px] border-[var(--tree-poppy)] sm:h-[40px]">
                                         {t("industries.building.apartment")}
                                         </span>
                                         {t("industries.building.willmake")}
